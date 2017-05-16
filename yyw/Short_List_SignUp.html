@@ -1,0 +1,304 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--移动设备优先-->
+<title>填写信息/悠悠蜗</title>
+<meta name="keywords" content="关键字" />
+<meta name="description" content="描述" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<!--通知IE采用最新的模式-->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="fromat-detecition" content="telephone=no" />
+<!-- 屏蔽浏览器自动识别数字为电话号码 -->
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<!--  Bootstrap 核心 CSS 文件 -->
+<link rel="stylesheet" href="css/css.css">
+<!--  样式表 -->
+<link rel="stylesheet" href="css/style.css">
+<!--  媒体查询样式表 -->
+<link href="css/swiper.min.css" rel="stylesheet">
+<!--滑动插件-->
+<link href="css/animate.css" rel="stylesheet">
+<!--动画插件-->
+<script src="js/jquery.min.js"></script><!-- jQuery文件 -->
+<script src="js/bootstrap.min.js"></script><!--  Bootstrap 核心 JavaScript 文件 -->
+</head>
+
+<body>
+<header id="header" class="paddingNone"> 
+    <div class="Nav-Wra PositionNone">
+        <nav class="navbar navbar-default w-1180">
+            <div class="container-fluid m-0 p-0">
+                <div class="navbar-header"><!-- 下拉导航栏按钮 -->
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> 
+                        <span class="sr-only">Toggle navigation</span> 
+                        <span class="icon-bar"></span> 
+                        <span class="icon-bar"></span> 
+                        <span class="icon-bar"></span> 
+                    </button>
+                    <a class="navbar-brand m-0 p-0" href="index.html"><img src="images/Logo.png" alt=""><span>专注大学生旅游</span></a><!-- LOGO --> 
+                </div>
+                <div class="collapse navbar-collapse p-0 m-0" id="bs-example-navbar-collapse-1"><!-- 导航栏 -->
+                    <ul class="nav navbar-nav">
+                        <li><a href="index.html">首页 <span class="sr-only">(current)</span></a></li>
+                        <li class="active"><a href="Short_List.html">同城精粹</a></li>
+                        <li><a href="#">短途旅行</a></li>
+                        <li><a href="Short_List_B.html">长途旅行</a></li>
+                        <li><a href="Customized.html">团体定制</a></li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse --> 
+            </div>
+            <!-- /.container-fluid --> 
+            <div class="Top2-Nav">
+                <ul class="clearFix">
+	        <li class="f-l">
+                    <form class="form tr-02">
+                      <input class="text" type="text" />
+                      <button class="submit Bg1 tr-02" type="button" name="" value=""></button>
+                    </form>
+              </li>
+	        <li class="f-l Bg1"><a href="#"></a></li>
+	        <li class="f-l L-R"><a href="Land.html">登录</a></li>
+	        <li class="f-l L-R"><a href="Register.html">注册</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</header>
+<!-- /header -->
+<div id="Contene" class="w-1180">
+	<div class="Short-List-SignUp">
+		<div class="Top">
+			<a href="Short_List_SignUp.html" class="active tr-02">1.填写信息</a>
+			<a href="Short_List_SignUp_B.html" class="tr-02">2.支付</a>
+			<a href="#" class="tr-02">3.报名成功</a>
+		</div>
+		<div class="SignUpDiv clearFix">
+		          <div class="f-l">
+			          	<section>
+					<div class="section clearFix">
+						<h4>填写出行人信息</h4>
+						<div class="Common">
+						          <strong>常用出行人：</strong>
+							<label><input type="checkbox" checked="checked"/><span>李大根</span> </label> 
+							<label><input type="checkbox"/><span>李二根</span>  </label> 
+						</div>
+						<div class="Information">
+							<div class="Top clearFix">
+								<span class="f-l">李大根</span>
+								<div class="f-r">
+									<a class="tr-02" href="JavaScript:;" data-toggle="modal" data-target="#edit">编辑</a>
+									<a class="tr-02" href="JavaScript:;">删除</a>
+								</div>
+							</div>
+							<div class="Txt">
+								<ul class="clearFix">
+									<li class="f-l">真实姓名：<span>李大根</span></li>
+									<li class="f-l">性别：<span>女</span></li>
+									<li class="f-l">出生日期：<span>1980-04-17</span></li>
+									<li class="f-l">证件类型：<span>身份证</span></li>
+									<li class="f-l">证件号：<span>362523199204170818 </span></li>
+									<li class="f-l">护照号码：<span>23213265</span></li>
+									<li class="f-l">手机号：<span>13302580258</span></li>
+									<li class="f-l">邮箱：<span>18507317473@163.com</span></li>
+									<li class="f-l">保险：<span>赠送  平安保险--神州畅游 A款 </span></li>
+								</ul>
+							</div>
+						</div>
+						<button class="btn f-r" data-toggle="modal" data-target="#edit">添加出行人</button>
+					</div>
+				</section>
+				<section>
+				           <div class="section2">
+				           	<h4>紧急联系人</h4>
+				           	<div class="text clearFix">
+				           		<label class="f-l"><span>紧急联系人姓名</span><input class="focus-input" type="text"></label>
+				           		<label class="f-r"><span>联系方式</span><input class="focus-input" type="tel" max="11"></label>
+				           	</div>
+				           </div>
+				</section>
+				<hr>
+				<section>
+				           <div class="section3">
+				           	<h4>睡友</h4>
+				           	<div class="clearFix">
+				           		<div class="f-l left-txt"><span>房间安排：</span></div>
+				           		<div class="f-l right-radio">
+				           			<label class="label-Click"><input type="radio" name="Fruit"checked="checked"/><span>随机安排与同性队员拼房</span> </label> 
+							           <label class="label-Click"><input type="radio" name="Fruit"/><span>不！我有自己的睡友</span>  </label> 
+							           <p class="section3-P active">旅行中的住宿通常为标间，稻草人不收取单房差，也不提供住单间预订服务，一个人来的小伙伴我们将为您找一位同性队员或随团工作人员拼房，有时为了调整房差会安排3人间；</p>
+							           <div class="section3-P clearFix">
+							               <div class="f-l">
+							               	<span>姓名：</span>
+							               	<input type="text" class="focus-input">
+							               </div>
+							               <div class="f-r">
+							               	<span>手机号：</span>
+							               	<input type="tel" class="focus-input">
+							               </div>
+							           </div>
+				           		</div>
+				           	</div>
+				           </div>
+				</section>
+				<hr>
+				<section>
+				           <div class="section4">
+				           	<h4>过敏源&忌口</h4>
+				           	<textarea class="textarea focus-input" placeholder="如果你有过敏源或者忌口请写在这里哦，这样我们的随团工作人员就可以知晓啦！"></textarea>
+				           </div>
+				</section>
+				<hr>
+				<section>
+				           <div class="section5">
+				           	<h4>合同预览</h4>
+				           	<p>提交报名前请仔细阅读以下合同条款，付款成功即表示同意并接受合同条款中所述内容，甲乙双方需按条款约定内容履行权利义务。付款成功后订单中会生成一份电子旅游合同供你存档，现场需签署一份纸质合同用于悠悠蜗存档。</p>
+				           </div>
+				</section>
+				<hr>
+				<section class="poa">
+				           <div class="section6">
+				           	<label><input type="checkbox"/><span>我已阅读并同意 </span> </label> 
+				           	<a href="#" target="_Blank">旅游合同</a>
+				           	<a href="#" target="_Blank">报名须知</a>
+				           	<a href="#" target="_Blank">安全告知书</a>
+				           </div>
+				           <a href="Short_List_SignUp_B.html" class="btn tr-02 submit ">提交订单</a>
+				</section>
+				
+				<!-- 添加出行人弹窗 -->
+				<div role="dialog" class="modal fade" id="edit">
+				     	<div class="modal-dialog">
+				     		<div class="modal-content">
+				     			<div class="modal-header">
+				     			           <button type="button" class="close" data-dismiss="modal">
+				     			           	<span>&times;</span>
+				     			           </button>
+				     			           <h4>填写出行人信息<span>（<i>*</i>为必填选项）</span></h4>
+				     			</div>
+				     			<div class="modal-body text-right">
+				     				<form>
+					     				<ul>
+					     					<li>
+					     					    <strong><i>*</i>姓&nbsp;&nbsp;&nbsp;名：</strong>
+					     					    <span><input class="input-txt focus-input" type="text" autofocus="autofocus"></span>
+					     					</li>
+					     					<li>
+					     					    <strong><i>*</i>姓&nbsp;&nbsp;&nbsp;别：</strong>
+					     					    <span class="text-left">
+					     					           <label>
+					     					                  <input class="click" type="radio" name="Fruit" checked="checked"/>
+					     					                  <span>男</span> 
+					     					           </label>
+					     					           <label>
+					     					                  <input class="click" type="radio" name="Fruit"/>
+					     					                  <span>女</span> 
+					     					           </label>
+					     					     </span>
+					     					</li>
+					     					<li>
+					     					    <strong><i>*</i>手机号：</strong>
+					     					    <span><input class="input-txt focus-input" type="tel"></span>
+					     					</li>
+					     					<li>
+					     					    <strong><i>*</i>邮&nbsp;&nbsp;&nbsp;箱：</strong>
+					     					    <span><input class="input-txt focus-input" type="email"></span>
+					     					</li>
+					     					<li>
+					     					    <strong><i>*</i>    
+						     					    <select class="select" name=""> 
+												    <option value="0">身份证</option> 
+												    <option value="1">护照</option> 
+											    </select> 
+										    </strong>
+					     					    <span><input class="input-txt focus-input" type="text"></span>
+					     					</li>
+					     					<li >
+					     					     <span class="text-left"><label><input class="click" type="checkbox"/><span>同事保存为常用出行人</span> </label> </span>
+					     					</li>
+					     					<li>
+					     					     <span class="text-left"><button type="button" class="btn" data-dismiss="modal">添加</button></span>
+					     					</li>
+					     				</ul>
+				     				</form>
+				     			</div>
+				     		</div>
+				     	</div>
+				 </div>
+				<!-- / 添加出行人弹窗 -->
+		          </div>
+		          <div class="f-r">
+		          	    <div class="photo"><img src="images/photo1.jpg" alt="图片"></div>
+		          	    <div class="txt clearFix">
+		          	    	<h3>一岛情迷，美丽枸杞</h3>
+		          	    	<p>2017-05-09 至 2017-05-10</p>
+		          	    	<div class="add">
+			          	    	<div class="clearFix"><span class="f-l">李大根</span><span class="f-r">￥880</span></div>
+			          	    	<div class="clearFix"><span class="f-l">李二根</span><span class="f-r">￥880</span></div>
+		          	    	</div>
+		          	    	<hr>
+		          	    	<strong class="f-r">合计：<span>￥1760</span></strong>
+		          	    </div>
+		          </div>
+		</div>
+	</div>
+</div>
+<!-- /Contene --> 
+<!-- 右侧浮动导航 -->
+<div class="Right-Nav">
+	<ul>
+		<li>
+			<div class="show tr-02">
+				<p>客服电话：138-0000-0000<br/>客服时间：06：00~20：00</p>
+				<i></i>
+			</div>
+		</li>
+		<li></li>
+		<li>
+			<div class="show tr-02">
+				<img src="images/code.jpg" alt="">
+				<i></i>
+			</div>
+		</li>
+		<li id="Return-Top"></li>
+	</ul>
+	<div class="Jd"></div>
+</div>
+<footer id="footer">
+    <div class="w-1180 clearFix">
+             <div class="f-r">
+    		<a href="index.html">
+    			<img src="images/Logo2.png" alt="">
+    			<span>专注大学生旅游</span>
+    		</a>	
+    		<img src="images/code.jpg" alt="">	
+    	</div>	
+    	<div class="f-l">
+    		<ul class="clearFix">
+    			<li class="f-l"><a class="tr-02" href="Join_Us.html">加入我们</a></li>
+                                        <li class="f-l"><a class="tr-02" href="Contact_Us.html">联系我们</a></li>
+                                        <li class="f-l"><a class="tr-02" href="Common_Problem.html">常见问题</a></li>
+                                        <li class="f-l"><a class="tr-02" href="Disclaimer.html">免责说明</a></li>
+    		</ul>	
+    		<p>悠悠蜗是一家专门针对大学生户外出游的公司,<span>致力于提供优秀的出游体验。</span></p>
+    		<p>地址：上海市杨浦区国定东路200号1号楼1113室     <span>联系电话：021-56082169</span></p>
+    		<p>Copyright ©2017-2019 悠悠蜗版权所有 <span>沪ICP备17003305号</span></p>
+    	</div>
+    </div>	
+</footer>
+<!-- /footer --> 
+<script src="js/style.js"></script><!-- jQuery whole Put in the bottom --> 
+<script src="js/swiper.jquery.min.js"></script><!-- Slide Put in the bottom --> 
+<script>	
+/*睡友*/
+$('.label-Click').click(function(){
+	var index  = $(this).index();
+	$('.Short-List-SignUp .SignUpDiv > .f-l .section3 .right-radio  .section3-P').eq(index).addClass('active').siblings().removeClass('active');
+});
+
+</script>
+</body>
+</html>
