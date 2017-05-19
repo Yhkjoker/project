@@ -1,0 +1,55 @@
+<include file="Public:header"/>
+        
+        <div class="zixun_center">
+             <div class="zixun_centerTop">
+               <h3><{$con_arr.title}></h3>
+               <i>•</i><span>更新日期：</span><em><?php echo date("Y.m.d",$con_arr['inputtime']);?></em><!-- &nbsp&nbsp;<span>作者：</span><em>bobo baby</em> --><i>•</i>
+             </div> 
+             <img src="__PUBLIC__/img/zxxx.jpg" width="100%">
+             <div class="wenben">
+                       <{$con_arr.content}>
+             </div> 
+             <div class="zixun_photo">
+                  <dl>
+                     <dt><img src="__PUBLIC__/img/zxxx01.jpg" width="100%"></dt>
+                     <dd><img src="__PUBLIC__/img/zxxx02.jpg" width="100%"></dd>
+                  </dl>
+             </div>
+             <div class="zixun_fanye">
+                <span class="zixun_fanye_left"><empty  name="front">前一篇<else /><a href="__URL__/news_xq/catid/<{$con_arr.catid}>/id/<{$front.id}>">前一篇</a></empty></span>
+                <a style="text-align: center;" href="<{:U('Content/content',array('catid'=>23))}>">返回活动资讯</a>
+                <span class="zixun_fanye_right"> <empty  name="after">后一篇<else /><a href="__URL__/news_xq/catid/<{$con_arr.catid}>/id/<{$after.id}>">后一篇</a></empty></span>
+             </div>
+        </div>
+        <div class="zixun_hdcp">
+            <h3>活动中出现的产品</h3>
+            <div class="zixun_hdcp_content">
+			
+			<foreach name="pro_list" item="v">
+                 <div class="zixun_hdcp_chanpin">
+                      <dl>
+                          <dt>
+                             <img src="<{$v.picurl}>">
+                             <div class="jincai">
+                                 <i><{$v.catname}></i>
+                                 <div class="zixun_hdcp_chanpin_dianji">
+								 <foreach name="v[colorlist]" item="vo">
+                                   <span style="background-color:<{$vo.colorname}>"></span>
+								 </foreach>  
+               
+                                  </div>
+                             </div>
+                             <h4><{$v.title}><span><{$v.capacity}></span></h4>	
+                          </dt>
+                          <dd><em><i>￥</i><{$v.price}></em>
+                             <img class="aixin Product_followBtn1" src="__PUBLIC__/img/botombg.png">
+                             <img class="aixin Product_followBtn2" src="__PUBLIC__/img/botombg1.png">
+                          </dd>
+                      </dl>
+                 </div>
+			</foreach>
+            </div>
+        </div> 
+            <div class="zhankai"></div>
+
+<include file="Public:footer"/>

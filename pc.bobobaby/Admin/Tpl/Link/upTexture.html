@@ -1,0 +1,63 @@
+<include file="Public:header"/>
+<script  type="text/javascript" src="__PUBLIC__/ajs/pic.js"></script><script  type="text/javascript" src="__PUBLIC__/ajs/colpick.js"></script>
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/acss/colpick.css" />
+<!--内容-->
+<div id="content">
+<div id="breadcrumb"> <a href="__APP__/Index/index" title="Go to Home" class="tip-bottom"><i class="icon-home"></i>主页</a>->添加材质参数</span></div>
+<div class="quick-actions_homepage">
+
+      <ul class="quick-actions">
+
+
+			 <li class="bg_ls"> <a href="javascript:history.go(-1);"> <i class="icon-dashboard"></i>返回</a></li>
+      </ul>
+
+    </div>
+ <div class="row-fluid">
+
+     <div class="span12">
+
+        <div class="widget-box">
+
+          <div class="widget-title"> <span class="icon"> <i class="icon-th"></i> </span>
+
+            <h5>添加材质参数</h5>
+				
+          </div>
+		<form action="__APP__/Link/doParameter/action/add" id="myform" class="myForm" method="post" >	
+     	<table class="table table-bordered table-striped">
+
+		<tr >		  <td width="100px"><span>材质名称：</span></td>		  <td>				<input type="text" name="info[colorname]" />				<input type="hidden" name="info[typeid]" value="2" />		  </td>		  </tr>				
+     	
+		
+        <tr><td colspan="2"><input name="" type="submit" class="an" value="保存发布"></td></tr>
+
+
+		</table>		</form>
+	</div>
+	
+	 
+</div>
+</div>	
+<script>
+  $('.myForm').Validform({
+
+				tiptype:3,
+
+				ajaxPost:true,
+
+				callback:function(data){
+
+					if(data.status=='y'){
+
+									setTimeout(function(){window.location="__APP__/Link/parameter/cls/6";},1000);
+
+					}
+
+				}
+
+			  })
+</script>
+
+<!--尾巴-->
+<include file="Public:footer"/>

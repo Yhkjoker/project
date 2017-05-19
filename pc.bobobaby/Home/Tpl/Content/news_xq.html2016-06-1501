@@ -1,0 +1,22 @@
+<include file="Public:header"/>
+        
+        <div class="zixun_center">
+             <div class="zixun_centerTop">
+               <h3><{$con_arr.title}></h3>
+               <i>•</i><span>更新日期：</span><em><?php echo date("Y.m.d",$con_arr['inputtime']);?></em><!-- &nbsp&nbsp;<span>作者：</span><em>bobo baby</em> --><i>•</i>
+             </div> 
+             <img src="__PUBLIC__/img/zxxx.jpg" width="100%">
+             <div class="wenben">
+                       <{$con_arr.content}>
+             </div> 
+             
+             <div class="zixun_fanye">
+                <span class="zixun_fanye_left"><empty  name="front">前一篇<else /><a href="__URL__/news_xq/catid/<{$con_arr.catid}>/id/<{$front.id}>">前一篇</a></empty></span>
+                <a style="text-align: center;" href="<{:U('Content/content',array('catid'=>25))}>">返回新闻中心</a>
+                <span class="zixun_fanye_right"> <empty  name="after">后一篇<else /><a href="__URL__/news_xq/catid/<{$con_arr.catid}>/id/<{$after.id}>">后一篇</a></empty></span>
+             </div>
+        </div>
+        
+            <div class="zhankai"></div>
+
+<include file="Public:footer"/>

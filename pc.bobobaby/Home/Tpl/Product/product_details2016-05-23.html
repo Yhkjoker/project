@@ -1,0 +1,258 @@
+<include file="Public:header"/>
+        <!--内容-->
+        <div class="product_content">
+            <div class="product_contentLeft f_left">
+                 <div class="product_contentLeftTop">
+                     <div class="product_contentLeftTopNew"></div>
+                     <div class="product_contentLeftTopNei">
+                        <ul>
+                            <foreach name="pro_arr[picurlpcall]" item="v">
+                            <li><img class="product_img" src="<{$v}>"></li>                
+                            </foreach>
+                        </ul>
+                      </div>  
+                      <div class="banner_a">
+                          <span class="bannde_span" style="width:auto; margin-left:-30px;">产品颜色：</span>
+                          <foreach name="pro_arr[colorlist]" item="v">
+                              <a class="banner_01" href="javascript:changecolor('<{$v.name}>')" style="background:<{$v.colorname}>;"></a>
+                          </foreach>
+                      </div>
+                </div>
+            </div>
+            <div class="product_contentRight f_right">
+                <div class="product_contentRight_top">
+                    <span><{$cate_arr.catname}></span>
+                    <h3><{$pro_arr.title}>&nbsp;-&nbsp;<span id="colorid"><{$pro_arr[colorlist][0][name]}></span>&nbsp;&nbsp;
+					
+					<?php 	session_start(); 	if(!$_SESSION['bobo_pc_user_id']){?>
+							<a href="javascript:;" onclick="hhhhh()"><img class="product_rightImg Product_followBtn1" src="__PUBLIC__/img/botombg.png"></a>
+					<?php }else{?>
+
+					<if condition="$pro_arr[colid] ">
+						<a href="javascript:collect_del(<{$pro_arr[colid]}>);"><img class="product_rightImg Product_followBtn1" src="__PUBLIC__/img/botombg1.png"></a>
+					<else/>
+						<a href="javascript:collect_tj(<{$pro_arr.ppid}>);"><img class="product_rightImg Product_followBtn1" src="__PUBLIC__/img/botombg.png"></a>
+					</if>
+					
+					
+					
+					<?php }?>
+					
+	
+                    </h3>
+                    <dl>
+                        <dt><i>￥</i><em><{$pro_arr.price}></em></dt>
+                        <dd>
+                            <span>分享：&nbsp;&nbsp;</span>
+                            <a class="product_share01" href="#"></a>
+                            <a class="product_share02" href="#"></a>
+                            <a class="product_share03" href="#"></a>
+                            <a class="product_share04" href="#"></a>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="product_Piiic"><{$pro_arr.content}></div>
+                <!--2016-05-16新增-->
+                <div class="I-On-Trial">
+					  <?php 	session_start(); 	if(!$_SESSION['bobo_pc_user_id']){?>
+				
+                    <input class="I-On-TrialBtn" type="button" value="我要试用" onclick="hhhhh();"/>
+					<?php }else{ ?>
+					<input class="I-On-TrialBtn" type="button" value="我要试用" onclick="wysy(<{$pro_arr.ppid}>);"/>
+					<?php }?>
+                </div>
+                
+                
+            </div>
+        </div>
+        <div class="zixun_hdcp" id="eq">
+            <h3>相关产品</h3>
+            <div class="zixun_hdcp_content">
+				<foreach name="pro_list" item="v">	
+                <div class="zixun_hdcp_chanpin">
+
+                     <div class="zixun_hdcp_ProDian">        
+                          <dl>
+                              <dt>
+                                 <a class="zixun_hdcp_ProDianDX" href="<{:U('Product/product_details',array('catid'=>$v[catid],'pid'=>$v['pid'],'ppid'=>$v[id]))}>"> <img src="<{$v.picurlpc}>"></a>
+                                  <div class="jincai">
+                                      <i><{$cate_arr.catname}></i>
+                                      <div class="zixun_hdcp_chanpin_dianji1">
+                                          <foreach name="v[colorlist]" item="vo">
+                                              <span style="background-color:<{$vo.colorname}>"></span>
+                                          </foreach>
+                                      </div>
+                                  </div>
+                                  <h4><a href="<{:U('Product/product_details',array('catid'=>$v[catid],'pid'=>$v['pid'],'ppid'=>$v[id]))}>"><{$v.title}></a><span><{$v.capacity}></span></h4>
+                              </dt>
+                              <dd><em><i>￥</i><{$v.price}></em>
+
+								  
+								  <?php 	session_start(); 	if(!$_SESSION['bobo_pc_user_id']){?>
+													<a href="javascript:$('.dlzc, .bgbg').show();"><img class="aixin Product_followBtn1" src="__PUBLIC__/img/botombg.png"></a>
+											<?php }else{?>
+													<if condition="$v[colid] ">
+															<a href="javascript:collect_del(<{$v[colid]}>);"><img class="aixin Product_followBtn1" src="__PUBLIC__/img/botombg1.png"></a>
+														<else/>
+															<a href="javascript:collect_tj(<{$v.id}>);"><img class="aixin Product_followBtn1" src="__PUBLIC__/img/botombg.png"></a>
+														</if>
+				
+											
+											<?php }?>
+								  
+								  
+								  
+
+                              </dd>
+                          </dl>
+                    </div>
+
+                    
+
+                </div>
+			</foreach>	
+             
+                
+            </div>
+        </div>
+        <div class="product_jianju"></div>
+        <div class="product_Parenting">
+            <h3>相关育儿宝典</h3>
+            <!-- bobo around -->
+            <div class="bobo-around">
+                <div class="inner XxTop">
+                    <div class="bobo-knowledge">
+                        <a href="<{:U('Content/content',array('catid'=>24))}>"><span>-bobo宝典-</span><img src="__PUBLIC__/img/icon-btn-knowledge.png"></a>
+                    </div>
+                    <div class="bobo-news">
+                        <a href="<{:U('Content/content',array('catid'=>25))}>"><span>-bobo新闻-</span><img src="__PUBLIC__/img/icon-btn-news.png"></a>
+                    </div>
+                    <div class="bobo-event">
+                        <a href="<{:U('Content/content',array('catid'=>23))}>"><span>-bobo活动-</span><img src="__PUBLIC__/img/icon-btn-event.png"></a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="zhankai"></div>
+<include file="Public:footer"/>
+
+
+        <!--申请提交成功 弹出窗-->
+        <div class="TryUseBg">
+            <i></i>
+        </div>
+        <div class="TryUseBgDiv">
+            <i></i>
+            <h3>试用申请提交成功！</h3>
+            <p>感谢选择bobo产品试用！</p>
+            <p>可至“我的试用”查看进度，请耐心等待！</p>
+        </div>
+        
+    <script src="__PUBLIC__/js/main.js"></script>
+
+<script type="text/javascript" src="__PUBLIC__/js/banner.js"></script>
+
+
+
+
+    <script type="text/javascript">
+		function changecolor(name){
+		$("#colorid").html(name);
+	}
+	
+    var Box = $('.product_contentLeftTop'); //大盒子
+    var Width = "100%"; //图片的实际宽度
+    var Height = 500; //图片的实际高度
+    var Left = 20; //向左、右放大数值
+    var Top = 10; //向上、下放大数值
+    var Amr = 10; //每个a右间距数值
+    var Amw = 15 + Amr; //每个a的宽度
+    banner(Box, Width, Height, Left, Top, Amw, Amr);
+    /*左侧定位*/
+   $(document).ready(function (){
+	$(window).scroll(function (){
+		var a = document.getElementById("eq").offsetTop;
+		if (a >= $(window).scrollTop() && a < ($(window).scrollTop()+$(window).height())) {
+			$('.product_contentLeftTop').removeAttr("style");
+			$('.product_contentLeftTop').css({                    
+            	'position': 'absolute', 
+            	'bottom': '1300px',
+				'top':'inherit'
+            });
+		}else{
+			if($(window).scrollTop() < 195){
+				$('.product_contentLeftTop').removeAttr("style");
+				$('.product_contentLeftTop').css({                    
+                    'position': 'fixed', 
+                    'top': '188px'
+                });
+			}else{    
+			    $('.product_contentLeftTop').removeAttr("style");
+				$('.product_contentLeftTop').css({
+                    'position': 'fixed',
+                    'top': '48px'
+                });
+			}	
+		}
+	});
+	window.scroll(0,1);
+});
+
+	
+    /*点击焦点*/
+    $('.zixun_hdcp_chanpin_dianji span').click(function() {
+        $(this).addClass('Product_border').siblings().removeClass('Product_border')
+
+    });
+	/*菜单*/
+	$('.nav-bar li:first').hover(function(){
+		$(this).removeClass('near')
+	},function(){
+		$(this).addClass('near')
+		});
+		
+		
+    /*点击切换*/
+	
+	$('.zixun_hdcp_chanpin').find('.zixun_hdcp_ProDian:first').show();
+	  $('.zixun_hdcp_chanpin_dianji1 span').click(function(){
+		    var ProductDian=$(this).index();
+			$(this).parents('.zixun_hdcp_chanpin').find('.zixun_hdcp_ProDian').hide();
+			$(this).parents('.zixun_hdcp_chanpin').find('.zixun_hdcp_ProDian').eq(ProductDian).show() 
+			$(this).addClass('Product_border').siblings().removeClass('Product_border') 
+	  
+	  })
+	  
+	  /*申请提交成功 弹出窗*/
+	  function wysy(ppid){
+		$.ajax({
+			type:"post",
+			url:"__APP__/Member/addTryPro",
+			data:"ppid="+ppid,
+			success:function(data){
+				if(data=='n'){
+					alert("您已经申请过此产品！");
+				}else{
+					$('.TryUseBg,.TryUseBgDiv').show();
+				}
+			}
+	
+		})
+	}
+
+		  
+
+		  
+		
+		 
+
+	  $('.TryUseBg').click(function(){
+		  
+		$(this).hide().next().hide();
+      });
+
+    </script>
+            

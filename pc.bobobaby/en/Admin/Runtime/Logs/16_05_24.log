@@ -1,0 +1,814 @@
+[ 2016-05-24T11:57:33+08:00 ] 116.226.196.195 /bobo2/admin.php/Login/login
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000609s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000724s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000390s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000449s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000287s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000382s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.049616s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.049761s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000338s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000242s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000139s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000310s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001189s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000431s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000489s ]
+
+[ 2016-05-24T11:57:37+08:00 ] 116.226.196.195 /bobo2/admin.php/Login/doLogin
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000605s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000694s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000353s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000408s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.000529s ]
+SQL: SELECT * FROM `tp_user` WHERE ( `username` = 'mofang' ) AND ( `password` = '63fbf481658e05b00eea3921f783a80a' ) LIMIT 1   [ RunTime:0.000289s ]
+
+[ 2016-05-24T11:57:40+08:00 ] 116.226.196.195 /bobo2/admin.php/Index/index/cls/1
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000598s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000704s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000383s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000443s ]
+NOTIC: [2048] Declaration of IndexAction::show() should be compatible with that of Action::show() /var/www/html/bobo2/Admin/Lib/Action/IndexAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.000525s ]
+SQL: SHOW COLUMNS FROM `tp_index_picture` [ RunTime:0.000526s ]
+NOTIC: [8] Undefined variable: gd /var/www/html/bobo2/Admin/Lib/Action/IndexAction.class.php 第 19 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000251s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000320s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.069663s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.069770s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000334s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000263s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000141s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000311s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001210s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000447s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000500s ]
+
+[ 2016-05-24T11:57:43+08:00 ] 116.226.196.195 /bobo2/admin.php/Category/category/cls/2
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000607s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000689s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000353s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000412s ]
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.000704s ]
+SQL: SELECT `catid`,`catname`,`type`,`parentid`,concat(arrparentid,'-',catid) as bpath,`model`,`listorder` FROM `tp_category` WHERE ( siteid=1 ) ORDER BY parentid,listorder  [ RunTime:0.000438s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000281s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000372s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 138 行.
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 138 行.
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 138 行.
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 138 行.
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 138 行.
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 138 行.
+NOTIC: [8] Use of undefined constant Content - assumed 'Content' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 167 行.
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 138 行.
+NOTIC: [8] Use of undefined constant Content - assumed 'Content' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 167 行.
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 138 行.
+NOTIC: [8] Use of undefined constant Content - assumed 'Content' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 167 行.
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 138 行.
+NOTIC: [8] Use of undefined constant Content - assumed 'Content' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 167 行.
+NOTIC: [8] Use of undefined constant Picture - assumed 'Picture' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 197 行.
+NOTIC: [8] Use of undefined constant Product - assumed 'Product' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 227 行.
+NOTIC: [8] Use of undefined constant Video - assumed 'Video' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 258 行.
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 138 行.
+NOTIC: [8] Use of undefined constant Content - assumed 'Content' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 167 行.
+NOTIC: [8] Use of undefined constant Picture - assumed 'Picture' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 197 行.
+NOTIC: [8] Use of undefined constant Product - assumed 'Product' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 227 行.
+NOTIC: [8] Use of undefined constant Video - assumed 'Video' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 258 行.
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 138 行.
+NOTIC: [8] Use of undefined constant Content - assumed 'Content' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 167 行.
+NOTIC: [8] Use of undefined constant Picture - assumed 'Picture' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 197 行.
+NOTIC: [8] Use of undefined constant Product - assumed 'Product' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 227 行.
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 138 行.
+NOTIC: [8] Use of undefined constant Content - assumed 'Content' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 167 行.
+NOTIC: [8] Use of undefined constant Picture - assumed 'Picture' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 197 行.
+NOTIC: [8] Use of undefined constant Product - assumed 'Product' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 227 行.
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 138 行.
+NOTIC: [8] Use of undefined constant Content - assumed 'Content' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 167 行.
+NOTIC: [8] Use of undefined constant Picture - assumed 'Picture' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 197 行.
+NOTIC: [8] Use of undefined constant Product - assumed 'Product' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 227 行.
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 138 行.
+NOTIC: [8] Use of undefined constant Content - assumed 'Content' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 167 行.
+NOTIC: [8] Use of undefined constant Picture - assumed 'Picture' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 197 行.
+NOTIC: [8] Use of undefined constant Product - assumed 'Product' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 227 行.
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 138 行.
+NOTIC: [8] Use of undefined constant Content - assumed 'Content' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 167 行.
+NOTIC: [8] Use of undefined constant Picture - assumed 'Picture' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 197 行.
+NOTIC: [8] Use of undefined constant Product - assumed 'Product' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 227 行.
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 138 行.
+NOTIC: [8] Use of undefined constant Content - assumed 'Content' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 167 行.
+NOTIC: [8] Use of undefined constant Picture - assumed 'Picture' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 197 行.
+NOTIC: [8] Use of undefined constant Product - assumed 'Product' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 227 行.
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 138 行.
+NOTIC: [8] Use of undefined constant Content - assumed 'Content' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 167 行.
+NOTIC: [8] Use of undefined constant Picture - assumed 'Picture' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 197 行.
+NOTIC: [8] Use of undefined constant Product - assumed 'Product' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 227 行.
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 138 行.
+NOTIC: [8] Use of undefined constant Content - assumed 'Content' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 167 行.
+NOTIC: [8] Use of undefined constant Picture - assumed 'Picture' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 197 行.
+NOTIC: [8] Use of undefined constant Product - assumed 'Product' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 227 行.
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 138 行.
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 138 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.047224s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.047294s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000604s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000337s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000150s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000326s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001699s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000466s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000524s ]
+
+[ 2016-05-24T11:57:50+08:00 ] 116.226.196.195 /bobo2/admin.php/Product/product/catid/18/cls/2
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000676s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000768s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000362s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000424s ]
+NOTIC: [2048] Declaration of ProductAction::show() should be compatible with that of Action::show() /var/www/html/bobo2/Admin/Lib/Action/ProductAction.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `tp_product` [ RunTime:0.000764s ]
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.000539s ]
+SQL: SHOW COLUMNS FROM `tp_linkage` [ RunTime:0.000421s ]
+SQL: SHOW COLUMNS FROM `tp_product_price` [ RunTime:0.000418s ]
+SQL: SHOW COLUMNS FROM `tp_parameter` [ RunTime:0.000410s ]
+SQL: SHOW COLUMNS FROM `tp_problem` [ RunTime:0.000397s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_product` WHERE ( catid=18 ) LIMIT 1   [ RunTime:0.000313s ]
+SQL: SELECT `id`,`status`,`listorder`,`title`,`posid`,`inputtime`,`xqstatus` FROM `tp_product` WHERE ( catid=18 ) ORDER BY listorder desc,id desc LIMIT 0,10   [ RunTime:0.000296s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000231s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000295s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.067050s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.067137s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000364s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000355s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000140s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000337s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001358s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000403s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000466s ]
+
+[ 2016-05-24T11:57:55+08:00 ] 116.226.196.195 /bobo2/admin.php/Product/upProduct/catid/18/id/34/cls/2
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000568s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000649s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000353s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000413s ]
+NOTIC: [2048] Declaration of ProductAction::show() should be compatible with that of Action::show() /var/www/html/bobo2/Admin/Lib/Action/ProductAction.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `tp_product` [ RunTime:0.000783s ]
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.000560s ]
+SQL: SHOW COLUMNS FROM `tp_linkage` [ RunTime:0.000443s ]
+SQL: SHOW COLUMNS FROM `tp_product_price` [ RunTime:0.000426s ]
+SQL: SHOW COLUMNS FROM `tp_parameter` [ RunTime:0.000421s ]
+SQL: SHOW COLUMNS FROM `tp_problem` [ RunTime:0.000378s ]
+SQL: SELECT `catname`,`catid` FROM `tp_category` WHERE ( catid=18 ) LIMIT 1   [ RunTime:0.000243s ]
+SQL: SELECT * FROM `tp_product` WHERE ( id=34 ) LIMIT 1   [ RunTime:0.000180s ]
+SQL: SELECT `linkageid`,`name` FROM `tp_linkage` WHERE ( catid=18 )  [ RunTime:0.000145s ]
+SQL: SELECT `id`,`title` FROM `tp_problem` WHERE ( status=1 ) ORDER BY listorder desc,id desc  [ RunTime:0.000160s ]
+SQL: SELECT `id`,`name`,`colorname` FROM `tp_parameter` WHERE ( status=1 and typeid=1 ) ORDER BY listorder desc,id desc  [ RunTime:0.000192s ]
+SQL: SELECT `id`,`name`,`colorname` FROM `tp_parameter` WHERE ( status=1 and typeid=2 ) ORDER BY listorder desc,id desc  [ RunTime:0.000167s ]
+SQL: SELECT * FROM `tp_product_price` WHERE ( pid=34 )  [ RunTime:0.000180s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000250s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000309s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant linkageid - assumed 'linkageid' /var/www/html/bobo2/Admin/Runtime/Cache/666a63631cddee27080cea4483817fa4.php 第 150 行.
+NOTIC: [8] Use of undefined constant linkageid - assumed 'linkageid' /var/www/html/bobo2/Admin/Runtime/Cache/666a63631cddee27080cea4483817fa4.php 第 150 行.
+NOTIC: [8] Use of undefined constant linkageid - assumed 'linkageid' /var/www/html/bobo2/Admin/Runtime/Cache/666a63631cddee27080cea4483817fa4.php 第 150 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/666a63631cddee27080cea4483817fa4.php 第 170 行.
+NOTIC: [8] Use of undefined constant texturelist - assumed 'texturelist' /var/www/html/bobo2/Admin/Runtime/Cache/666a63631cddee27080cea4483817fa4.php 第 222 行.
+NOTIC: [8] Use of undefined constant texturelist - assumed 'texturelist' /var/www/html/bobo2/Admin/Runtime/Cache/666a63631cddee27080cea4483817fa4.php 第 222 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/666a63631cddee27080cea4483817fa4.php 第 222 行.
+NOTIC: [8] Use of undefined constant texturelist - assumed 'texturelist' /var/www/html/bobo2/Admin/Runtime/Cache/666a63631cddee27080cea4483817fa4.php 第 222 行.
+NOTIC: [8] Use of undefined constant texturelist - assumed 'texturelist' /var/www/html/bobo2/Admin/Runtime/Cache/666a63631cddee27080cea4483817fa4.php 第 222 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/666a63631cddee27080cea4483817fa4.php 第 222 行.
+NOTIC: [8] Use of undefined constant texturelist - assumed 'texturelist' /var/www/html/bobo2/Admin/Runtime/Cache/666a63631cddee27080cea4483817fa4.php 第 222 行.
+NOTIC: [8] Use of undefined constant texturelist - assumed 'texturelist' /var/www/html/bobo2/Admin/Runtime/Cache/666a63631cddee27080cea4483817fa4.php 第 222 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/666a63631cddee27080cea4483817fa4.php 第 222 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.037537s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037600s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000358s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000249s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000134s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000578s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001491s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000415s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000469s ]
+
+[ 2016-05-24T11:58:00+08:00 ] 116.226.196.195 /bobo2/admin.php/Product/doProduct/action/edit/id/34
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000594s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000675s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000350s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000410s ]
+NOTIC: [2048] Declaration of ProductAction::show() should be compatible with that of Action::show() /var/www/html/bobo2/Admin/Lib/Action/ProductAction.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `tp_product` [ RunTime:0.000785s ]
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.000572s ]
+SQL: SHOW COLUMNS FROM `tp_linkage` [ RunTime:0.000590s ]
+SQL: SHOW COLUMNS FROM `tp_product_price` [ RunTime:0.000432s ]
+SQL: SHOW COLUMNS FROM `tp_parameter` [ RunTime:0.000433s ]
+SQL: SHOW COLUMNS FROM `tp_problem` [ RunTime:0.000415s ]
+NOTIC: [8] Undefined index: info_price /var/www/html/bobo2/Admin/Lib/Action/ProductAction.class.php 第 113 行.
+SQL: UPDATE `tp_product` SET `title`='指套牙刷 ',`catid`=18,`linkageid`=14,`actstatus`=1,`pmid`=3,`activity`='',`content`='<ul style=\"font-family:\'Microsoft YaHei\';background-color:#FFFFFF;\">\r\n	<li style=\"color:#444444;font-size:14px;\">\r\n		产品名称：指套牙刷 24/144PCS<br />\r\n产品货号：BS306C<br />\r\n产品适用：6个月以上宝宝\r\n	</li>\r\n	<li style=\"color:#444444;font-size:14px;\">\r\n		<br />\r\n	</li>\r\n</ul>\r\n<img src=\"/image/20160414/20160414153125_20324.jpg\" alt=\"\" /><br />',`picurlpc`='/image/20160429/20160429114410_38255.png',`colorlist`='13',`picurlpcall`='/image/20160428/20160428155052_55906.png',`updatetime`=1464062275 WHERE ( id=34  and catid=18 ) [ RunTime:0.000390s ]
+SQL: UPDATE `tp_product_price` SET `capacity`='',`price`='15.00',`texturelist`='' WHERE ( id=43 ) [ RunTime:0.000198s ]
+SQL: SELECT `id` FROM `tp_product_price` WHERE ( pid=34 )  [ RunTime:0.000215s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000202s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000266s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.024439s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024517s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000214s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000251s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000135s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000297s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001057s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000432s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000487s ]
+
+[ 2016-05-24T11:58:02+08:00 ] 116.226.196.195 /bobo2/admin.php/Product/upProduct/catid/18/id/34/cls/2
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000574s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000676s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000372s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000430s ]
+NOTIC: [2048] Declaration of ProductAction::show() should be compatible with that of Action::show() /var/www/html/bobo2/Admin/Lib/Action/ProductAction.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `tp_product` [ RunTime:0.000817s ]
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.000553s ]
+SQL: SHOW COLUMNS FROM `tp_linkage` [ RunTime:0.000444s ]
+SQL: SHOW COLUMNS FROM `tp_product_price` [ RunTime:0.000402s ]
+SQL: SHOW COLUMNS FROM `tp_parameter` [ RunTime:0.000435s ]
+SQL: SHOW COLUMNS FROM `tp_problem` [ RunTime:0.000424s ]
+SQL: SELECT `catname`,`catid` FROM `tp_category` WHERE ( catid=18 ) LIMIT 1   [ RunTime:0.000236s ]
+SQL: SELECT * FROM `tp_product` WHERE ( id=34 ) LIMIT 1   [ RunTime:0.000188s ]
+SQL: SELECT `linkageid`,`name` FROM `tp_linkage` WHERE ( catid=18 )  [ RunTime:0.000149s ]
+SQL: SELECT `id`,`title` FROM `tp_problem` WHERE ( status=1 ) ORDER BY listorder desc,id desc  [ RunTime:0.000139s ]
+SQL: SELECT `id`,`name`,`colorname` FROM `tp_parameter` WHERE ( status=1 and typeid=1 ) ORDER BY listorder desc,id desc  [ RunTime:0.000209s ]
+SQL: SELECT `id`,`name`,`colorname` FROM `tp_parameter` WHERE ( status=1 and typeid=2 ) ORDER BY listorder desc,id desc  [ RunTime:0.000172s ]
+SQL: SELECT * FROM `tp_product_price` WHERE ( pid=34 )  [ RunTime:0.000177s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000313s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000401s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant linkageid - assumed 'linkageid' /var/www/html/bobo2/Admin/Runtime/Cache/666a63631cddee27080cea4483817fa4.php 第 150 行.
+NOTIC: [8] Use of undefined constant linkageid - assumed 'linkageid' /var/www/html/bobo2/Admin/Runtime/Cache/666a63631cddee27080cea4483817fa4.php 第 150 行.
+NOTIC: [8] Use of undefined constant linkageid - assumed 'linkageid' /var/www/html/bobo2/Admin/Runtime/Cache/666a63631cddee27080cea4483817fa4.php 第 150 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/666a63631cddee27080cea4483817fa4.php 第 170 行.
+NOTIC: [8] Use of undefined constant texturelist - assumed 'texturelist' /var/www/html/bobo2/Admin/Runtime/Cache/666a63631cddee27080cea4483817fa4.php 第 222 行.
+NOTIC: [8] Use of undefined constant texturelist - assumed 'texturelist' /var/www/html/bobo2/Admin/Runtime/Cache/666a63631cddee27080cea4483817fa4.php 第 222 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/666a63631cddee27080cea4483817fa4.php 第 222 行.
+NOTIC: [8] Use of undefined constant texturelist - assumed 'texturelist' /var/www/html/bobo2/Admin/Runtime/Cache/666a63631cddee27080cea4483817fa4.php 第 222 行.
+NOTIC: [8] Use of undefined constant texturelist - assumed 'texturelist' /var/www/html/bobo2/Admin/Runtime/Cache/666a63631cddee27080cea4483817fa4.php 第 222 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/666a63631cddee27080cea4483817fa4.php 第 222 行.
+NOTIC: [8] Use of undefined constant texturelist - assumed 'texturelist' /var/www/html/bobo2/Admin/Runtime/Cache/666a63631cddee27080cea4483817fa4.php 第 222 行.
+NOTIC: [8] Use of undefined constant texturelist - assumed 'texturelist' /var/www/html/bobo2/Admin/Runtime/Cache/666a63631cddee27080cea4483817fa4.php 第 222 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/666a63631cddee27080cea4483817fa4.php 第 222 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.019830s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019917s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000392s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000268s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000135s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000315s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001273s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000469s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000524s ]
+
+[ 2016-05-24T11:58:54+08:00 ] 116.226.196.195 /bobo2/admin.php/Try/index/status/1/cls/7
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000596s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000675s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000356s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000416s ]
+NOTIC: [2048] Declaration of TryAction::show() should be compatible with that of Action::show() /var/www/html/bobo2/Admin/Lib/Action/TryAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `tp_try_out` [ RunTime:0.000697s ]
+SQL: SHOW COLUMNS FROM `tp_problem` [ RunTime:0.000381s ]
+SQL: SHOW COLUMNS FROM `tp_problem_data` [ RunTime:0.000476s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_try_out` left join `tp_vipuser` a on tp_try_out.vid=a.vid left join `tp_product_price` b on tp_try_out.ppid=b.id left join `tp_product` c on b.pid=c.id WHERE ( tp_try_out.status = 1 ) LIMIT 1   [ RunTime:0.000344s ]
+SQL: SELECT tp_try_out.id,a.username,c.title,b.capacity,tp_try_out.inputtime,tp_try_out.status FROM `tp_try_out` left join `tp_vipuser` a on tp_try_out.vid=a.vid left join `tp_product_price` b on tp_try_out.ppid=b.id left join `tp_product` c on b.pid=c.id WHERE ( tp_try_out.status = 1 ) ORDER BY tp_try_out.id desc LIMIT 0,10   [ RunTime:0.000367s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000207s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000267s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant status - assumed 'status' /var/www/html/bobo2/Admin/Runtime/Cache/4b44a86f8f5994646dee99a9e295d7ff.php 第 85 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /var/www/html/bobo2/Admin/Runtime/Cache/4b44a86f8f5994646dee99a9e295d7ff.php 第 122 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /var/www/html/bobo2/Admin/Runtime/Cache/4b44a86f8f5994646dee99a9e295d7ff.php 第 125 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.031748s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031810s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000313s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000281s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000133s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000319s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001206s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000514s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000586s ]
+
+[ 2016-05-24T12:08:02+08:00 ] 116.226.196.195 /bobo2/admin.php/Try/passTry/
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000573s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000678s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000352s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000404s ]
+NOTIC: [2048] Declaration of TryAction::show() should be compatible with that of Action::show() /var/www/html/bobo2/Admin/Lib/Action/TryAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `tp_try_out` [ RunTime:0.000876s ]
+SQL: SHOW COLUMNS FROM `tp_problem` [ RunTime:0.000564s ]
+SQL: SHOW COLUMNS FROM `tp_problem_data` [ RunTime:0.000560s ]
+SQL: UPDATE `tp_try_out` SET `status`=2 WHERE ( id=23 ) [ RunTime:0.000336s ]
+
+[ 2016-05-24T12:08:03+08:00 ] 116.226.196.195 /bobo2/admin.php/Try/index/status/1/cls/7
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000605s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000685s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000376s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000435s ]
+NOTIC: [2048] Declaration of TryAction::show() should be compatible with that of Action::show() /var/www/html/bobo2/Admin/Lib/Action/TryAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `tp_try_out` [ RunTime:0.000639s ]
+SQL: SHOW COLUMNS FROM `tp_problem` [ RunTime:0.000427s ]
+SQL: SHOW COLUMNS FROM `tp_problem_data` [ RunTime:0.000445s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_try_out` left join `tp_vipuser` a on tp_try_out.vid=a.vid left join `tp_product_price` b on tp_try_out.ppid=b.id left join `tp_product` c on b.pid=c.id WHERE ( tp_try_out.status = 1 ) LIMIT 1   [ RunTime:0.000424s ]
+SQL: SELECT tp_try_out.id,a.username,c.title,b.capacity,tp_try_out.inputtime,tp_try_out.status FROM `tp_try_out` left join `tp_vipuser` a on tp_try_out.vid=a.vid left join `tp_product_price` b on tp_try_out.ppid=b.id left join `tp_product` c on b.pid=c.id WHERE ( tp_try_out.status = 1 ) ORDER BY tp_try_out.id desc LIMIT 0,10   [ RunTime:0.000358s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000211s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000274s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant status - assumed 'status' /var/www/html/bobo2/Admin/Runtime/Cache/4b44a86f8f5994646dee99a9e295d7ff.php 第 85 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /var/www/html/bobo2/Admin/Runtime/Cache/4b44a86f8f5994646dee99a9e295d7ff.php 第 122 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /var/www/html/bobo2/Admin/Runtime/Cache/4b44a86f8f5994646dee99a9e295d7ff.php 第 125 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.015370s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015436s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000323s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000271s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000165s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000317s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001238s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000462s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000517s ]
+
+[ 2016-05-24T14:06:34+08:00 ] 116.226.196.195 /bobo2/admin.php/Category/category/cls/2
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000604s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000685s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000377s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000436s ]
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.000692s ]
+SQL: SELECT `catid`,`catname`,`type`,`parentid`,concat(arrparentid,'-',catid) as bpath,`model`,`listorder` FROM `tp_category` WHERE ( siteid=1 ) ORDER BY parentid,listorder  [ RunTime:0.000416s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000271s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000333s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 138 行.
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 138 行.
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 138 行.
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 138 行.
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 138 行.
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 138 行.
+NOTIC: [8] Use of undefined constant Content - assumed 'Content' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 167 行.
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 138 行.
+NOTIC: [8] Use of undefined constant Content - assumed 'Content' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 167 行.
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 138 行.
+NOTIC: [8] Use of undefined constant Content - assumed 'Content' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 167 行.
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 138 行.
+NOTIC: [8] Use of undefined constant Content - assumed 'Content' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 167 行.
+NOTIC: [8] Use of undefined constant Picture - assumed 'Picture' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 197 行.
+NOTIC: [8] Use of undefined constant Product - assumed 'Product' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 227 行.
+NOTIC: [8] Use of undefined constant Video - assumed 'Video' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 258 行.
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 138 行.
+NOTIC: [8] Use of undefined constant Content - assumed 'Content' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 167 行.
+NOTIC: [8] Use of undefined constant Picture - assumed 'Picture' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 197 行.
+NOTIC: [8] Use of undefined constant Product - assumed 'Product' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 227 行.
+NOTIC: [8] Use of undefined constant Video - assumed 'Video' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 258 行.
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 138 行.
+NOTIC: [8] Use of undefined constant Content - assumed 'Content' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 167 行.
+NOTIC: [8] Use of undefined constant Picture - assumed 'Picture' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 197 行.
+NOTIC: [8] Use of undefined constant Product - assumed 'Product' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 227 行.
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 138 行.
+NOTIC: [8] Use of undefined constant Content - assumed 'Content' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 167 行.
+NOTIC: [8] Use of undefined constant Picture - assumed 'Picture' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 197 行.
+NOTIC: [8] Use of undefined constant Product - assumed 'Product' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 227 行.
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 138 行.
+NOTIC: [8] Use of undefined constant Content - assumed 'Content' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 167 行.
+NOTIC: [8] Use of undefined constant Picture - assumed 'Picture' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 197 行.
+NOTIC: [8] Use of undefined constant Product - assumed 'Product' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 227 行.
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 138 行.
+NOTIC: [8] Use of undefined constant Content - assumed 'Content' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 167 行.
+NOTIC: [8] Use of undefined constant Picture - assumed 'Picture' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 197 行.
+NOTIC: [8] Use of undefined constant Product - assumed 'Product' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 227 行.
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 138 行.
+NOTIC: [8] Use of undefined constant Content - assumed 'Content' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 167 行.
+NOTIC: [8] Use of undefined constant Picture - assumed 'Picture' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 197 行.
+NOTIC: [8] Use of undefined constant Product - assumed 'Product' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 227 行.
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 138 行.
+NOTIC: [8] Use of undefined constant Content - assumed 'Content' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 167 行.
+NOTIC: [8] Use of undefined constant Picture - assumed 'Picture' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 197 行.
+NOTIC: [8] Use of undefined constant Product - assumed 'Product' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 227 行.
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 138 行.
+NOTIC: [8] Use of undefined constant Content - assumed 'Content' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 167 行.
+NOTIC: [8] Use of undefined constant Picture - assumed 'Picture' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 197 行.
+NOTIC: [8] Use of undefined constant Product - assumed 'Product' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 227 行.
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 138 行.
+NOTIC: [8] Use of undefined constant Content - assumed 'Content' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 167 行.
+NOTIC: [8] Use of undefined constant Picture - assumed 'Picture' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 197 行.
+NOTIC: [8] Use of undefined constant Product - assumed 'Product' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 227 行.
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 138 行.
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 138 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.017636s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017691s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000358s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000283s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000138s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000312s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001250s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000422s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000476s ]
+
+[ 2016-05-24T14:06:44+08:00 ] 116.226.196.195 /bobo2/admin.php/Product/addProduct/catid/18/cls/2
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000608s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000689s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000373s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000433s ]
+NOTIC: [2048] Declaration of ProductAction::show() should be compatible with that of Action::show() /var/www/html/bobo2/Admin/Lib/Action/ProductAction.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `tp_product` [ RunTime:0.000803s ]
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.000567s ]
+SQL: SHOW COLUMNS FROM `tp_linkage` [ RunTime:0.000421s ]
+SQL: SHOW COLUMNS FROM `tp_product_price` [ RunTime:0.000437s ]
+SQL: SHOW COLUMNS FROM `tp_parameter` [ RunTime:0.000412s ]
+SQL: SHOW COLUMNS FROM `tp_problem` [ RunTime:0.000442s ]
+SQL: SELECT `catname`,`catid` FROM `tp_category` WHERE ( catid=18 ) LIMIT 1   [ RunTime:0.000265s ]
+SQL: SELECT `linkageid`,`name` FROM `tp_linkage` WHERE ( catid=18 )  [ RunTime:0.000147s ]
+SQL: SELECT `id`,`title` FROM `tp_problem` WHERE ( status=1 ) ORDER BY listorder desc,id desc  [ RunTime:0.000142s ]
+SQL: SELECT `id`,`name`,`colorname` FROM `tp_parameter` WHERE ( status=1 and typeid=2 ) ORDER BY listorder desc,id desc  [ RunTime:0.000208s ]
+SQL: SELECT `id`,`name`,`colorname` FROM `tp_parameter` WHERE ( status=1  and typeid=1 ) ORDER BY listorder desc,id desc  [ RunTime:0.000178s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000361s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000424s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: pro_arr /var/www/html/bobo2/Admin/Runtime/Cache/6cdadecbacd50ddd89838d938c796be5.php 第 157 行.
+NOTIC: [8] Undefined variable: pro_arr /var/www/html/bobo2/Admin/Runtime/Cache/6cdadecbacd50ddd89838d938c796be5.php 第 157 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.033879s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033957s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000342s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000245s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000158s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000325s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001237s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000405s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000462s ]
+
+[ 2016-05-24T14:06:50+08:00 ] 116.226.196.195 /bobo2/admin.php/Product/product/catid/21/cls/2
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000629s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000722s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000406s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000465s ]
+NOTIC: [2048] Declaration of ProductAction::show() should be compatible with that of Action::show() /var/www/html/bobo2/Admin/Lib/Action/ProductAction.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `tp_product` [ RunTime:0.000873s ]
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.000523s ]
+SQL: SHOW COLUMNS FROM `tp_linkage` [ RunTime:0.000406s ]
+SQL: SHOW COLUMNS FROM `tp_product_price` [ RunTime:0.000418s ]
+SQL: SHOW COLUMNS FROM `tp_parameter` [ RunTime:0.000398s ]
+SQL: SHOW COLUMNS FROM `tp_problem` [ RunTime:0.000364s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_product` WHERE ( catid=21 ) LIMIT 1   [ RunTime:0.000253s ]
+SQL: SELECT `id`,`status`,`listorder`,`title`,`posid`,`inputtime`,`xqstatus` FROM `tp_product` WHERE ( catid=21 ) ORDER BY listorder desc,id desc LIMIT 0,10   [ RunTime:0.000269s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000220s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000282s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.013491s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013560s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000300s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000238s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000134s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000332s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001163s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000398s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000453s ]
+
+[ 2016-05-24T14:06:56+08:00 ] 116.226.196.195 /bobo2/admin.php/Product/upProduct/catid/21/id/40/cls/2
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000586s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000665s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000400s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000462s ]
+NOTIC: [2048] Declaration of ProductAction::show() should be compatible with that of Action::show() /var/www/html/bobo2/Admin/Lib/Action/ProductAction.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `tp_product` [ RunTime:0.000842s ]
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.000585s ]
+SQL: SHOW COLUMNS FROM `tp_linkage` [ RunTime:0.000463s ]
+SQL: SHOW COLUMNS FROM `tp_product_price` [ RunTime:0.000412s ]
+SQL: SHOW COLUMNS FROM `tp_parameter` [ RunTime:0.000455s ]
+SQL: SHOW COLUMNS FROM `tp_problem` [ RunTime:0.000392s ]
+SQL: SELECT `catname`,`catid` FROM `tp_category` WHERE ( catid=21 ) LIMIT 1   [ RunTime:0.000237s ]
+SQL: SELECT * FROM `tp_product` WHERE ( id=40 ) LIMIT 1   [ RunTime:0.000199s ]
+SQL: SELECT `linkageid`,`name` FROM `tp_linkage` WHERE ( catid=21 )  [ RunTime:0.000146s ]
+SQL: SELECT `id`,`title` FROM `tp_problem` WHERE ( status=1 ) ORDER BY listorder desc,id desc  [ RunTime:0.000143s ]
+SQL: SELECT `id`,`name`,`colorname` FROM `tp_parameter` WHERE ( status=1 and typeid=1 ) ORDER BY listorder desc,id desc  [ RunTime:0.000214s ]
+SQL: SELECT `id`,`name`,`colorname` FROM `tp_parameter` WHERE ( status=1 and typeid=2 ) ORDER BY listorder desc,id desc  [ RunTime:0.000172s ]
+SQL: SELECT * FROM `tp_product_price` WHERE ( pid=40 )  [ RunTime:0.000182s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000333s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000398s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/666a63631cddee27080cea4483817fa4.php 第 170 行.
+NOTIC: [8] Use of undefined constant texturelist - assumed 'texturelist' /var/www/html/bobo2/Admin/Runtime/Cache/666a63631cddee27080cea4483817fa4.php 第 222 行.
+NOTIC: [8] Use of undefined constant texturelist - assumed 'texturelist' /var/www/html/bobo2/Admin/Runtime/Cache/666a63631cddee27080cea4483817fa4.php 第 222 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/666a63631cddee27080cea4483817fa4.php 第 222 行.
+NOTIC: [8] Use of undefined constant texturelist - assumed 'texturelist' /var/www/html/bobo2/Admin/Runtime/Cache/666a63631cddee27080cea4483817fa4.php 第 222 行.
+NOTIC: [8] Use of undefined constant texturelist - assumed 'texturelist' /var/www/html/bobo2/Admin/Runtime/Cache/666a63631cddee27080cea4483817fa4.php 第 222 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/666a63631cddee27080cea4483817fa4.php 第 222 行.
+NOTIC: [8] Use of undefined constant texturelist - assumed 'texturelist' /var/www/html/bobo2/Admin/Runtime/Cache/666a63631cddee27080cea4483817fa4.php 第 222 行.
+NOTIC: [8] Use of undefined constant texturelist - assumed 'texturelist' /var/www/html/bobo2/Admin/Runtime/Cache/666a63631cddee27080cea4483817fa4.php 第 222 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/666a63631cddee27080cea4483817fa4.php 第 222 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.019884s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019963s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000327s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000242s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000158s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000334s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001227s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000455s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000510s ]
+
+[ 2016-05-24T14:07:06+08:00 ] 116.226.196.195 /bobo2/admin.php/Product/doProduct/action/edit/id/40
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000596s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000678s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000370s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000431s ]
+NOTIC: [2048] Declaration of ProductAction::show() should be compatible with that of Action::show() /var/www/html/bobo2/Admin/Lib/Action/ProductAction.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `tp_product` [ RunTime:0.000798s ]
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.000556s ]
+SQL: SHOW COLUMNS FROM `tp_linkage` [ RunTime:0.000430s ]
+SQL: SHOW COLUMNS FROM `tp_product_price` [ RunTime:0.000428s ]
+SQL: SHOW COLUMNS FROM `tp_parameter` [ RunTime:0.000407s ]
+SQL: SHOW COLUMNS FROM `tp_problem` [ RunTime:0.000381s ]
+NOTIC: [8] Undefined index: info_price /var/www/html/bobo2/Admin/Lib/Action/ProductAction.class.php 第 113 行.
+SQL: UPDATE `tp_product` SET `title`='酒精棉片',`catid`=21,`linkageid`=0,`actstatus`=1,`pmid`=3,`activity`='',`content`='<ul style=\"font-family:\'Microsoft YaHei\';background-color:#FFFFFF;\">\r\n	<li style=\"color:#444444;font-size:14px;\">\r\n		产品名称：酒精棉片 12PCS/48PCS<br />\r\n产品货号：BM240<br />\r\n产品成分：75%医用酒精 RO纯水 水刺无纺布\r\n	</li>\r\n	<li style=\"color:#444444;font-size:14px;\">\r\n		<br />\r\n	</li>\r\n</ul>\r\n<img src=\"/image/20160414/20160414154544_36234.jpg\" alt=\"\" /><br />',`picurlpc`='/image/20160429/20160429114042_83890.png',`colorlist`='9',`picurlpcall`='/image/20160428/20160428130243_68330.png',`updatetime`=1464070016 WHERE ( id=40  and catid=21 ) [ RunTime:0.000322s ]
+SQL: UPDATE `tp_product_price` SET `capacity`='',`price`='32.00',`texturelist`='' WHERE ( id=49 ) [ RunTime:0.000156s ]
+SQL: SELECT `id` FROM `tp_product_price` WHERE ( pid=40 )  [ RunTime:0.000197s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000203s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000262s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.005402s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005513s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000216s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000393s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000186s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000332s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001430s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000449s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000505s ]
+
+[ 2016-05-24T14:07:08+08:00 ] 116.226.196.195 /bobo2/admin.php/Product/upProduct/catid/21/id/40/cls/2
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000614s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000696s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000355s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000418s ]
+NOTIC: [2048] Declaration of ProductAction::show() should be compatible with that of Action::show() /var/www/html/bobo2/Admin/Lib/Action/ProductAction.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `tp_product` [ RunTime:0.000812s ]
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.000582s ]
+SQL: SHOW COLUMNS FROM `tp_linkage` [ RunTime:0.000418s ]
+SQL: SHOW COLUMNS FROM `tp_product_price` [ RunTime:0.000431s ]
+SQL: SHOW COLUMNS FROM `tp_parameter` [ RunTime:0.000407s ]
+SQL: SHOW COLUMNS FROM `tp_problem` [ RunTime:0.000383s ]
+SQL: SELECT `catname`,`catid` FROM `tp_category` WHERE ( catid=21 ) LIMIT 1   [ RunTime:0.000236s ]
+SQL: SELECT * FROM `tp_product` WHERE ( id=40 ) LIMIT 1   [ RunTime:0.000189s ]
+SQL: SELECT `linkageid`,`name` FROM `tp_linkage` WHERE ( catid=21 )  [ RunTime:0.000144s ]
+SQL: SELECT `id`,`title` FROM `tp_problem` WHERE ( status=1 ) ORDER BY listorder desc,id desc  [ RunTime:0.000162s ]
+SQL: SELECT `id`,`name`,`colorname` FROM `tp_parameter` WHERE ( status=1 and typeid=1 ) ORDER BY listorder desc,id desc  [ RunTime:0.000197s ]
+SQL: SELECT `id`,`name`,`colorname` FROM `tp_parameter` WHERE ( status=1 and typeid=2 ) ORDER BY listorder desc,id desc  [ RunTime:0.000171s ]
+SQL: SELECT * FROM `tp_product_price` WHERE ( pid=40 )  [ RunTime:0.000202s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000251s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000310s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/666a63631cddee27080cea4483817fa4.php 第 170 行.
+NOTIC: [8] Use of undefined constant texturelist - assumed 'texturelist' /var/www/html/bobo2/Admin/Runtime/Cache/666a63631cddee27080cea4483817fa4.php 第 222 行.
+NOTIC: [8] Use of undefined constant texturelist - assumed 'texturelist' /var/www/html/bobo2/Admin/Runtime/Cache/666a63631cddee27080cea4483817fa4.php 第 222 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/666a63631cddee27080cea4483817fa4.php 第 222 行.
+NOTIC: [8] Use of undefined constant texturelist - assumed 'texturelist' /var/www/html/bobo2/Admin/Runtime/Cache/666a63631cddee27080cea4483817fa4.php 第 222 行.
+NOTIC: [8] Use of undefined constant texturelist - assumed 'texturelist' /var/www/html/bobo2/Admin/Runtime/Cache/666a63631cddee27080cea4483817fa4.php 第 222 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/666a63631cddee27080cea4483817fa4.php 第 222 行.
+NOTIC: [8] Use of undefined constant texturelist - assumed 'texturelist' /var/www/html/bobo2/Admin/Runtime/Cache/666a63631cddee27080cea4483817fa4.php 第 222 行.
+NOTIC: [8] Use of undefined constant texturelist - assumed 'texturelist' /var/www/html/bobo2/Admin/Runtime/Cache/666a63631cddee27080cea4483817fa4.php 第 222 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/666a63631cddee27080cea4483817fa4.php 第 222 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.019270s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019353s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000378s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000250s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000138s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000349s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001282s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000402s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000456s ]
+
+[ 2016-05-24T14:07:34+08:00 ] 116.226.196.195 /bobo2/admin.php/Try/index/status/1/cls/7
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000595s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000673s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000349s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000408s ]
+NOTIC: [2048] Declaration of TryAction::show() should be compatible with that of Action::show() /var/www/html/bobo2/Admin/Lib/Action/TryAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `tp_try_out` [ RunTime:0.000668s ]
+SQL: SHOW COLUMNS FROM `tp_problem` [ RunTime:0.000410s ]
+SQL: SHOW COLUMNS FROM `tp_problem_data` [ RunTime:0.000428s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_try_out` left join `tp_vipuser` a on tp_try_out.vid=a.vid left join `tp_product_price` b on tp_try_out.ppid=b.id left join `tp_product` c on b.pid=c.id WHERE ( tp_try_out.status = 1 ) LIMIT 1   [ RunTime:0.000412s ]
+SQL: SELECT tp_try_out.id,a.username,c.title,b.capacity,tp_try_out.inputtime,tp_try_out.status FROM `tp_try_out` left join `tp_vipuser` a on tp_try_out.vid=a.vid left join `tp_product_price` b on tp_try_out.ppid=b.id left join `tp_product` c on b.pid=c.id WHERE ( tp_try_out.status = 1 ) ORDER BY tp_try_out.id desc LIMIT 0,10   [ RunTime:0.000381s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000220s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000284s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant status - assumed 'status' /var/www/html/bobo2/Admin/Runtime/Cache/4b44a86f8f5994646dee99a9e295d7ff.php 第 85 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /var/www/html/bobo2/Admin/Runtime/Cache/4b44a86f8f5994646dee99a9e295d7ff.php 第 122 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /var/www/html/bobo2/Admin/Runtime/Cache/4b44a86f8f5994646dee99a9e295d7ff.php 第 125 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.015446s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015519s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000320s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000265s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000136s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000332s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001223s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000424s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000478s ]
+
+[ 2016-05-24T14:07:38+08:00 ] 116.226.196.195 /bobo2/admin.php/Try/passTry/
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000592s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000671s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000375s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000430s ]
+NOTIC: [2048] Declaration of TryAction::show() should be compatible with that of Action::show() /var/www/html/bobo2/Admin/Lib/Action/TryAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `tp_try_out` [ RunTime:0.000651s ]
+SQL: SHOW COLUMNS FROM `tp_problem` [ RunTime:0.000406s ]
+SQL: SHOW COLUMNS FROM `tp_problem_data` [ RunTime:0.000409s ]
+SQL: UPDATE `tp_try_out` SET `status`=2 WHERE ( id=24 ) [ RunTime:0.000276s ]
+
+[ 2016-05-24T14:07:41+08:00 ] 116.226.196.195 /bobo2/admin.php/Try/index/status/1/cls/7
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000601s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000682s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000377s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000437s ]
+NOTIC: [2048] Declaration of TryAction::show() should be compatible with that of Action::show() /var/www/html/bobo2/Admin/Lib/Action/TryAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `tp_try_out` [ RunTime:0.000663s ]
+SQL: SHOW COLUMNS FROM `tp_problem` [ RunTime:0.000435s ]
+SQL: SHOW COLUMNS FROM `tp_problem_data` [ RunTime:0.000420s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_try_out` left join `tp_vipuser` a on tp_try_out.vid=a.vid left join `tp_product_price` b on tp_try_out.ppid=b.id left join `tp_product` c on b.pid=c.id WHERE ( tp_try_out.status = 1 ) LIMIT 1   [ RunTime:0.000416s ]
+SQL: SELECT tp_try_out.id,a.username,c.title,b.capacity,tp_try_out.inputtime,tp_try_out.status FROM `tp_try_out` left join `tp_vipuser` a on tp_try_out.vid=a.vid left join `tp_product_price` b on tp_try_out.ppid=b.id left join `tp_product` c on b.pid=c.id WHERE ( tp_try_out.status = 1 ) ORDER BY tp_try_out.id desc LIMIT 0,10   [ RunTime:0.000347s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000227s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000292s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant status - assumed 'status' /var/www/html/bobo2/Admin/Runtime/Cache/4b44a86f8f5994646dee99a9e295d7ff.php 第 85 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /var/www/html/bobo2/Admin/Runtime/Cache/4b44a86f8f5994646dee99a9e295d7ff.php 第 122 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /var/www/html/bobo2/Admin/Runtime/Cache/4b44a86f8f5994646dee99a9e295d7ff.php 第 125 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.014868s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014936s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000320s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000271s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000140s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000308s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001201s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000442s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000497s ]
+
+[ 2016-05-24T14:14:28+08:00 ] 116.226.196.195 /bobo2/admin.php/Try/index/status/1/cls/7
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000572s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000653s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000355s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000420s ]
+NOTIC: [2048] Declaration of TryAction::show() should be compatible with that of Action::show() /var/www/html/bobo2/Admin/Lib/Action/TryAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `tp_try_out` [ RunTime:0.000703s ]
+SQL: SHOW COLUMNS FROM `tp_problem` [ RunTime:0.000439s ]
+SQL: SHOW COLUMNS FROM `tp_problem_data` [ RunTime:0.000408s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_try_out` left join `tp_vipuser` a on tp_try_out.vid=a.vid left join `tp_product_price` b on tp_try_out.ppid=b.id left join `tp_product` c on b.pid=c.id WHERE ( tp_try_out.status = 1 ) LIMIT 1   [ RunTime:0.000420s ]
+SQL: SELECT tp_try_out.id,a.username,c.title,b.capacity,tp_try_out.inputtime,tp_try_out.status FROM `tp_try_out` left join `tp_vipuser` a on tp_try_out.vid=a.vid left join `tp_product_price` b on tp_try_out.ppid=b.id left join `tp_product` c on b.pid=c.id WHERE ( tp_try_out.status = 1 ) ORDER BY tp_try_out.id desc LIMIT 0,10   [ RunTime:0.000353s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000223s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000289s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant status - assumed 'status' /var/www/html/bobo2/Admin/Runtime/Cache/4b44a86f8f5994646dee99a9e295d7ff.php 第 85 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /var/www/html/bobo2/Admin/Runtime/Cache/4b44a86f8f5994646dee99a9e295d7ff.php 第 122 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /var/www/html/bobo2/Admin/Runtime/Cache/4b44a86f8f5994646dee99a9e295d7ff.php 第 125 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.015086s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015156s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000356s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000244s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000137s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000318s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001324s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000557s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000635s ]
+
+[ 2016-05-24T14:14:38+08:00 ] 116.226.196.195 /bobo2/admin.php/Try/passTry/
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000575s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000656s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000354s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000408s ]
+NOTIC: [2048] Declaration of TryAction::show() should be compatible with that of Action::show() /var/www/html/bobo2/Admin/Lib/Action/TryAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `tp_try_out` [ RunTime:0.000632s ]
+SQL: SHOW COLUMNS FROM `tp_problem` [ RunTime:0.000416s ]
+SQL: SHOW COLUMNS FROM `tp_problem_data` [ RunTime:0.000459s ]
+SQL: UPDATE `tp_try_out` SET `status`=2 WHERE ( id=25 ) [ RunTime:0.000256s ]
+
+[ 2016-05-24T14:14:39+08:00 ] 116.226.196.195 /bobo2/admin.php/Try/index/status/1/cls/7
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000570s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000672s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000350s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000408s ]
+NOTIC: [2048] Declaration of TryAction::show() should be compatible with that of Action::show() /var/www/html/bobo2/Admin/Lib/Action/TryAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `tp_try_out` [ RunTime:0.000615s ]
+SQL: SHOW COLUMNS FROM `tp_problem` [ RunTime:0.000423s ]
+SQL: SHOW COLUMNS FROM `tp_problem_data` [ RunTime:0.000405s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_try_out` left join `tp_vipuser` a on tp_try_out.vid=a.vid left join `tp_product_price` b on tp_try_out.ppid=b.id left join `tp_product` c on b.pid=c.id WHERE ( tp_try_out.status = 1 ) LIMIT 1   [ RunTime:0.000403s ]
+SQL: SELECT tp_try_out.id,a.username,c.title,b.capacity,tp_try_out.inputtime,tp_try_out.status FROM `tp_try_out` left join `tp_vipuser` a on tp_try_out.vid=a.vid left join `tp_product_price` b on tp_try_out.ppid=b.id left join `tp_product` c on b.pid=c.id WHERE ( tp_try_out.status = 1 ) ORDER BY tp_try_out.id desc LIMIT 0,10   [ RunTime:0.000350s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000208s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000293s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant status - assumed 'status' /var/www/html/bobo2/Admin/Runtime/Cache/4b44a86f8f5994646dee99a9e295d7ff.php 第 85 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /var/www/html/bobo2/Admin/Runtime/Cache/4b44a86f8f5994646dee99a9e295d7ff.php 第 122 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /var/www/html/bobo2/Admin/Runtime/Cache/4b44a86f8f5994646dee99a9e295d7ff.php 第 125 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.014737s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014799s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000329s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000243s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000131s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000322s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001269s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000390s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000445s ]
+

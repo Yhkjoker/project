@@ -1,0 +1,17 @@
+          <div class="Product_list_left f_left">
+                <div>
+                    <h1><a href="<{:U('Product/product')}>">最新产品</a></h1>
+                </div>
+                <div>
+                    <h1 class="Product_this"><a href="<{:U('Product/product_all')}>">全部产品</a></h1>
+					<foreach name="catname_list" item="v">
+						<p><a href="<{:U('Product/product',array('catid'=>$v[catid]))}>" <if condition="$_GET[catid] eq $v[catid]"> class="Product_this_bg"</if>><{$v.catname}></a></p>
+					</foreach>
+                </div>
+                <div>
+                    <h1><a href="<{:U('Video/video',array('catid'=>26))}>">产品视频</a></h1>
+                </div>
+                <div>
+                    <h1><a href="<{:U('Report/report',array('catid'=>27))}>">检测报告</a></h1>
+                </div>
+            </div>

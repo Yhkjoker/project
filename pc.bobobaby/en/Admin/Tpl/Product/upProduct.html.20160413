@@ -1,0 +1,409 @@
+<include file="Public:header"/>
+<!--内容-->
+<script>
+KindEditor.ready(function(K) {
+	K.create('#ke_demo', {
+		allowFileManager : true,
+		afterBlur: function(){this.sync();}
+	});
+});
+</script>
+<div id="content">
+<div id="breadcrumb"> <a href="__APP__/Index/index/cls/1" title="Go to Home" class="tip-bottom"><i class="icon-home"></i>主页</a><span class="nadd">->&nbsp;&nbsp;&nbsp;添加产品</span></div>
+<!--breadcrumbs-->
+
+  <div class="container-fluid">
+
+    <div class="quick-actions_homepage">
+
+      <ul class="quick-actions">
+
+	   <li class="bg_lb"> <a href="__APP__/Product/product/catid/<{$cate_arr.catid}>/cls/2"> <i class="icon-dashboard"></i><{$cate_arr.catname}></a></li>
+
+      </ul>
+
+    </div>
+
+<!--End-breadcrumbs-->
+
+ <div class="row-fluid">
+
+     <div class="span12">
+
+        <div class="widget-box">
+
+          <div class="widget-title"> <span class="icon"> <i class="icon-th"></i> </span>
+
+            <h5>新增</h5>
+
+          </div>
+
+          <div class="widget-content nopadding">
+
+          <form class="myForm" action="__APP__/Product/doProduct/action/edit/id/<{$pro_arr.id}>" method="post">
+
+           <table class="table table-bordered table-striped">
+
+			<tr>
+
+			  <td><span class="needed">*</span>栏目：</td>
+
+			  <td><{$cate_arr.catname}>
+			  </td>
+
+			</tr>
+
+			<tr>
+
+			  <td><span class="needed">*</span>标题：</td>
+
+			  <td><input type="text" name="info[title]" datatype="*" nullmsg="标题为空" value="<{$pro_arr.title}>"/>
+			  <input type="hidden" name="info[catid]" value="<{$cate_arr.catid}>"/>
+			  </td>
+
+			</tr>
+			
+			
+			<tr>
+
+			  <td>二级栏目：</td>
+
+			  <td>
+				<select name="info[linkageid]">
+					<option value="0">无二级栏目</option>	
+					<foreach name="link_list" item="v">
+						<option <if condition="$pro_arr.linkageid eq $v[linkageid]">selected</if> value="<{$v.linkageid}>"><{$v.name}></option>	
+					</foreach>
+				</select>
+			  </td>
+
+			</tr>
+
+
+             <tr>
+
+             	<td><span class="needed">*</span>内容：</td>
+
+             	<td><textarea name="info[content]" id="ke_demo" style="width:800px;height:350px;" datatype="*" ignore="ignore" nullmsg="不能为空"><{$pro_arr.content}></textarea></td>
+
+             </tr>
+			<tr><td><span>上传pc站封面图片：</span></td><td>
+			<input type="text" id="url3" name="info[picurlpc]" value="<{$pro_arr.picurlpc}>" class="ke-input-text"/> <input type="button" id="image3" class="btn btn-success delpic" value="选择图片" style="margin-bottom:10px"/>
+</td></tr>
+
+		</tr>
+					<tr><td><span> 价格信息：</span></td><td>
+						<table width="950" >
+     
+							<tbody>
+								<tr>
+								    <th width="100" style="background-color: #f5f5f5;">容量</th>
+									<th width="100" style="background-color: #f5f5f5;">价格</th>	
+									<th width="300" style="background-color: #f5f5f5;">颜色</th>	
+									<th width="300" style="background-color: #f5f5f5;">材质</th>	
+									<th width="100" style="background-color: #f5f5f5;"></th>
+							  </tr>
+							 </tbody>
+							 
+							 <tbody id="addTrr">
+						<foreach name="price_list" item="v" key="k">
+							 
+								<tr id="d_<{$v.id}>">
+									<td>
+											<input type="text"  style="width:100px;" name="info_price_up[<{$v.id}>][capacity]" value="<{$v.capacity}>"/>	
+									</td>
+									<td>
+											<input type="text"  style="width:100px;"  name="info_price_up[<{$v.id}>][price]" value="<{$v.price}>"/>
+									</td>
+									<td>
+									<ul>
+									 <foreach name="para_list" item="vo">
+										<if condition="$vo.typeid eq 1">
+				
+											<li style="float:left;"><span><input type="checkbox" name="info_price_up[<{$v.id}>][colorlist][]" value="<{$vo.id}>"  <foreach name="v[colorlist]" item="val"><if condition="$val eq $vo[id]">checked</if></foreach>    ></span><{$vo.name}><span style="width: 20px;height: 20px;display: block; float: right;background-color:<{$vo.colorname}>;"></span></li>
+									
+										</if>
+									  </foreach>
+									  </ul>
+									</td>
+
+
+								  <td >
+									<ul >
+								  <foreach name="para_list" item="vo">
+									<if condition="$vo.typeid eq 2">
+										<li style="float:left;"><div><input type="checkbox" name="info_price_up[<{$v.id}>][texturelist][]" value="<{$vo.id}>"  <foreach name="v[texturelist]" item="val" ><if condition="$val eq $vo[id]">checked</if></foreach>><{$vo.colorname}></div></li>
+									</if>
+								  </foreach>
+									</ul>
+								  </td>
+									
+									
+									<td>
+											<a style='color:#307cb8;cursor:pointer;' onClick='getIDDele(<{$v.id}>,"d_<{$v.id}>")'> 删除</a>
+									</td>
+								</tr>
+					</foreach>
+						
+						  </tbody>
+						
+							<tbody><tr>
+								<td style="border:none;" colspan="2">
+								<div class="fl zjjgqj">
+									<a id="getCtr" href="javascript:void(0);">
+											<img src="__PUBLIC__/aimages/jia.jpg">
+									<span>增加价格区间 </span>
+									</a>
+								</div>
+								</td>
+								</tr>
+							
+						  </tbody></table>
+
+					
+				<!-- 	<input type="text" name="info[price]" value="<{$pro_arr.price}>" style="width:80px" class="ke-input-text" datatype="/^[0-9]+(.[0-9]{1,2})?$/" nullmsg="请填写产品价格" errormsg="价格不符合规范，只允许保留2位小数"/> 元 -->
+		</td></tr>
+		
+			<!-- <tr>
+
+			  <td><span class="needed">*</span>颜色参数：</td>
+
+			  <td  style="word-break:break-all">
+				<ul >
+			  <foreach name="para_list" item="v">
+				<if condition="$v.typeid eq 1">
+					<li style="float:left;"><div><input type="checkbox" name="colorlist[]" value="<{$v.id}>"><{$v.name}></div><div style="background-color:<{$v.colorname}>;width:20px;height:20px;"></div></li>
+				</if>
+			  </foreach>
+				</ul>
+			  </td>
+
+			</tr> -->
+			
+			<!-- <tr>
+
+			 
+
+			</tr>
+			 -->
+			
+		
+		
+		
+		
+		<tr><td colspan="2">
+				<div id="J_imageView">
+				<php>
+						if($pro_arr['picurlpcall']){
+						$pic_list=explode(",",$pro_arr['picurlpcall']);
+					
+						foreach($pic_list as $ke=>$va){
+						echo "<div id='img$ke'><img src='$va' class='allImg' width='200px' heigth='200px'/><a href='javascript:shanchu($ke)' >delete</a>
+                        <hr/>
+		
+						
+						</div>";
+						}
+				
+					}
+		   </php>
+		</div>
+				
+				</td></tr>
+
+			<tr>
+		
+
+			  <td><span class="needed">*</span>发表时间：</td>
+
+			  <td><input type="hidden" name="info[picurlpcall]" id="purl" value="<{$pro_arr.picurlpcall}>"/><input type='text' name='info[updatetime]' value="<?php  echo date('Y-m-d H:i:s',time()); ?>" class='text-input small-input Wdate'  onBlur="FireEvent(this,'onchange');" onFocus="WdatePicker({dateFmt:'yyyy-MM-dd HH:mm:ss',readOnly:true})"   readonly=""/></td>
+
+			</tr>
+
+             <tr>
+
+             	<td colspan="2"><input type="reset" class="an" value="重置信息"/>&nbsp;&nbsp;<input type="button" id="J_selectImage" class="an" value="批量上传" />&nbsp;&nbsp;<input type="submit" value="保存发布" name="dosubmit"  class="an"/></td>
+
+             </tr>
+
+          </table>
+
+          </form>
+
+          <script type="text/javascript">
+			  $('.myForm').Validform({
+
+				tiptype:3,
+
+				ajaxPost:true,
+
+				callback:function(data){
+
+					if(data.status=='y'){
+
+						setTimeout(function(){window.location="__APP__/Product/product/catid/<{$cate_arr.catid}>/cls/2";},1000);
+
+					}
+
+				}
+
+			  })
+			  
+			KindEditor.ready(function(K) {
+			var editor = K.editor({
+					allowFileManager : true
+				});
+				K('#image3').click(function() {
+					editor.loadPlugin('image', function() {
+						editor.plugin.imageDialog({
+							showRemote : false,
+							imageUrl : K('#url3').val(),
+							clickFn : function(url, title, width, height, border, align) {
+								K('#url3').val(url);
+								editor.hideDialog();
+							}
+						});
+					});
+				});
+			});
+			
+KindEditor.ready(function(K) {
+				var editor = K.editor({
+				});
+		
+				K('#J_selectImage').click(function() {			
+					editor.loadPlugin('multiimage', function() {
+						editor.plugin.multiImageDialog({
+					
+						clickFn : function(urlList) {
+								var url=document.getElementById("purl").value;									
+								var div = K('#J_imageView');
+								K.each(urlList, function(i, data) {
+									div.append('<p><img src="'+data.url+'" width="200px" height="200px"/></p>');
+									url=url+","+data.url;
+									
+								});		
+								
+								if (url.substr(0,1)==',') 
+								url=url.substr(1);
+								
+								document.getElementById("purl").value=url;
+								
+								editor.hideDialog();
+							}
+						});
+					});
+				});
+			});
+			
+			
+
+$(function(){
+	var k=0;
+    $("#getCtr").click(function(){     
+
+		 var y_id=$("#addTrr tr").length;
+
+
+        var str='';
+        str+="<tr id='p"+y_id+"'>";
+        str+="<td> <input type='text' style='width:100px'   name='info_price[capacity][]' /></td>";
+		str+="<td> <input type='text' style='width:100px;' name='info_price[price][]'/></td>";
+		str+="<td><ul>";
+				<foreach name="para_list" item="v">
+					<if condition="$v.typeid eq 1">
+		str+='<li style="float:left;"><span><input type="checkbox" name="info_price[newcolorlist]['+k+'][]" value="<{$v.id}>"></span><{$v.name}><span style="width: 20px;height: 20px;display: block; float: right;background-color:<{$v.colorname}>;"></span></li>';
+					</if>
+			</foreach>
+		str+="</ul></td>";
+		str+="<td ><ul >";
+				  <foreach name="para_list" item="v">
+					<if condition="$v.typeid eq 2">
+						str+='<li style="float:left;"><div><input type="checkbox" name="info_price[newtexturelist]['+k+'][]" value="<{$v.id}>"><{$v.colorname}></div></li>';
+					</if>
+				</foreach>
+		str+="</ul></td>";			
+		str+="<td><a style='color:#307cb8;cursor:pointer;' onClick='getDele(this)'> 删除</a></td>";
+        str+="</tr>";
+		k++;
+			$("#addTrr").append(str);
+			
+				
+	
+		
+       
+    });
+});
+function getDele(j){
+    $(j).parent().parent().remove();     
+}
+function getIDDele(val,j){
+		$.ajax({
+			type:"POST",
+			url:"__APP__/Product/delPric",
+			data:"id="+val,
+			success:function(data){
+					if(data){
+						 $("#"+j).remove(); 
+					
+					
+					}
+			
+			
+			}
+		
+		
+		
+		})
+		
+			
+
+	
+}
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+function shanchu(val){
+
+			var div=document.getElementById('img'+val)
+			div.parentNode.removeChild(div);
+			var purl="";
+			$("#J_imageView img.allImg").each(function(){
+			
+			  purl+=$(this).attr("src")+",";
+
+			})
+				 if (purl.length > 0) {
+					purl = purl.substring(0, purl.length - 1);
+				}
+			
+				document.getElementById("purl").value=purl;
+			
+			}
+		</script>
+		
+
+          </div>
+
+        </div>
+
+    </div>
+
+  </div>
+
+  <div class="row-fluid">
+
+<include file="Public:footer"/>

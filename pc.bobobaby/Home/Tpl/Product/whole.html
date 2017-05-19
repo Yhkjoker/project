@@ -1,0 +1,243 @@
+<include file="Public:header"/>
+        <!--内容-->
+        <div class="Product_list_content">
+			<include file="Public:left"/>
+            <div class="Product_list_right f_right">
+                <!--banner-->
+                <div class="Product_list_banner"><img src="__PUBLIC__/img/cplbvbanner.jpg" width="100%"></div>
+                <!--参数显示-->
+                <div class="Product_parameter">
+                    <div class="Product_parameter_top">
+                          <ul>
+                              <li><if condition="$_GET[price_search] "><?php echo  $_GET['price_search']; ?><i></i><else/>价格<i></i></if>
+                                  <div class="Product_parameter_topNei">
+                                      <input class="radioclass" type="button" name="price_search" value="全部" onclick="searchfun(this.name,this.value);" >
+                                      <input class="radioclass" type="button" name="price_search" value="0-50" onclick="searchfun(this.name,this.value);" >
+                                       <input class="radioclass" type="button" name="price_search" value="50-100" onclick="searchfun(this.name,this.value);" >
+                                      <input class="radioclass" type="button" name="price_search" value="100-300" onclick="searchfun(this.name,this.value);" >
+                                      <input class="radioclass" type="button" name="price_search" value="300-1000" onclick="searchfun(this.name,this.value);" >
+                                  </div>
+                              </li>
+                              <li><if condition="$_GET[texturelist_search] "><?php echo  $_GET['texturelist_search']; ?><i></i><else/>材质<i></i></if>
+                                  <div class="Product_parameter_topNei">
+                                      <input class="radioclass" type="button" name="texturelist_search" value="全部" onclick="searchfun(this.name,this.value);" >
+                                       <input class="radioclass" type="button" name="texturelist_search" value="玻璃" onclick="searchfun(this.name,this.value);" >
+                                     <input class="radioclass" type="button" name="texturelist_search" value="塑胶" onclick="searchfun(this.name,this.value);" >
+                                      <input class="radioclass" type="button" name="texturelist_search" value="PPSU" onclick="searchfun(this.name,this.value);" >
+                                  </div>
+                              </li>
+                              <li><if condition="$_GET[capacity_search] "><?php echo  $_GET['capacity_search']; ?><i></i><else/>容量<i></i></if>
+                                  <div class="Product_parameter_topNei">
+                                      <input class="radioclass" type="button" name="capacity_search" value="全部" onclick="searchfun(this.name,this.value);" >
+                                      <input class="radioclass" type="button" name="capacity_search" value="50ml-100ml" onclick="searchfun(this.name,this.value);" >
+                                      <input class="radioclass" type="button" name="capacity_search" value="100ml-200ml" onclick="searchfun(this.name,this.value);" >
+                                      <input class="radioclass" type="button" name="capacity_search" value="200ml以上" onclick="searchfun(this.name,this.value);" >
+                                  </div>
+                              </li>
+                          </ul> 
+                      </div>
+                    <div class="Product_parameter_photo">
+										<if condition="$pro_list ">
+						<foreach name="pro_list" item="v" key="k">
+							<div class="Product_photo_single">
+				
+							<div class="Product_photo_nei">
+							<if condition="$v[xqstatus] eq 1">
+									<a href="<{:U('Product/product_details',array('catid'=>$v['catid'],'pid'=>$v['id'],'ppid'=>$v['ppid']))}>">
+							<else/>
+									<a href='javascript:alert("此产品已下架")'>
+							</if>
+					
+							<div class="Product_photowai">
+
+							<if condition="$v[fmpicurl] ">
+								<img class="Product_photo_img" src="<{$v.fmpicurl}>">
+							<else/>
+                            	<img class="Product_photo_img" src="<{$v.picurlpc}>">
+					
+							</if>
+							
+				
+							</div><h3><{$v.catname}><div class="Product_sekuai">
+
+							<?php $color_count=count($v['para_list']);?>
+							<if condition="$color_count gt 1">
+								<foreach name="v[para_list]" item="val">
+									<span style="background-color:<{$val.colorname}>"></span>
+								</foreach>
+							</if>
+
+					</div></h3><h2><{$v.title}><span><{$v.capacity}></span></h2></a><div class="Product_price"><h4><i>￥</i><{$v.price}>
+					<?php 	session_start(); 	if(!$_SESSION['bobo_pc_user_id']){?>
+							<a href="javascript:hhhhh();"><img class="Product_follow Product_followBtn1" src="__PUBLIC__/img/botombg.png"></a>
+					<?php }else{?>
+								<if condition="$v[colid] ">
+									<a href="javascript:collect_del(<{$v[colid]}>);"><img class="Product_follow Product_followBtn1" src="__PUBLIC__/img/botombg1.png"></a>
+								<else/>
+									<a href="javascript:collect_tj(<{$v.ppid}>);"><img class="Product_follow Product_followBtn1" src="__PUBLIC__/img/botombg.png"></a>
+								</if>
+					<?php }?>
+					
+					
+					</h4></div></div></div>
+						</foreach>
+						
+						<else/>
+						<div class="cpkBg"></div>
+						</if>
+	
+                    </div>
+				
+                </div>
+				<div style="clear:both;"></div>
+                <a class="Product_document" href="javascript:">您的足迹</a>
+                <div class="Product_document_bottom">
+                
+                    
+		<foreach name="pro_list_fw" item="v">		
+                       <div class="Product_document_nei">
+					    
+                      <div class="Product_document_cnei">
+					    <if condition="$v[status] eq 1 || $v[xqstatus] eq 1"><a href="<{:U('Product/product_details',array('catid'=>$v[catid],'pid'=>$v[pid],'ppid'=>$v[id]))}>"><else/><a href="javascript:alert('此产品已下架');"></if>
+                                <img class="Product_photo_imeagh" src="<{$v.picurlpc}>">
+                                <h3 style="position: relative;"> <{$v.catname}>
+                                    <div class="Product_sekuai_s22" style="position: absolute; right: 8%;">
+					<?php $color_count_one=count($v['colorlist']);?>
+								<if condition="$color_count_one gt 1">
+                            <foreach name="v[colorlist]" item="vo">
+                                <span style="background-color:<{$vo.colorname}>"></span>
+                            </foreach>  
+                            </if>
+                          </div>
+                                </h3>
+                                <h2><{$v.title}><span><{$v.capacity}></span></h2></a>
+                                <div class="Product_price01">
+                                    <h4>
+                                       <i>￥</i><{$v.price}>
+                                     	<?php 	session_start(); 	if(!$_SESSION['bobo_pc_user_id']){?>
+													<a href="javascript:hhhhh();"><img class="Product_follow Product_followBtn1" src="__PUBLIC__/img/botombg.png"></a>
+											<?php }else{?>
+														<if condition="$v[colid] ">
+															<a href="javascript:collect_del(<{$v[colid]}>);"><img class="Product_follow Product_followBtn1" src="__PUBLIC__/img/botombg1.png"></a>
+														<else/>
+															<a href="javascript:collect_tj(<{$v.id}>);"><img class="Product_follow Product_followBtn1" src="__PUBLIC__/img/botombg.png"></a>
+														</if>
+
+											
+											<?php }?>
+                                    </h4>
+                                </div>
+                          </div>
+			
+                          
+                    </div>
+				</foreach>	
+
+                    
+                </div>
+            </div>
+        </div>
+        <!-- footer -->
+        <div class="zhankai"></div>
+<include file="Public:footer"/>
+
+<script>
+
+function searchfun(name,value){
+	var hrefstr,pos,url='';
+	hrefstr = window.location.href;
+	pos = hrefstr.indexOf("?"); 
+	var value=encodeURI(value);
+	var bool=1;
+	if(pos=="-1"){
+		url=hrefstr+"?"+name+'='+value;
+		window.location.href=url;
+	}else{
+			var returnurl="";
+			var setparam="";
+	     	url = hrefstr.substr(hrefstr.indexOf('?') + 1);
+
+		    arr = url.split('&');
+			for (i in arr) {
+					if(arr[i].split('=')[0]==name){
+						if(name=='price_search' || name=='texturelist_search' || name=='capacity_search' || name=='color_search'){
+							arr[i]=name+"="+value;//url名与传进的名相同，存在修改
+						}
+						bool=0;break;
+					}
+			}
+			if(bool==1){
+				arr.push(name+"="+value);//url名与传进的名不同，存在不变
+			}	
+			for(j in arr){
+				returnurl+=arr[j]+"&";	
+			}
+		      returnurl = returnurl.substr(0, returnurl.length - 1); 
+			 url=hrefstr.substr(0, hrefstr.indexOf('?')) + "?" +returnurl;
+			window.location.href=url;
+	}
+}
+
+
+  
+		/*颜色焦点*/
+    $('.Product_sekuai span').click(function() {
+        $(this).addClass('Product_border').siblings().removeClass('Product_border')
+
+    });
+	$('.Product_Color span').click(function() {
+        $(this).addClass('Product_border').siblings().removeClass('Product_border')
+
+    });
+     /*参数*/
+		 $('.Product_parameter_top').find('li').hover(function(){
+		      $(this).find('.Product_parameter_topNei').stop(false,true).stop().slideDown(400);
+		 },function(){
+			  $(this).find('.Product_parameter_topNei').slideUp(400);
+		 });
+		 
+		 $('.Product_parameter_top').find('li').hover(function(){
+		      $(this).find('i').addClass('Product_parameter_topThis');
+		 },function(){
+			  $(this).find('i').removeClass('Product_parameter_topThis');
+	     });
+		 
+		 $('.radioclass').hover(function(){
+		      $(this).addClass('radioclassThis'); 
+		 },function(){
+			  $(this).removeClass('radioclassThis')
+		 });
+    
+
+    /*内容图片*/
+    $('.Product_photo_nei').live('mouseover',function() {
+        $(this).addClass('Product_shadow')
+    })
+	  $('.Product_photo_nei').live('mouseout',function() {
+        $(this).removeClass('Product_shadow')
+    })
+
+    /*足迹*/
+    $('.Product_sekuai_s2 span').click(function() {
+        $(this).addClass('Product_border').siblings().removeClass('Product_border')
+
+    })
+	
+		/*菜单*/
+	$('.nav-bar li:first').hover(function(){
+		$(this).removeClass('near')
+	},function(){
+		$(this).addClass('near')
+		})
+		
+	/*点击切换*/
+	$('.Product_document_nei').find('.Product_document_cnei:first').show()
+	$('.Product_sekuai_s22 span').click(function(){
+       var WholeDian=$(this).index()
+		 $(this).parents('.Product_document_nei').find('.Product_document_cnei').hide()
+		 $(this).parents('.Product_document_nei').find('.Product_document_cnei').eq(WholeDian).show() 
+		 $(this).addClass('Product_border').siblings().removeClass('Product_border')
+		})
+
+
+</script>

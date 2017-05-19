@@ -1,0 +1,33 @@
+<include file="Public:header"/>
+
+<?php 
+	session_start(); 
+	if(!$_SESSION['bobo_pc_user_id']){
+?>
+		<script>
+				$(function(){
+				        $('.dlzc, .bgbg').show();
+				})	
+				
+				function dltc(){
+				 $('.dlzc, .bgbg').show();
+				}
+		</script>	
+<?php }?>
+        <div class="user_content">
+            <div class="user_content_center">
+                <h4>欢迎,以下是您的基本信息</h4>
+                <div class="jiben">
+                    <p>您的昵称：<if condition="$vip_arr.nickname "><{$vip_arr.nickname}><else/>未设置</if></p>
+                    <p><span>宝宝的姓氏：<if condition="$vip_arr.bbname "><{$vip_arr.bbname}><else/>未设置</if></span><span>宝宝的年龄：<if condition="$vip_arr.age "><{$vip_arr.age}><else/>未设置</if></span></p>
+                    <p>宝宝的性别：<if condition="$vip_arr.sex "><if condition="$vip_arr.sex eq 0">男<else/>女</if><else/>未设置</if></p>
+                    <p>您的e-mail：<if condition="$vip_arr.email "><{$vip_arr.email}><else/>未设置</if></p>
+                    <p>您的地址：<if condition="$vip_arr.address "><{$vip_arr.address}><else/>未设置</if></p>
+                </div>
+                <if condition="$vip_arr "><a href="<{:U('Member/member_change')}>" class="user_content_xgzl"><else/><a href="javascript:dltc();" class="user_content_xgzl"></if>修改资料</a>
+            </div>
+        </div>
+        <div class="zhankai"></div>
+    </div>
+<include file="Public:footer"/>
+

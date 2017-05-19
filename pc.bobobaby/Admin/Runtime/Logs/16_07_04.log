@@ -1,0 +1,1376 @@
+[ 2016-07-04T16:11:30+08:00 ] 101.81.35.125 /bobo2/admin.php/Login/login
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000606s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000688s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000367s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000467s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000223s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000285s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.048444s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.048549s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000293s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000249s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000151s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000310s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001186s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000449s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000504s ]
+
+[ 2016-07-04T16:11:35+08:00 ] 101.81.35.125 /bobo2/admin.php/Login/doLogin
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000603s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000683s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000377s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000431s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.022530s ]
+SQL: SELECT * FROM `tp_user` WHERE ( `username` = 'mofang' ) AND ( `password` = '63fbf481658e05b00eea3921f783a80a' ) LIMIT 1   [ RunTime:0.000278s ]
+
+[ 2016-07-04T16:11:38+08:00 ] 101.81.35.125 /bobo2/admin.php/Index/index/cls/1
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000616s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000703s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000433s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000496s ]
+NOTIC: [2048] Declaration of IndexAction::show() should be compatible with that of Action::show() /var/www/html/bobo2/Admin/Lib/Action/IndexAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.000570s ]
+SQL: SHOW COLUMNS FROM `tp_index_picture` [ RunTime:0.000536s ]
+NOTIC: [8] Undefined variable: gd /var/www/html/bobo2/Admin/Lib/Action/IndexAction.class.php 第 19 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000303s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000374s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.073145s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.073231s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000281s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000251s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000163s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000311s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001171s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000425s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000480s ]
+
+[ 2016-07-04T16:11:46+08:00 ] 101.81.35.125 /bobo2/admin.php/Category/category/cls/2
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000989s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001126s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000721s ]
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.000911s ]
+SQL: SELECT `catid`,`catname`,`type`,`parentid`,concat(arrparentid,'-',catid) as bpath,`model`,`listorder` FROM `tp_category` WHERE ( siteid=1 ) ORDER BY parentid,listorder  [ RunTime:0.000472s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000342s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000408s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 138 行.
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 138 行.
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 138 行.
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 138 行.
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 138 行.
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 138 行.
+NOTIC: [8] Use of undefined constant Content - assumed 'Content' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 167 行.
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 138 行.
+NOTIC: [8] Use of undefined constant Content - assumed 'Content' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 167 行.
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 138 行.
+NOTIC: [8] Use of undefined constant Content - assumed 'Content' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 167 行.
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 138 行.
+NOTIC: [8] Use of undefined constant Content - assumed 'Content' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 167 行.
+NOTIC: [8] Use of undefined constant Picture - assumed 'Picture' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 197 行.
+NOTIC: [8] Use of undefined constant Product - assumed 'Product' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 227 行.
+NOTIC: [8] Use of undefined constant Video - assumed 'Video' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 258 行.
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 138 行.
+NOTIC: [8] Use of undefined constant Content - assumed 'Content' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 167 行.
+NOTIC: [8] Use of undefined constant Picture - assumed 'Picture' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 197 行.
+NOTIC: [8] Use of undefined constant Product - assumed 'Product' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 227 行.
+NOTIC: [8] Use of undefined constant Video - assumed 'Video' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 258 行.
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 138 行.
+NOTIC: [8] Use of undefined constant Content - assumed 'Content' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 167 行.
+NOTIC: [8] Use of undefined constant Picture - assumed 'Picture' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 197 行.
+NOTIC: [8] Use of undefined constant Product - assumed 'Product' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 227 行.
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 138 行.
+NOTIC: [8] Use of undefined constant Content - assumed 'Content' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 167 行.
+NOTIC: [8] Use of undefined constant Picture - assumed 'Picture' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 197 行.
+NOTIC: [8] Use of undefined constant Product - assumed 'Product' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 227 行.
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 138 行.
+NOTIC: [8] Use of undefined constant Content - assumed 'Content' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 167 行.
+NOTIC: [8] Use of undefined constant Picture - assumed 'Picture' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 197 行.
+NOTIC: [8] Use of undefined constant Product - assumed 'Product' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 227 行.
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 138 行.
+NOTIC: [8] Use of undefined constant Content - assumed 'Content' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 167 行.
+NOTIC: [8] Use of undefined constant Picture - assumed 'Picture' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 197 行.
+NOTIC: [8] Use of undefined constant Product - assumed 'Product' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 227 行.
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 138 行.
+NOTIC: [8] Use of undefined constant Content - assumed 'Content' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 167 行.
+NOTIC: [8] Use of undefined constant Picture - assumed 'Picture' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 197 行.
+NOTIC: [8] Use of undefined constant Product - assumed 'Product' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 227 行.
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 138 行.
+NOTIC: [8] Use of undefined constant Content - assumed 'Content' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 167 行.
+NOTIC: [8] Use of undefined constant Picture - assumed 'Picture' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 197 行.
+NOTIC: [8] Use of undefined constant Product - assumed 'Product' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 227 行.
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 138 行.
+NOTIC: [8] Use of undefined constant Content - assumed 'Content' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 167 行.
+NOTIC: [8] Use of undefined constant Picture - assumed 'Picture' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 197 行.
+NOTIC: [8] Use of undefined constant Product - assumed 'Product' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 227 行.
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 138 行.
+NOTIC: [8] Use of undefined constant Content - assumed 'Content' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 167 行.
+NOTIC: [8] Use of undefined constant Picture - assumed 'Picture' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 197 行.
+NOTIC: [8] Use of undefined constant Product - assumed 'Product' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 227 行.
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 138 行.
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 138 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.051199s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.051269s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000399s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000255s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000139s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000320s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001320s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000432s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000486s ]
+
+[ 2016-07-04T16:11:54+08:00 ] 101.81.35.125 /bobo2/admin.php/Video/video/catid/27/cls/2
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000605s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000686s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000358s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000418s ]
+NOTIC: [2048] Declaration of VideoAction::show() should be compatible with that of Action::show() /var/www/html/bobo2/Admin/Lib/Action/VideoAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.000701s ]
+SQL: SHOW COLUMNS FROM `tp_video` [ RunTime:0.000610s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_video` WHERE ( catid=27  and siteid=1 ) LIMIT 1   [ RunTime:0.000361s ]
+SQL: SELECT * FROM `tp_video` WHERE ( catid=27  and siteid=1 ) ORDER BY listorder asc,vid desc LIMIT 0,12   [ RunTime:0.000295s ]
+NOTIC: [8] Undefined variable: cate_arr /var/www/html/bobo2/Admin/Lib/Action/VideoAction.class.php 第 22 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000276s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000363s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.044146s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044224s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000357s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000275s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000145s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000323s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001266s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000459s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000519s ]
+
+[ 2016-07-04T16:12:03+08:00 ] 101.81.35.125 /bobo2/admin.php/Video/upVideo/catid/27/vid/20/cls/2
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000623s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000715s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000386s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000446s ]
+NOTIC: [2048] Declaration of VideoAction::show() should be compatible with that of Action::show() /var/www/html/bobo2/Admin/Lib/Action/VideoAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.000959s ]
+SQL: SHOW COLUMNS FROM `tp_video` [ RunTime:0.000846s ]
+SQL: SELECT `catname`,`catid` FROM `tp_category` WHERE ( catid=27 ) LIMIT 1   [ RunTime:0.000303s ]
+SQL: SELECT * FROM `tp_video` WHERE ( vid=20  and siteid=1 ) LIMIT 1   [ RunTime:0.000229s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000341s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000457s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.067473s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.067589s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000355s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000250s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000168s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000322s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001265s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000449s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000555s ]
+
+[ 2016-07-04T16:12:12+08:00 ] 101.81.35.125 /bobo2/admin.php/Video/doVideo/action/edit/vid/20
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000608s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000688s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000388s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000444s ]
+NOTIC: [2048] Declaration of VideoAction::show() should be compatible with that of Action::show() /var/www/html/bobo2/Admin/Lib/Action/VideoAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.000644s ]
+SQL: SHOW COLUMNS FROM `tp_video` [ RunTime:0.000596s ]
+SQL: UPDATE `tp_video` SET `vtitle`='研磨喂食小金碗欧标化学检测报告',`catid`=27,`ftitle`='GZHG1511047592IP',`vurl`='/upload/11.pdf',`vfurl`='',`content`='',`picurlpc`='/image/20160406/20160406125935_47469.jpg',`vpurlwz`='',`headerpic`='/bobo2/image/20160511/20160511135846_88367.png',`inputtime`=1448877334 WHERE ( catid=27 and vid=20  and siteid=1 ) [ RunTime:0.000333s ]
+
+[ 2016-07-04T16:12:14+08:00 ] 101.81.35.125 /bobo2/admin.php/Video/video/catid/27/cls/2
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000580s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000684s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000359s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000419s ]
+NOTIC: [2048] Declaration of VideoAction::show() should be compatible with that of Action::show() /var/www/html/bobo2/Admin/Lib/Action/VideoAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.000711s ]
+SQL: SHOW COLUMNS FROM `tp_video` [ RunTime:0.000616s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_video` WHERE ( catid=27  and siteid=1 ) LIMIT 1   [ RunTime:0.000293s ]
+SQL: SELECT * FROM `tp_video` WHERE ( catid=27  and siteid=1 ) ORDER BY listorder asc,vid desc LIMIT 0,12   [ RunTime:0.000284s ]
+NOTIC: [8] Undefined variable: cate_arr /var/www/html/bobo2/Admin/Lib/Action/VideoAction.class.php 第 22 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000215s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000274s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.011930s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011996s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000330s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000275s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000140s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000313s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001220s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000437s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000492s ]
+
+[ 2016-07-04T16:12:19+08:00 ] 101.81.35.125 /bobo2/admin.php/Video/upVideo/catid/27/vid/19/cls/2
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000628s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000709s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000392s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000452s ]
+NOTIC: [2048] Declaration of VideoAction::show() should be compatible with that of Action::show() /var/www/html/bobo2/Admin/Lib/Action/VideoAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.000812s ]
+SQL: SHOW COLUMNS FROM `tp_video` [ RunTime:0.000593s ]
+SQL: SELECT `catname`,`catid` FROM `tp_category` WHERE ( catid=27 ) LIMIT 1   [ RunTime:0.000180s ]
+SQL: SELECT * FROM `tp_video` WHERE ( vid=19  and siteid=1 ) LIMIT 1   [ RunTime:0.000237s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000331s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000398s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.010882s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010949s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000308s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000243s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000137s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000305s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001157s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000413s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000493s ]
+
+[ 2016-07-04T16:13:03+08:00 ] 101.81.35.125 /bobo2/admin.php/Video/doVideo/action/edit/vid/19
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000575s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000656s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000356s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000411s ]
+NOTIC: [2048] Declaration of VideoAction::show() should be compatible with that of Action::show() /var/www/html/bobo2/Admin/Lib/Action/VideoAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.000686s ]
+SQL: SHOW COLUMNS FROM `tp_video` [ RunTime:0.000616s ]
+SQL: UPDATE `tp_video` SET `vtitle`='卡通学饮杯食品级检测报告',`catid`=27,`ftitle`='T51610181215TC',`vurl`='/upload/10.pdf',`vfurl`='',`content`='',`picurlpc`='/image/20160406/20160406175230_51238.jpg',`vpurlwz`='',`headerpic`='/bobo2/image/20160511/20160511141617_47357.png',`inputtime`=1448877248 WHERE ( catid=27 and vid=19  and siteid=1 ) [ RunTime:0.000316s ]
+
+[ 2016-07-04T16:13:05+08:00 ] 101.81.35.125 /bobo2/admin.php/Video/video/catid/27/cls/2
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000578s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000658s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000357s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000417s ]
+NOTIC: [2048] Declaration of VideoAction::show() should be compatible with that of Action::show() /var/www/html/bobo2/Admin/Lib/Action/VideoAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.000678s ]
+SQL: SHOW COLUMNS FROM `tp_video` [ RunTime:0.000608s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_video` WHERE ( catid=27  and siteid=1 ) LIMIT 1   [ RunTime:0.000289s ]
+SQL: SELECT * FROM `tp_video` WHERE ( catid=27  and siteid=1 ) ORDER BY listorder asc,vid desc LIMIT 0,12   [ RunTime:0.000298s ]
+NOTIC: [8] Undefined variable: cate_arr /var/www/html/bobo2/Admin/Lib/Action/VideoAction.class.php 第 22 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000210s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000270s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.012328s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012437s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000384s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000250s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000139s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000339s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001278s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000435s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000494s ]
+
+[ 2016-07-04T16:13:17+08:00 ] 101.81.35.125 /bobo2/admin.php/Video/upVideo/catid/27/vid/18/cls/2
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000599s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000679s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000379s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000438s ]
+NOTIC: [2048] Declaration of VideoAction::show() should be compatible with that of Action::show() /var/www/html/bobo2/Admin/Lib/Action/VideoAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.000745s ]
+SQL: SHOW COLUMNS FROM `tp_video` [ RunTime:0.000563s ]
+SQL: SELECT `catname`,`catid` FROM `tp_category` WHERE ( catid=27 ) LIMIT 1   [ RunTime:0.000182s ]
+SQL: SELECT * FROM `tp_video` WHERE ( vid=18  and siteid=1 ) LIMIT 1   [ RunTime:0.000179s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000264s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000328s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.010821s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010887s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000284s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000240s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000301s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000310s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001309s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000428s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000484s ]
+
+[ 2016-07-04T16:13:26+08:00 ] 101.81.35.125 /bobo2/admin.php/Video/doVideo/action/edit/vid/18
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000585s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000666s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000362s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000416s ]
+NOTIC: [2048] Declaration of VideoAction::show() should be compatible with that of Action::show() /var/www/html/bobo2/Admin/Lib/Action/VideoAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.000727s ]
+SQL: SHOW COLUMNS FROM `tp_video` [ RunTime:0.000618s ]
+SQL: UPDATE `tp_video` SET `vtitle`='卡通水壶食品级检测报告',`catid`=27,`ftitle`='T51610181216TC',`vurl`='/upload/9.pdf',`vfurl`='',`content`='',`picurlpc`='/image/20160406/20160406123511_16582.jpg',`vpurlwz`='',`headerpic`='/bobo2/image/20160511/20160511141639_92874.png',`inputtime`=1448877112 WHERE ( catid=27 and vid=18  and siteid=1 ) [ RunTime:0.000335s ]
+
+[ 2016-07-04T16:13:28+08:00 ] 101.81.35.125 /bobo2/admin.php/Video/video/catid/27/cls/2
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000582s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000662s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000364s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000424s ]
+NOTIC: [2048] Declaration of VideoAction::show() should be compatible with that of Action::show() /var/www/html/bobo2/Admin/Lib/Action/VideoAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.000747s ]
+SQL: SHOW COLUMNS FROM `tp_video` [ RunTime:0.000560s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_video` WHERE ( catid=27  and siteid=1 ) LIMIT 1   [ RunTime:0.000251s ]
+SQL: SELECT * FROM `tp_video` WHERE ( catid=27  and siteid=1 ) ORDER BY listorder asc,vid desc LIMIT 0,12   [ RunTime:0.000281s ]
+NOTIC: [8] Undefined variable: cate_arr /var/www/html/bobo2/Admin/Lib/Action/VideoAction.class.php 第 22 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000237s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000298s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.011824s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011891s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000335s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000246s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000138s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000315s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001220s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000402s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000458s ]
+
+[ 2016-07-04T16:13:34+08:00 ] 101.81.35.125 /bobo2/admin.php/Video/upVideo/catid/27/vid/17/cls/2
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000632s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000714s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000571s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000685s ]
+NOTIC: [2048] Declaration of VideoAction::show() should be compatible with that of Action::show() /var/www/html/bobo2/Admin/Lib/Action/VideoAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.000650s ]
+SQL: SHOW COLUMNS FROM `tp_video` [ RunTime:0.000589s ]
+SQL: SELECT `catname`,`catid` FROM `tp_category` WHERE ( catid=27 ) LIMIT 1   [ RunTime:0.000257s ]
+SQL: SELECT * FROM `tp_video` WHERE ( vid=17  and siteid=1 ) LIMIT 1   [ RunTime:0.000181s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000274s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000338s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.010875s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010939s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000282s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000240s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000146s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000311s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001198s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000426s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000480s ]
+
+[ 2016-07-04T16:13:42+08:00 ] 101.81.35.125 /bobo2/admin.php/Video/doVideo/action/edit/vid/17
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000608s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000690s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000366s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000422s ]
+NOTIC: [2048] Declaration of VideoAction::show() should be compatible with that of Action::show() /var/www/html/bobo2/Admin/Lib/Action/VideoAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.000683s ]
+SQL: SHOW COLUMNS FROM `tp_video` [ RunTime:0.000601s ]
+SQL: UPDATE `tp_video` SET `vtitle`='经口毒测试报告-bobo湿巾',`catid`=27,`ftitle`='GZCPCH151102696-1.3',`vurl`='/upload/8.pdf',`vfurl`='',`content`='',`picurlpc`='/image/20160406/20160406143808_69040.jpg',`vpurlwz`='',`headerpic`='/bobo2/image/20160511/20160511141656_35317.png',`inputtime`=1448877078 WHERE ( catid=27 and vid=17  and siteid=1 ) [ RunTime:0.000312s ]
+
+[ 2016-07-04T16:13:44+08:00 ] 101.81.35.125 /bobo2/admin.php/Video/video/catid/27/cls/2
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000637s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000717s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000405s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000465s ]
+NOTIC: [2048] Declaration of VideoAction::show() should be compatible with that of Action::show() /var/www/html/bobo2/Admin/Lib/Action/VideoAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.000681s ]
+SQL: SHOW COLUMNS FROM `tp_video` [ RunTime:0.000609s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_video` WHERE ( catid=27  and siteid=1 ) LIMIT 1   [ RunTime:0.000319s ]
+SQL: SELECT * FROM `tp_video` WHERE ( catid=27  and siteid=1 ) ORDER BY listorder asc,vid desc LIMIT 0,12   [ RunTime:0.000280s ]
+NOTIC: [8] Undefined variable: cate_arr /var/www/html/bobo2/Admin/Lib/Action/VideoAction.class.php 第 22 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000208s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000268s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.011737s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011805s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000352s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000247s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000139s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000371s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001272s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000417s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000471s ]
+
+[ 2016-07-04T16:14:11+08:00 ] 101.81.35.125 /bobo2/admin.php/Video/upVideo/catid/27/vid/16/cls/2
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000584s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000692s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000362s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000423s ]
+NOTIC: [2048] Declaration of VideoAction::show() should be compatible with that of Action::show() /var/www/html/bobo2/Admin/Lib/Action/VideoAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.000640s ]
+SQL: SHOW COLUMNS FROM `tp_video` [ RunTime:0.000573s ]
+SQL: SELECT `catname`,`catid` FROM `tp_category` WHERE ( catid=27 ) LIMIT 1   [ RunTime:0.000269s ]
+SQL: SELECT * FROM `tp_video` WHERE ( vid=16  and siteid=1 ) LIMIT 1   [ RunTime:0.000182s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000250s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000334s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.010869s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010962s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000282s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000237s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000136s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000335s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001152s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000425s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000485s ]
+
+[ 2016-07-04T16:14:32+08:00 ] 101.81.35.125 /bobo2/admin.php/Video/doVideo/action/edit/vid/16
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000605s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000684s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000356s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000409s ]
+NOTIC: [2048] Declaration of VideoAction::show() should be compatible with that of Action::show() /var/www/html/bobo2/Admin/Lib/Action/VideoAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.000689s ]
+SQL: SHOW COLUMNS FROM `tp_video` [ RunTime:0.000592s ]
+SQL: UPDATE `tp_video` SET `vtitle`='进口玻璃奶瓶检测报告',`catid`=27,`ftitle`='GZHG1509039092IP',`vurl`='/upload/7.pdf',`vfurl`='',`content`='',`picurlpc`='/image/20160406/20160406123011_50459.jpg',`vpurlwz`='',`headerpic`='/bobo2/image/20160511/20160511141715_18632.png',`inputtime`=1448877035 WHERE ( catid=27 and vid=16  and siteid=1 ) [ RunTime:0.000313s ]
+
+[ 2016-07-04T16:14:34+08:00 ] 101.81.35.125 /bobo2/admin.php/Video/video/catid/27/cls/2
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000574s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000673s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000354s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000412s ]
+NOTIC: [2048] Declaration of VideoAction::show() should be compatible with that of Action::show() /var/www/html/bobo2/Admin/Lib/Action/VideoAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.000661s ]
+SQL: SHOW COLUMNS FROM `tp_video` [ RunTime:0.000571s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_video` WHERE ( catid=27  and siteid=1 ) LIMIT 1   [ RunTime:0.000378s ]
+SQL: SELECT * FROM `tp_video` WHERE ( catid=27  and siteid=1 ) ORDER BY listorder asc,vid desc LIMIT 0,12   [ RunTime:0.000423s ]
+NOTIC: [8] Undefined variable: cate_arr /var/www/html/bobo2/Admin/Lib/Action/VideoAction.class.php 第 22 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000390s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000471s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.013391s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013486s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000506s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000266s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000180s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000360s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001526s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000579s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000701s ]
+
+[ 2016-07-04T16:15:03+08:00 ] 101.81.35.125 /bobo2/admin.php/Video/upVideo/catid/27/vid/15/cls/2
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000606s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000695s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000358s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000419s ]
+NOTIC: [2048] Declaration of VideoAction::show() should be compatible with that of Action::show() /var/www/html/bobo2/Admin/Lib/Action/VideoAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.000673s ]
+SQL: SHOW COLUMNS FROM `tp_video` [ RunTime:0.000587s ]
+SQL: SELECT `catname`,`catid` FROM `tp_category` WHERE ( catid=27 ) LIMIT 1   [ RunTime:0.000256s ]
+SQL: SELECT * FROM `tp_video` WHERE ( vid=15  and siteid=1 ) LIMIT 1   [ RunTime:0.000185s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000248s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000311s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.011288s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011373s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000317s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000246s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000161s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000314s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001208s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000410s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000466s ]
+
+[ 2016-07-04T16:15:11+08:00 ] 101.81.35.125 /bobo2/admin.php/Video/doVideo/action/edit/vid/15
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000573s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000652s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000355s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000408s ]
+NOTIC: [2048] Declaration of VideoAction::show() should be compatible with that of Action::show() /var/www/html/bobo2/Admin/Lib/Action/VideoAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.000831s ]
+SQL: SHOW COLUMNS FROM `tp_video` [ RunTime:0.000784s ]
+SQL: UPDATE `tp_video` SET `vtitle`='急性皮肤刺激测试报告-bobo湿巾',`catid`=27,`ftitle`='GZCPCH151102696-1.1',`vurl`='/upload/6.pdf',`vfurl`='',`content`='',`picurlpc`='/image/20160406/20160406123833_38211.jpg',`vpurlwz`='',`headerpic`='/bobo2/image/20160511/20160511141740_28170.png',`inputtime`=1448877012 WHERE ( catid=27 and vid=15  and siteid=1 ) [ RunTime:0.000383s ]
+
+[ 2016-07-04T16:15:16+08:00 ] 101.81.35.125 /bobo2/admin.php/Video/video/catid/27/cls/2
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000590s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000669s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000370s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000430s ]
+NOTIC: [2048] Declaration of VideoAction::show() should be compatible with that of Action::show() /var/www/html/bobo2/Admin/Lib/Action/VideoAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.000698s ]
+SQL: SHOW COLUMNS FROM `tp_video` [ RunTime:0.000614s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_video` WHERE ( catid=27  and siteid=1 ) LIMIT 1   [ RunTime:0.000290s ]
+SQL: SELECT * FROM `tp_video` WHERE ( catid=27  and siteid=1 ) ORDER BY listorder asc,vid desc LIMIT 0,12   [ RunTime:0.000295s ]
+NOTIC: [8] Undefined variable: cate_arr /var/www/html/bobo2/Admin/Lib/Action/VideoAction.class.php 第 22 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000224s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000290s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.012033s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012096s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000356s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000244s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000138s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000342s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001242s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000405s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000459s ]
+
+[ 2016-07-04T16:15:44+08:00 ] 101.81.35.125 /bobo2/admin.php/Video/upVideo/catid/27/vid/14/cls/2
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000627s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000707s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000377s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000436s ]
+NOTIC: [2048] Declaration of VideoAction::show() should be compatible with that of Action::show() /var/www/html/bobo2/Admin/Lib/Action/VideoAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.000702s ]
+SQL: SHOW COLUMNS FROM `tp_video` [ RunTime:0.000598s ]
+SQL: SELECT `catname`,`catid` FROM `tp_category` WHERE ( catid=27 ) LIMIT 1   [ RunTime:0.000266s ]
+SQL: SELECT * FROM `tp_video` WHERE ( vid=14  and siteid=1 ) LIMIT 1   [ RunTime:0.000180s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000331s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000396s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.010603s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010667s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000306s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000236s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000135s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000302s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001163s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000407s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000462s ]
+
+[ 2016-07-04T16:15:58+08:00 ] 101.81.35.125 /bobo2/admin.php/Video/doVideo/action/edit/vid/14
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000591s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000670s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000368s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000422s ]
+NOTIC: [2048] Declaration of VideoAction::show() should be compatible with that of Action::show() /var/www/html/bobo2/Admin/Lib/Action/VideoAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.000702s ]
+SQL: SHOW COLUMNS FROM `tp_video` [ RunTime:0.000613s ]
+SQL: UPDATE `tp_video` SET `vtitle`='国产玻璃奶瓶检测报告',`catid`=27,`ftitle`='GZHG1509039091IP',`vurl`='/upload/5.pdf',`vfurl`='',`content`='',`picurlpc`='/image/20160406/20160406175136_61418.jpg',`vpurlwz`='',`headerpic`='/bobo2/image/20160511/20160511141806_37359.png',`inputtime`=1448876967 WHERE ( catid=27 and vid=14  and siteid=1 ) [ RunTime:0.000331s ]
+
+[ 2016-07-04T16:16:00+08:00 ] 101.81.35.125 /bobo2/admin.php/Video/video/catid/27/cls/2
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000577s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000656s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000357s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000417s ]
+NOTIC: [2048] Declaration of VideoAction::show() should be compatible with that of Action::show() /var/www/html/bobo2/Admin/Lib/Action/VideoAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.000687s ]
+SQL: SHOW COLUMNS FROM `tp_video` [ RunTime:0.000612s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_video` WHERE ( catid=27  and siteid=1 ) LIMIT 1   [ RunTime:0.000295s ]
+SQL: SELECT * FROM `tp_video` WHERE ( catid=27  and siteid=1 ) ORDER BY listorder asc,vid desc LIMIT 0,12   [ RunTime:0.000296s ]
+NOTIC: [8] Undefined variable: cate_arr /var/www/html/bobo2/Admin/Lib/Action/VideoAction.class.php 第 22 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000212s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000271s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.011752s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011819s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000326s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000271s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000135s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000310s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001201s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000431s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000485s ]
+
+[ 2016-07-04T16:16:05+08:00 ] 101.81.35.125 /bobo2/admin.php/Video/upVideo/catid/27/vid/13/cls/2
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000578s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000679s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000357s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000416s ]
+NOTIC: [2048] Declaration of VideoAction::show() should be compatible with that of Action::show() /var/www/html/bobo2/Admin/Lib/Action/VideoAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.000692s ]
+SQL: SHOW COLUMNS FROM `tp_video` [ RunTime:0.000617s ]
+SQL: SELECT `catname`,`catid` FROM `tp_category` WHERE ( catid=27 ) LIMIT 1   [ RunTime:0.000253s ]
+SQL: SELECT * FROM `tp_video` WHERE ( vid=13  and siteid=1 ) LIMIT 1   [ RunTime:0.000203s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000251s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000315s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.010772s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010838s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000288s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000267s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000139s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000307s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001165s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000436s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000492s ]
+
+[ 2016-07-04T16:16:12+08:00 ] 101.81.35.125 /bobo2/admin.php/Video/doVideo/action/edit/vid/13
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000622s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000704s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000387s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000452s ]
+NOTIC: [2048] Declaration of VideoAction::show() should be compatible with that of Action::show() /var/www/html/bobo2/Admin/Lib/Action/VideoAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.000660s ]
+SQL: SHOW COLUMNS FROM `tp_video` [ RunTime:0.000594s ]
+SQL: UPDATE `tp_video` SET `vtitle`='分阶特护奶嘴检测报告',`catid`=27,`ftitle`='T51510192074TC',`vurl`='/upload/4.pdf',`vfurl`='',`content`='',`picurlpc`='/image/20160406/20160406175037_48664.jpg',`vpurlwz`='',`headerpic`='',`inputtime`=1448876939 WHERE ( catid=27 and vid=13  and siteid=1 ) [ RunTime:0.000300s ]
+
+[ 2016-07-04T16:16:13+08:00 ] 101.81.35.125 /bobo2/admin.php/Video/video/catid/27/cls/2
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000626s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000705s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000401s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000463s ]
+NOTIC: [2048] Declaration of VideoAction::show() should be compatible with that of Action::show() /var/www/html/bobo2/Admin/Lib/Action/VideoAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.000660s ]
+SQL: SHOW COLUMNS FROM `tp_video` [ RunTime:0.000558s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_video` WHERE ( catid=27  and siteid=1 ) LIMIT 1   [ RunTime:0.000291s ]
+SQL: SELECT * FROM `tp_video` WHERE ( catid=27  and siteid=1 ) ORDER BY listorder asc,vid desc LIMIT 0,12   [ RunTime:0.000281s ]
+NOTIC: [8] Undefined variable: cate_arr /var/www/html/bobo2/Admin/Lib/Action/VideoAction.class.php 第 22 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000261s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000324s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.012167s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012243s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000344s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000272s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000142s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000318s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001239s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000456s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000511s ]
+
+[ 2016-07-04T16:16:18+08:00 ] 101.81.35.125 /bobo2/admin.php/Video/upVideo/catid/27/vid/12/cls/2
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000595s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000673s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000380s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000438s ]
+NOTIC: [2048] Declaration of VideoAction::show() should be compatible with that of Action::show() /var/www/html/bobo2/Admin/Lib/Action/VideoAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.000735s ]
+SQL: SHOW COLUMNS FROM `tp_video` [ RunTime:0.000541s ]
+SQL: SELECT `catname`,`catid` FROM `tp_category` WHERE ( catid=27 ) LIMIT 1   [ RunTime:0.000201s ]
+SQL: SELECT * FROM `tp_video` WHERE ( vid=12  and siteid=1 ) LIMIT 1   [ RunTime:0.000190s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000233s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000297s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.010881s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010947s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000326s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000268s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000139s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000329s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001232s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000440s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000496s ]
+
+[ 2016-07-04T16:16:23+08:00 ] 101.81.35.125 /bobo2/admin.php/Video/doVideo/action/edit/vid/12
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000606s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000687s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000357s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000436s ]
+NOTIC: [2048] Declaration of VideoAction::show() should be compatible with that of Action::show() /var/www/html/bobo2/Admin/Lib/Action/VideoAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.000660s ]
+SQL: SHOW COLUMNS FROM `tp_video` [ RunTime:0.000554s ]
+SQL: UPDATE `tp_video` SET `vtitle`='仿真吸奶器检测报告',`catid`=27,`ftitle`='T51510182161TC',`vurl`='/upload/3.pdf',`vfurl`='',`content`='',`picurlpc`='/image/20160406/20160406175012_80553.jpg',`vpurlwz`='',`headerpic`='',`inputtime`=1448876538 WHERE ( catid=27 and vid=12  and siteid=1 ) [ RunTime:0.000298s ]
+
+[ 2016-07-04T16:16:25+08:00 ] 101.81.35.125 /bobo2/admin.php/Video/video/catid/27/cls/2
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000588s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000690s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000366s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000425s ]
+NOTIC: [2048] Declaration of VideoAction::show() should be compatible with that of Action::show() /var/www/html/bobo2/Admin/Lib/Action/VideoAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.000666s ]
+SQL: SHOW COLUMNS FROM `tp_video` [ RunTime:0.000579s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_video` WHERE ( catid=27  and siteid=1 ) LIMIT 1   [ RunTime:0.000288s ]
+SQL: SELECT * FROM `tp_video` WHERE ( catid=27  and siteid=1 ) ORDER BY listorder asc,vid desc LIMIT 0,12   [ RunTime:0.000297s ]
+NOTIC: [8] Undefined variable: cate_arr /var/www/html/bobo2/Admin/Lib/Action/VideoAction.class.php 第 22 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000220s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000282s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.011869s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011946s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000373s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000248s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000136s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000311s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001233s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000412s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000472s ]
+
+[ 2016-07-04T16:16:29+08:00 ] 101.81.35.125 /bobo2/admin.php/Video/upVideo/catid/27/vid/11/cls/2
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000594s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000675s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000355s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000417s ]
+NOTIC: [2048] Declaration of VideoAction::show() should be compatible with that of Action::show() /var/www/html/bobo2/Admin/Lib/Action/VideoAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.000642s ]
+SQL: SHOW COLUMNS FROM `tp_video` [ RunTime:0.000595s ]
+SQL: SELECT `catname`,`catid` FROM `tp_category` WHERE ( catid=27 ) LIMIT 1   [ RunTime:0.000245s ]
+SQL: SELECT * FROM `tp_video` WHERE ( vid=11  and siteid=1 ) LIMIT 1   [ RunTime:0.000204s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000238s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000298s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.011334s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011398s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000280s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000237s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000134s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000361s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001176s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000403s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000460s ]
+
+[ 2016-07-04T16:16:34+08:00 ] 101.81.35.125 /bobo2/admin.php/Video/doVideo/action/edit/vid/11
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000574s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000654s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000354s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000409s ]
+NOTIC: [2048] Declaration of VideoAction::show() should be compatible with that of Action::show() /var/www/html/bobo2/Admin/Lib/Action/VideoAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.000655s ]
+SQL: SHOW COLUMNS FROM `tp_video` [ RunTime:0.000566s ]
+SQL: UPDATE `tp_video` SET `vtitle`='德国安抚奶嘴化学检测报告',`catid`=27,`ftitle`='GZHG1511047408IP',`vurl`='/upload/2.pdf',`vfurl`='',`content`='',`picurlpc`='/image/20160406/20160406174933_21519.jpg',`vpurlwz`='',`headerpic`='',`inputtime`=1448876500 WHERE ( catid=27 and vid=11  and siteid=1 ) [ RunTime:0.000303s ]
+
+[ 2016-07-04T16:16:36+08:00 ] 101.81.35.125 /bobo2/admin.php/Video/video/catid/27/cls/2
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000836s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000931s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000374s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000446s ]
+NOTIC: [2048] Declaration of VideoAction::show() should be compatible with that of Action::show() /var/www/html/bobo2/Admin/Lib/Action/VideoAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.000646s ]
+SQL: SHOW COLUMNS FROM `tp_video` [ RunTime:0.000576s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_video` WHERE ( catid=27  and siteid=1 ) LIMIT 1   [ RunTime:0.000288s ]
+SQL: SELECT * FROM `tp_video` WHERE ( catid=27  and siteid=1 ) ORDER BY listorder asc,vid desc LIMIT 0,12   [ RunTime:0.000280s ]
+NOTIC: [8] Undefined variable: cate_arr /var/www/html/bobo2/Admin/Lib/Action/VideoAction.class.php 第 22 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000217s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000279s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.011750s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011813s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000394s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000247s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000139s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000335s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001281s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000403s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000459s ]
+
+[ 2016-07-04T16:16:39+08:00 ] 101.81.35.125 /bobo2/admin.php/Video/upVideo/catid/27/vid/10/cls/2
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000650s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000729s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000391s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000450s ]
+NOTIC: [2048] Declaration of VideoAction::show() should be compatible with that of Action::show() /var/www/html/bobo2/Admin/Lib/Action/VideoAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.000647s ]
+SQL: SHOW COLUMNS FROM `tp_video` [ RunTime:0.000580s ]
+SQL: SELECT `catname`,`catid` FROM `tp_category` WHERE ( catid=27 ) LIMIT 1   [ RunTime:0.000270s ]
+SQL: SELECT * FROM `tp_video` WHERE ( vid=10  and siteid=1 ) LIMIT 1   [ RunTime:0.000186s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000247s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000311s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.010800s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010866s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000304s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000241s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000138s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000304s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001155s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000408s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000489s ]
+
+[ 2016-07-04T16:16:44+08:00 ] 101.81.35.125 /bobo2/admin.php/Video/doVideo/action/edit/vid/10
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000582s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000662s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000361s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000417s ]
+NOTIC: [2048] Declaration of VideoAction::show() should be compatible with that of Action::show() /var/www/html/bobo2/Admin/Lib/Action/VideoAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.000735s ]
+SQL: SHOW COLUMNS FROM `tp_video` [ RunTime:0.000612s ]
+SQL: UPDATE `tp_video` SET `vtitle`='PPSU奶瓶检测报告',`catid`=27,`ftitle`='GZHG1509039090IP',`vurl`='/upload/1.pdf',`vfurl`='',`content`='',`picurlpc`='/image/20160406/20160406174849_33995.jpg',`vpurlwz`='',`headerpic`='/bobo2/image/20160511/20160511141509_26165.png',`inputtime`=1448876444 WHERE ( catid=27 and vid=10  and siteid=1 ) [ RunTime:0.000316s ]
+
+[ 2016-07-04T16:16:46+08:00 ] 101.81.35.125 /bobo2/admin.php/Video/video/catid/27/cls/2
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000583s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000669s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000361s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000421s ]
+NOTIC: [2048] Declaration of VideoAction::show() should be compatible with that of Action::show() /var/www/html/bobo2/Admin/Lib/Action/VideoAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.000692s ]
+SQL: SHOW COLUMNS FROM `tp_video` [ RunTime:0.000650s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_video` WHERE ( catid=27  and siteid=1 ) LIMIT 1   [ RunTime:0.000290s ]
+SQL: SELECT * FROM `tp_video` WHERE ( catid=27  and siteid=1 ) ORDER BY listorder asc,vid desc LIMIT 0,12   [ RunTime:0.000297s ]
+NOTIC: [8] Undefined variable: cate_arr /var/www/html/bobo2/Admin/Lib/Action/VideoAction.class.php 第 22 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000217s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000278s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.012178s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012250s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000362s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000248s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000139s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000337s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001248s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000409s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000469s ]
+
+[ 2016-07-04T16:16:51+08:00 ] 101.81.35.125 /bobo2/admin.php/Video/video/catid/27/cls/2/p/2
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000572s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000653s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000356s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000415s ]
+NOTIC: [2048] Declaration of VideoAction::show() should be compatible with that of Action::show() /var/www/html/bobo2/Admin/Lib/Action/VideoAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.000678s ]
+SQL: SHOW COLUMNS FROM `tp_video` [ RunTime:0.000586s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_video` WHERE ( catid=27  and siteid=1 ) LIMIT 1   [ RunTime:0.000307s ]
+SQL: SELECT * FROM `tp_video` WHERE ( catid=27  and siteid=1 ) ORDER BY listorder asc,vid desc LIMIT 12,12   [ RunTime:0.000260s ]
+NOTIC: [8] Undefined variable: cate_arr /var/www/html/bobo2/Admin/Lib/Action/VideoAction.class.php 第 22 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000240s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000299s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.012783s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012859s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000304s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000269s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000166s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000311s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001216s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000470s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000582s ]
+
+[ 2016-07-04T16:16:53+08:00 ] 101.81.35.125 /bobo2/admin.php/Video/upVideo/catid/27/vid/8/cls/2
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000600s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000680s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000383s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000443s ]
+NOTIC: [2048] Declaration of VideoAction::show() should be compatible with that of Action::show() /var/www/html/bobo2/Admin/Lib/Action/VideoAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.000647s ]
+SQL: SHOW COLUMNS FROM `tp_video` [ RunTime:0.000605s ]
+SQL: SELECT `catname`,`catid` FROM `tp_category` WHERE ( catid=27 ) LIMIT 1   [ RunTime:0.000264s ]
+SQL: SELECT * FROM `tp_video` WHERE ( vid=8  and siteid=1 ) LIMIT 1   [ RunTime:0.000178s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000247s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000309s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.010847s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010939s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000307s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000239s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000138s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000326s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001173s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000407s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000463s ]
+
+[ 2016-07-04T16:16:59+08:00 ] 101.81.35.125 /bobo2/admin.php/Video/doVideo/action/edit/vid/8
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000578s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000657s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000358s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000413s ]
+NOTIC: [2048] Declaration of VideoAction::show() should be compatible with that of Action::show() /var/www/html/bobo2/Admin/Lib/Action/VideoAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.001078s ]
+SQL: SHOW COLUMNS FROM `tp_video` [ RunTime:0.000908s ]
+SQL: UPDATE `tp_video` SET `vtitle`='（南六）幼儿手口湿巾（急性经口毒）',`catid`=27,`ftitle`='GZCPCH150300387.3-BM241',`vurl`='/upload/3.pdf',`vfurl`='',`content`='',`picurlpc`='/image/20160328/20160328155405_76832.jpg',`vpurlwz`='',`headerpic`='',`inputtime`=1448876353 WHERE ( catid=27 and vid=8  and siteid=1 ) [ RunTime:0.000379s ]
+
+[ 2016-07-04T16:17:00+08:00 ] 101.81.35.125 /bobo2/admin.php/Video/video/catid/27/cls/2
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000592s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000671s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000381s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000440s ]
+NOTIC: [2048] Declaration of VideoAction::show() should be compatible with that of Action::show() /var/www/html/bobo2/Admin/Lib/Action/VideoAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.000923s ]
+SQL: SHOW COLUMNS FROM `tp_video` [ RunTime:0.000748s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_video` WHERE ( catid=27  and siteid=1 ) LIMIT 1   [ RunTime:0.000292s ]
+SQL: SELECT * FROM `tp_video` WHERE ( catid=27  and siteid=1 ) ORDER BY listorder asc,vid desc LIMIT 0,12   [ RunTime:0.000279s ]
+NOTIC: [8] Undefined variable: cate_arr /var/www/html/bobo2/Admin/Lib/Action/VideoAction.class.php 第 22 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000221s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000284s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.011774s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011842s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000327s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000262s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000135s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000308s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001193s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000446s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000501s ]
+
+[ 2016-07-04T16:17:04+08:00 ] 101.81.35.125 /bobo2/admin.php/Video/video/catid/27/cls/2/p/2
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000622s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000702s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000375s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000434s ]
+NOTIC: [2048] Declaration of VideoAction::show() should be compatible with that of Action::show() /var/www/html/bobo2/Admin/Lib/Action/VideoAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.000668s ]
+SQL: SHOW COLUMNS FROM `tp_video` [ RunTime:0.000601s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_video` WHERE ( catid=27  and siteid=1 ) LIMIT 1   [ RunTime:0.000283s ]
+SQL: SELECT * FROM `tp_video` WHERE ( catid=27  and siteid=1 ) ORDER BY listorder asc,vid desc LIMIT 12,12   [ RunTime:0.000280s ]
+NOTIC: [8] Undefined variable: cate_arr /var/www/html/bobo2/Admin/Lib/Action/VideoAction.class.php 第 22 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000208s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000274s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.012666s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012756s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000322s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000241s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000168s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000311s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001206s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000429s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000484s ]
+
+[ 2016-07-04T16:17:07+08:00 ] 101.81.35.125 /bobo2/admin.php/Video/upVideo/catid/27/vid/7/cls/2
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000584s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000664s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000355s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000422s ]
+NOTIC: [2048] Declaration of VideoAction::show() should be compatible with that of Action::show() /var/www/html/bobo2/Admin/Lib/Action/VideoAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.000831s ]
+SQL: SHOW COLUMNS FROM `tp_video` [ RunTime:0.000626s ]
+SQL: SELECT `catname`,`catid` FROM `tp_category` WHERE ( catid=27 ) LIMIT 1   [ RunTime:0.000278s ]
+SQL: SELECT * FROM `tp_video` WHERE ( vid=7  and siteid=1 ) LIMIT 1   [ RunTime:0.000182s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000240s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000336s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.010864s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010952s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000283s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000238s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000136s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000328s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001151s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000406s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000462s ]
+
+[ 2016-07-04T16:17:24+08:00 ] 101.81.35.125 /bobo2/admin.php/Video/doVideo/action/edit/vid/7
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000602s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000682s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000393s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000449s ]
+NOTIC: [2048] Declaration of VideoAction::show() should be compatible with that of Action::show() /var/www/html/bobo2/Admin/Lib/Action/VideoAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.000708s ]
+SQL: SHOW COLUMNS FROM `tp_video` [ RunTime:0.000614s ]
+SQL: UPDATE `tp_video` SET `vtitle`='（南六）幼儿手口湿巾（一次完整皮肤刺激）',`catid`=27,`ftitle`='GZCPCH150300387.2-BM241',`vurl`='/upload/2.pdf',`vfurl`='',`content`='',`picurlpc`='/image/20160328/20160328155405_76832.jpg',`vpurlwz`='',`headerpic`='',`inputtime`=1448874828 WHERE ( catid=27 and vid=7  and siteid=1 ) [ RunTime:0.000331s ]
+
+[ 2016-07-04T16:17:25+08:00 ] 101.81.35.125 /bobo2/admin.php/Video/video/catid/27/cls/2
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000633s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000712s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000376s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000435s ]
+NOTIC: [2048] Declaration of VideoAction::show() should be compatible with that of Action::show() /var/www/html/bobo2/Admin/Lib/Action/VideoAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.000714s ]
+SQL: SHOW COLUMNS FROM `tp_video` [ RunTime:0.000614s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_video` WHERE ( catid=27  and siteid=1 ) LIMIT 1   [ RunTime:0.000347s ]
+SQL: SELECT * FROM `tp_video` WHERE ( catid=27  and siteid=1 ) ORDER BY listorder asc,vid desc LIMIT 0,12   [ RunTime:0.000299s ]
+NOTIC: [8] Undefined variable: cate_arr /var/www/html/bobo2/Admin/Lib/Action/VideoAction.class.php 第 22 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000229s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000292s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.012005s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012079s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000377s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000250s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000138s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000337s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001263s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000421s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000487s ]
+
+[ 2016-07-04T16:17:29+08:00 ] 101.81.35.125 /bobo2/admin.php/Video/video/catid/27/cls/2/p/2
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000772s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000860s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000447s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000507s ]
+NOTIC: [2048] Declaration of VideoAction::show() should be compatible with that of Action::show() /var/www/html/bobo2/Admin/Lib/Action/VideoAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.000950s ]
+SQL: SHOW COLUMNS FROM `tp_video` [ RunTime:0.000864s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_video` WHERE ( catid=27  and siteid=1 ) LIMIT 1   [ RunTime:0.000376s ]
+SQL: SELECT * FROM `tp_video` WHERE ( catid=27  and siteid=1 ) ORDER BY listorder asc,vid desc LIMIT 12,12   [ RunTime:0.000365s ]
+NOTIC: [8] Undefined variable: cate_arr /var/www/html/bobo2/Admin/Lib/Action/VideoAction.class.php 第 22 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000336s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000434s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.016158s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016258s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000309s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000244s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000139s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000306s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001182s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000427s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000482s ]
+
+[ 2016-07-04T16:17:48+08:00 ] 101.81.35.125 /bobo2/admin.php/Video/video/catid/27/cls/2/p/2
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000614s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000697s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000389s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000449s ]
+NOTIC: [2048] Declaration of VideoAction::show() should be compatible with that of Action::show() /var/www/html/bobo2/Admin/Lib/Action/VideoAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.000757s ]
+SQL: SHOW COLUMNS FROM `tp_video` [ RunTime:0.000581s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_video` WHERE ( catid=27  and siteid=1 ) LIMIT 1   [ RunTime:0.000244s ]
+SQL: SELECT * FROM `tp_video` WHERE ( catid=27  and siteid=1 ) ORDER BY listorder asc,vid desc LIMIT 12,12   [ RunTime:0.000259s ]
+NOTIC: [8] Undefined variable: cate_arr /var/www/html/bobo2/Admin/Lib/Action/VideoAction.class.php 第 22 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000252s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000327s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.012173s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012263s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000307s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000268s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000142s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000376s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001274s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000519s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000581s ]
+
+[ 2016-07-04T16:17:52+08:00 ] 101.81.35.125 /bobo2/admin.php/Video/upVideo/catid/27/vid/6/cls/2
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000582s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000663s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000360s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000419s ]
+NOTIC: [2048] Declaration of VideoAction::show() should be compatible with that of Action::show() /var/www/html/bobo2/Admin/Lib/Action/VideoAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.000707s ]
+SQL: SHOW COLUMNS FROM `tp_video` [ RunTime:0.000659s ]
+SQL: SELECT `catname`,`catid` FROM `tp_category` WHERE ( catid=27 ) LIMIT 1   [ RunTime:0.000248s ]
+SQL: SELECT * FROM `tp_video` WHERE ( vid=6  and siteid=1 ) LIMIT 1   [ RunTime:0.000182s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000317s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000382s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.010707s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010772s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000309s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000245s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000138s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000310s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001165s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000552s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000620s ]
+
+[ 2016-07-04T16:17:57+08:00 ] 101.81.35.125 /bobo2/admin.php/Video/doVideo/action/edit/vid/6
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000575s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000657s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000356s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000410s ]
+NOTIC: [2048] Declaration of VideoAction::show() should be compatible with that of Action::show() /var/www/html/bobo2/Admin/Lib/Action/VideoAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.000679s ]
+SQL: SHOW COLUMNS FROM `tp_video` [ RunTime:0.000600s ]
+SQL: UPDATE `tp_video` SET `vtitle`='（南六）幼儿手口湿巾（微生物）',`catid`=27,`ftitle`='GZCPCH150300387.1-BM241',`vurl`='/upload/1.pdf',`vfurl`='',`content`='',`picurlpc`='',`vpurlwz`='',`headerpic`='',`inputtime`=1448874576 WHERE ( catid=27 and vid=6  and siteid=1 ) [ RunTime:0.000300s ]
+
+[ 2016-07-04T16:17:58+08:00 ] 101.81.35.125 /bobo2/admin.php/Video/video/catid/27/cls/2
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000613s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000693s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000392s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000451s ]
+NOTIC: [2048] Declaration of VideoAction::show() should be compatible with that of Action::show() /var/www/html/bobo2/Admin/Lib/Action/VideoAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.000971s ]
+SQL: SHOW COLUMNS FROM `tp_video` [ RunTime:0.000918s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_video` WHERE ( catid=27  and siteid=1 ) LIMIT 1   [ RunTime:0.000293s ]
+SQL: SELECT * FROM `tp_video` WHERE ( catid=27  and siteid=1 ) ORDER BY listorder asc,vid desc LIMIT 0,12   [ RunTime:0.000280s ]
+NOTIC: [8] Undefined variable: cate_arr /var/www/html/bobo2/Admin/Lib/Action/VideoAction.class.php 第 22 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000247s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000311s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.013038s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013108s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000332s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000241s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000159s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000311s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001203s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000423s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000480s ]
+
+[ 2016-07-04T16:19:02+08:00 ] 101.81.35.125 /bobo2/admin.php/Video/upVideo/catid/27/vid/22/cls/2
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000611s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000706s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000360s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000443s ]
+NOTIC: [2048] Declaration of VideoAction::show() should be compatible with that of Action::show() /var/www/html/bobo2/Admin/Lib/Action/VideoAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.000680s ]
+SQL: SHOW COLUMNS FROM `tp_video` [ RunTime:0.000611s ]
+SQL: SELECT `catname`,`catid` FROM `tp_category` WHERE ( catid=27 ) LIMIT 1   [ RunTime:0.000266s ]
+SQL: SELECT * FROM `tp_video` WHERE ( vid=22  and siteid=1 ) LIMIT 1   [ RunTime:0.000178s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000250s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000311s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.010658s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010725s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000362s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000300s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000140s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000342s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001311s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000407s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000463s ]
+
+[ 2016-07-04T16:19:21+08:00 ] 101.81.35.125 /bobo2/admin.php/Video/doVideo/action/edit/vid/22
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000575s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000655s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000357s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000435s ]
+NOTIC: [2048] Declaration of VideoAction::show() should be compatible with that of Action::show() /var/www/html/bobo2/Admin/Lib/Action/VideoAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.000711s ]
+SQL: SHOW COLUMNS FROM `tp_video` [ RunTime:0.000587s ]
+SQL: UPDATE `tp_video` SET `vtitle`='研磨喂食小金碗洗碗机&微波炉测试',`catid`=27,`ftitle`='GZHG1511047591IP',`vurl`='/upload/12.pdf',`vfurl`='',`content`='',`picurlpc`='/image/20160406/20160406143726_54207.jpg',`vpurlwz`='',`headerpic`='/bobo2/image/20160511/20160511140611_81696.png',`inputtime`=1448877361 WHERE ( catid=27 and vid=22  and siteid=1 ) [ RunTime:0.000318s ]
+
+[ 2016-07-04T16:19:22+08:00 ] 101.81.35.125 /bobo2/admin.php/Video/video/catid/27/cls/2
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000610s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000696s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000383s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000443s ]
+NOTIC: [2048] Declaration of VideoAction::show() should be compatible with that of Action::show() /var/www/html/bobo2/Admin/Lib/Action/VideoAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.000676s ]
+SQL: SHOW COLUMNS FROM `tp_video` [ RunTime:0.000582s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_video` WHERE ( catid=27  and siteid=1 ) LIMIT 1   [ RunTime:0.000319s ]
+SQL: SELECT * FROM `tp_video` WHERE ( catid=27  and siteid=1 ) ORDER BY listorder asc,vid desc LIMIT 0,12   [ RunTime:0.000275s ]
+NOTIC: [8] Undefined variable: cate_arr /var/www/html/bobo2/Admin/Lib/Action/VideoAction.class.php 第 22 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000226s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000310s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.012176s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012254s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000368s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000248s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000186s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000337s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001331s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000408s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000467s ]
+
+[ 2016-07-04T16:19:24+08:00 ] 101.81.35.125 /bobo2/admin.php/Video/upVideo/catid/27/vid/20/cls/2
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000591s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000671s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000371s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000431s ]
+NOTIC: [2048] Declaration of VideoAction::show() should be compatible with that of Action::show() /var/www/html/bobo2/Admin/Lib/Action/VideoAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.000662s ]
+SQL: SHOW COLUMNS FROM `tp_video` [ RunTime:0.000593s ]
+SQL: SELECT `catname`,`catid` FROM `tp_category` WHERE ( catid=27 ) LIMIT 1   [ RunTime:0.000246s ]
+SQL: SELECT * FROM `tp_video` WHERE ( vid=20  and siteid=1 ) LIMIT 1   [ RunTime:0.000202s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000254s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000317s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.010724s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010788s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000285s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000239s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000142s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000309s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001167s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000432s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000488s ]
+
+[ 2016-07-04T16:19:46+08:00 ] 101.81.35.125 /bobo2/admin.php/Video/upVideo/catid/27/vid/13/cls/2
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000608s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000689s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000357s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000439s ]
+NOTIC: [2048] Declaration of VideoAction::show() should be compatible with that of Action::show() /var/www/html/bobo2/Admin/Lib/Action/VideoAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.000684s ]
+SQL: SHOW COLUMNS FROM `tp_video` [ RunTime:0.000584s ]
+SQL: SELECT `catname`,`catid` FROM `tp_category` WHERE ( catid=27 ) LIMIT 1   [ RunTime:0.000247s ]
+SQL: SELECT * FROM `tp_video` WHERE ( vid=13  and siteid=1 ) LIMIT 1   [ RunTime:0.000179s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000343s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000409s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.011006s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011084s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000301s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000264s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000142s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000309s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001187s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000431s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000486s ]
+

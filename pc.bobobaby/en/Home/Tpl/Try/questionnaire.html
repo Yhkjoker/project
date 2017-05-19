@@ -1,0 +1,113 @@
+<include file="Public:header"/>
+        <!--内容-->
+        <div class="Product_list_content shiyong">
+			<include file="Public:member_left"/>
+            <div class="Product_list_right f_right">
+                <div class="Product_list_right_photo">
+                    <img class="Product_list_right_photo01" src="<{$try_arr.picurlpc}>" />
+                    <div class="Product_list_right_photo_DW"></div>
+                    <div class="Product_list_right_photo_TxtDW">
+                        <h2><{$try_arr.title}><span><{$try_arr.capacity}></span></h2>
+                    </div>
+                </div>
+                <div class="Product_list_right_content survey">
+				<form action="<{:U('Try/doQuestionnaire',array('id'=>$try_arr[id]))}>" method="post" class="myForm">
+                  <h2><{$try_arr.title}>试用问卷</h2>
+                    <ul>
+						<{$form_list}>
+                    </ul>
+       
+                        <input class="surveyBtn01" type="submit" value="提交" />
+                        <input class="surveyBtn02" type="reset" value="重填" />
+                    </form>
+                </div>
+	        </div>
+	    </div>
+        <!-- footer -->
+        <div class="zhankai"></div>
+        <!--弹出窗背景-->
+        <div class="TryUseBg">
+            <i></i>
+        </div>
+<include file="Public:footer"/>
+
+
+
+<script>
+
+
+			  $('.myForm').Validform({
+
+				tiptype:3,
+
+				ajaxPost:true,
+
+				callback:function(data){
+
+					if(data.status==1){
+						
+						$('.TryUseBg').show();
+							
+						setTimeout(function(){window.location="__APP__/Try/index/cls/2";},5000);
+
+					}
+
+				}
+
+			  })
+			  /*关闭窗口*/
+			  $('.TryUseBg').click(function(){
+				  $(this).hide();
+				  $('#Validform_msg').hide();
+				  window.location="__APP__/Try/index/cls/2";
+				  
+			   });
+			  
+			  
+function searchfun(name,value){
+	var hrefstr,pos,url='';
+	hrefstr = window.location.href;
+	pos = hrefstr.indexOf("?"); 
+	var value=encodeURI(value);
+	var bool=1;
+	if(pos=="-1"){
+		url=hrefstr+"?"+name+'='+value;
+		window.location.href=url;
+	}else{
+			var returnurl="";
+			var setparam="";
+	     	url = hrefstr.substr(hrefstr.indexOf('?') + 1);
+
+		    arr = url.split('&');
+			for (i in arr) {
+					if(arr[i].split('=')[0]==name){
+						if(name=='price_search' || name=='texturelist_search' || name=='capacity_search' || name=='color_search'){
+							arr[i]=name+"="+value;//url名与传进的名相同，存在修改
+						}
+						bool=0;break;
+					}
+			}
+			if(bool==1){
+				arr.push(name+"="+value);//url名与传进的名不同，存在不变
+			}	
+			for(j in arr){
+				returnurl+=arr[j]+"&";	
+			}
+		      returnurl = returnurl.substr(0, returnurl.length - 1); 
+			 url=hrefstr.substr(0, hrefstr.indexOf('?')) + "?" +returnurl;
+			window.location.href=url;
+	}
+}
+
+
+	
+		/*菜单*/
+	$('.nav-bar li:first').hover(function(){
+		$(this).removeClass('near')
+	},function(){
+		$(this).addClass('near')
+		})
+
+
+
+</script>

@@ -1,0 +1,331 @@
+
+        <div class="footers"><div class="inner inner-ban">
+                <div class="f_left">
+                    <ul class="nav-footer">
+                        <li><a href="#">网站地图</a> | </li>
+                        <li><a href="#">个人隐私保护政策</a> | </li>
+                        <li><a href="#">使用条款</a></li>
+                    </ul>
+                    <p>新文越婴童用品（上海）有限公司 版权所有
+                        <br>Solaris Children Care (Shang Hai) Company Limited All Copyrights Reserved</p>
+                </div>
+                <div class="f_right">
+                    <img src="__PUBLIC__/img/icp-logo.png">沪ICP备14026024号
+                </div>
+            </div></div>
+    
+    </div>
+    <style>
+    .backb { background:url("/bobo2/Public/img/iconc1.png") no-repeat !important;}
+    </style>
+    <div class="bgbg"></div>
+    <div class="dlzc" >
+         <div class="denglu">
+
+             <div class="dengluLeft">登&nbsp;&nbsp;录</div>
+             <div class="dengluRight">注&nbsp;&nbsp;册</div>
+		<form class="registerform" action="__APP__/Member/dologin"  method="post">
+             <dl>
+               <dt>用户名</dt>
+               <dd><input class="inqut_border" name="username" type="text" placeholder="手机号码"  datatype="m" nullmsg=" " errormsg=" ">
+               </dd>
+               <dt>密码</dt>
+               <dd><input class="inqut_border" name="password" type="password" placeholder="6到16位英文或者数字" nullmsg=" " datatype="*6-16" errormsg=" ">
+               </dd>
+               <div class="tijiao"><input type="reset" class="chongtian" value="重&nbsp;填"/><span>•</span><input type="submit" class="queren" value="确&nbsp;认"/></div>
+               
+             </dl>
+		</form>	 
+         </div>
+    </div>
+
+    <form id="signupForm" method="post" action="__APP__/Member/doregister" class="zcform">
+        <div class="dengluLeft_01">注&nbsp;&nbsp;册</div>
+        <div class="dengluRight_01">登&nbsp;&nbsp;录</div>
+        <div class="clearfix posi">
+        	<p class="mageinn">用户名</p>
+        	<input id="telphone" type="text" name="info[username]" class="required inqut_border"  placeholder="手机号码"  datatype="m" nullmsg=" " errormsg=" "/>
+         
+            <a class="get_code" href="javascript:sendcode();" id="ntc" />验&nbsp;&nbsp;证</a>
+        </div>
+		
+        <div class="clearfix">
+        	<p class="mageinn">输入验证码</p>
+            <input class="identifying_code inqut_border" type="text"  name="info[code]"  datatype="*" nullmsg=" "  placeholder="输入您手机收到的校验码" />
+          
+        </div>
+		
+        <div class="clearfix">
+         	<p class="mageinn">密码</p>
+        	<input id="password" name="info[password]"   datatype="*6-16" nullmsg=" " errormsg=" " type="password" class="{required:true,rangelength:[8,20],} inqut_border" value placeholder="6到16位英文或者数字" />
+         
+        </div>
+		
+        <div class="clearfix">
+        	<p class="mageinn">重复密码</p>
+        	<input id="confirm_password" name="repassword"  type="password" class="{required:true,equalTo:'#password'} inqut_border" value placeholder="6到16位英文或者数字" datatype="*" recheck="info[password]" nullmsg=" " errormsg=" "/>
+
+        </div>
+	
+        <p class="last"><input type="reset" class="chongtian" value="重&nbsp;填"/><span>•</span><input type="submit" class="tijiao" value="提&nbsp;交"/></p>
+        <!--<p class="last"><a class="chongtian" href="#">重填</a><span>·</span><a class="tijiao" href="#">提交</a></p>-->
+    </form>
+    </div>
+
+    
+        <!--收藏成功 弹出窗-->
+        <div class="TryUseBg00">
+            <i></i>
+        </div>
+        <div class="TryUseBgDiv00">
+            <i></i>
+            <p>收藏成功</p>
+        </div>
+        
+        <!--取消收藏 弹出窗-->
+        <div class="TryUseBg01">
+            <i></i>
+        </div>
+        <div class="TryUseBgDiv01">
+            <i></i>
+            <p>取消收藏成功</p>
+        </div>
+    
+    
+    <script type="text/javascript" src="__PUBLIC__/js/jquery-1.8.3-min.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/js/jquery.validate.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/js/jquery.metadata.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/js/slick.min.js"></script>
+    <!-- <script type="text/javascript" src="__PUBLIC__/js/resgin.js"></script> -->
+    <!--<script type="text/javascript" src="__PUBLIC__/js/main.min.js"></script>-->
+	<script type="text/javascript" src="__PUBLIC__/js/Validform_v5.3.2_min.js"></script>
+
+    <script type="text/javascript">
+      //点击按钮
+
+
+    /*banner*/
+    jQuery(function($) {
+        $('.slider-wrapper').slick({
+            dots: true,
+            infinite: true,
+            speed: 500,
+            fade: true,
+            cssEase: 'linear'
+        });
+    })
+    /*头部搜索点击*/
+    $('.search-wrap').click(function() {
+        $(this).animate({
+            width: '200px'
+        }, 500);
+    })
+
+    $('.zhankai').click(function() {
+        $('.inner-ban').slideDown();
+        var a = $(window).scrollTop() + 150;
+        $('html,body').animate({
+            scrollTop: a
+        }, 500);
+        $(this).hide()
+    })
+    $('.inner-ban').click(function() {
+        $(this).slideUp();
+        $('.zhankai').show()
+    })
+   
+   var heightBody = $(window).height();
+    $('.bgbg').height(heightBody);
+
+
+    $('#btn-login').click(function() {
+        $('.dlzc, .bgbg').show();
+    })
+
+    $('.bgbg').click(function() {
+        $('.dlzc, .bgbg, .zcform').hide();
+    })
+
+    $('.dengluRight').click(function() {
+        $('.dlzc').hide();
+        $('.zcform').show();
+    })
+    $('.dengluRight_01').click(function() {
+        $('.zcform').hide();
+        $('.dlzc').show();
+    })
+   </script> 
+    <script type="text/javascript">
+	$(function(){	
+		$(".registerform").Validform({
+			ajaxPost:true,
+			tiptype:3,
+			callback:function(arr){
+			if(arr.status=="y"){
+				setTimeout(function(){
+					//window.location.reload();
+				},2000);
+			}else if(arr.status=="n" || arr.status=='nn'){
+                $('.zcform').siblings('#Validform_msg').find('.Validform_title').addClass('backb');
+				setTimeout(function(){
+					//window.location.reload();
+				},2000);
+			}
+		}
+		
+		});		
+	})
+	
+	
+	 function sendcode(){
+	  	var ph = $('#telphone').val();
+		var reg=/^[1][3][0-9]{9}$/;
+		var re = new RegExp(reg);
+			if(!re.test(ph)){
+			
+				alert("请正确填写手机号！");
+			}else{
+				settime();
+					$.post("__APP__/Member/message",{phone:ph},function(data){
+							if(data.status=="n"){
+								alert(data.info);
+							}
+					},'json');
+			}
+		}
+   
+
+ 
+ 
+
+	var countdown=60; 
+	function settime() { 
+	
+		var obj=document.getElementById('ntc');
+		if (countdown == 0) { 
+			obj.href="javascript:sendcode(this);";
+			obj.innerHTML="验证"; 
+			countdown = 60; 
+			return;
+		} else { 
+			obj.href="javascript:void(0);";
+			obj.innerHTML="(" + countdown + ")"; 
+			countdown--; 
+		} 
+		setTimeout(function() { 
+		settime(obj) }
+		,1000) 
+	}
+
+	
+	
+	
+	$(function(){	
+		$(".zcform").Validform({
+			ajaxPost:true,
+			tiptype:3,
+			callback:function(arr){
+			if(arr.status=="y"){
+				setTimeout(function(){
+				//	window.location.reload();
+				},2000);
+			}else if(arr.status=="n" || arr.status=='nn'){
+                 $('.zcform').siblings('#Validform_msg').find('.Validform_title').addClass('backb');
+				setTimeout(function(){
+					//window.location.reload();
+				},2000);
+			}
+            
+
+            
+             
+            
+		}
+		
+		});		
+	});
+	
+
+  /*全部产品 收藏点击*/
+  
+  function collect_tj(ppid){
+		$.post("<{:U('Product/addCollect')}>",{ppid:ppid},function(data){
+				if(data){
+					$('.TryUseBg00,.TryUseBgDiv00').show();
+					setTimeout(function(){window.location.reload();},5000)
+				}
+		
+		
+		})
+  
+  
+  }
+  /*关闭弹窗*/
+  $('.TryUseBg00').click(function(){
+      $(this).hide().next().hide();
+	  window.location.reload();
+  });
+  
+  function collect_del(colid){
+	$.post("<{:U('Product/delCollect')}>",{colid:colid},function(data){
+				if(data){
+					$('.TryUseBg01,.TryUseBgDiv01').show();
+					setTimeout(function(){window.location.reload();},5000)
+				}
+		
+		
+		})
+  
+  }
+  /*关闭弹窗*/
+  $('.TryUseBg01').click(function(){
+      $(this).hide().next().hide();
+	  window.location.reload();
+  });
+  
+  	function hhhhh(){
+			$('.dlzc, .bgbg').show();
+	}	  
+  
+  
+  
+  
+
+  
+/*兼容输入框*/
+
+$(function(){
+if(!placeholderSupport()){   // 判断浏览器是否支持 placeholder
+    $('[placeholder]').focus(function() {
+        var input = $(this);
+        if (input.val() == input.attr('placeholder')) {
+            input.val('');
+            input.removeClass('placeholder');
+        }
+    }).blur(function() {
+        var input = $(this);
+        if (input.val() == '' || input.val() == input.attr('placeholder')) {
+            input.addClass('placeholder');
+            input.val(input.attr('placeholder'));
+        }
+    }).blur();
+};
+})
+function placeholderSupport() {
+    return 'placeholder' in document.createElement('input');
+}
+	
+	
+	/*设置产品中心左侧菜单的高度*/
+ 
+ var _heig = $('.Product_list_content').height();
+ $('.Product_list_left').css({
+    'height':_heig+'px' 
+	 
+ });	
+</script>
+
+
+</body>
+
+</html>

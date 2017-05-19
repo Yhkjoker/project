@@ -1,0 +1,116 @@
+<include file="Public:header"/>
+        <!-- banner -->
+        <div class="banner">
+            <div class="inner">
+                <ul class="slider-wrapper">
+				<foreach name="index_pic_banner" item="v">
+                    <li>
+                        <a href="<{$v.vidurl}>"><img src="<{$v.picurl}>"></a>
+                    </li>
+               
+				</foreach>	
+                </ul>
+            </div>
+             
+    
+        </div>
+        <!-- products -->
+        <div class="products-catalog">
+            <div class="inner">
+                <div class="row cp-goldd">
+				  <foreach name="index_pic_list" item="v">
+					<if condition="$v[id] eq 11">
+						<div class="col-md-62"><a href="<{$v.vidurl}>"><img src="<{$v.picurl}>"></a></div>
+						<div class="col-md-38"><a href="<{$v.vidurl}>"><img src="<{$v.picwzurl}>"></a></div>
+					</if>
+				</foreach>	
+                </div>
+                <div class="row cp-gold">
+				<foreach name="index_pic_list" item="v">
+					<if condition="$v[id] eq 12">
+						<div class="col-md-38"><a href="<{$v.vidurl}>"><img src="<{$v.picwzurl}>"></a></div>
+						<div class="col-md-62"><a href="<{$v.vidurl}>"><img src="<{$v.picurl}>"></a></div>
+					</if>
+				</foreach>	
+                </div>
+                <div class="row">
+                    <div class="col-md-50">
+					<foreach name="index_pic_list" item="v">
+						<if condition="$v[id] eq 13">
+							<a href="<{$v.vidurl}>" class="products-feeding"><img src="<{$v.picwzurl}>"></a>
+							<img src="<{$v.picurl}>">
+						</if>
+				    </foreach>	
+                    </div>
+                    <div class="col-md-50">
+					<foreach name="index_pic_list" item="v">
+						<if condition="$v[id] eq 14">
+							<a href="<{$v.vidurl}>" class="products-tableware"><img src="<{$v.picwzurl}>"></a>
+							<img src="<{$v.picurl}>">
+						</if>
+				    </foreach>	
+                    </div>
+                </div>
+                <div class="row cp-motherscat">
+				<foreach name="index_pic_list" item="v">
+					<if condition="$v[id] eq 15">
+                    <div class="col-md-62"><a href="<{$v.vidurl}>"><img src="<{$v.picurl}>"></a></div>
+                    <div class="col-md-38"><a href="<{$v.vidurl}>"><img src="<{$v.picwzurl}>"></a></div>
+					</if>
+				    </foreach>	
+                </div>
+                <div class="row cp-oralcare">
+				<foreach name="index_pic_list" item="v">
+					<if condition="$v[id] eq 16">
+                    <div class="col-md-38"><a href="<{$v.vidurl}>"><img src="<{$v.picwzurl}>"></a></div>
+                    <div class="col-md-62"><a href="<{$v.vidurl}>"><img src="<{$v.picurl}>"></a></div>
+					</if>
+				   </foreach>	
+                </div>
+                <div class="row">
+                    <div class="col-md-50">
+					<foreach name="index_pic_list" item="v">
+						<if condition="$v[id] eq 17">
+							<a href="<{$v.vidurl}>" class="products-household"><img src="<{$v.picwzurl}>"></a>
+							<img src="<{$v.picurl}>">
+						</if>
+				   </foreach>	
+                    </div>
+                    <div class="col-md-50">
+					<foreach name="index_pic_list" item="v">
+						<if condition="$v[id] eq 18">
+							<a href="<{$v.vidurl}>" class="products-accessories"><img src="<{$v.picwzurl}>"></a>
+							<img src="<{$v.picurl}>">
+						</if>
+				   </foreach>	
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- bobo around -->
+        <div class="bobo-around">
+            <div class="inner">
+                <div class="bobo-knowledge">
+                    <a href="<{:U('Content/content',array('catid'=>24))}>"><span>- Parenting Tips -</span><img src="__PUBLIC__/img/icon-btn-knowledge.png"></a>
+                </div>
+                <div class="bobo-news">
+                    <a href="<{:U('Content/content',array('catid'=>25))}>"><span>- News -</span><img src="__PUBLIC__/img/icon-btn-news.png"></a>
+                </div>
+                <div class="bobo-event">
+                    <a href="<{:U('Content/content',array('catid'=>23))}>"><span>- Activity Info -</span><img src="__PUBLIC__/img/icon-btn-event.png"></a>
+                </div>
+            </div>
+            <div class="tel">
+                <img src="__PUBLIC__/img/icon-tel.png">
+                <i class="icon-tel"></i>
+            </div>
+        </div>
+		    <!-- footer -->
+        <div class="footer">
+            <a href="__APP__/Index/about/catid/29" class="btn-about"><img src="__PUBLIC__/img/btn-about.png"></a>
+                
+        </div>
+         <div class="zhankai"></div>
+       
+    <include file="Public:footer"/>
+   

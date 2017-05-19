@@ -1,0 +1,141 @@
+<include file="Public:header"/>
+        <div class="user_content_02">
+
+            <div class="user_content_center_02">
+                <h4>欢迎完善您的信息&nbsp,&nbsp;我们将提供给您的宝宝更好的服务。</h4>
+			<form  method="post" action="__APP__/Member/upMemberInfo/action/uppass" class="registerform_one">
+                <table border="0" cellspacing="0" cellpadding="0" class="user_box margin_top">
+                    <tr>
+                        <td class="user_front user_txt">原来的密码</td>
+                        <td class="yuanlai">
+                            <input class="user_top" name="info[passwordold]" id="passwordold" datatype="*6-16" errormsg=" "  nullmsg=" "   type="password">
+                        </td>
+
+                    </tr>
+                </table>
+                <table border="0" cellspacing="0" cellpadding="0" class="user_box">
+                    <tr>
+                        <td class="user_front user_txt">新的密码</td>
+                        <td class="user_top user_top02">
+                            <input class="user_top" name="info[password]" type="password" datatype="*6-16" errormsg=" " nullmsg=" ">
+                        </td>
+
+                        <td class="user_repeat_txt user_txt user_front">重复输入密码</td>
+                        <td style="width:310px;">
+                            <input class="user_repeat user_padding"  name="repassword" recheck="info[password]" datatype="*6-16" errormsg=" " nullmsg=" " type="password">
+                        </td>
+
+                        <td class="user_modify user_txt"><input type="submit" value="修改"/></td>
+                    </tr>
+                </table>
+			</form>
+			<form  method="post" action="__APP__/Member/upMemberInfo/action/upinfo" class="registerform_two">		
+                <table border="0" cellspacing="0" cellpadding="0" class="user_box">
+				     <tr>
+                        <td class="user_front user_txt">您的昵称</td>
+                        <td class="user_width">
+                            <input class="user_top" name="info[nickname]"  datatype="*" nullmsg=" "  type="text" placeholder="您登录时显示您的昵称" value="<{$vip_arr.nickname}>">
+                        </td>
+		
+                    </tr>
+                  </table>
+                 <table border="0" cellspacing="0" cellpadding="0" class="user_box">   
+                    <tr>
+                        <td class="user_front user_txt">宝宝的姓氏</td>
+                        <td class="user_baby02" style="width:300px;">
+                            <input class="user_baby" name="info[bbname]" type="text"  datatype="*" nullmsg=" " value="<{$vip_arr.bbname}>">
+                        </td>
+		
+                        <td class="user_Age user_txt">宝宝的年龄</td>
+                        <td class="user_baby">
+                            <input class="user_nian" name="info[age]" type="text" datatype="n" nullmsg=" " errormsg=" " value="<{$vip_arr.age}>">
+                        </td>
+		
+                        <td class="user_Age user_txt">宝宝的性别</td>
+                        <td class="user_Gender user_txt"><input style="border:none;" type="radio" value="0" name="info[sex]" <if condition="$vip_arr.sex eq 0">checked</if> />男</td>
+                      
+                        <td class="user_Gender user_txt"><input style="border:none;" type="radio" value="1" name="info[sex]" datatype="*" nullmsg=" " <if condition="$vip_arr.sex eq 1">checked</if> />女</td>
+
+                    </tr>
+                </table>
+                <table border="0" cellspacing="0" cellpadding="0" class="user_box">
+                    <tr>
+                        <td class="user_front user_txt">您的e-mail</td>
+                        <td class="front_width">
+                            <input class="user_address" name="info[email]"  type="text"  datatype="e" errormsg=" " nullmsg=" " value="<{$vip_arr.email}>"/>
+                        </td>
+					
+                    </tr>
+                    <tr>
+                        <td class="user_front user_txt">您的地址</td>
+                        <td class="front_width">
+                            <input class="user_address" name="info[address]" type="text" placeholder="常用收件地址,用于礼品发放" datatype="*" nullmsg=" " value="<{$vip_arr.address}>">
+                        </td>
+
+                    </tr>
+                </table>
+                <div class="user_preservation">
+                    <div class="user_preservation_nei"><input type="submit" class="user_storage" value="保存"/><input type="reset" class="user_Refillings" value="重填"/></div>
+                </div>
+			</form>	
+            </div>
+
+        </div>
+        <div class="zhankai"></div>
+        
+    </div>
+<script>
+$(function(){	
+		$(".registerform_one").Validform({
+			ajaxPost:true,
+			tiptype:3,
+			callback:function(arr){
+			if(arr.status=="y"){
+				$('.TryUseBg').show();
+				setTimeout(function(){
+					window.location.reload();
+				},5000);
+			}else if(arr.status=="n"){
+				$('.TryUseBg').show();
+				$('.zcform').siblings('#Validform_msg').find('.Validform_title').addClass('backb');
+				setTimeout(function(){
+					window.location.reload();
+				},5000);
+			}
+		}
+		
+		});		
+	})
+	
+	$(function(){	
+		$(".registerform_two").Validform({
+			ajaxPost:true,
+			tiptype:3,
+			callback:function(arr){
+			if(arr.status=="y"){
+				$('.TryUseBg').show();
+				setTimeout(function(){
+					window.location.reload();
+				},5000);
+			}else if(arr.status=="n"){
+				$('.TryUseBg').show();
+				setTimeout(function(){
+					window.location.reload();
+				},5000);
+			}
+		}
+		
+		});		
+	})
+	
+	        /*关闭窗口*/
+			  $('.TryUseBg').click(function(){
+				  $(this).hide();
+				  $('#Validform_msg').hide();
+				  window.location.reload();
+				  
+			   });
+	
+</script>	
+	
+<include file="Public:footer"/>

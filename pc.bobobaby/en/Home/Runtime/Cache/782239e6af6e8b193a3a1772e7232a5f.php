@@ -1,0 +1,534 @@
+<?php if (!defined('THINK_PATH')) exit();?><!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name='viewport' content='width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no'>
+    <title><?php echo ($site_arr["stitle"]); ?></title>
+    <link rel="shortcut icon" href="__PUBLIC__/img/favicon.ico" />
+    <link type="text/css" rel="stylesheet" href="__PUBLIC__/css/lib.min.min.css" />
+    <link type="text/css" rel="stylesheet" href="__PUBLIC__/css/lib.mincss.css" />
+	<link type="text/css" rel="stylesheet" href="__PUBLIC__/css/style.css" />
+    <meta name="description" content="<?php echo ($site_arr["sdescription"]); ?>">
+    <meta name="keywords" content="<?php echo ($site_arr["skeywords"]); ?>">
+    <link href="" rel="stylesheet">
+    <link href="__PUBLIC__/css/lib.min.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+      <script src="static/js/html5shiv.min.js"></script>
+      <script src="static/js/respond.min.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="__PUBLIC__/js/main.min.js"></script>
+    
+</head>
+
+
+<body>
+    <div class="container">
+    
+        <!-- top header -->
+        <div class="header">
+            <div class="top-bar inner">
+                <a href="__APP__" class="logo"><img src="__PUBLIC__/img/logo.png"></a>
+                <!-- search -->
+                <div class="search-wrap">
+                    <input type="text" name="keyword" class="" placeholder="请输入您要搜索的内容">
+                    <a href="javascript:" class="btn-search"><i class="icon-search"></i></a>
+                </div>
+                <!-- language select -->
+                <div class="lang-wrap">
+                    <div class="dian_01">·</div>
+                    <a href="#" class="btn-lang"><i class="icon-lang"></i></a>
+                    <span>
+                        <a href="#">English</a> | <a href="#">中文</a>
+                    </span>
+                    <div class="dian_02">·</div>
+                </div>
+                
+                <!-- social -->
+                <div class="social-wrap">
+                    <ul>
+                        <li>
+                            <a href="#" class="btn-wchat">
+                                <i class="icon-wchat"></i>
+                                <span class="erweima"><img src="__PUBLIC__/img/erweima.png"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn-qq"><i class="icon-qq"></i></a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn-weibo"><i class="icon-weibo"></i></a>
+                        </li>
+                    </ul>
+                    <div class="dian_03">·</div>
+                </div>
+                <!-- user -->
+                <div class="user-wrap">
+<?php  session_start(); if(!$_SESSION['bobo_pc_user_id']){ ?>  
+<a href="javascript:" class="btn-login" id="btn-login">登录</a>
+<?php }else{ ?>
+<a href="<?php echo U('Member/outMember');?>" class="btn-login">退出</a>
+
+<?php } ?>
+                </div>
+                <div class="hello_bobo"><?php  if($_SESSION['bobo_pc_user_id']){ ?>  您好&nbsp;,&nbsp;<?php } if(empty($_SESSION['bobo_pc_user_nickname'])){echo $_SESSION['bobo_pc_user_name'];}else{ echo $_SESSION['bobo_pc_user_nickname']; } ?>
+				</div>
+            </div>
+            <div class="nav-wrap">
+                <ul class="nav-bar inner">
+                    <li class="near">
+                        <a href="__APP__" title="">首页</a>
+                    </li>
+                    <li class="">
+                        <a href="<?php echo U('Index/about',array('catid'=>29));?>" title="">品牌专区</a>
+                        <div class="sub-nav brand">
+                            <ul class="cp-catalog">
+                                <li class="active">
+                                    <a href="<?php echo U('Index/about',array('catid'=>29));?>" data-for="bobo-about">关于bobo</a>
+                                </li>
+                                <li>
+                                    <a href="<?php echo U('Content/content',array('catid'=>23));?>" data-for="bobo-event">活动资讯</a>
+                                </li>
+                                <li>
+                                    <a href="<?php echo U('Content/content',array('catid'=>24));?>" data-for="bobo-knowledge">bobo宝典</a>
+                                </li>
+                                <li>
+                                    <a href="<?php echo U('Content/content',array('catid'=>25));?>" data-for="bobo-news">bobo新闻</a>
+                                </li>
+                            </ul>
+                            <div class="cp-list">
+                                <ul id="bobo-about" class="active">
+                                  
+                                </ul>
+                                <ul id="bobo-event">
+									<?php if(is_array($con_list_one)): foreach($con_list_one as $k=>$v): ?><li <?php if($k == 0): ?>class="active"<?php endif; ?> ><a href="<?php echo U('Content/news_xq',array('catid'=>$v[catid],'id'=>$v[id]));?>" data-img="<?php echo ($v["picurlpc"]); ?>"><?php echo ($v["title"]); ?></a></li><?php endforeach; endif; ?>
+                                </ul>
+                                <ul id="bobo-knowledge">
+                                   		<?php if(is_array($con_list_two)): foreach($con_list_two as $k=>$v): ?><li <?php if($k == 0): ?>class="active"<?php endif; ?> ><a href="<?php echo U('Content/news_xq',array('catid'=>$v[catid],'id'=>$v[id]));?>" data-img="<?php echo ($v["picurlpc"]); ?>"><?php echo ($v["title"]); ?></a></li><?php endforeach; endif; ?>
+                                </ul>
+                                <ul id="bobo-news">
+                                       <?php if(is_array($con_list_three)): foreach($con_list_three as $k=>$v): ?><li <?php if($k == 0): ?>class="active"<?php endif; ?> ><a href="<?php echo U('Content/news_xq',array('catid'=>$v[catid],'id'=>$v[id]));?>" data-img="<?php echo ($v["picurlpc"]); ?>"><?php echo ($v["title"]); ?></a></li><?php endforeach; endif; ?>
+                                </ul>
+                            </div>
+                            <div class="cp-photo"><img src="" width="282" height="212"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="<?php echo U('Product/product',array('catid'=>14));?>" title="">产品专区</a>
+                        <div class="sub-nav">
+                            <ul class="cp-catalog">
+                                <li class="active">
+                                    <a href="<?php echo U('Product/product',array('catid'=>14));?>" data-for="cp-new">新品推荐</a>
+                                </li>
+                                <li>
+                                    <a href="<?php echo U('Product/product',array('catid'=>14));?>" data-for="cp-all">全部产品</a>
+                                </li>
+                                <li>
+                                    <a href="<?php echo U('Video/video',array('catid'=>26));?>" data-for="cp-video">产品视频</a>
+                                </li>
+                                <li>
+                                    <a href="<?php echo U('Report/report',array('catid'=>27));?>" data-for="cp-report">检测报告</a>
+                                </li>
+                            </ul>
+                            <div class="cp-list">
+                                <ul id="cp-new" class="active">
+								<?php if(is_array($pro_header)): foreach($pro_header as $k=>$v): ?><li <?php if($k == 0): ?>class="active"<?php endif; ?>><?php if($v["xqstatus"] == 1): ?><a href="<?php echo U('Product/product_details',array('catid'=>$v[catid],'pid'=>$v[id],'ppid'=>$v[ppid]));?>" data-img="<?php echo ($v["picurlpc"]); ?>"><?php else: ?><a href="javascript:alert('此产品已下架')" data-img="<?php echo ($v["picurlpc"]); ?>"><?php endif; echo ($v["title"]); ?></a></li><?php endforeach; endif; ?> 
+                                </ul>
+                                <ul id="cp-all">
+                            
+									<?php if(is_array($catname_list)): foreach($catname_list as $k=>$v): ?><li <?php if($k == 0): ?>class="active"<?php endif; ?>><a href="<?php echo U('Product/product',array('catid'=>$v[catid]));?>" data-img="<?php echo ($v["caturl"]); ?>"><?php echo ($v["catname"]); ?></a></li><?php endforeach; endif; ?>	
+                                
+                                </ul>
+                                <ul id="cp-video">
+								<?php if(is_array($video_header)): foreach($video_header as $k=>$v): ?><li <?php if($k == 0): ?>class="active"<?php endif; ?>><a href="<?php echo U('Video/video',array('catid'=>$v[catid]));?>" data-img="<?php echo ($v["picurlpc"]); ?>"><?php echo ($v["vtitle"]); ?></a></li><?php endforeach; endif; ?>
+                                </ul>
+                                <ul id="cp-report">
+								<?php if(is_array($jcbg_header)): foreach($jcbg_header as $k=>$v): ?><li <?php if($k == 0): ?>class="active"<?php endif; ?>><a href="<?php echo U('Report/report',array('catid'=>$v[catid]));?>" data-img="<?php echo ($v["picurlpc"]); ?>"><?php echo ($v["vtitle"]); ?></a></li><?php endforeach; endif; ?>
+          
+                                </ul>
+                            </div>
+                            <div class="cp-photo"><img src="__PUBLIC__/img/cp-photo.jpg" width="282" height="212"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="<?php echo U('Member/member');?>" title="">会员服务</a>
+                    </li>
+                    <li>
+                        <a href="download.html" title="">APP下载</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="user_content_02">
+
+            <div class="user_content_center_02">
+                <h4>欢迎完善您的信息&nbsp,&nbsp;我们将提供给您的宝宝更好的服务。</h4>
+			<form  method="post" action="__APP__/Member/upMemberInfo/action/uppass" class="registerform_one">
+                <table border="0" cellspacing="0" cellpadding="0" class="user_box margin_top">
+                    <tr>
+                        <td class="user_front user_txt">原来的密码</td>
+                        <td class="yuanlai">
+                            <input class="user_top" name="info[passwordold]" id="passwordold" datatype="*6-16" errormsg=" "  nullmsg=" "   type="password">
+                        </td>
+
+                    </tr>
+                </table>
+                <table border="0" cellspacing="0" cellpadding="0" class="user_box">
+                    <tr>
+                        <td class="user_front user_txt">新的密码</td>
+                        <td class="user_top user_top02">
+                            <input class="user_top" name="info[password]" type="password" datatype="*6-16" errormsg=" " nullmsg=" ">
+                        </td>
+
+                        <td class="user_repeat_txt user_txt user_front">重复输入密码</td>
+                        <td style="width:310px;">
+                            <input class="user_repeat user_padding"  name="repassword" recheck="info[password]" datatype="*6-16" errormsg=" " nullmsg=" " type="password">
+                        </td>
+
+                        <td class="user_modify user_txt"><input type="submit" value="修改"/></td>
+                    </tr>
+                </table>
+			</form>
+			<form  method="post" action="__APP__/Member/upMemberInfo/action/upinfo" class="registerform_two">		
+                <table border="0" cellspacing="0" cellpadding="0" class="user_box">
+				     <tr>
+                        <td class="user_front user_txt">您的昵称</td>
+                        <td class="user_width">
+                            <input class="user_top" name="info[nickname]"  datatype="*" nullmsg=" "  type="text" placeholder="您登录时显示您的昵称" value="<?php echo ($vip_arr["nickname"]); ?>">
+                        </td>
+		
+                    </tr>
+                  </table>
+                 <table border="0" cellspacing="0" cellpadding="0" class="user_box">   
+                    <tr>
+                        <td class="user_front user_txt">宝宝的姓氏</td>
+                        <td class="user_baby02" style="width:300px;">
+                            <input class="user_baby" name="info[bbname]" type="text"  datatype="*" nullmsg=" " value="<?php echo ($vip_arr["bbname"]); ?>">
+                        </td>
+		
+                        <td class="user_Age user_txt">宝宝的年龄</td>
+                        <td class="user_baby">
+                            <input class="user_nian" name="info[age]" type="text" datatype="n" nullmsg=" " errormsg=" " value="<?php echo ($vip_arr["age"]); ?>">
+                        </td>
+		
+                        <td class="user_Age user_txt">宝宝的性别</td>
+                        <td class="user_Gender user_txt"><input style="border:none;" type="radio" value="0" name="info[sex]" <?php if($vip_arr["sex"] == 0): ?>checked<?php endif; ?> />男</td>
+                      
+                        <td class="user_Gender user_txt"><input style="border:none;" type="radio" value="1" name="info[sex]" datatype="*" nullmsg=" " <?php if($vip_arr["sex"] == 1): ?>checked<?php endif; ?> />女</td>
+
+                    </tr>
+                </table>
+                <table border="0" cellspacing="0" cellpadding="0" class="user_box">
+                    <tr>
+                        <td class="user_front user_txt">您的e-mail</td>
+                        <td class="front_width">
+                            <input class="user_address" name="info[email]"  type="text"  datatype="e" errormsg=" " nullmsg=" " value="<?php echo ($vip_arr["email"]); ?>"/>
+                        </td>
+					
+                    </tr>
+                    <tr>
+                        <td class="user_front user_txt">您的地址</td>
+                        <td class="front_width">
+                            <input class="user_address" name="info[address]" type="text" placeholder="常用收件地址,用于礼品发放" datatype="*" nullmsg=" " value="<?php echo ($vip_arr["address"]); ?>">
+                        </td>
+
+                    </tr>
+                </table>
+                <div class="user_preservation">
+                    <div class="user_preservation_nei"><input type="submit" class="user_storage" value="保存"/><input type="reset" class="user_Refillings" value="重填"/></div>
+                </div>
+			</form>	
+            </div>
+
+        </div>
+        <div class="zhankai"></div>
+    </div>
+<script>
+$(function(){	
+		$(".registerform_one").Validform({
+			ajaxPost:true,
+			tiptype:3,
+			callback:function(arr){
+			if(arr.status=="y"){
+				setTimeout(function(){
+					window.location.reload();
+				},2000);
+			}else if(arr.status=="n"){
+				setTimeout(function(){
+					window.location.reload();
+				},2000);
+			}
+		}
+		
+		});		
+	})
+	
+	$(function(){	
+		$(".registerform_two").Validform({
+			ajaxPost:true,
+			tiptype:3,
+			callback:function(arr){
+			if(arr.status=="y"){
+				setTimeout(function(){
+					window.location.reload();
+				},2000);
+			}else if(arr.status=="n"){
+				setTimeout(function(){
+					window.location.reload();
+				},2000);
+			}
+		}
+		
+		});		
+	})
+	
+</script>	
+	
+
+        <div class="footers"><div class="inner inner-ban">
+                <div class="f_left">
+                    <ul class="nav-footer">
+                        <li><a href="#">网站地图</a> | </li>
+                        <li><a href="#">个人隐私保护政策</a> | </li>
+                        <li><a href="#">使用条款</a></li>
+                    </ul>
+                    <p>新文越婴童用品（上海）有限公司 版权所有
+                        <br>Solaris Children Care (Shang Hai) Company Limited All Copyrights Reserved</p>
+                </div>
+                <div class="f_right">
+                    <img src="__PUBLIC__/img/icp-logo.png">沪ICP备14026024号
+                </div>
+            </div></div>
+    
+    </div>
+    <div class="bgbg"></div>
+    <div class="dlzc">
+         <div class="denglu">
+
+             <div class="dengluLeft">登&nbsp;&nbsp;录</div>
+             <div class="dengluRight">注&nbsp;&nbsp;册</div>
+		<form class="registerform" action="__APP__/Member/dologin"  method="post">
+             <dl>
+               <dt>用户名</dt>
+               <dd><input class="inqut_border" name="username" type="text" placeholder="手机号码"  datatype="m" nullmsg=" " errormsg=" ">
+               </dd>
+               <dt>密码</dt>
+               <dd><input class="inqut_border" name="password" type="password" placeholder="6到16位英文或者数字" nullmsg=" " datatype="*6-16" errormsg=" ">
+               </dd>
+               <div class="tijiao"><input type="reset" class="chongtian" value="重&nbsp;填"/><span>•</span><input type="submit" class="queren" value="确&nbsp;认"/></div>
+               
+             </dl>
+		</form>	 
+         </div>
+    </div>
+
+    <form id="signupForm" method="post" action="__APP__/Member/doregister" class="zcform">
+        <div class="dengluLeft_01">注&nbsp;&nbsp;册</div>
+        <div class="dengluRight_01">登&nbsp;&nbsp;录</div>
+        <div class="clearfix posi">
+        	<p class="mageinn">用户名</p>
+        	<input id="telphone" name="info[username]" class="required inqut_border"  placeholder="手机号码"  datatype="m" nullmsg=" " errormsg=" "/>
+         
+            <a class="get_code" href="javascript:sendcode();" id="ntc" />验&nbsp&nbsp;证</a>
+        </div>
+		
+        <div class="clearfix">
+        	<p class="mageinn">输入验证码</p>
+            <input class="identifying_code inqut_border" type="text"  name="info[code]"  datatype="*" nullmsg=" "  placeholder="输入您手机收到的校验码" />
+          
+        </div>
+		
+        <div class="clearfix">
+         	<p class="mageinn">密码</p>
+        	<input id="password" name="info[password]"   datatype="*6-16" nullmsg=" " errormsg=" " type="password" class="{required:true,rangelength:[8,20],} inqut_border" value placeholder="6到16位英文或者数字" />
+         
+        </div>
+		
+        <div class="clearfix">
+        	<p class="mageinn">重复密码</p>
+        	<input id="confirm_password" name="repassword"  type="password" class="{required:true,equalTo:'#password'} inqut_border" value placeholder="6到16位英文或者数字" datatype="*" recheck="info[password]" nullmsg=" " errormsg=" "/>
+
+        </div>
+	
+        <p class="last"><input type="reset" class="chongtian" value="重&nbsp;填"/><span>•</span><input type="submit" class="tijiao" value="提&nbsp;交"/></p>
+        <!--<p class="last"><a class="chongtian" href="#">重填</a><span>·</span><a class="tijiao" href="#">提交</a></p>-->
+    </form>
+    </div>
+
+
+    <script type="text/javascript" src="__PUBLIC__/js/jquery-1.8.3-min.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/js/jquery.validate.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/js/jquery.metadata.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/js/slick.min.js"></script>
+    <!-- <script type="text/javascript" src="__PUBLIC__/js/resgin.js"></script> -->
+    <!--<script type="text/javascript" src="__PUBLIC__/js/main.min.js"></script>-->
+	<script type="text/javascript" src="__PUBLIC__/js/Validform_v5.3.2_min.js"></script>
+
+    <script type="text/javascript">
+      //点击按钮
+$(".piaochecked").removeClass("on_check");
+$(".piaochecked").on("click",function(){
+   $(this).parents('li').find('.piaochecked').addClass("on_check").parents('li').siblings().find('.piaochecked').removeClass("on_check");
+});
+$('.Product_ColorBtn').removeClass('.Product_ColorBtnClass');
+$('.Product_ColorBtn').on("click",function(){
+   $(this).addClass('.Product_ColorBtnClass').siblings().removeClass('.Product_ColorBtnClass');
+});
+
+
+    /*banner*/
+    jQuery(function($) {
+        $('.slider-wrapper').slick({
+            dots: true,
+            infinite: true,
+            speed: 500,
+            fade: true,
+            cssEase: 'linear'
+        });
+    })
+    /*头部搜索点击*/
+    $('.search-wrap').click(function() {
+        $(this).animate({
+            width: '200px'
+        }, 500);
+    })
+
+    $('.zhankai').click(function() {
+        $('.inner-ban').slideDown();
+        var a = $(window).scrollTop() + 150;
+        $('html,body').animate({
+            scrollTop: a
+        }, 500);
+        $(this).hide()
+    })
+    $('.inner-ban').click(function() {
+        $(this).slideUp();
+        $('.zhankai').show()
+    })
+   
+   var heightBody = $(window).height();
+    $('.bgbg').height(heightBody);
+
+
+    $('#btn-login').click(function() {
+        $('.dlzc, .bgbg').show();
+    })
+
+    $('.bgbg').click(function() {
+        $('.dlzc, .bgbg, .zcform').hide();
+    })
+
+    $('.dengluRight').click(function() {
+        $('.dlzc').hide();
+        $('.zcform').show();
+    })
+    $('.dengluRight_01').click(function() {
+        $('.zcform').hide();
+        $('.dlzc').show();
+    })
+   </script> 
+    <script type="text/javascript">
+	$(function(){	
+		$(".registerform").Validform({
+			ajaxPost:true,
+			tiptype:3,
+			callback:function(arr){
+			if(arr.status=="y"){
+				setTimeout(function(){
+					window.location.reload();
+				},2000);
+			}else if(arr.status=="n"){
+				setTimeout(function(){
+					window.location.reload();
+				},2000);
+			}
+		}
+		
+		});		
+	})
+	
+	
+	 function sendcode(){
+	  	var ph = $('#telphone').val();
+		var reg=/^[1][3][0-9]{9}$/;
+		var re = new RegExp(reg);
+			if(!re.test(ph)){
+			
+				alert("请正确填写手机号！");
+			}else{
+				settime();
+					$.post("__APP__/Member/message",{phone:ph},function(data){
+							if(data.status=="n"){
+								alert(data.info);
+							}
+					},'json');
+			}
+		}
+   
+
+ 
+ 
+
+	var countdown=60; 
+	function settime() { 
+	
+		var obj=document.getElementById('ntc');
+		if (countdown == 0) { 
+			obj.href="javascript:sendcode(this);";
+			obj.innerHTML="验证"; 
+			countdown = 60; 
+			return;
+		} else { 
+			obj.href="javascript:void(0);";
+			obj.innerHTML="(" + countdown + ")"; 
+			countdown--; 
+		} 
+		setTimeout(function() { 
+		settime(obj) }
+		,1000) 
+	}
+
+	
+	
+	
+	$(function(){	
+		$(".zcform").Validform({
+			ajaxPost:true,
+			tiptype:3,
+			callback:function(arr){
+			if(arr.status=="y"){
+				setTimeout(function(){
+					window.location.reload();
+				},2000);
+			}else if(arr.status=="n"){
+				setTimeout(function(){
+					window.location.reload();
+				},2000);
+			}
+		}
+		
+		});		
+	});
+	
+
+  /*全部产品 收藏点击*/
+  $('.Product_followBtn1').live("click",function(){
+        $(this).hide();
+        $(this).siblings('.Product_followBtn2').show();
+  });
+    $('.Product_followBtn2').live("click",function(){
+        $(this).hide();
+        $(this).siblings('.Product_followBtn1').show();
+  });
+  
+
+
+	
+	
+</script>
+
+
+</body>
+
+</html>

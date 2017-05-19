@@ -1,0 +1,23 @@
+[ 2016-07-18T17:31:25+08:00 ] 223.255.240.74 /bobo2/admin.php/Login/login
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000622s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000702s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000384s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000443s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000284s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000418s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.048763s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.048858s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000261s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000261s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000148s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000338s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001174s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000446s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000500s ]
+

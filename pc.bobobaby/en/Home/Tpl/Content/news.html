@@ -1,0 +1,83 @@
+<include file="Public:header"/>
+        <div class="Journalism_content">
+            <div class="Journalism_content_nei">
+                <h2><img class="Journalism_bobo" src="__PUBLIC__/img/bt00.png"></h2>
+               <div class="Journalism_contentLeft f_left">
+                  <ul class="list_all">
+			
+                  </ul>
+                  <p class="load_more">更多</p>
+               </div>
+               <div class="Journalism_contentRight f_left">
+			      
+               </div>
+            </div>
+        <div class="zhankai"></div>
+        </div>   
+
+<include file="Public:footer"/>
+<script type="text/javascript" src="__PUBLIC__/js/jquery-1.6.4.js"></script>
+<script type="text/javascript">  
+
+$(document).ready(function() {  
+    var track_click = 0; 
+    var total_pages =<?php  if($total_pages){ echo $total_pages; }else{ echo 0; }?>;  
+    $(window).load('<{:U("Content/getAuto")}>', {page: track_click,'catid':<{$_GET[catid]}>}, function(data) {
+				var msg=eval('('+data+')');
+			$('.list_all').append(msg.lists.one);
+			$('.Journalism_contentRight').append(msg.lists.two);
+		  $('.Journalism_contentRight dl:first').show();
+			track_click++;},'json'); 
+
+    $(".load_more").click(function (e) { 
+		$(this).hide();
+
+        $('.animation_image').show(); 
+	
+        if(track_click <= total_pages)
+        {  
+
+            $.post('<{:U("Content/getAuto")}>',{page: track_click,'catid':<{$_GET[catid]}>}, function(data) {  
+             		var msg=eval('('+data+')');
+          	$('.list_all').append(msg.lists.one);
+			$('.Journalism_contentRight').append(msg.lists.two);
+      
+                $('.animation_image').hide(); 
+                track_click++; 
+              	$(".load_more").show();
+            }).fail(function(xhr, ajaxOptions, thrownError) {   
+                alert(thrownError);
+                $(".load_more").show();  
+                $('.animation_image').hide(); 
+            });  
+              
+            if(track_click >= total_pages-1)  
+            {  
+
+                $(".load_more").attr("disabled", "disabled");  
+				
+            }  
+         }  
+            
+        });  
+		
+		
+
+		
+		
+		
+		
+		
+		
+});  
+
+  /*新闻*/
+	  $('.Journalism_contentLeft li a').live('hover',function(){
+		      var sw = $(this).parent().index();
+			  $('.Journalism_contentRight dl').hide();
+			  $('.Journalism_contentRight dl').eq(sw).show();
+		})
+		
+	
+		
+</script>

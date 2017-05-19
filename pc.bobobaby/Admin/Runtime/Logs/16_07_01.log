@@ -1,0 +1,60 @@
+[ 2016-07-01T17:35:36+08:00 ] 101.81.35.125 /bobo2/admin.php
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000374s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000451s ]
+NOTIC: [2048] Declaration of IndexAction::show() should be compatible with that of Action::show() /var/www/html/bobo2/Admin/Lib/Action/IndexAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.000678s ]
+SQL: SHOW COLUMNS FROM `tp_index_picture` [ RunTime:0.000619s ]
+NOTIC: [8] Undefined variable: gd /var/www/html/bobo2/Admin/Lib/Action/IndexAction.class.php 第 19 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000298s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000365s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: cls /var/www/html/bobo2/Admin/Runtime/Cache/20eabf8d43f497715f3e1a7ec1a2f00f.php 第 53 行.
+NOTIC: [8] Undefined index: cls /var/www/html/bobo2/Admin/Runtime/Cache/20eabf8d43f497715f3e1a7ec1a2f00f.php 第 54 行.
+NOTIC: [8] Undefined index: cls /var/www/html/bobo2/Admin/Runtime/Cache/20eabf8d43f497715f3e1a7ec1a2f00f.php 第 55 行.
+NOTIC: [8] Undefined index: cls /var/www/html/bobo2/Admin/Runtime/Cache/20eabf8d43f497715f3e1a7ec1a2f00f.php 第 56 行.
+NOTIC: [8] Undefined index: cls /var/www/html/bobo2/Admin/Runtime/Cache/20eabf8d43f497715f3e1a7ec1a2f00f.php 第 57 行.
+NOTIC: [8] Undefined index: cls /var/www/html/bobo2/Admin/Runtime/Cache/20eabf8d43f497715f3e1a7ec1a2f00f.php 第 58 行.
+NOTIC: [8] Undefined index: cls /var/www/html/bobo2/Admin/Runtime/Cache/20eabf8d43f497715f3e1a7ec1a2f00f.php 第 59 行.
+NOTIC: [8] Undefined index: cls /var/www/html/bobo2/Admin/Runtime/Cache/20eabf8d43f497715f3e1a7ec1a2f00f.php 第 60 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.008938s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009020s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000418s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000280s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000146s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000353s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001372s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000456s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000521s ]
+
+[ 2016-07-01T17:35:39+08:00 ] 101.81.35.125 /bobo2/admin.php/Index/picture/cls/5
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000630s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000712s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000459s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000518s ]
+NOTIC: [2048] Declaration of IndexAction::show() should be compatible with that of Action::show() /var/www/html/bobo2/Admin/Lib/Action/IndexAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.000681s ]
+SQL: SHOW COLUMNS FROM `tp_index_picture` [ RunTime:0.000693s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_index_picture` WHERE ( `siteid` = 2 ) LIMIT 1   [ RunTime:0.000315s ]
+SQL: SELECT `inputtime`,`title`,`picurl`,`id`,`listorder`,`status` FROM `tp_index_picture` WHERE ( `siteid` = 2 ) ORDER BY listorder desc,id desc LIMIT 0,10   [ RunTime:0.000334s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000302s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000394s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.012069s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012153s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000325s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000250s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000143s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000341s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001223s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000406s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000462s ]
+

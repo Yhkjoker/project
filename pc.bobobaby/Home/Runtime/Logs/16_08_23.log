@@ -1,0 +1,1130 @@
+[ 2016-08-23T01:47:59+08:00 ] 66.249.77.1 /bobo2/index.php/Product/product/catid/17
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001808s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001907s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001141s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001210s ]
+SQL: SHOW COLUMNS FROM `tp_product` [ RunTime:0.000786s ]
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.000564s ]
+SQL: SHOW COLUMNS FROM `tp_linkage` [ RunTime:0.000532s ]
+SQL: SHOW COLUMNS FROM `tp_parameter` [ RunTime:0.022816s ]
+SQL: SHOW COLUMNS FROM `tp_collect` [ RunTime:0.000490s ]
+SQL: SHOW COLUMNS FROM `tp_content` [ RunTime:0.000689s ]
+SQL: SHOW COLUMNS FROM `tp_page` [ RunTime:0.000452s ]
+SQL: SELECT * FROM `tp_page` WHERE ( `catid` = 29 ) LIMIT 1   [ RunTime:0.001186s ]
+SQL: SELECT `id`,`catid`,`title`,`headerpic` FROM `tp_content` WHERE ( catid=23 and (status=2 or status=3) ) ORDER BY conorder desc,id desc LIMIT 8   [ RunTime:0.000494s ]
+SQL: SELECT `id`,`catid`,`title`,`headerpic` FROM `tp_content` WHERE ( catid=24 and (status=2 or status=3) ) ORDER BY conorder desc,id desc LIMIT 8   [ RunTime:0.000376s ]
+SQL: SELECT `id`,`catid`,`title`,`headerpic` FROM `tp_content` WHERE ( catid=25 and (status=2 or status=3) ) ORDER BY conorder desc,id desc LIMIT 8   [ RunTime:0.000355s ]
+SQL: SHOW COLUMNS FROM `tp_site` [ RunTime:0.000361s ]
+SQL: SELECT * FROM `tp_site` WHERE ( siteid=1 ) LIMIT 1   [ RunTime:0.000205s ]
+SQL: SELECT a.xqstatus,a.title,a.picurlpc,a.catid,a.id,b.id as ppid FROM tp_product_price b,tp_product a WHERE ( a.posid=1 and a.status=1 and  a.id=b.pid ) ORDER BY a.listorder desc,id desc LIMIT 8   [ RunTime:0.000538s ]
+SQL: SHOW COLUMNS FROM `tp_video` [ RunTime:0.024473s ]
+SQL: SELECT `vtitle`,`headerpic`,`catid` FROM `tp_video` WHERE ( catid=26 and (status=2 or status=3) ) ORDER BY listorder desc,vid desc LIMIT 8   [ RunTime:0.004233s ]
+SQL: SELECT `vtitle`,`headerpic`,`catid` FROM `tp_video` WHERE ( catid=27 and (status=2 or status=3) ) ORDER BY listorder desc,vid desc LIMIT 8   [ RunTime:0.000235s ]
+SQL: SELECT `catid`,`catname`,`caturl` FROM `tp_category` WHERE ( `catid` IN ('14','15','16','17','18','19','20','21') ) ORDER BY listorder desc,catid desc  [ RunTime:0.000226s ]
+NOTIC: [8] Undefined variable: category_list /var/www/html/bobo2/Home/Lib/Action/CommonAction.class.php 第 28 行.
+NOTIC: [8] Undefined index: linkageid /var/www/html/bobo2/Home/Lib/Action/ProductAction.class.php 第 18 行.
+NOTIC: [8] Undefined index: price_search /var/www/html/bobo2/Home/Lib/Action/ProductAction.class.php 第 19 行.
+NOTIC: [8] Undefined index: texturelist_search /var/www/html/bobo2/Home/Lib/Action/ProductAction.class.php 第 20 行.
+NOTIC: [8] Undefined index: capacity_search /var/www/html/bobo2/Home/Lib/Action/ProductAction.class.php 第 21 行.
+SQL: SELECT `catid`,`catname`,`caturl` FROM `tp_category` WHERE ( `catid` IN ('14','15','16','17','18','19','20','21') ) ORDER BY listorder desc,catid desc  [ RunTime:0.000220s ]
+NOTIC: [8] Undefined index: bobo_pc_user_id /var/www/html/bobo2/Home/Lib/Action/ProductAction.class.php 第 24 行.
+NOTIC: [8] Undefined variable: pro_list_fw /var/www/html/bobo2/Home/Lib/Action/ProductAction.class.php 第 45 行.
+SQL: SELECT `colorname`,`id` FROM `tp_parameter` WHERE ( typeid=1 and status=1 ) ORDER BY listorder desc,id desc  [ RunTime:0.001317s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_linkage` WHERE ( catid=17 and status=1 ) LIMIT 1   [ RunTime:0.000184s ]
+SQL: SELECT a.xqstatus,a.title,a.picurlpc,a.catid,a.id,b.capacity,b.price,b.id as ppid,a.colorlist,b.fmpicurl FROM tp_product_price b,tp_product a WHERE ( a.catid=17  and a.status=1 and  a.id=b.pid ) ORDER BY a.listorder desc,id desc  [ RunTime:0.000496s ]
+SQL: SELECT `catname` FROM `tp_category` WHERE ( catid=17 ) LIMIT 1   [ RunTime:0.000164s ]
+SQL: SELECT `colorname` FROM `tp_parameter` WHERE ( `id` IN ('9') )  [ RunTime:0.000144s ]
+SQL: SELECT `catname` FROM `tp_category` WHERE ( catid=17 ) LIMIT 1   [ RunTime:0.000137s ]
+SQL: SELECT `colorname` FROM `tp_parameter` WHERE ( `id` IN ('9','9') )  [ RunTime:0.000173s ]
+SQL: SELECT `catname` FROM `tp_category` WHERE ( catid=17 ) LIMIT 1   [ RunTime:0.000140s ]
+SQL: SELECT `colorname` FROM `tp_parameter` WHERE ( `id` IN ('9','9') )  [ RunTime:0.000149s ]
+SQL: SELECT `catname` FROM `tp_category` WHERE ( catid=17 ) LIMIT 1   [ RunTime:0.000159s ]
+SQL: SELECT `colorname` FROM `tp_parameter` WHERE ( `id` IN ('13') )  [ RunTime:0.000140s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000276s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000335s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] A session had already been started - ignoring session_start() /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 78 行.
+NOTIC: [8] Undefined index: bobo_pc_user_id /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 78 行.
+NOTIC: [8] Undefined index: bobo_pc_user_id /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 85 行.
+NOTIC: [8] Undefined index: bobo_pc_user_name /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 85 行.
+NOTIC: [8] Undefined variable: k /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 112 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 115 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 115 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 115 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 115 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 115 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 115 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 115 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 115 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 115 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 115 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 115 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 115 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 115 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 115 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 115 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 115 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 118 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 118 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 118 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 118 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 118 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 118 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 118 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 118 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 121 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 121 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 121 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 121 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 146 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 146 行.
+NOTIC: [8] Use of undefined constant ppid - assumed 'ppid' /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 146 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 146 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 146 行.
+NOTIC: [8] Use of undefined constant ppid - assumed 'ppid' /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 146 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 146 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 146 行.
+NOTIC: [8] Use of undefined constant ppid - assumed 'ppid' /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 146 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 146 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 146 行.
+NOTIC: [8] Use of undefined constant ppid - assumed 'ppid' /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 146 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 146 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 146 行.
+NOTIC: [8] Use of undefined constant ppid - assumed 'ppid' /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 146 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 146 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 146 行.
+NOTIC: [8] Use of undefined constant ppid - assumed 'ppid' /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 146 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 146 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 146 行.
+NOTIC: [8] Use of undefined constant ppid - assumed 'ppid' /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 146 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 146 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 146 行.
+NOTIC: [8] Use of undefined constant ppid - assumed 'ppid' /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 146 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 150 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 150 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 150 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 150 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 150 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 150 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 150 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 150 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 154 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 154 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 154 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 154 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 154 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 154 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 154 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 157 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 157 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 157 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 157 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 157 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 157 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 157 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 157 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 180 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 180 行.
+NOTIC: [8] Use of undefined constant ppid - assumed 'ppid' /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 180 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 180 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 180 行.
+NOTIC: [8] Use of undefined constant ppid - assumed 'ppid' /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 180 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 180 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 180 行.
+NOTIC: [8] Use of undefined constant ppid - assumed 'ppid' /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 180 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 180 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 180 行.
+NOTIC: [8] Use of undefined constant ppid - assumed 'ppid' /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 180 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 180 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 180 行.
+NOTIC: [8] Use of undefined constant ppid - assumed 'ppid' /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 180 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 180 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 180 行.
+NOTIC: [8] Use of undefined constant ppid - assumed 'ppid' /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 180 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 180 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 180 行.
+NOTIC: [8] Use of undefined constant ppid - assumed 'ppid' /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 180 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 180 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 180 行.
+NOTIC: [8] Use of undefined constant ppid - assumed 'ppid' /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 180 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 184 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 184 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 184 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 184 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 184 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 184 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 184 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 184 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 188 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 188 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 188 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 188 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 188 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 188 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 188 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 191 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 191 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 191 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 191 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 191 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 191 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 191 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 191 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 265 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 265 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 265 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 265 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 265 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 265 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 265 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 265 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 265 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 265 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 265 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 265 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 265 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 265 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 265 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 265 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 265 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 265 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 265 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 265 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 265 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 265 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 265 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 265 行.
+NOTIC: [8] Use of undefined constant price_search - assumed 'price_search' /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 281 行.
+NOTIC: [8] Undefined index: price_search /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 281 行.
+NOTIC: [8] Use of undefined constant texturelist_search - assumed 'texturelist_search' /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 290 行.
+NOTIC: [8] Undefined index: texturelist_search /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 290 行.
+NOTIC: [8] Use of undefined constant capacity_search - assumed 'capacity_search' /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 298 行.
+NOTIC: [8] Undefined index: capacity_search /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 298 行.
+NOTIC: [8] Use of undefined constant xqstatus - assumed 'xqstatus' /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 312 行.
+NOTIC: [8] Use of undefined constant fmpicurl - assumed 'fmpicurl' /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 318 行.
+NOTIC: [8] A session had already been started - ignoring session_start() /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 329 行.
+NOTIC: [8] Undefined index: bobo_pc_user_id /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 329 行.
+NOTIC: [8] Use of undefined constant xqstatus - assumed 'xqstatus' /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 312 行.
+NOTIC: [8] Use of undefined constant fmpicurl - assumed 'fmpicurl' /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 318 行.
+NOTIC: [8] A session had already been started - ignoring session_start() /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 329 行.
+NOTIC: [8] Undefined index: bobo_pc_user_id /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 329 行.
+NOTIC: [8] Use of undefined constant xqstatus - assumed 'xqstatus' /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 312 行.
+NOTIC: [8] Use of undefined constant fmpicurl - assumed 'fmpicurl' /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 318 行.
+NOTIC: [8] A session had already been started - ignoring session_start() /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 329 行.
+NOTIC: [8] Undefined index: bobo_pc_user_id /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 329 行.
+NOTIC: [8] Use of undefined constant xqstatus - assumed 'xqstatus' /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 312 行.
+NOTIC: [8] Use of undefined constant fmpicurl - assumed 'fmpicurl' /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 318 行.
+NOTIC: [8] A session had already been started - ignoring session_start() /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 329 行.
+NOTIC: [8] Undefined index: bobo_pc_user_id /var/www/html/bobo2/Home/Runtime/Cache/7ec83dbe9b0a50fbf22731d36a9728b0.php 第 329 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.044689s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044749s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000591s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000282s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000150s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000380s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001604s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000414s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000472s ]
+
+[ 2016-08-23T15:23:06+08:00 ] 116.226.162.13 /bobo2/
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000364s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000439s ]
+SQL: SHOW COLUMNS FROM `tp_page` [ RunTime:0.000637s ]
+SQL: SHOW COLUMNS FROM `tp_index_picture` [ RunTime:0.000570s ]
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.000636s ]
+SQL: SHOW COLUMNS FROM `tp_content` [ RunTime:0.000652s ]
+SQL: SELECT * FROM `tp_page` WHERE ( `catid` = 29 ) LIMIT 1   [ RunTime:0.000242s ]
+SQL: SELECT `id`,`catid`,`title`,`headerpic` FROM `tp_content` WHERE ( catid=23 and (status=2 or status=3) ) ORDER BY conorder desc,id desc LIMIT 8   [ RunTime:0.000460s ]
+SQL: SELECT `id`,`catid`,`title`,`headerpic` FROM `tp_content` WHERE ( catid=24 and (status=2 or status=3) ) ORDER BY conorder desc,id desc LIMIT 8   [ RunTime:0.000360s ]
+SQL: SELECT `id`,`catid`,`title`,`headerpic` FROM `tp_content` WHERE ( catid=25 and (status=2 or status=3) ) ORDER BY conorder desc,id desc LIMIT 8   [ RunTime:0.000359s ]
+SQL: SHOW COLUMNS FROM `tp_site` [ RunTime:0.000420s ]
+SQL: SELECT * FROM `tp_site` WHERE ( siteid=1 ) LIMIT 1   [ RunTime:0.000190s ]
+SQL: SHOW COLUMNS FROM `tp_product` [ RunTime:0.018381s ]
+SQL: SELECT a.xqstatus,a.title,a.picurlpc,a.catid,a.id,b.id as ppid FROM tp_product_price b,tp_product a WHERE ( a.posid=1 and a.status=1 and  a.id=b.pid ) ORDER BY a.listorder desc,id desc LIMIT 8   [ RunTime:0.000628s ]
+SQL: SHOW COLUMNS FROM `tp_video` [ RunTime:0.020039s ]
+SQL: SELECT `vtitle`,`headerpic`,`catid` FROM `tp_video` WHERE ( catid=26 and (status=2 or status=3) ) ORDER BY listorder desc,vid desc LIMIT 8   [ RunTime:0.000302s ]
+SQL: SELECT `vtitle`,`headerpic`,`catid` FROM `tp_video` WHERE ( catid=27 and (status=2 or status=3) ) ORDER BY listorder desc,vid desc LIMIT 8   [ RunTime:0.000272s ]
+SQL: SELECT `catid`,`catname`,`caturl` FROM `tp_category` WHERE ( `catid` IN ('14','15','16','17','18','19','20','21') ) ORDER BY listorder desc,catid desc  [ RunTime:0.000225s ]
+NOTIC: [8] Undefined variable: category_list /var/www/html/bobo2/Home/Lib/Action/CommonAction.class.php 第 28 行.
+SQL: SELECT `picurl`,`vidurl` FROM `tp_index_picture` WHERE ( siteid=2 and status=1 )  [ RunTime:0.000179s ]
+SQL: SELECT `id`,`picurl`,`vidurl`,`picwzurl` FROM `tp_index_picture` WHERE ( `id` IN ('11','12','13','14','15','16','17','18') ) AND ( `siteid` = 2 ) AND ( `status` = 2 )  [ RunTime:0.000197s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000270s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000339s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] A session had already been started - ignoring session_start() /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 78 行.
+NOTIC: [8] Undefined index: bobo_pc_user_id /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 78 行.
+NOTIC: [8] Undefined index: bobo_pc_user_id /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 85 行.
+NOTIC: [8] Undefined index: bobo_pc_user_name /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 85 行.
+NOTIC: [8] Undefined variable: k /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 112 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 115 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 115 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 115 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 115 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 115 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 115 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 115 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 115 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 115 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 115 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 115 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 115 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 115 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 115 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 115 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 115 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 118 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 118 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 118 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 118 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 118 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 118 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 118 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 118 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 121 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 121 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 121 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 121 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 146 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 146 行.
+NOTIC: [8] Use of undefined constant ppid - assumed 'ppid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 146 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 146 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 146 行.
+NOTIC: [8] Use of undefined constant ppid - assumed 'ppid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 146 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 146 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 146 行.
+NOTIC: [8] Use of undefined constant ppid - assumed 'ppid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 146 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 146 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 146 行.
+NOTIC: [8] Use of undefined constant ppid - assumed 'ppid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 146 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 146 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 146 行.
+NOTIC: [8] Use of undefined constant ppid - assumed 'ppid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 146 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 146 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 146 行.
+NOTIC: [8] Use of undefined constant ppid - assumed 'ppid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 146 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 146 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 146 行.
+NOTIC: [8] Use of undefined constant ppid - assumed 'ppid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 146 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 146 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 146 行.
+NOTIC: [8] Use of undefined constant ppid - assumed 'ppid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 146 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 150 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 150 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 150 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 150 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 150 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 150 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 150 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 150 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 154 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 154 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 154 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 154 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 154 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 154 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 154 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 157 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 157 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 157 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 157 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 157 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 157 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 157 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 157 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 180 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 180 行.
+NOTIC: [8] Use of undefined constant ppid - assumed 'ppid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 180 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 180 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 180 行.
+NOTIC: [8] Use of undefined constant ppid - assumed 'ppid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 180 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 180 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 180 行.
+NOTIC: [8] Use of undefined constant ppid - assumed 'ppid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 180 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 180 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 180 行.
+NOTIC: [8] Use of undefined constant ppid - assumed 'ppid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 180 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 180 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 180 行.
+NOTIC: [8] Use of undefined constant ppid - assumed 'ppid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 180 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 180 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 180 行.
+NOTIC: [8] Use of undefined constant ppid - assumed 'ppid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 180 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 180 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 180 行.
+NOTIC: [8] Use of undefined constant ppid - assumed 'ppid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 180 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 180 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 180 行.
+NOTIC: [8] Use of undefined constant ppid - assumed 'ppid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 180 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 184 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 184 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 184 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 184 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 184 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 184 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 184 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 184 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 188 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 188 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 188 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 188 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 188 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 188 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 188 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 191 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 191 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 191 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 191 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 191 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 191 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 191 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 191 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 273 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 273 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 273 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 273 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 273 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 273 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 273 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 273 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 277 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 277 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 277 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 277 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 277 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 277 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 277 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 277 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 282 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 282 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 282 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 282 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 282 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 282 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 282 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 282 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 286 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 286 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 286 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 286 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 286 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 286 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 286 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 286 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 291 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 291 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 291 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 291 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 291 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 291 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 291 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 291 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 295 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 295 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 295 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 295 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 295 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 295 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 295 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 295 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 300 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 300 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 300 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 300 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 300 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 300 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 300 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 300 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 304 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 304 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 304 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 304 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 304 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 304 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 304 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 304 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.081290s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.081363s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000508s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000265s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000144s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000329s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001439s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000409s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000465s ]
+
+[ 2016-08-23T15:23:11+08:00 ] 116.226.162.13 /bobo2/index.php/Content/content/catid/25
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000619s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000700s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000384s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000443s ]
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.000690s ]
+SQL: SHOW COLUMNS FROM `tp_content` [ RunTime:0.000643s ]
+SQL: SHOW COLUMNS FROM `tp_page` [ RunTime:0.000443s ]
+SQL: SELECT * FROM `tp_page` WHERE ( `catid` = 29 ) LIMIT 1   [ RunTime:0.000239s ]
+SQL: SELECT `id`,`catid`,`title`,`headerpic` FROM `tp_content` WHERE ( catid=23 and (status=2 or status=3) ) ORDER BY conorder desc,id desc LIMIT 8   [ RunTime:0.000441s ]
+SQL: SELECT `id`,`catid`,`title`,`headerpic` FROM `tp_content` WHERE ( catid=24 and (status=2 or status=3) ) ORDER BY conorder desc,id desc LIMIT 8   [ RunTime:0.000390s ]
+SQL: SELECT `id`,`catid`,`title`,`headerpic` FROM `tp_content` WHERE ( catid=25 and (status=2 or status=3) ) ORDER BY conorder desc,id desc LIMIT 8   [ RunTime:0.000340s ]
+SQL: SHOW COLUMNS FROM `tp_site` [ RunTime:0.000362s ]
+SQL: SELECT * FROM `tp_site` WHERE ( siteid=1 ) LIMIT 1   [ RunTime:0.000194s ]
+SQL: SHOW COLUMNS FROM `tp_product` [ RunTime:0.000579s ]
+SQL: SELECT a.xqstatus,a.title,a.picurlpc,a.catid,a.id,b.id as ppid FROM tp_product_price b,tp_product a WHERE ( a.posid=1 and a.status=1 and  a.id=b.pid ) ORDER BY a.listorder desc,id desc LIMIT 8   [ RunTime:0.000609s ]
+SQL: SHOW COLUMNS FROM `tp_video` [ RunTime:0.000514s ]
+SQL: SELECT `vtitle`,`headerpic`,`catid` FROM `tp_video` WHERE ( catid=26 and (status=2 or status=3) ) ORDER BY listorder desc,vid desc LIMIT 8   [ RunTime:0.000293s ]
+SQL: SELECT `vtitle`,`headerpic`,`catid` FROM `tp_video` WHERE ( catid=27 and (status=2 or status=3) ) ORDER BY listorder desc,vid desc LIMIT 8   [ RunTime:0.000244s ]
+SQL: SELECT `catid`,`catname`,`caturl` FROM `tp_category` WHERE ( `catid` IN ('14','15','16','17','18','19','20','21') ) ORDER BY listorder desc,catid desc  [ RunTime:0.000229s ]
+NOTIC: [8] Undefined variable: category_list /var/www/html/bobo2/Home/Lib/Action/CommonAction.class.php 第 28 行.
+SQL: SHOW COLUMNS FROM `tp_parameter` [ RunTime:0.000468s ]
+SQL: SELECT `catname` FROM `tp_category` WHERE ( catid=25 ) LIMIT 1   [ RunTime:0.000198s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_content` WHERE ( (status=2 or status=3) and catid=25 ) LIMIT 1   [ RunTime:0.000377s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000268s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000329s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] A session had already been started - ignoring session_start() /var/www/html/bobo2/Home/Runtime/Cache/fe9930bbb0e2d631fffd2092295b4769.php 第 78 行.
+NOTIC: [8] Undefined index: bobo_pc_user_id /var/www/html/bobo2/Home/Runtime/Cache/fe9930bbb0e2d631fffd2092295b4769.php 第 78 行.
+NOTIC: [8] Undefined index: bobo_pc_user_id /var/www/html/bobo2/Home/Runtime/Cache/fe9930bbb0e2d631fffd2092295b4769.php 第 85 行.
+NOTIC: [8] Undefined index: bobo_pc_user_name /var/www/html/bobo2/Home/Runtime/Cache/fe9930bbb0e2d631fffd2092295b4769.php 第 85 行.
+NOTIC: [8] Undefined variable: k /var/www/html/bobo2/Home/Runtime/Cache/fe9930bbb0e2d631fffd2092295b4769.php 第 112 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/fe9930bbb0e2d631fffd2092295b4769.php 第 115 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/fe9930bbb0e2d631fffd2092295b4769.php 第 115 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/fe9930bbb0e2d631fffd2092295b4769.php 第 115 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/fe9930bbb0e2d631fffd2092295b4769.php 第 115 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/fe9930bbb0e2d631fffd2092295b4769.php 第 115 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/fe9930bbb0e2d631fffd2092295b4769.php 第 115 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/fe9930bbb0e2d631fffd2092295b4769.php 第 115 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/fe9930bbb0e2d631fffd2092295b4769.php 第 115 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/fe9930bbb0e2d631fffd2092295b4769.php 第 115 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/fe9930bbb0e2d631fffd2092295b4769.php 第 115 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/fe9930bbb0e2d631fffd2092295b4769.php 第 115 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/fe9930bbb0e2d631fffd2092295b4769.php 第 115 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/fe9930bbb0e2d631fffd2092295b4769.php 第 115 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/fe9930bbb0e2d631fffd2092295b4769.php 第 115 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/fe9930bbb0e2d631fffd2092295b4769.php 第 115 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/fe9930bbb0e2d631fffd2092295b4769.php 第 115 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/fe9930bbb0e2d631fffd2092295b4769.php 第 118 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/fe9930bbb0e2d631fffd2092295b4769.php 第 118 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/fe9930bbb0e2d631fffd2092295b4769.php 第 118 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/fe9930bbb0e2d631fffd2092295b4769.php 第 118 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/fe9930bbb0e2d631fffd2092295b4769.php 第 118 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/fe9930bbb0e2d631fffd2092295b4769.php 第 118 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/fe9930bbb0e2d631fffd2092295b4769.php 第 118 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/fe9930bbb0e2d631fffd2092295b4769.php 第 118 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/fe9930bbb0e2d631fffd2092295b4769.php 第 121 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/fe9930bbb0e2d631fffd2092295b4769.php 第 121 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/fe9930bbb0e2d631fffd2092295b4769.php 第 121 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/fe9930bbb0e2d631fffd2092295b4769.php 第 121 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/fe9930bbb0e2d631fffd2092295b4769.php 第 146 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/fe9930bbb0e2d631fffd2092295b4769.php 第 146 行.
+NOTIC: [8] Use of undefined constant ppid - assumed 'ppid' /var/www/html/bobo2/Home/Runtime/Cache/fe9930bbb0e2d631fffd2092295b4769.php 第 146 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/fe9930bbb0e2d631fffd2092295b4769.php 第 146 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/fe9930bbb0e2d631fffd2092295b4769.php 第 146 行.
+NOTIC: [8] Use of undefined constant ppid - assumed 'ppid' /var/www/html/bobo2/Home/Runtime/Cache/fe9930bbb0e2d631fffd2092295b4769.php 第 146 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/fe9930bbb0e2d631fffd2092295b4769.php 第 146 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/fe9930bbb0e2d631fffd2092295b4769.php 第 146 行.
+NOTIC: [8] Use of undefined constant ppid - assumed 'ppid' /var/www/html/bobo2/Home/Runtime/Cache/fe9930bbb0e2d631fffd2092295b4769.php 第 146 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/fe9930bbb0e2d631fffd2092295b4769.php 第 146 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/fe9930bbb0e2d631fffd2092295b4769.php 第 146 行.
+NOTIC: [8] Use of undefined constant ppid - assumed 'ppid' /var/www/html/bobo2/Home/Runtime/Cache/fe9930bbb0e2d631fffd2092295b4769.php 第 146 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/fe9930bbb0e2d631fffd2092295b4769.php 第 146 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/fe9930bbb0e2d631fffd2092295b4769.php 第 146 行.
+NOTIC: [8] Use of undefined constant ppid - assumed 'ppid' /var/www/html/bobo2/Home/Runtime/Cache/fe9930bbb0e2d631fffd2092295b4769.php 第 146 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/fe9930bbb0e2d631fffd2092295b4769.php 第 146 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/fe9930bbb0e2d631fffd2092295b4769.php 第 146 行.
+NOTIC: [8] Use of undefined constant ppid - assumed 'ppid' /var/www/html/bobo2/Home/Runtime/Cache/fe9930bbb0e2d631fffd2092295b4769.php 第 146 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/fe9930bbb0e2d631fffd2092295b4769.php 第 146 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/fe9930bbb0e2d631fffd2092295b4769.php 第 146 行.
+NOTIC: [8] Use of undefined constant ppid - assumed 'ppid' /var/www/html/bobo2/Home/Runtime/Cache/fe9930bbb0e2d631fffd2092295b4769.php 第 146 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/fe9930bbb0e2d631fffd2092295b4769.php 第 146 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/fe9930bbb0e2d631fffd2092295b4769.php 第 146 行.
+NOTIC: [8] Use of undefined constant ppid - assumed 'ppid' /var/www/html/bobo2/Home/Runtime/Cache/fe9930bbb0e2d631fffd2092295b4769.php 第 146 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/fe9930bbb0e2d631fffd2092295b4769.php 第 150 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/fe9930bbb0e2d631fffd2092295b4769.php 第 150 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/fe9930bbb0e2d631fffd2092295b4769.php 第 150 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/fe9930bbb0e2d631fffd2092295b4769.php 第 150 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/fe9930bbb0e2d631fffd2092295b4769.php 第 150 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/fe9930bbb0e2d631fffd2092295b4769.php 第 150 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/fe9930bbb0e2d631fffd2092295b4769.php 第 150 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/fe9930bbb0e2d631fffd2092295b4769.php 第 150 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/fe9930bbb0e2d631fffd2092295b4769.php 第 154 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/fe9930bbb0e2d631fffd2092295b4769.php 第 154 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/fe9930bbb0e2d631fffd2092295b4769.php 第 154 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/fe9930bbb0e2d631fffd2092295b4769.php 第 154 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/fe9930bbb0e2d631fffd2092295b4769.php 第 154 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/fe9930bbb0e2d631fffd2092295b4769.php 第 154 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/fe9930bbb0e2d631fffd2092295b4769.php 第 154 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/fe9930bbb0e2d631fffd2092295b4769.php 第 157 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/fe9930bbb0e2d631fffd2092295b4769.php 第 157 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/fe9930bbb0e2d631fffd2092295b4769.php 第 157 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/fe9930bbb0e2d631fffd2092295b4769.php 第 157 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/fe9930bbb0e2d631fffd2092295b4769.php 第 157 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/fe9930bbb0e2d631fffd2092295b4769.php 第 157 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/fe9930bbb0e2d631fffd2092295b4769.php 第 157 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/fe9930bbb0e2d631fffd2092295b4769.php 第 157 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/fe9930bbb0e2d631fffd2092295b4769.php 第 180 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/fe9930bbb0e2d631fffd2092295b4769.php 第 180 行.
+NOTIC: [8] Use of undefined constant ppid - assumed 'ppid' /var/www/html/bobo2/Home/Runtime/Cache/fe9930bbb0e2d631fffd2092295b4769.php 第 180 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/fe9930bbb0e2d631fffd2092295b4769.php 第 180 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/fe9930bbb0e2d631fffd2092295b4769.php 第 180 行.
+NOTIC: [8] Use of undefined constant ppid - assumed 'ppid' /var/www/html/bobo2/Home/Runtime/Cache/fe9930bbb0e2d631fffd2092295b4769.php 第 180 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/fe9930bbb0e2d631fffd2092295b4769.php 第 180 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/fe9930bbb0e2d631fffd2092295b4769.php 第 180 行.
+NOTIC: [8] Use of undefined constant ppid - assumed 'ppid' /var/www/html/bobo2/Home/Runtime/Cache/fe9930bbb0e2d631fffd2092295b4769.php 第 180 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/fe9930bbb0e2d631fffd2092295b4769.php 第 180 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/fe9930bbb0e2d631fffd2092295b4769.php 第 180 行.
+NOTIC: [8] Use of undefined constant ppid - assumed 'ppid' /var/www/html/bobo2/Home/Runtime/Cache/fe9930bbb0e2d631fffd2092295b4769.php 第 180 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/fe9930bbb0e2d631fffd2092295b4769.php 第 180 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/fe9930bbb0e2d631fffd2092295b4769.php 第 180 行.
+NOTIC: [8] Use of undefined constant ppid - assumed 'ppid' /var/www/html/bobo2/Home/Runtime/Cache/fe9930bbb0e2d631fffd2092295b4769.php 第 180 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/fe9930bbb0e2d631fffd2092295b4769.php 第 180 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/fe9930bbb0e2d631fffd2092295b4769.php 第 180 行.
+NOTIC: [8] Use of undefined constant ppid - assumed 'ppid' /var/www/html/bobo2/Home/Runtime/Cache/fe9930bbb0e2d631fffd2092295b4769.php 第 180 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/fe9930bbb0e2d631fffd2092295b4769.php 第 180 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/fe9930bbb0e2d631fffd2092295b4769.php 第 180 行.
+NOTIC: [8] Use of undefined constant ppid - assumed 'ppid' /var/www/html/bobo2/Home/Runtime/Cache/fe9930bbb0e2d631fffd2092295b4769.php 第 180 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/fe9930bbb0e2d631fffd2092295b4769.php 第 180 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/fe9930bbb0e2d631fffd2092295b4769.php 第 180 行.
+NOTIC: [8] Use of undefined constant ppid - assumed 'ppid' /var/www/html/bobo2/Home/Runtime/Cache/fe9930bbb0e2d631fffd2092295b4769.php 第 180 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/fe9930bbb0e2d631fffd2092295b4769.php 第 184 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/fe9930bbb0e2d631fffd2092295b4769.php 第 184 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/fe9930bbb0e2d631fffd2092295b4769.php 第 184 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/fe9930bbb0e2d631fffd2092295b4769.php 第 184 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/fe9930bbb0e2d631fffd2092295b4769.php 第 184 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/fe9930bbb0e2d631fffd2092295b4769.php 第 184 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/fe9930bbb0e2d631fffd2092295b4769.php 第 184 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/fe9930bbb0e2d631fffd2092295b4769.php 第 184 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/fe9930bbb0e2d631fffd2092295b4769.php 第 188 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/fe9930bbb0e2d631fffd2092295b4769.php 第 188 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/fe9930bbb0e2d631fffd2092295b4769.php 第 188 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/fe9930bbb0e2d631fffd2092295b4769.php 第 188 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/fe9930bbb0e2d631fffd2092295b4769.php 第 188 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/fe9930bbb0e2d631fffd2092295b4769.php 第 188 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/fe9930bbb0e2d631fffd2092295b4769.php 第 188 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/fe9930bbb0e2d631fffd2092295b4769.php 第 191 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/fe9930bbb0e2d631fffd2092295b4769.php 第 191 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/fe9930bbb0e2d631fffd2092295b4769.php 第 191 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/fe9930bbb0e2d631fffd2092295b4769.php 第 191 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/fe9930bbb0e2d631fffd2092295b4769.php 第 191 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/fe9930bbb0e2d631fffd2092295b4769.php 第 191 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/fe9930bbb0e2d631fffd2092295b4769.php 第 191 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/fe9930bbb0e2d631fffd2092295b4769.php 第 191 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/fe9930bbb0e2d631fffd2092295b4769.php 第 611 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/fe9930bbb0e2d631fffd2092295b4769.php 第 626 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.045629s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.045684s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000445s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000270s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000140s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000328s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001371s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000427s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000483s ]
+
+[ 2016-08-23T15:23:13+08:00 ] 116.226.162.13 /bobo2/index.php/Content/getAuto
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000592s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000670s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000378s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000431s ]
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.000746s ]
+SQL: SHOW COLUMNS FROM `tp_content` [ RunTime:0.000664s ]
+SQL: SHOW COLUMNS FROM `tp_page` [ RunTime:0.000448s ]
+SQL: SELECT * FROM `tp_page` WHERE ( `catid` = 29 ) LIMIT 1   [ RunTime:0.000239s ]
+SQL: SELECT `id`,`catid`,`title`,`headerpic` FROM `tp_content` WHERE ( catid=23 and (status=2 or status=3) ) ORDER BY conorder desc,id desc LIMIT 8   [ RunTime:0.000470s ]
+SQL: SELECT `id`,`catid`,`title`,`headerpic` FROM `tp_content` WHERE ( catid=24 and (status=2 or status=3) ) ORDER BY conorder desc,id desc LIMIT 8   [ RunTime:0.000384s ]
+SQL: SELECT `id`,`catid`,`title`,`headerpic` FROM `tp_content` WHERE ( catid=25 and (status=2 or status=3) ) ORDER BY conorder desc,id desc LIMIT 8   [ RunTime:0.000335s ]
+SQL: SHOW COLUMNS FROM `tp_site` [ RunTime:0.000358s ]
+SQL: SELECT * FROM `tp_site` WHERE ( siteid=1 ) LIMIT 1   [ RunTime:0.000192s ]
+SQL: SHOW COLUMNS FROM `tp_product` [ RunTime:0.000596s ]
+SQL: SELECT a.xqstatus,a.title,a.picurlpc,a.catid,a.id,b.id as ppid FROM tp_product_price b,tp_product a WHERE ( a.posid=1 and a.status=1 and  a.id=b.pid ) ORDER BY a.listorder desc,id desc LIMIT 8   [ RunTime:0.000620s ]
+SQL: SHOW COLUMNS FROM `tp_video` [ RunTime:0.000495s ]
+SQL: SELECT `vtitle`,`headerpic`,`catid` FROM `tp_video` WHERE ( catid=26 and (status=2 or status=3) ) ORDER BY listorder desc,vid desc LIMIT 8   [ RunTime:0.000314s ]
+SQL: SELECT `vtitle`,`headerpic`,`catid` FROM `tp_video` WHERE ( catid=27 and (status=2 or status=3) ) ORDER BY listorder desc,vid desc LIMIT 8   [ RunTime:0.000239s ]
+SQL: SELECT `catid`,`catname`,`caturl` FROM `tp_category` WHERE ( `catid` IN ('14','15','16','17','18','19','20','21') ) ORDER BY listorder desc,catid desc  [ RunTime:0.000224s ]
+NOTIC: [8] Undefined variable: category_list /var/www/html/bobo2/Home/Lib/Action/CommonAction.class.php 第 28 行.
+SQL: SHOW COLUMNS FROM `tp_parameter` [ RunTime:0.000422s ]
+SQL: SELECT `title`,`description`,`picurlpc`,`catid`,`id`,`inputtime` FROM `tp_content` WHERE ( (status=2 or status=3) and catid=25 ) ORDER BY conorder desc,inputtime desc LIMIT 0,10   [ RunTime:0.000411s ]
+NOTIC: [8] Undefined variable: msg /var/www/html/bobo2/Home/Lib/Action/ContentAction.class.php 第 98 行.
+NOTIC: [8] Undefined index: one /var/www/html/bobo2/Home/Lib/Action/ContentAction.class.php 第 98 行.
+NOTIC: [8] Undefined index: two /var/www/html/bobo2/Home/Lib/Action/ContentAction.class.php 第 99 行.
+
+[ 2016-08-23T16:14:50+08:00 ] 223.255.240.74 /bobo2/index.php/Product/product_details/catid/14/pid/61/ppid/74
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000602s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000682s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000379s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000438s ]
+SQL: SHOW COLUMNS FROM `tp_product` [ RunTime:0.000784s ]
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.000559s ]
+SQL: SHOW COLUMNS FROM `tp_linkage` [ RunTime:0.000507s ]
+SQL: SHOW COLUMNS FROM `tp_parameter` [ RunTime:0.000417s ]
+SQL: SHOW COLUMNS FROM `tp_collect` [ RunTime:0.000444s ]
+SQL: SHOW COLUMNS FROM `tp_content` [ RunTime:0.000565s ]
+SQL: SHOW COLUMNS FROM `tp_page` [ RunTime:0.000502s ]
+SQL: SELECT * FROM `tp_page` WHERE ( `catid` = 29 ) LIMIT 1   [ RunTime:0.000252s ]
+SQL: SELECT `id`,`catid`,`title`,`headerpic` FROM `tp_content` WHERE ( catid=23 and (status=2 or status=3) ) ORDER BY conorder desc,id desc LIMIT 8   [ RunTime:0.000482s ]
+SQL: SELECT `id`,`catid`,`title`,`headerpic` FROM `tp_content` WHERE ( catid=24 and (status=2 or status=3) ) ORDER BY conorder desc,id desc LIMIT 8   [ RunTime:0.000408s ]
+SQL: SELECT `id`,`catid`,`title`,`headerpic` FROM `tp_content` WHERE ( catid=25 and (status=2 or status=3) ) ORDER BY conorder desc,id desc LIMIT 8   [ RunTime:0.000406s ]
+SQL: SHOW COLUMNS FROM `tp_site` [ RunTime:0.000400s ]
+SQL: SELECT * FROM `tp_site` WHERE ( siteid=1 ) LIMIT 1   [ RunTime:0.000218s ]
+SQL: SELECT a.xqstatus,a.title,a.picurlpc,a.catid,a.id,b.id as ppid FROM tp_product_price b,tp_product a WHERE ( a.posid=1 and a.status=1 and  a.id=b.pid ) ORDER BY a.listorder desc,id desc LIMIT 8   [ RunTime:0.000565s ]
+SQL: SHOW COLUMNS FROM `tp_video` [ RunTime:0.000580s ]
+SQL: SELECT `vtitle`,`headerpic`,`catid` FROM `tp_video` WHERE ( catid=26 and (status=2 or status=3) ) ORDER BY listorder desc,vid desc LIMIT 8   [ RunTime:0.000307s ]
+SQL: SELECT `vtitle`,`headerpic`,`catid` FROM `tp_video` WHERE ( catid=27 and (status=2 or status=3) ) ORDER BY listorder desc,vid desc LIMIT 8   [ RunTime:0.000308s ]
+SQL: SELECT `catid`,`catname`,`caturl` FROM `tp_category` WHERE ( `catid` IN ('14','15','16','17','18','19','20','21') ) ORDER BY listorder desc,catid desc  [ RunTime:0.000289s ]
+NOTIC: [8] Undefined variable: category_list /var/www/html/bobo2/Home/Lib/Action/CommonAction.class.php 第 28 行.
+NOTIC: [8] Undefined index: bobo_pc_user_id /var/www/html/bobo2/Home/Lib/Action/ProductAction.class.php 第 379 行.
+SQL: SELECT tp_product.picurlpc,tp_product.title,tp_product.colorlist,a.price,a.capacity,tp_product.id as pid,tp_product.catid,a.id FROM `tp_product` left join tp_product_price a on tp_product.id=a.pid WHERE ( tp_product.catid=14  and tp_product.status=1  ) ORDER BY tp_product.listorder desc,tp_product.id desc LIMIT 6   [ RunTime:0.000597s ]
+SQL: SELECT `colorname`,`name` FROM `tp_parameter` WHERE ( `id` IN ('12','8','1','6') ) AND ( `status` = 1 )  [ RunTime:0.000201s ]
+SQL: SELECT `colorname`,`name` FROM `tp_parameter` WHERE ( `id` IN ('12','8','1','6') ) AND ( `status` = 1 )  [ RunTime:0.000171s ]
+SQL: SELECT `colorname`,`name` FROM `tp_parameter` WHERE ( `id` IN ('12','8','1','6') ) AND ( `status` = 1 )  [ RunTime:0.000190s ]
+SQL: SELECT `colorname`,`name` FROM `tp_parameter` WHERE ( `id` IN ('12','8','1','6') ) AND ( `status` = 1 )  [ RunTime:0.000167s ]
+SQL: SELECT `colorname`,`name` FROM `tp_parameter` WHERE ( `id` IN ('12','4','1','6') ) AND ( `status` = 1 )  [ RunTime:0.000166s ]
+SQL: SELECT `colorname`,`name` FROM `tp_parameter` WHERE ( `id` IN ('12','4','1','6') ) AND ( `status` = 1 )  [ RunTime:0.000166s ]
+SQL: SELECT `catname` FROM `tp_category` WHERE ( catid=14 ) LIMIT 1   [ RunTime:0.000138s ]
+SQL: SELECT tp_product.xqstatus,tp_product.content,tp_product.picurlpcall,tp_product.title,tp_product.colorlist,a.price,c.id as colid,a.id as ppid FROM `tp_product` left join tp_product_price a on tp_product.id=a.pid left join tp_collect c on a.id=c.ppid WHERE ( tp_product.catid=14 and tp_product.id=61 and tp_product.status=1 and a.id=74 ) LIMIT 1   [ RunTime:0.000254s ]
+SQL: SELECT `colorname`,`name` FROM `tp_parameter` WHERE ( `id` IN ('4','7','1','6') ) AND ( `status` = 1 ) ORDER BY field (id,4,7,1,6)  [ RunTime:0.000197s ]
+NOTIC: [8] Undefined variable: link_list /var/www/html/bobo2/Home/Lib/Action/ProductAction.class.php 第 428 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000295s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000361s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] A session had already been started - ignoring session_start() /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 78 行.
+NOTIC: [8] Undefined index: bobo_pc_user_id /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 78 行.
+NOTIC: [8] Undefined index: bobo_pc_user_id /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 85 行.
+NOTIC: [8] Undefined index: bobo_pc_user_name /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 85 行.
+NOTIC: [8] Undefined variable: k /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 112 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 115 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 115 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 115 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 115 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 115 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 115 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 115 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 115 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 115 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 115 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 115 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 115 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 115 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 115 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 115 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 115 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 118 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 118 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 118 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 118 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 118 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 118 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 118 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 118 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 121 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 121 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 121 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 121 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 146 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 146 行.
+NOTIC: [8] Use of undefined constant ppid - assumed 'ppid' /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 146 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 146 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 146 行.
+NOTIC: [8] Use of undefined constant ppid - assumed 'ppid' /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 146 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 146 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 146 行.
+NOTIC: [8] Use of undefined constant ppid - assumed 'ppid' /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 146 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 146 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 146 行.
+NOTIC: [8] Use of undefined constant ppid - assumed 'ppid' /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 146 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 146 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 146 行.
+NOTIC: [8] Use of undefined constant ppid - assumed 'ppid' /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 146 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 146 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 146 行.
+NOTIC: [8] Use of undefined constant ppid - assumed 'ppid' /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 146 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 146 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 146 行.
+NOTIC: [8] Use of undefined constant ppid - assumed 'ppid' /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 146 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 146 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 146 行.
+NOTIC: [8] Use of undefined constant ppid - assumed 'ppid' /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 146 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 150 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 150 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 150 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 150 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 150 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 150 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 150 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 150 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 154 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 154 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 154 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 154 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 154 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 154 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 154 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 157 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 157 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 157 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 157 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 157 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 157 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 157 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 157 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 180 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 180 行.
+NOTIC: [8] Use of undefined constant ppid - assumed 'ppid' /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 180 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 180 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 180 行.
+NOTIC: [8] Use of undefined constant ppid - assumed 'ppid' /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 180 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 180 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 180 行.
+NOTIC: [8] Use of undefined constant ppid - assumed 'ppid' /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 180 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 180 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 180 行.
+NOTIC: [8] Use of undefined constant ppid - assumed 'ppid' /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 180 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 180 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 180 行.
+NOTIC: [8] Use of undefined constant ppid - assumed 'ppid' /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 180 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 180 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 180 行.
+NOTIC: [8] Use of undefined constant ppid - assumed 'ppid' /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 180 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 180 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 180 行.
+NOTIC: [8] Use of undefined constant ppid - assumed 'ppid' /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 180 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 180 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 180 行.
+NOTIC: [8] Use of undefined constant ppid - assumed 'ppid' /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 180 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 184 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 184 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 184 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 184 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 184 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 184 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 184 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 184 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 188 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 188 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 188 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 188 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 188 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 188 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 188 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 191 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 191 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 191 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 191 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 191 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 191 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 191 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 191 行.
+NOTIC: [8] Use of undefined constant picurlpcall - assumed 'picurlpcall' /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 263 行.
+NOTIC: [8] Use of undefined constant picurlpcall - assumed 'picurlpcall' /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 263 行.
+NOTIC: [8] Use of undefined constant colorlist - assumed 'colorlist' /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 268 行.
+NOTIC: [8] Use of undefined constant colorlist - assumed 'colorlist' /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 268 行.
+NOTIC: [8] Use of undefined constant colorlist - assumed 'colorlist' /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 275 行.
+NOTIC: [8] Use of undefined constant name - assumed 'name' /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 275 行.
+NOTIC: [8] A session had already been started - ignoring session_start() /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 277 行.
+NOTIC: [8] Undefined index: bobo_pc_user_id /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 277 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 319 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 319 行.
+NOTIC: [8] Use of undefined constant colorlist - assumed 'colorlist' /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 323 行.
+NOTIC: [8] Use of undefined constant colorlist - assumed 'colorlist' /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 323 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 326 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 326 行.
+NOTIC: [8] A session had already been started - ignoring session_start() /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 331 行.
+NOTIC: [8] Undefined index: bobo_pc_user_id /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 331 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 319 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 319 行.
+NOTIC: [8] Use of undefined constant colorlist - assumed 'colorlist' /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 323 行.
+NOTIC: [8] Use of undefined constant colorlist - assumed 'colorlist' /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 323 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 326 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 326 行.
+NOTIC: [8] A session had already been started - ignoring session_start() /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 331 行.
+NOTIC: [8] Undefined index: bobo_pc_user_id /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 331 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 319 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 319 行.
+NOTIC: [8] Use of undefined constant colorlist - assumed 'colorlist' /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 323 行.
+NOTIC: [8] Use of undefined constant colorlist - assumed 'colorlist' /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 323 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 326 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 326 行.
+NOTIC: [8] A session had already been started - ignoring session_start() /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 331 行.
+NOTIC: [8] Undefined index: bobo_pc_user_id /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 331 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 319 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 319 行.
+NOTIC: [8] Use of undefined constant colorlist - assumed 'colorlist' /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 323 行.
+NOTIC: [8] Use of undefined constant colorlist - assumed 'colorlist' /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 323 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 326 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 326 行.
+NOTIC: [8] A session had already been started - ignoring session_start() /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 331 行.
+NOTIC: [8] Undefined index: bobo_pc_user_id /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 331 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 319 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 319 行.
+NOTIC: [8] Use of undefined constant colorlist - assumed 'colorlist' /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 323 行.
+NOTIC: [8] Use of undefined constant colorlist - assumed 'colorlist' /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 323 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 326 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 326 行.
+NOTIC: [8] A session had already been started - ignoring session_start() /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 331 行.
+NOTIC: [8] Undefined index: bobo_pc_user_id /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 331 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 319 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 319 行.
+NOTIC: [8] Use of undefined constant colorlist - assumed 'colorlist' /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 323 行.
+NOTIC: [8] Use of undefined constant colorlist - assumed 'colorlist' /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 323 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 326 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 326 行.
+NOTIC: [8] A session had already been started - ignoring session_start() /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 331 行.
+NOTIC: [8] Undefined index: bobo_pc_user_id /var/www/html/bobo2/Home/Runtime/Cache/22da7317198283eab56d8e78bc060a88.php 第 331 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.108273s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.108337s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000567s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000291s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000141s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000360s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001527s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000454s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000512s ]
+
+[ 2016-08-23T17:36:06+08:00 ] 116.226.162.13 /bobo2/
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000366s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000442s ]
+SQL: SHOW COLUMNS FROM `tp_page` [ RunTime:0.000945s ]
+SQL: SHOW COLUMNS FROM `tp_index_picture` [ RunTime:0.000588s ]
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.000618s ]
+SQL: SHOW COLUMNS FROM `tp_content` [ RunTime:0.000684s ]
+SQL: SELECT * FROM `tp_page` WHERE ( `catid` = 29 ) LIMIT 1   [ RunTime:0.000244s ]
+SQL: SELECT `id`,`catid`,`title`,`headerpic` FROM `tp_content` WHERE ( catid=23 and (status=2 or status=3) ) ORDER BY conorder desc,id desc LIMIT 8   [ RunTime:0.000486s ]
+SQL: SELECT `id`,`catid`,`title`,`headerpic` FROM `tp_content` WHERE ( catid=24 and (status=2 or status=3) ) ORDER BY conorder desc,id desc LIMIT 8   [ RunTime:0.000369s ]
+SQL: SELECT `id`,`catid`,`title`,`headerpic` FROM `tp_content` WHERE ( catid=25 and (status=2 or status=3) ) ORDER BY conorder desc,id desc LIMIT 8   [ RunTime:0.000347s ]
+SQL: SHOW COLUMNS FROM `tp_site` [ RunTime:0.000419s ]
+SQL: SELECT * FROM `tp_site` WHERE ( siteid=1 ) LIMIT 1   [ RunTime:0.000195s ]
+SQL: SHOW COLUMNS FROM `tp_product` [ RunTime:0.000647s ]
+SQL: SELECT a.xqstatus,a.title,a.picurlpc,a.catid,a.id,b.id as ppid FROM tp_product_price b,tp_product a WHERE ( a.posid=1 and a.status=1 and  a.id=b.pid ) ORDER BY a.listorder desc,id desc LIMIT 8   [ RunTime:0.000642s ]
+SQL: SHOW COLUMNS FROM `tp_video` [ RunTime:0.000578s ]
+SQL: SELECT `vtitle`,`headerpic`,`catid` FROM `tp_video` WHERE ( catid=26 and (status=2 or status=3) ) ORDER BY listorder desc,vid desc LIMIT 8   [ RunTime:0.000286s ]
+SQL: SELECT `vtitle`,`headerpic`,`catid` FROM `tp_video` WHERE ( catid=27 and (status=2 or status=3) ) ORDER BY listorder desc,vid desc LIMIT 8   [ RunTime:0.000229s ]
+SQL: SELECT `catid`,`catname`,`caturl` FROM `tp_category` WHERE ( `catid` IN ('14','15','16','17','18','19','20','21') ) ORDER BY listorder desc,catid desc  [ RunTime:0.000224s ]
+NOTIC: [8] Undefined variable: category_list /var/www/html/bobo2/Home/Lib/Action/CommonAction.class.php 第 28 行.
+SQL: SELECT `picurl`,`vidurl` FROM `tp_index_picture` WHERE ( siteid=2 and status=1 )  [ RunTime:0.000196s ]
+SQL: SELECT `id`,`picurl`,`vidurl`,`picwzurl` FROM `tp_index_picture` WHERE ( `id` IN ('11','12','13','14','15','16','17','18') ) AND ( `siteid` = 2 ) AND ( `status` = 2 )  [ RunTime:0.000202s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000283s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000347s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] A session had already been started - ignoring session_start() /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 78 行.
+NOTIC: [8] Undefined index: bobo_pc_user_id /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 78 行.
+NOTIC: [8] Undefined index: bobo_pc_user_id /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 85 行.
+NOTIC: [8] Undefined index: bobo_pc_user_name /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 85 行.
+NOTIC: [8] Undefined variable: k /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 112 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 115 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 115 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 115 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 115 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 115 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 115 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 115 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 115 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 115 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 115 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 115 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 115 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 115 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 115 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 115 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 115 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 118 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 118 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 118 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 118 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 118 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 118 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 118 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 118 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 121 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 121 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 121 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 121 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 146 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 146 行.
+NOTIC: [8] Use of undefined constant ppid - assumed 'ppid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 146 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 146 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 146 行.
+NOTIC: [8] Use of undefined constant ppid - assumed 'ppid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 146 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 146 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 146 行.
+NOTIC: [8] Use of undefined constant ppid - assumed 'ppid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 146 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 146 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 146 行.
+NOTIC: [8] Use of undefined constant ppid - assumed 'ppid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 146 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 146 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 146 行.
+NOTIC: [8] Use of undefined constant ppid - assumed 'ppid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 146 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 146 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 146 行.
+NOTIC: [8] Use of undefined constant ppid - assumed 'ppid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 146 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 146 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 146 行.
+NOTIC: [8] Use of undefined constant ppid - assumed 'ppid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 146 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 146 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 146 行.
+NOTIC: [8] Use of undefined constant ppid - assumed 'ppid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 146 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 150 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 150 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 150 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 150 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 150 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 150 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 150 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 150 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 154 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 154 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 154 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 154 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 154 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 154 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 154 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 157 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 157 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 157 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 157 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 157 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 157 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 157 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 157 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 180 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 180 行.
+NOTIC: [8] Use of undefined constant ppid - assumed 'ppid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 180 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 180 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 180 行.
+NOTIC: [8] Use of undefined constant ppid - assumed 'ppid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 180 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 180 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 180 行.
+NOTIC: [8] Use of undefined constant ppid - assumed 'ppid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 180 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 180 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 180 行.
+NOTIC: [8] Use of undefined constant ppid - assumed 'ppid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 180 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 180 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 180 行.
+NOTIC: [8] Use of undefined constant ppid - assumed 'ppid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 180 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 180 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 180 行.
+NOTIC: [8] Use of undefined constant ppid - assumed 'ppid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 180 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 180 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 180 行.
+NOTIC: [8] Use of undefined constant ppid - assumed 'ppid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 180 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 180 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 180 行.
+NOTIC: [8] Use of undefined constant ppid - assumed 'ppid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 180 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 184 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 184 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 184 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 184 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 184 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 184 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 184 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 184 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 188 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 188 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 188 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 188 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 188 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 188 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 188 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 191 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 191 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 191 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 191 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 191 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 191 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 191 行.
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 191 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 273 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 273 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 273 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 273 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 273 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 273 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 273 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 273 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 277 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 277 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 277 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 277 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 277 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 277 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 277 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 277 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 282 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 282 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 282 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 282 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 282 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 282 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 282 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 282 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 286 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 286 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 286 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 286 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 286 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 286 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 286 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 286 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 291 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 291 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 291 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 291 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 291 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 291 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 291 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 291 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 295 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 295 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 295 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 295 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 295 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 295 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 295 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 295 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 300 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 300 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 300 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 300 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 300 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 300 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 300 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 300 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 304 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 304 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 304 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 304 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 304 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 304 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 304 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 304 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.043187s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043258s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000496s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000285s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000142s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000335s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001427s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000430s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000487s ]
+

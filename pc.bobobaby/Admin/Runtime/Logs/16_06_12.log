@@ -1,0 +1,904 @@
+[ 2016-06-12T10:35:13+08:00 ] 101.81.36.162 /bobo2/admin.php/Index/picture/cls/3
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000605s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000689s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000385s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000446s ]
+NOTIC: [2048] Declaration of IndexAction::show() should be compatible with that of Action::show() /var/www/html/bobo2/Admin/Lib/Action/IndexAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.020335s ]
+SQL: SHOW COLUMNS FROM `tp_index_picture` [ RunTime:0.000546s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_index_picture` WHERE ( `siteid` = 2 ) LIMIT 1   [ RunTime:0.000225s ]
+SQL: SELECT `inputtime`,`title`,`picurl`,`id`,`listorder`,`status` FROM `tp_index_picture` WHERE ( `siteid` = 2 ) ORDER BY listorder desc,id desc LIMIT 0,10   [ RunTime:0.000257s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000245s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000310s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.070508s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.070581s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000370s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000252s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000139s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000331s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001261s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000410s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000470s ]
+
+[ 2016-06-12T10:35:21+08:00 ] 101.81.36.162 /bobo2/admin.php
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000364s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000440s ]
+NOTIC: [2048] Declaration of IndexAction::show() should be compatible with that of Action::show() /var/www/html/bobo2/Admin/Lib/Action/IndexAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.000535s ]
+SQL: SHOW COLUMNS FROM `tp_index_picture` [ RunTime:0.000515s ]
+NOTIC: [8] Undefined variable: gd /var/www/html/bobo2/Admin/Lib/Action/IndexAction.class.php 第 19 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000217s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000280s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: cls /var/www/html/bobo2/Admin/Runtime/Cache/20eabf8d43f497715f3e1a7ec1a2f00f.php 第 53 行.
+NOTIC: [8] Undefined index: cls /var/www/html/bobo2/Admin/Runtime/Cache/20eabf8d43f497715f3e1a7ec1a2f00f.php 第 54 行.
+NOTIC: [8] Undefined index: cls /var/www/html/bobo2/Admin/Runtime/Cache/20eabf8d43f497715f3e1a7ec1a2f00f.php 第 55 行.
+NOTIC: [8] Undefined index: cls /var/www/html/bobo2/Admin/Runtime/Cache/20eabf8d43f497715f3e1a7ec1a2f00f.php 第 56 行.
+NOTIC: [8] Undefined index: cls /var/www/html/bobo2/Admin/Runtime/Cache/20eabf8d43f497715f3e1a7ec1a2f00f.php 第 57 行.
+NOTIC: [8] Undefined index: cls /var/www/html/bobo2/Admin/Runtime/Cache/20eabf8d43f497715f3e1a7ec1a2f00f.php 第 58 行.
+NOTIC: [8] Undefined index: cls /var/www/html/bobo2/Admin/Runtime/Cache/20eabf8d43f497715f3e1a7ec1a2f00f.php 第 59 行.
+NOTIC: [8] Undefined index: cls /var/www/html/bobo2/Admin/Runtime/Cache/20eabf8d43f497715f3e1a7ec1a2f00f.php 第 60 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.022227s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022290s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000401s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000471s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000149s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000322s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001541s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000532s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000590s ]
+
+[ 2016-06-12T10:35:39+08:00 ] 101.81.36.162 /bobo2/admin.php/Category/category/cls/2
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000572s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000651s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000360s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000429s ]
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.000697s ]
+SQL: SELECT `catid`,`catname`,`type`,`parentid`,concat(arrparentid,'-',catid) as bpath,`model`,`listorder` FROM `tp_category` WHERE ( siteid=1 ) ORDER BY parentid,listorder  [ RunTime:0.000605s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000394s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000506s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 138 行.
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 138 行.
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 138 行.
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 138 行.
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 138 行.
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 138 行.
+NOTIC: [8] Use of undefined constant Content - assumed 'Content' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 167 行.
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 138 行.
+NOTIC: [8] Use of undefined constant Content - assumed 'Content' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 167 行.
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 138 行.
+NOTIC: [8] Use of undefined constant Content - assumed 'Content' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 167 行.
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 138 行.
+NOTIC: [8] Use of undefined constant Content - assumed 'Content' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 167 行.
+NOTIC: [8] Use of undefined constant Picture - assumed 'Picture' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 197 行.
+NOTIC: [8] Use of undefined constant Product - assumed 'Product' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 227 行.
+NOTIC: [8] Use of undefined constant Video - assumed 'Video' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 258 行.
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 138 行.
+NOTIC: [8] Use of undefined constant Content - assumed 'Content' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 167 行.
+NOTIC: [8] Use of undefined constant Picture - assumed 'Picture' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 197 行.
+NOTIC: [8] Use of undefined constant Product - assumed 'Product' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 227 行.
+NOTIC: [8] Use of undefined constant Video - assumed 'Video' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 258 行.
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 138 行.
+NOTIC: [8] Use of undefined constant Content - assumed 'Content' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 167 行.
+NOTIC: [8] Use of undefined constant Picture - assumed 'Picture' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 197 行.
+NOTIC: [8] Use of undefined constant Product - assumed 'Product' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 227 行.
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 138 行.
+NOTIC: [8] Use of undefined constant Content - assumed 'Content' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 167 行.
+NOTIC: [8] Use of undefined constant Picture - assumed 'Picture' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 197 行.
+NOTIC: [8] Use of undefined constant Product - assumed 'Product' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 227 行.
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 138 行.
+NOTIC: [8] Use of undefined constant Content - assumed 'Content' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 167 行.
+NOTIC: [8] Use of undefined constant Picture - assumed 'Picture' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 197 行.
+NOTIC: [8] Use of undefined constant Product - assumed 'Product' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 227 行.
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 138 行.
+NOTIC: [8] Use of undefined constant Content - assumed 'Content' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 167 行.
+NOTIC: [8] Use of undefined constant Picture - assumed 'Picture' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 197 行.
+NOTIC: [8] Use of undefined constant Product - assumed 'Product' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 227 行.
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 138 行.
+NOTIC: [8] Use of undefined constant Content - assumed 'Content' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 167 行.
+NOTIC: [8] Use of undefined constant Picture - assumed 'Picture' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 197 行.
+NOTIC: [8] Use of undefined constant Product - assumed 'Product' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 227 行.
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 138 行.
+NOTIC: [8] Use of undefined constant Content - assumed 'Content' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 167 行.
+NOTIC: [8] Use of undefined constant Picture - assumed 'Picture' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 197 行.
+NOTIC: [8] Use of undefined constant Product - assumed 'Product' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 227 行.
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 138 行.
+NOTIC: [8] Use of undefined constant Content - assumed 'Content' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 167 行.
+NOTIC: [8] Use of undefined constant Picture - assumed 'Picture' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 197 行.
+NOTIC: [8] Use of undefined constant Product - assumed 'Product' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 227 行.
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 138 行.
+NOTIC: [8] Use of undefined constant Content - assumed 'Content' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 167 行.
+NOTIC: [8] Use of undefined constant Picture - assumed 'Picture' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 197 行.
+NOTIC: [8] Use of undefined constant Product - assumed 'Product' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 227 行.
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 138 行.
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' /var/www/html/bobo2/Admin/Runtime/Cache/91a138de4020df51ccc2e977dfd86a90.php 第 138 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.039139s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039228s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000378s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000247s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000139s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000327s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001307s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000428s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000530s ]
+
+[ 2016-06-12T10:35:43+08:00 ] 101.81.36.162 /bobo2/admin.php/Content/content/catid/23/cls/2
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000616s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000704s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000383s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000442s ]
+NOTIC: [2048] Declaration of ContentAction::show() should be compatible with that of Action::show() /var/www/html/bobo2/Admin/Lib/Action/ContentAction.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `tp_content` [ RunTime:0.000743s ]
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.000542s ]
+SQL: SHOW COLUMNS FROM `tp_product` [ RunTime:0.000600s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_content` WHERE ( catid=23 ) LIMIT 1   [ RunTime:0.000524s ]
+SQL: SELECT `id`,`status`,`conorder`,`title`,`posid`,`inputtime` FROM `tp_content` WHERE ( catid=23 ) ORDER BY conorder desc,id desc LIMIT 0,10   [ RunTime:0.000421s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000210s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000272s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.041204s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041270s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000373s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000246s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000135s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000345s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001260s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000401s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000456s ]
+
+[ 2016-06-12T10:35:48+08:00 ] 101.81.36.162 /bobo2/admin.php/Content/upContent/catid/23/id/52/cls/2
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000568s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000648s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000494s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000601s ]
+NOTIC: [2048] Declaration of ContentAction::show() should be compatible with that of Action::show() /var/www/html/bobo2/Admin/Lib/Action/ContentAction.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `tp_content` [ RunTime:0.000726s ]
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.000545s ]
+SQL: SHOW COLUMNS FROM `tp_product` [ RunTime:0.000626s ]
+SQL: SELECT `catname`,`catid` FROM `tp_category` WHERE ( catid=23  and siteid=1 ) LIMIT 1   [ RunTime:0.000283s ]
+SQL: SELECT * FROM `tp_content` WHERE ( id=52  and siteid=1 ) LIMIT 1   [ RunTime:0.000187s ]
+SQL: SELECT a.id,tp_product.title,a.capacity,a.price FROM `tp_product` left join `tp_product_price` a on tp_product.id=a.pid WHERE ( tp_product.status=1 )  [ RunTime:0.001922s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000228s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000299s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.037157s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037221s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000345s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000248s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000139s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000305s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001203s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000427s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000487s ]
+
+[ 2016-06-12T10:36:12+08:00 ] 101.81.36.162 /bobo2/admin.php/Content/doContent/id/52/action/edit
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000577s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000659s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000357s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000413s ]
+NOTIC: [2048] Declaration of ContentAction::show() should be compatible with that of Action::show() /var/www/html/bobo2/Admin/Lib/Action/ContentAction.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `tp_content` [ RunTime:0.000790s ]
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.000560s ]
+SQL: SHOW COLUMNS FROM `tp_product` [ RunTime:0.000627s ]
+NOTIC: [8] Undefined index: productlist /var/www/html/bobo2/Admin/Lib/Action/ContentAction.class.php 第 68 行.
+NOTIC: [2] implode(): Invalid arguments passed /var/www/html/bobo2/Admin/Lib/Action/ContentAction.class.php 第 68 行.
+SQL: UPDATE `tp_content` SET `title`='bo妈寻瓶记 10000支新生奶瓶等你来赢',`catid`=23,`description`='',`content`='<p>\r\n	<img src=\"/image/20151204/20151204160431_74568.jpg\" alt=\"\" width=\"600\" height=\"334\" title=\"\" align=\"\" />\r\n</p>\r\n<p>\r\n	想要体验新奇又好玩的新生喂哺之旅吗？马上进入bobo新生乐园，变声快乐bo妈，踏上趣味纷呈的冒险，赢取新生好礼！<img src=\"/image/20151204/20151204160453_22536.jpg\" alt=\"\" />\r\n</p>',`picurlpc`='/bobo2/image/20160612/20160612103610_98882.jpg',`headerpic`='',`updatetime`=1465698948,`productlist`=null WHERE ( id=52  and catid=23 ) [ RunTime:0.000333s ]
+
+[ 2016-06-12T10:36:13+08:00 ] 101.81.36.162 /bobo2/admin.php/Content/content/catid/23/cls/2
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000597s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000678s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000374s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000474s ]
+NOTIC: [2048] Declaration of ContentAction::show() should be compatible with that of Action::show() /var/www/html/bobo2/Admin/Lib/Action/ContentAction.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `tp_content` [ RunTime:0.000761s ]
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.000563s ]
+SQL: SHOW COLUMNS FROM `tp_product` [ RunTime:0.000639s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_content` WHERE ( catid=23 ) LIMIT 1   [ RunTime:0.000504s ]
+SQL: SELECT `id`,`status`,`conorder`,`title`,`posid`,`inputtime` FROM `tp_content` WHERE ( catid=23 ) ORDER BY conorder desc,id desc LIMIT 0,10   [ RunTime:0.000405s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000231s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000298s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.013724s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013803s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000382s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000273s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000136s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000520s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001479s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000418s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000479s ]
+
+[ 2016-06-12T10:39:29+08:00 ] 101.81.36.162 /bobo2/admin.php/Content/upContent/catid/23/id/95/cls/2
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000572s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000652s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000357s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000429s ]
+NOTIC: [2048] Declaration of ContentAction::show() should be compatible with that of Action::show() /var/www/html/bobo2/Admin/Lib/Action/ContentAction.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `tp_content` [ RunTime:0.000734s ]
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.000522s ]
+SQL: SHOW COLUMNS FROM `tp_product` [ RunTime:0.000599s ]
+SQL: SELECT `catname`,`catid` FROM `tp_category` WHERE ( catid=23  and siteid=1 ) LIMIT 1   [ RunTime:0.000256s ]
+SQL: SELECT * FROM `tp_content` WHERE ( id=95  and siteid=1 ) LIMIT 1   [ RunTime:0.000188s ]
+SQL: SELECT a.id,tp_product.title,a.capacity,a.price FROM `tp_product` left join `tp_product_price` a on tp_product.id=a.pid WHERE ( tp_product.status=1 )  [ RunTime:0.001917s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000325s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000399s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.016874s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016944s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000342s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000325s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000141s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000312s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001291s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000514s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000576s ]
+
+[ 2016-06-12T10:40:01+08:00 ] 101.81.36.162 /bobo2/admin.php/Content/doContent/id/95/action/edit
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000601s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000681s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000352s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000406s ]
+NOTIC: [2048] Declaration of ContentAction::show() should be compatible with that of Action::show() /var/www/html/bobo2/Admin/Lib/Action/ContentAction.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `tp_content` [ RunTime:0.000712s ]
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.000538s ]
+SQL: SHOW COLUMNS FROM `tp_product` [ RunTime:0.000604s ]
+NOTIC: [8] Undefined index: productlist /var/www/html/bobo2/Admin/Lib/Action/ContentAction.class.php 第 68 行.
+NOTIC: [2] implode(): Invalid arguments passed /var/www/html/bobo2/Admin/Lib/Action/ContentAction.class.php 第 68 行.
+SQL: UPDATE `tp_content` SET `title`='捕捉成长小潜力  换新成就大能力',`catid`=23,`description`='',`content`='<p>\r\n	<img src=\"/image/20151210/20151210105148_83223.jpg\" alt=\"\" width=\"600\" height=\"633\" title=\"\" align=\"\" />\r\n</p>\r\n<p>\r\n	宝宝成长源动力<br />\r\n在生命开始的最初几个月里，宝宝借着“觅乳反射”“吸吮反射”“吞咽反射”三大先天反射能力完成吃奶的过程，这些都是在新生期会出现的自然反应。吸吮的最初动作只是靠舌尖本能的含合和挤压来完成喝奶，并不属于真正意义的自主吮吸。而吞咽时很难自主控制流速和流量，所以在奶瓶喂养时，特别容易引发溢奶或呛奶。同时，新生儿口腔黏膜薄嫩，血管丰富，唾液分泌少，口腔黏膜干燥，易受损伤和细菌感染。因此还要注意口腔卫生，需要给宝宝安全柔和地呵护。<br />\r\n“吃奶”，作为宝宝与生俱来的本领，吮吸时的节奏与妈妈乳腺出奶节奏相吻合，伴随宝宝吸力停止，奶水自动终止，所以宝宝不易呛奶。而奶瓶喂养就不再那么简单，要么吸不出，宝宝急得大哭；要么用力过猛，瞬间奶液流出太多，导致呛奶。<br />\r\n<br />\r\n妈妈好帮手<br />\r\n成长换新季0-6月所推荐的bobo新生【优晶瓶】和新生【小金瓶】，均配有bobo新生柔护型奶嘴，超柔10°硬度硅胶材质，呵护宝宝娇嫩口腔，专利“自动锁流”技术，充分模仿妈妈乳腺结构，独创3道切口设计，根据宝宝吮吸自动调节流量，轻松易吸，避免呛奶，是初生婴儿的理想选择。<br />\r\n<img src=\"/image/20151210/20151210105205_97269.jpg\" alt=\"\" width=\"600\" height=\"748\" title=\"\" align=\"\" />\r\n</p>',`picurlpc`='/bobo2/image/20160612/20160612103959_94901.jpg',`headerpic`='/bobo2/image/20160512/20160512155239_65309.png',`updatetime`=1465699169,`productlist`=null WHERE ( id=95  and catid=23 ) [ RunTime:0.000384s ]
+
+[ 2016-06-12T10:40:02+08:00 ] 101.81.36.162 /bobo2/admin.php/Content/content/catid/23/cls/2
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000583s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000662s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000395s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000466s ]
+NOTIC: [2048] Declaration of ContentAction::show() should be compatible with that of Action::show() /var/www/html/bobo2/Admin/Lib/Action/ContentAction.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `tp_content` [ RunTime:0.000694s ]
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.000519s ]
+SQL: SHOW COLUMNS FROM `tp_product` [ RunTime:0.000594s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_content` WHERE ( catid=23 ) LIMIT 1   [ RunTime:0.000489s ]
+SQL: SELECT `id`,`status`,`conorder`,`title`,`posid`,`inputtime` FROM `tp_content` WHERE ( catid=23 ) ORDER BY conorder desc,id desc LIMIT 0,10   [ RunTime:0.000387s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000240s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000304s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.013368s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013434s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000377s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000251s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000137s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000313s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001243s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000438s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000502s ]
+
+[ 2016-06-12T10:40:18+08:00 ] 101.81.36.162 /bobo2/admin.php/Content/upContent/catid/23/id/90/cls/2
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000604s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000684s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000386s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000458s ]
+NOTIC: [2048] Declaration of ContentAction::show() should be compatible with that of Action::show() /var/www/html/bobo2/Admin/Lib/Action/ContentAction.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `tp_content` [ RunTime:0.000717s ]
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.000545s ]
+SQL: SHOW COLUMNS FROM `tp_product` [ RunTime:0.000615s ]
+SQL: SELECT `catname`,`catid` FROM `tp_category` WHERE ( catid=23  and siteid=1 ) LIMIT 1   [ RunTime:0.000258s ]
+SQL: SELECT * FROM `tp_content` WHERE ( id=90  and siteid=1 ) LIMIT 1   [ RunTime:0.000194s ]
+SQL: SELECT a.id,tp_product.title,a.capacity,a.price FROM `tp_product` left join `tp_product_price` a on tp_product.id=a.pid WHERE ( tp_product.status=1 )  [ RunTime:0.001904s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000277s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000358s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.016388s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016464s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000412s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000258s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000141s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000329s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001309s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000417s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000477s ]
+
+[ 2016-06-12T10:40:29+08:00 ] 101.81.36.162 /bobo2/admin.php/Content/doContent/id/90/action/edit
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000569s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000651s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000362s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000437s ]
+NOTIC: [2048] Declaration of ContentAction::show() should be compatible with that of Action::show() /var/www/html/bobo2/Admin/Lib/Action/ContentAction.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `tp_content` [ RunTime:0.000727s ]
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.000520s ]
+SQL: SHOW COLUMNS FROM `tp_product` [ RunTime:0.000572s ]
+NOTIC: [8] Undefined index: productlist /var/www/html/bobo2/Admin/Lib/Action/ContentAction.class.php 第 68 行.
+NOTIC: [2] implode(): Invalid arguments passed /var/www/html/bobo2/Admin/Lib/Action/ContentAction.class.php 第 68 行.
+SQL: UPDATE `tp_content` SET `title`='bobo儿童节晒图有礼',`catid`=23,`description`='',`content`='<p>\r\n	<img src=\"/image/20151208/20151208154918_13038.jpg\" alt=\"\" />\r\n</p>\r\n<p>\r\n	六月是宝宝的摇篮，童年的梦乡！微笑在宝宝的脸上绽放，迎来春暖花开的初夏，恰好儿童节与端午节相逢，更多的温馨画面将这个小长假期间被定格。你准备好晒出来与大家分享你的幸福了吗？<br />\r\n为欢度六一儿童节，bobo将见证你与宝宝欢乐的时刻，将喂哺的幸福无限放大。在6月7日之前，发布你与宝宝的幸福合照+#bobo宝贝六一快乐#至朋友圈，并将截图发送至bobo官方微信，我们将在6月7日抽取5位幸运妈妈，送出bobo新生【小金瓶】1个！<br />\r\n留下你们珍贵的瞬间，让宝宝感知你的爱，快来参与我们的活动吧！<br />\r\n<img src=\"/image/20151208/20151208154934_64158.jpg\" alt=\"\" />\r\n</p>\r\n<p>\r\n	<br />\r\n</p>',`picurlpc`='/bobo2/image/20160612/20160612104027_99263.jpg',`headerpic`='/bobo2/image/20160512/20160512155259_42966.png',`updatetime`=1465699218,`productlist`=null WHERE ( id=90  and catid=23 ) [ RunTime:0.000348s ]
+
+[ 2016-06-12T10:40:30+08:00 ] 101.81.36.162 /bobo2/admin.php/Content/content/catid/23/cls/2
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000629s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000709s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000361s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000433s ]
+NOTIC: [2048] Declaration of ContentAction::show() should be compatible with that of Action::show() /var/www/html/bobo2/Admin/Lib/Action/ContentAction.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `tp_content` [ RunTime:0.000722s ]
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.000515s ]
+SQL: SHOW COLUMNS FROM `tp_product` [ RunTime:0.000631s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_content` WHERE ( catid=23 ) LIMIT 1   [ RunTime:0.000509s ]
+SQL: SELECT `id`,`status`,`conorder`,`title`,`posid`,`inputtime` FROM `tp_content` WHERE ( catid=23 ) ORDER BY conorder desc,id desc LIMIT 0,10   [ RunTime:0.000387s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000226s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000293s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.013682s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013761s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000420s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000356s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000187s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000383s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001554s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000444s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000504s ]
+
+[ 2016-06-12T10:40:38+08:00 ] 101.81.36.162 /bobo2/admin.php/Content/upContent/catid/23/id/85/cls/2
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000617s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000697s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000367s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000452s ]
+NOTIC: [2048] Declaration of ContentAction::show() should be compatible with that of Action::show() /var/www/html/bobo2/Admin/Lib/Action/ContentAction.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `tp_content` [ RunTime:0.000736s ]
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.000534s ]
+SQL: SHOW COLUMNS FROM `tp_product` [ RunTime:0.000615s ]
+SQL: SELECT `catname`,`catid` FROM `tp_category` WHERE ( catid=23  and siteid=1 ) LIMIT 1   [ RunTime:0.000276s ]
+SQL: SELECT * FROM `tp_content` WHERE ( id=85  and siteid=1 ) LIMIT 1   [ RunTime:0.000189s ]
+SQL: SELECT a.id,tp_product.title,a.capacity,a.price FROM `tp_product` left join `tp_product_price` a on tp_product.id=a.pid WHERE ( tp_product.status=1 )  [ RunTime:0.001897s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000269s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000329s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.015516s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015575s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000334s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000243s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000134s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000334s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001203s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000410s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000478s ]
+
+[ 2016-06-12T10:40:52+08:00 ] 101.81.36.162 /bobo2/admin.php/Content/doContent/id/85/action/edit
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000571s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000653s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000356s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000411s ]
+NOTIC: [2048] Declaration of ContentAction::show() should be compatible with that of Action::show() /var/www/html/bobo2/Admin/Lib/Action/ContentAction.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `tp_content` [ RunTime:0.000801s ]
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.000574s ]
+SQL: SHOW COLUMNS FROM `tp_product` [ RunTime:0.000627s ]
+NOTIC: [8] Undefined index: productlist /var/www/html/bobo2/Admin/Lib/Action/ContentAction.class.php 第 68 行.
+NOTIC: [2] implode(): Invalid arguments passed /var/www/html/bobo2/Admin/Lib/Action/ContentAction.class.php 第 68 行.
+SQL: UPDATE `tp_content` SET `title`='bobo成长换新季 7款喂哺产品免费换',`catid`=23,`description`='',`content`='<p>\r\n	<img src=\"/image/20151208/20151208141429_49158.jpg\" alt=\"\" />\r\n</p>\r\n<p>\r\n	每个宝宝都有自己独一无二的成长力量。bobo成长换新季，邀请妈妈关注宝宝每一个成长讯息，为宝宝及时更换最适时的喂哺工具，助力宝宝展现更多成长力量<br />\r\n<br />\r\n活动时间 2014年5月17日-2014年6月28日<br />\r\n活动内容<br />\r\n第1站：成长换新区<br />\r\n通过官方微信报名成功者，可凭换新短信或微信，以任意品牌喂哺产品免费换领宝宝下阶段所需的bobo指定全新喂哺产品。<br />\r\n第2站：有奖游戏区<br />\r\n现场参加“成长力量大不同，分阶工具连连看”游戏，在1分钟内完成宝宝下阶段分阶工具搭配，即可赢取bobo20元优惠券1张。（1人限玩1次）<br />\r\n金质喂哺工具 适用月龄<br />\r\n新生优晶瓶或新生小金瓶（2选1） 0-6m<br />\r\n研磨喂食碗或小晶碗（2选1） 6m+<br />\r\n魔力软嘴杯 6m+<br />\r\n晶透学饮杯 12m+<br />\r\n一瓶两用杯 15m+<br />\r\n<img src=\"/image/20151208/20151208141515_29072.jpg\" alt=\"\" width=\"600\" height=\"583\" title=\"\" align=\"\" /><img src=\"/image/20151208/20151208141518_15069.jpg\" alt=\"\" width=\"600\" height=\"583\" title=\"\" align=\"\" /><img src=\"/image/20151208/20151208141520_78078.jpg\" alt=\"\" width=\"600\" height=\"600\" title=\"\" align=\"\" /><img src=\"/image/20151208/20151208141524_34375.jpg\" alt=\"\" width=\"600\" height=\"583\" title=\"\" align=\"\" /><img src=\"/image/20151208/20151208141526_82528.jpg\" alt=\"\" width=\"600\" height=\"583\" title=\"\" align=\"\" />\r\n</p>\r\n<p>\r\n	晒图有礼<br />\r\n将活动现场照片及更换的产品照片发布至微信朋友圈，添加话题#bobo成长换新季#，截图发送给金质喂哺堂，即有机会再获得好礼1份！<br />\r\n<br />\r\n报名条件及方式<br />\r\n①家有0-12个月的萌宝<br />\r\n②家住浙江杭州、宁波（成长换新店铺目前设立于此2个城市）<br />\r\n③发送 活动+姓名+电话+城市+宝宝月龄 至金质喂哺堂！<br />\r\n<br />\r\n扫描以下二维码或微信添加公众账号金质喂哺堂立即关注bobo微信<br />\r\n<img src=\"/image/20151208/20151208141859_78646.png\" alt=\"\" />\r\n</p>',`picurlpc`='/bobo2/image/20160612/20160612104050_50089.jpg',`headerpic`='/bobo2/image/20160512/20160512155318_40554.png',`updatetime`=1465699238,`productlist`=null WHERE ( id=85  and catid=23 ) [ RunTime:0.000435s ]
+
+[ 2016-06-12T10:40:53+08:00 ] 101.81.36.162 /bobo2/admin.php/Content/content/catid/23/cls/2
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000606s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000686s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000390s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000448s ]
+NOTIC: [2048] Declaration of ContentAction::show() should be compatible with that of Action::show() /var/www/html/bobo2/Admin/Lib/Action/ContentAction.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `tp_content` [ RunTime:0.000765s ]
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.000578s ]
+SQL: SHOW COLUMNS FROM `tp_product` [ RunTime:0.000661s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_content` WHERE ( catid=23 ) LIMIT 1   [ RunTime:0.000496s ]
+SQL: SELECT `id`,`status`,`conorder`,`title`,`posid`,`inputtime` FROM `tp_content` WHERE ( catid=23 ) ORDER BY conorder desc,id desc LIMIT 0,10   [ RunTime:0.000387s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000217s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000283s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.013226s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013290s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000349s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000244s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000159s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000312s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001241s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000399s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000475s ]
+
+[ 2016-06-12T10:40:57+08:00 ] 101.81.36.162 /bobo2/admin.php/Content/upContent/catid/23/id/84/cls/2
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000600s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000686s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000384s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000445s ]
+NOTIC: [2048] Declaration of ContentAction::show() should be compatible with that of Action::show() /var/www/html/bobo2/Admin/Lib/Action/ContentAction.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `tp_content` [ RunTime:0.000749s ]
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.000563s ]
+SQL: SHOW COLUMNS FROM `tp_product` [ RunTime:0.000620s ]
+SQL: SELECT `catname`,`catid` FROM `tp_category` WHERE ( catid=23  and siteid=1 ) LIMIT 1   [ RunTime:0.000258s ]
+SQL: SELECT * FROM `tp_content` WHERE ( id=84  and siteid=1 ) LIMIT 1   [ RunTime:0.000185s ]
+SQL: SELECT a.id,tp_product.title,a.capacity,a.price FROM `tp_product` left join `tp_product_price` a on tp_product.id=a.pid WHERE ( tp_product.status=1 )  [ RunTime:0.001906s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000246s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000307s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /var/www/html/bobo2/Admin/Runtime/Cache/356adffaf769ac024682f88a143e6d7f.php 第 171 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.015452s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015511s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000300s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000258s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000137s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000304s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001155s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000425s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000484s ]
+
+[ 2016-06-12T10:41:07+08:00 ] 101.81.36.162 /bobo2/admin.php/Content/doContent/id/84/action/edit
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000596s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000676s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000354s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000408s ]
+NOTIC: [2048] Declaration of ContentAction::show() should be compatible with that of Action::show() /var/www/html/bobo2/Admin/Lib/Action/ContentAction.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `tp_content` [ RunTime:0.000766s ]
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.000561s ]
+SQL: SHOW COLUMNS FROM `tp_product` [ RunTime:0.000636s ]
+NOTIC: [8] Undefined index: productlist /var/www/html/bobo2/Admin/Lib/Action/ContentAction.class.php 第 68 行.
+NOTIC: [2] implode(): Invalid arguments passed /var/www/html/bobo2/Admin/Lib/Action/ContentAction.class.php 第 68 行.
+SQL: UPDATE `tp_content` SET `title`='10000支优晶瓶等你来抢',`catid`=23,`description`='',`content`='<p>\r\n	<img src=\"/image/20151208/20151208140939_64214.jpg\" alt=\"\" width=\"600\" height=\"333\" title=\"\" align=\"\" />\r\n</p>\r\n<p>\r\n	新生儿喂哺预体验，10000支玻璃奶瓶等你来抢！只需简单几步，体验喂哺过程，赢取宝宝第一支玻璃奶瓶！\r\n</p>\r\n<p>\r\n	<img src=\"/image/20151208/20151208141008_53538.jpg\" alt=\"\" width=\"600\" height=\"785\" title=\"\" align=\"\" />\r\n</p>',`picurlpc`='/bobo2/image/20160612/20160612104106_98103.jpg',`headerpic`='',`updatetime`=1465699257,`productlist`=null WHERE ( id=84  and catid=23 ) [ RunTime:0.000439s ]
+
+[ 2016-06-12T10:41:09+08:00 ] 101.81.36.162 /bobo2/admin.php/Content/content/catid/23/cls/2
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000595s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000675s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000384s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000454s ]
+NOTIC: [2048] Declaration of ContentAction::show() should be compatible with that of Action::show() /var/www/html/bobo2/Admin/Lib/Action/ContentAction.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `tp_content` [ RunTime:0.000745s ]
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.000571s ]
+SQL: SHOW COLUMNS FROM `tp_product` [ RunTime:0.000641s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_content` WHERE ( catid=23 ) LIMIT 1   [ RunTime:0.000487s ]
+SQL: SELECT `id`,`status`,`conorder`,`title`,`posid`,`inputtime` FROM `tp_content` WHERE ( catid=23 ) ORDER BY conorder desc,id desc LIMIT 0,10   [ RunTime:0.000463s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000209s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000272s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.013373s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013441s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000355s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000244s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000136s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000347s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001265s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000436s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000494s ]
+

@@ -1,0 +1,118 @@
+<include file="Public:header"/>
+        <!--内容-->
+        <div class="Product_list_content shiyong">
+			<include file="Public:left"/>
+            <div class="Product_list_right f_right">
+                <div class="Product_list_right_photo">
+                    <img class="Product_list_right_photo01" src="/bobo2/Public/img/000.png" />
+                    <div class="Product_list_right_photo_DW"></div>
+                    <div class="Product_list_right_photo_TxtDW">
+                        <h2>成长小金瓶<span>260ml</span></h2>
+                    </div>
+                </div>
+                <div class="Product_list_right_content survey">
+                  <h2>奥地利奶嘴试用问卷</h2>
+                    <ul>
+                        <li>
+                            <h3>一、您的宝宝为：</h3>
+                            <form id="form1" name="form1" method="post" action="">
+                                <input type="radio" name="RadioGroup1" value="单选" id="RadioGroup1_0" /><span>男</span>
+                                <input type="radio" name="RadioGroup1" value="单选" id="RadioGroup1_1" /><span>女</span>
+                            </form>
+                        </li>
+                        <li>
+                            <h3>二、您的宝宝是否使用过“bobo”系列的奶瓶：</h3>
+                            <form id="form1" name="form1" method="post" action="">
+                                <input type="radio" name="RadioGroup1" value="单选" id="RadioGroup1_0" /><span>是</span>
+                                <input type="radio" name="RadioGroup1" value="单选" id="RadioGroup1_1" /><span>否</span>
+                            </form>
+                        </li>
+                        <li>
+                            <h3>三、对于此次“bobo”品牌所提供的LP550（成长防摔优晶瓶）试用装，奶嘴更换成奥地利进口医用硅胶奶嘴（“+”字口变流量），在试用过程中，您及您的宝宝对于该款新奶嘴有哪些感受：</h3>
+                            <p>1.您对于该款奶嘴的硬度是否感受合适？</p>
+                            <form id="form1" name="form1" method="post" action="">
+                                <input type="radio" name="RadioGroup1" value="单选" id="RadioGroup1_0" /><span>是</span>
+                                <input type="radio" name="RadioGroup1" value="单选" id="RadioGroup1_1" /><span>否</span>
+                            </form>
+                        </li>
+                        <li>
+                            <p>2.您的宝宝在使用该款奶瓶喝奶时，是否很愿意接受？</p>
+                            <input type="radio" name="RadioGroup2" value="单选" id="RadioGroup2_0" /><span>很愿意接受</span><br />
+                            <input type="radio" name="RadioGroup2" value="单选" id="RadioGroup2_1" /><span>开始有点拒绝，但一会就愿意接受</span><br />
+                            <input type="radio" name="RadioGroup2" value="单选" id="RadioGroup2_2" /><span>拒绝，始终不愿意用该奶瓶（奶嘴）喝奶</span><br />
+                            <input type="radio" name="RadioGroup2" value="单选" id="RadioGroup2_3" /><span>其他</span>
+                        </li>
+                        <li>
+                            <p>3.您的宝宝在使用该奶瓶喝奶时，吸吮是否很顺畅？</p>
+                            <input type="radio" name="RadioGroup2" value="单选" id="RadioGroup2_0" /><span>很顺畅，一下就喝完了，很轻松</span><br />
+                            <input type="radio" name="RadioGroup2" value="单选" id="RadioGroup2_1" /><span>一般，感觉宝宝吸吮有点费力</span><br />
+                            <input type="radio" name="RadioGroup2" value="单选" id="RadioGroup2_2" /><span>吸不出来，感觉奶嘴都不会透气</span><br />
+                            <input type="radio" name="RadioGroup2" value="单选" id="RadioGroup2_3" /><span>其他</span>
+                        </li>
+                        <li>
+                            <p>4.您感觉宝宝喝奶时，该奶嘴的出奶量（流量）是否合适？</p>
+                            <input type="radio" name="RadioGroup2" value="单选" id="RadioGroup2_0" /><span>出奶量偏小，满足不了宝宝的需求</span><br />
+                            <input type="radio" name="RadioGroup2" value="单选" id="RadioGroup2_1" /><span>出奶量刚好</span><br />
+                            <input type="radio" name="RadioGroup2" value="单选" id="RadioGroup2_2" /><span>出奶量偏大，宝宝有呛奶现象</span><br />
+                            <input type="radio" name="RadioGroup2" value="单选" id="RadioGroup2_3" /><span>其他</span>
+                        </li>
+                    </ul>
+                    <form>
+                        <input class="surveyBtn01" type="button" value="提交" />
+                        <input class="surveyBtn02" type="button" value="重填" />
+                    </form>
+                </div>
+	        </div>
+	    </div>
+        <!-- footer -->
+        <div class="zhankai"></div>
+<include file="Public:footer"/>
+
+<script>
+function searchfun(name,value){
+	var hrefstr,pos,url='';
+	hrefstr = window.location.href;
+	pos = hrefstr.indexOf("?"); 
+	var value=encodeURI(value);
+	var bool=1;
+	if(pos=="-1"){
+		url=hrefstr+"?"+name+'='+value;
+		window.location.href=url;
+	}else{
+			var returnurl="";
+			var setparam="";
+	     	url = hrefstr.substr(hrefstr.indexOf('?') + 1);
+
+		    arr = url.split('&');
+			for (i in arr) {
+					if(arr[i].split('=')[0]==name){
+						if(name=='price_search' || name=='texturelist_search' || name=='capacity_search' || name=='color_search'){
+							arr[i]=name+"="+value;//url名与传进的名相同，存在修改
+						}
+						bool=0;break;
+					}
+			}
+			if(bool==1){
+				arr.push(name+"="+value);//url名与传进的名不同，存在不变
+			}	
+			for(j in arr){
+				returnurl+=arr[j]+"&";	
+			}
+		      returnurl = returnurl.substr(0, returnurl.length - 1); 
+			 url=hrefstr.substr(0, hrefstr.indexOf('?')) + "?" +returnurl;
+			window.location.href=url;
+	}
+}
+
+
+	
+		/*菜单*/
+	$('.nav-bar li:first').hover(function(){
+		$(this).removeClass('near')
+	},function(){
+		$(this).addClass('near')
+		})
+
+
+
+</script>

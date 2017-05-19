@@ -1,0 +1,56 @@
+<include file="Public:header"/>
+        
+        <!--内容-->
+        <div class="testing-content">
+           <!--标题-->
+           <h1 class="testing-h1"><img src="__PUBLIC__/img/detectionh1.png"></h1>
+           <div class="testing-nei">
+               
+           </div>
+		<div class="nodata">没有更多了</div>
+		   
+        </div>
+            
+        
+        <!-- footer -->
+        <div class="zhankai"></div>
+<include file="Public:footer"/>
+
+
+<script>
+
+
+$(function(){ 
+  var winH = $(window).height(); //页面可视区域高度 
+  var i = 0; //设置当前页数 
+    
+   $(window).load("<{:U('Report/getAuto')}>",{page:i,catid:27}, function(data) {
+   			i ++;
+			$(".testing-nei").append(data); 
+
+	}); 
+  $(window).scroll(function () { 
+
+    var pageH = $(document.body).height(); 
+    var scrollT = $(window).scrollTop(); //滚动条top 
+    var aa = (pageH-winH-scrollT)/winH; 
+    if(aa<0.02){ 
+      $.post("<{:U('Report/getAuto')}>",{page:i,catid:27},function(data){ 
+        if(data){ 
+
+           $(".testing-nei").append(data); 
+
+        }else{ 
+          $(".nodata").show().html("没有更多了"); 
+          return false; 
+        } 
+      }); 
+	   i++; 
+    } 
+  }); 
+}); 
+
+
+
+
+</script>
