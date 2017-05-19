@@ -1,0 +1,144 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<link type="text/css" rel="stylesheet" href="css/css.css" />
+</head>
+
+<body>
+
+<!--头部-->
+<div id="headerDl">
+     <div class="logo left"><a href="index.html"><img src="images/logo.jpg" /></a></div>
+     <div class="Btn right">
+         <a href="#">登录<span>/LOGIN</span></a><a href="#">注册<span>/REGISTERED</span></a>
+     </div>
+     <div class="clear"></div>
+</div> 
+<!--内容-->
+<div id="Loginbar">
+     <div class="loginbar">
+         <div class="loginbarNei">
+              <div class="LoginbarInput LoginbarInputdl">
+                  <table border="0">
+                    <tr>
+                      <td class="InputTxt">用户名：</td>
+                      <td class="InputSr"><input name="" type="text" /></td>
+                    </tr>
+                    <tr>
+                      <td class="InputTxt">密码：</td>
+                      <td class="InputSr"><input name="" type="password" /></td>
+                    </tr>
+                    <tr>
+                      <td class="InputTxt">&nbsp;</td>
+                      <td class="InputWj"><input name="" type="checkbox" value="" /><span>忘记密码？</span></td>
+                    </tr>
+                    <tr>
+                      <td>&nbsp;</td>
+                      <td>
+                          <table border="0" class="Inputbottom">
+                            <tr>
+                               <td style="width:175px;"><a class="Inputdenglu" href="#">登录</a></td>
+                               <td style=" padding-top:20px;"><a class="Inputdenglutxt Inputzctxt" href="#">未有账号？<span>立即注册</span></a></td>
+                             </tr>
+                          </table>
+                          <div class="clear"></div>
+                     </td>
+                    </tr>
+                  </table>
+
+              </div>
+              <div class="LoginbarInput LoginbarInputzc">
+                  <table border="0">
+                    <tr>
+                      <td class="InputTxt">用户名：</td>
+                      <td class="InputSr"><input name="" type="text" /></td>
+                    </tr>
+                    <tr>
+                      <td class="InputTxt">邮箱：</td>
+                      <td class="InputSr"><input name="" type="text" /></td>
+                    </tr>
+                    <tr>
+                      <td class="InputTxt">密码：</td>
+                      <td class="InputSr"><input name="" type="password" /></td>
+                    </tr>
+                    <tr>
+                      <td class="InputTxt">确认密码：</td>
+                      <td class="InputSr"><input name="" type="password" /></td>
+                    </tr>
+                    <tr>
+                      <td class="InputTxt">家长用户名：</td>
+                      <td class="InputSr"><input name="" type="text" /></td>
+                    </tr>
+                    <tr>
+                      <td class="InputTxt">邮箱：</td>
+                      <td class="InputSr"><input name="" type="text" /></td>
+                    </tr>
+                    <tr>
+                      <td class="InputTxt">密码：</td>
+                      <td class="InputSr"><input name="" type="password" /></td>
+                    </tr>
+                    <tr>
+                      <td class="InputTxt">确认密码：</td>
+                      <td class="InputSr"><input name="" type="password" /></td>
+                    </tr>
+                    <tr>
+                      <td>&nbsp;</td>
+                      <td>
+                         <table border="0" class="Inputbottom">
+                            <tr>
+                              <td style="width:175px;"><a class="Inputdenglu" href="#">注册</a></td>
+                              <td style=" padding-top:20px;"><a class="Inputdenglutxt Inputdltxt" href="#">已有账号？<span>马上登录</span></a></td>
+                            </tr>
+                          </table>
+                          <div class="clear"></div>
+                      </td>
+                    </tr>
+                  </table>
+
+              </div>
+         </div>
+     </div>
+</div>    
+
+<!--版权-->
+<div id="copyright">
+      <div class="copyright">
+            <span>版权所有 ©2005 上海魔方企业形象设计有限公司. 沪ICP备05002385号</span>
+            <div class="copyrightY right">
+                   <a href="#"><img src="images/f.gif" /></a>
+                   <a href="#"><img src="images/w.gif" /></a>
+                   <a href="#"><img src="images/r.gif" /></a>
+                   <a href="#"><img src="images/t.gif" /></a>
+            </div>
+      </div>
+</div>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript">
+$('.LoginbarInputdl').show();
+$('.Btn a').eq(0).addClass('Btnthis');
+$('.Btn a').click(function(){
+     var _Btn = $(this).index();
+	 
+	 $('.LoginbarInput').hide();
+	 $('.LoginbarInput').eq(_Btn).show();
+	 
+	 $('.Btn a').removeClass('Btnthis');
+	 $('.Btn a').eq(_Btn).addClass('Btnthis');
+});
+$('.Inputzctxt').click(function(){
+	 $('.LoginbarInput').hide();
+	 $('.LoginbarInput').eq(1).show();
+	 $('.Btn a').removeClass('Btnthis');
+	 $('.Btn a').eq(1).addClass('Btnthis');
+});
+$('.Inputdltxt').click(function(){
+	 $('.LoginbarInput').hide();
+	 $('.LoginbarInput').eq(0).show();
+	 $('.Btn a').removeClass('Btnthis');
+	 $('.Btn a').eq(0).addClass('Btnthis');
+});
+</script>
+</body>
+</html>
