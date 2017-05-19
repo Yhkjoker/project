@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>晓盛集团</title>
+	<meta name="keywords" content="关键字" />
+	<meta name="description" content="描述" />
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="viewport" content="width=375px">-->
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <!--<meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0" name="viewport" / >横屏时字体比较正常，竖屏时字体变小很多-->
+	<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.mobile-1.4.5.min.js"></script>
+	<link rel="stylesheet" href="css/css.css"><!--  样式表 -->
+	<link rel="stylesheet" href="css/style.css"><!--  媒体查询样式表 -->
+    <script src="js/width640.js" type="text/javascript"></script>
+</head>
+
+<body>
+
+
+<!-- 登陆 -->
+<div data-role="page" id="Land">
+
+  <div class="Land" data-role="content">
+      <div class="Land-input-box">
+          <img class="logo" src="images/land_logo.png">
+          <div class="Land-a clearFix">
+              <img class="f-l" src="images/land_ico1.png">
+              <input type="text" class="user w-100 f-r" data-role="none" placeholder="MOFANG-DESIGN">
+          </div>
+          <div class="Land-a clearFix">
+              <img class="f-l" src="images/land_ico2.png">
+              <input type="password" class="lock w-100 f-r" data-role="none">
+          </div>
+          <input class="submit" type="submit" value="登录" data-role="none">
+          <div class="forget find-center">
+              <a href="#" data-role="none">忘记了密码？</a>
+          </div>
+      </div>
+      <div class="posit find-center">
+            <a href="#register" data-ajax="false" data-role="none" data-transition="flow">新用户注册</a>
+      </div>
+  </div>
+
+</div>
+
+<!-- 注册 -->
+<div data-role="page" class="register" id="register">
+
+  <div class="Land" data-role="content">
+      <div class="Land-input-box">
+          <img class="logo" src="images/land_logo.png">
+          <div class="Land-a clearFix">
+              <img class="f-l" src="images/land_ico1.png">
+              <input type="text" class="user w-100 f-r" data-role="none" placeholder="账号">
+          </div>
+          <div class="Land-a clearFix">
+              <img class="f-l" src="images/land_ico2.png">
+              <input type="password" class="lock w-100 f-r" data-role="none" placeholder="密码">
+          </div>
+          <div class="Land-a clearFix">
+              <img class="f-l" src="images/land_ico2.png">
+              <input type="password" class="lock w-100 f-r" data-role="none" placeholder="确认密码">
+          </div>
+          <div class="Land-a clearFix yanzhengma">
+              <input type="password" class="lock w-100 f-l" data-role="none" placeholder="验证码">
+              <button class="button f-r">发送验证码</button>
+          </div>
+          <input class="submit" type="submit" value="注册" data-role="none">
+      </div>
+      <div class="posit find-center">
+            <a href="#Land" data-ajax="false" data-role="none" data-transition="flow">已有账号，<span>请登录</span></a>
+      </div>
+  </div>
+
+</div>
+
+</body>
+</html>
