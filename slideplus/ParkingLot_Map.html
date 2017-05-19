@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="__PUBLIC__/css/base.css" />
+<title>{$site_arr.stitle}</title>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<meta name="keywords" content="关键字,关键字" />
+<meta name="description" content="描述" />
+<!--地图添加 开始-->
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=1.2&services=true"></script>
+<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=430f969fb284263b3631805f0df6083a"></script>
+<!--地图添加 结束-->
+<script src="__PUBLIC__/js/width640.js" type="text/javascript"></script>
+<script type="text/javascript" src="__PUBLIC__/js/jquery.min.js"></script>
+<script type='application/javascript' src='__PUBLIC__/js/fastclick.js'></script>
+<script type="text/javascript">
+ /*清除300毫秒延迟*/
+$(function() {
+	FastClick.attach(document.body);
+});
+</script>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+<meta name="viewport" content="width=640, user-scalable=no, target-densitydpi=device-dpi, telephone=no">
+</head>
+<body>
+<div id="wrapper">
+        <div class="container Ascreen ParkingLot-Map">
+            <a class="MapIcon1" href="#"></a>
+            <div id="bbfmap">正在载入地图...</div>
+            <div id="bbfctrlpanel">
+            <div id="bbfctrlpanel_search">
+                <input type="button" class="bbfmapBtn" onClick="searchbaidu()" value="" autocomplete="off" />
+                <input type="text" id="title" placeholder="搜索目的地" />
+            </div>
+            <div class="clear"></div>
+            <div id="bbfresult">
+            </div> 
+        </div>   
+</div>
+	<script>
+        $('.Ascreen').height($(window).height());
+	</script>
+    <script type="text/javascript">
+wx.config({
+    debug: false, // 开启调试模式,调用的所有api的返回值会在客户端alert出来，若要查看传入的参数，可以在pc端打开，参数信息会通过log打出，仅在pc端时才会打印。
+    appId: '{$appid}', // 必填，公众号的唯一标识
+    timestamp: '{$arr.timestamp}', // 必填，生成签名的时间戳
+    nonceStr: '{$arr.nonceStr}', // 必填，生成签名的随机串
+    signature: '{$arr.signature}',// 必填，签名，见附录1
+    jsApiList: ['getLocation'] // 必填，需要使用的JS接口列表，所有JS接口列表见附录2
+});
+
+var lng;
+var lat;
+wx.ready(function(){
+    wx.getLocation({
+        type: 'wgs84', // 默认为wgs84的gps坐标，如果要返回直接给openLocation用的火星坐标，可传入'gcj02'
+        success: function (res) {
+            var latitude = res.latitude; // 纬度，浮点数，范围为90 ~ -90
+            var longitude = res.longitude; // 经度，浮点数，范围为180 ~ -180。
+            var speed = res.speed; // 速度，以米/每秒计
+            var accuracy = res.accuracy; // 位置精度            
+             $.ajax({  
+                url: 'http://api.map.baidu.com/ag/coord/convert?from=0&to=4&x='+longitude+'&y='+latitude,  
+                type: "get",  
+                dataType: "jsonp",  
+                jsonp: "callback",  
+                success: function (data) {  
+    
+                    lng=base64Decode(data.x);
+                    lat=base64Decode(data.y);
+                    loadMap(lng,lat);
+                    searchfrombaidu();
+                }  
+             });  
+            
+
+                    
+        }
+    });
+    // config信息验证后会执行ready方法，所有接口调用都必须在config接口获得结果之后，config是一个客户端的异步操作，所以如果需要在页面加载时就调用相关接口，则须把相关接口放在ready函数中调用来确保正确执行。对于用户触发时才调用的接口，则可以直接调用，不需要放在ready函数中。
+});
+wx.error(function(res){
+
+
+});
+</script>
+
+
+<script type="text/javascript">
+
+
+var map;
+var point;
+var marker;
+var circle;
+var lng;
+var lat;
+
+var json = new Array();
+<foreach name="part_list" item="vo" key="k">
+var json{$k}={ lng:{$vo.lng},lat:{$vo.lat},title:"{$vo.title}",address:"{$vo.address}",stime:"{$vo.stime}"};
+json.push(json{$k});
+</foreach>
+
+
+/*当前社区对象，当前社区的所有商家*/
+
+
+function loadMap(lng,lat){
+
+
+    
+    map = new BMap.Map("bbfmap");
+    point = new BMap.Point(lng,lat);// 创建标注
+    
+        
+    
+    marker = new BMap.Marker(point);  
+    map.addOverlay(marker);              // 将标注添加到地图中
+    map.addControl(new BMap.NavigationControl());    // 添加平移缩放控件
+    map.addControl(new BMap.ScaleControl());   // 添加比例尺控件
+    map.addControl(new BMap.OverviewMapControl());   //添加缩略地图控件
+    map.enableScrollWheelZoom();
+    
+    
+    
+    map.centerAndZoom(point, 15); //显示地图
+    //创建一个圆形区域
+    circle = new BMap.Circle(point,1000,{fillColor:"blue", strokeWeight: 1 ,fillOpacity: 0.3, strokeOpacity: 0.3});
+    map.addOverlay(circle);
+
+}
+function opt(ObjItem){
+    var html = '';
+    html += "<div class='userface_wraper' >";
+    html +="<img id='img_CO_LogPic' style='margin-top: 0px; width: 60px; height: 60px; visibility: visible' />"
+    html+="</div><div class='user_profile'>";
+    html+="<p style='font-size:12px;'><span id='span_AR_Name'>住址："+ObjItem.address+"</span></p>";
+    html+="<p style='font-size:12px;'><span id='span_CO_Name'>电话："+ObjItem.tel+"</span></p>";
+    html+="<p style='font-size:12px;'><span>备注："+ObjItem.address+"</span></p></div>"
+    return html;
+}
+
+var _Pro = new Array();
+//圆形搜索
+function searchfrombaidu(){
+    var local =  new BMap.LocalSearch(map, {renderOptions: {map: map, autoViewport: false}});  
+    var bounds = getSquareBounds(circle.getCenter(),circle.getRadius());
+    var SearchHtml = "";
+    var Pro_Array = new Array();
+    for(var item in json ){
+        var Provider_Point = new BMap.Point(json[item].lng,json[item].lat);
+        var gap = '';
+        //获取两点之间的距离
+        gap = map.getDistance(point,Provider_Point).toFixed(2);
+        if(gap <= circle.getRadius()){
+            Pro_Array.push(json[item]);
+        }
+    }
+    _Pro =  Pro_Array;
+    
+    if(_Pro.length <= 0){alert("附近没有停车场");return;}
+    //搜索结果
+    for (var i in _Pro) {
+      var CirclePoint = new BMap.Point(_Pro[i].lng, _Pro[i].lat);
+      addMarker(CirclePoint, i);
+      var he = -25 * parseInt(i);
+      SearchHtml += "<div >"
+                  +"<h2 class='h2-1'>"
+                  +"<div class='bbfBaiduMaplistImg' style='background-position:-23px "+he+" px; width:19px; height:25px;'></div>"
+                  +"<a onclick=\"click_on('"+i+"');\" href='javascript:void(0)' >"+_Pro[i].title+"</a>"
+                  +"<div class='clear'></div> " 
+                  +"</h2>"
+                  +"<p class='p-1'>地址:"+_Pro[i].address+"</p>"
+                  +"<p class='p-1'>运营时间:"+_Pro[i].stime+"</p>"
+                  +"</div>";
+      if(i == 6){break;}
+    }
+
+}
+// 编写自定义函数,创建标注
+ $('#bbfresult').removeClass('bbfresultBg');
+function addMarker(MarPoint, index){
+  var myIcon = new BMap.Icon("http://api.map.baidu.com/img/markers.png", new BMap.Size(23, 25), {
+    offset: new BMap.Size(10, 25),                  // 指定定位位置
+    imageOffset: new BMap.Size(0, 0 - index * 25)   // 设置图片偏移
+  });
+  var addmarker = new BMap.Marker(MarPoint, {icon: myIcon});
+  map.addOverlay(addmarker);
+  
+
+  addmarker.addEventListener("click", function(){   
+        var p = addmarker.getPosition();       //获取marker的位置
+        var string="";
+        $.post('{:U("getPosition")}',{lng:p.lng,lat:p.lat},function(data){
+                if(data){
+                    string+='<h1>'+data.title+'</h1>';
+                    string+='<h2>'+data.address+'</h2>';
+                    string+='<div class="clicklj"><a href="javascript:;" onclick="dhtz('+data.lat+','+data.lng+','+lat+','+lng+',\''+data.city+'\')">导航</a>';
+                    string+='<a href="{:U('subscribe')}&id='+data.id+'">预约</a>';
+                    string+='<a href="{:U('details')}&id='+data.id+'">详情》</a></div>';
+                
+                    $('#bbfresult').html(string).addClass('bbfresultBg');
+                }
+        
+        },'json')
+    });
+}
+
+
+function click_on(i){
+    var poi =map.getOverlays()[parseInt(i)+2];
+     var infoWindow = {
+        width:250,
+        height: 130,
+        title: "商家名称："+_Pro[i].name
+    }; //创建信息窗口对象
+    var html = opt(_Pro[i]);
+    var infoWindow = new BMap.InfoWindow(html, infoWindow);
+    poi.openInfoWindow(infoWindow); //打开气泡
+
+}
+
+/**
+ * 得到圆的内接正方形bounds
+ * @param {Point} centerPoi 圆形范围的圆心
+ * @param {Number} r 圆形范围的半径
+ * @return 无返回值   
+ */ 
+function getSquareBounds(centerPoi,r){
+    var a = Math.sqrt(2) * r; //正方形边长
+  
+    mPoi = getMecator(centerPoi);
+    var x0 = mPoi.x, y0 = mPoi.y;
+ 
+    var x1 = x0 + a / 2 , y1 = y0 + a / 2;//东北点
+    var x2 = x0 - a / 2 , y2 = y0 - a / 2;//西南点
+    
+    var ne = getPoi(new BMap.Pixel(x1, y1)), sw = getPoi(new BMap.Pixel(x2, y2));
+    return new BMap.Bounds(sw, ne);        
+    
+}
+//根据球面坐标获得平面坐标。
+function getMecator(poi){
+    return map.getMapType().getProjection().lngLatToPoint(poi);
+}
+
+//根据平面坐标获得球面坐标。
+function getPoi(mecator){
+    return map.getMapType().getProjection().pointToLngLat(mecator);
+}
+ function base64Decode(input){
+                rv = window.atob(input);
+                rv = escape(rv);
+                rv = decodeURIComponent(rv);
+                return rv;
+        }
+function searchbaidu(){
+        var title=$("#title").val();
+        var string="";
+        $.post('{:U("searchPark")}',{title:title},function(data){
+
+                if(data){
+                    string+='<h1>'+data.title+'</h1>';
+                    string+='<h2>'+data.address+'</h2>';
+                    string+='<div class="clicklj"><a href="javascript:;" onclick="dhtz('+data.lat+','+data.lng+','+lat+','+lng+',\''+data.city+'\')">导航</a>';
+                    string+='<a href="{:U('subscribe')}&id='+data.id+'">预约</a>';
+                    string+='<a href="{:U('details')}&id='+data.id+'">详情》</a></div>';
+                
+                     $('#bbfresult').html(string).addClass('bbfresultBg');
+                }
+        
+        
+        },'json')
+
+}
+function dhtz(lat,lng,latCurrent,lngCurrent,city){
+            
+
+      location.href="http://api.map.baidu.com/direction?origin="+latCurrent+","+lngCurrent+"&destination="+lat+","+lng+"&region="+city+"&mode=driving&output=html";
+}
+
+        
+</script>
+
+</body>
+</html>

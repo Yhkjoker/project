@@ -1,0 +1,41 @@
+﻿@charset "utf-8";
+#region, #region2 {
+	width: 100%;
+	max-width: 640px;
+	background: #d1d4d9;
+	position: fixed;
+	bottom: -500px;
+	left: 50%;
+	margin-left: -320px;
+	padding: 20px;
+	box-sizing: border-box;
+	font-size:22px;
+	color:#3a3a3a;
+	z-index: 9999999;
+}
+#region span, #region2 span {
+	display: inline-block;
+	width:69px;
+	height:50px;
+	text-align:center;
+	line-height:50px;
+	margin: 8px;
+	cursor: pointer;
+	background:#fff;
+	border-radius:5px;
+}
+#region span:hover, #region2 span:hover {
+	color: #3a3a3a;
+}
+
+#regionBg {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 0;
+	display: none;
+}
+
+

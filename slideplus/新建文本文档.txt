@@ -1,0 +1,4 @@
+Parking_Choice  停车选择
+Payment_Success 新 支付成功
+Monthly月租
+Daily_Rental 日租

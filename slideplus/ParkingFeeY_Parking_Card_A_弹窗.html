@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="css/base.css" />
+<link rel="stylesheet" href="css/License_plate.css" /><!--城市车牌选项插件-->
+<title>停车卡</title>
+<meta name="keywords" content="关键字,关键字" />
+<meta name="description" content="描述" />
+<script src="js/width640.js" type="text/javascript"></script>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type='application/javascript' src='js/fastclick.js'></script>
+<script type="text/javascript">
+ /*清除300毫秒延迟*/
+$(function() {
+	FastClick.attach(document.body);
+});
+</script>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+<meta name="viewport" content="width=640, user-scalable=no, target-densitydpi=device-dpi, telephone=no">
+</head>
+
+<body>
+<div id="wrapper">
+        <div class="container Ascreen Parking-CardBg">
+            <div class="Parking-CardDiv Parking-CardDiv-YhJ">
+                <div class="Parking-CardDivA">
+	                <h1>停车卡</h1>
+	                <p>车牌</p>
+	                <div class="AddVehicleTxt Parking-CardDivA-Cp">
+                      <input class="AddVehicleTxt1 left" type="button" value="沪A">
+                      <input class="AddVehicleTxt2 left" type="button" value="">
+                      <input class="AddVehicleTxt3 right" type="button" value="确定">
+                      <div class="clear"></div><!--清除浮动-->
+                  </div>
+                  <div id="regionBg"></div><!--关闭弹出层-->
+                  <div id="region" class="region_01"></div><!--号牌区域-->
+                  <div id="region2" class="region_02"></div><!--号牌城市-->
+	                <p>停车场</p>
+	                <h2 class="Parking-CardName">&nbsp;</h2>
+	                <p>入场时间</p>
+	                <h2>&nbsp;</h2>
+	                <p>出场时间</p>
+	                <h2>&nbsp;</h2>
+                </div>
+                <div class="Parking-CardDivWai2">
+                  <div class="Parking-CardDivA-a">停车费：<span class="right">0.00元</span></div>
+                  <div class="Parking-CardDivB">优惠券：<span class="right Yhj-xz-Btn">暂无优惠券</span></div>
+                  <div class="Parking-CardDivC">还需支付<span class="right">00.00元</span></div>
+                </div>
+                <div class="Parking-CardDivD">
+                   
+                </div>
+                <div class="Parking-CardDivE">
+                    <a class="left" href="#"><i class="Bg2 CardDivEBg1"></i>支付</a>
+                    <a class="right" href="#"><i class="Bg2 CardDivEBg2"></i>扫抵扣</a>
+                    <div class="clear"></div><!--清除浮动-->
+                </div>
+            </div>
+        </div>
+	</div>
+  <!--优惠券选择弹窗开始-->
+            <div class="Yhj-xz-Box">
+                <div class="Yhj-xz-div">
+                    <div class="Yhj-xz-div-Click">
+                        <img class="left" src="images/icon1.jpg" alt="">
+                        <strong class="left"><i>￥</i>5</strong>
+                        <div class="Yhj-xz-div-Txt left">
+                            <span>优惠券</span>
+                            <p>有效期：2017.01.19-2017.01.29</p>
+                        </div>
+                        <div class="checkbox-dlClick this right">
+                            <input id="checkboxBtn" name="" type="checkbox" value="">
+                        </div>
+                        <div class="clear"></div><!--清除浮动-->
+                    </div>
+                    <div class="Yhj-xz-div-Click">
+                        <img class="left" src="images/icon1.jpg" alt="">
+                        <strong class="left"><i>￥</i>10</strong>
+                        <div class="Yhj-xz-div-Txt left">
+                            <span>优惠券</span>
+                            <p>有效期：2017.01.19-2017.01.29</p>
+                        </div>
+                        <div class="checkbox-dlClick right">
+                            <input id="checkboxBtn" name="" type="checkbox" value="">
+                        </div>
+                        <div class="clear"></div><!--清除浮动-->
+                    </div>
+                    <div class="Yhj-xz-div-Click">
+                        <img class="left" src="images/icon1.jpg" alt="">
+                        <strong class="left"><i>￥</i>15</strong>
+                        <div class="Yhj-xz-div-Txt left">
+                            <span>优惠券</span>
+                            <p>有效期：2017.01.19-2017.01.29</p>
+                        </div>
+                        <div class="checkbox-dlClick right">
+                            <input id="checkboxBtn" name="" type="checkbox" value="">
+                        </div>
+                        <div class="clear"></div><!--清除浮动-->
+                    </div>
+                    <input type="submit" value="确认" class="Yhj-xz-div-submit"><!--弹窗提交按钮-->
+                </div>
+            </div>
+            <!--优惠券选择弹窗结束-->
+  <script type="text/javascript" src="js/License_plate.js"></script><!--城市车牌选项插件 注意放在下面不要放在上面-->
+	<script>
+        $('.Ascreen').height($(window).height());
+
+        /*支付方式选择*/
+
+        $('.Parking-CardDivD').click(function(){
+        	$('.TcBg,.Parking-CardDiv-Tc').show();
+        });
+         
+        $('.Parking-CardDiv-ClickDiv').click(function(){
+        	$(this).find('input').attr('checked',true);
+        	var _att = $(this).find('input').attr('checked');
+        	$('.Parking-CardDiv-ClickDiv input').attr('checked',false);
+        	$('.Parking-CardDiv-Checkbox').removeClass('ZhiBtnThis');
+        	if(_att == true){
+        		$(this).find('input').attr('checked',true);
+        		$(this).find('.Parking-CardDiv-Checkbox').addClass('ZhiBtnThis');
+        	};
+        	/*支付方式流程*/
+        	$('.Parking-Selection-method').removeClass('Parking-Selection-methodBlock');
+        	$('.Parking-Selection-method').eq(1).addClass('Parking-Selection-methodBlock');
+
+        });
+        /*关闭弹窗*/
+        $('.TcBg,.Parking-CardDiv-CloseBtn').click(function(){
+        	$('.TcBg,.Parking-CardDiv-Tc').hide();
+               /*支付方式流程*/
+        	$('.Parking-Selection-method').removeClass('Parking-Selection-methodBlock');
+        	$('.Parking-Selection-method').eq(0).addClass('Parking-Selection-methodBlock');
+        });
+
+
+/*输入添加车辆 车牌信息*/
+
+
+var clickName = false;
+  $('#region2').append('<strong style="display:none;" onclick="shan" class="region-Return">返回</strong>');
+
+  var brand1 = null;
+  var brand2 = null;
+  var jianpan;
+  $('.AddVehicleTxt1').click(function(event){
+      jianpan = 0;
+    clickName = true;
+    $('.region-Return').show();
+    $('.shanchu1').hide();
+    $('#region2').hide().css({'bottom':'-500px'});
+    event.stopPropagation();//阻止冒泡
+      $('#region').show().css({'bottom':'0'});
+      $('#regionBg').show();
+  });
+ 
+
+  $('.AddVehicleTxt2').click(function(){
+      jianpan = 1;
+    clickName = false;
+    $('.region-Return').remove();
+    $('#region2').append('<strong class="region-Return shanchu1">删除</strong>');
+    $('#region,#region2').hide().css({'bottom':'-500px'});
+      $('#region2').show().css({'bottom':'0'});
+      $('#regionBg').show();
+  });
+/*点击前面的输入框 显示的键盘*/
+  $('#region span').click(function(){
+      brand1 = $(this).html();
+      $('#region').hide().css({'bottom':'-500px'});
+      $('#region2').show().css({'bottom':'0'});
+      if(jianpan == 0){
+      $('.AddVehicleTxt1').val(brand1);
+    }else{
+      $('.AddVehicleTxt2').val(brand1);
+    }
+    $('.hide_jp').hide();
+  });
+
+  /*点击后面的输入框 显示的键盘*/
+  $('#region2 span').click(function(){
+      
+    //alert(1);AddVehicleTxt1
+    brand2 = $(this).html();
+      
+    if(jianpan == 0){
+        $('.AddVehicleTxt1').val(brand1+brand2);
+    }else{
+      var h = $('.AddVehicleTxt2').attr('value');
+      if(h.length<5){
+        $('.AddVehicleTxt2').val(h+brand2);
+      }
+    }
+    var Leng = $('.AddVehicleTxt1').val().length;
+    if(Leng == 2 && clickName == true){
+      $('.AddVehicleTxt2').click();
+    }
+    $('.hide_jp').show();
+  });
+/*删除按键*/
+  var _delete = '';
+$('#region2 .shanchu1 ').live('click',function(){
+  var _leng = $('.AddVehicleTxt2').val();
+  var _length = _leng.length - 1;
+  var obj2 = _leng.split("");
+  if(_length <= 0){
+    $('.AddVehicleTxt1').click();
+  }
+  for(i=0;i<_length;i++){
+    _delete = _delete+obj2[i];
+  }
+  $('.AddVehicleTxt2').val(_delete);
+  _delete = '';
+
+});
+
+
+  $('.region-Return').click(function(){
+      $('#region2').hide().css({'bottom':'-500px'});
+      $('#region').show().css({'bottom':'0'});
+  });
+
+
+  /*关闭键盘*/
+$('#regionBg').click(function(){
+  $('#region,#region2').hide().css({'bottom':'-500px'});
+  $(this).hide();
+});
+  /*添加车辆信息*/
+  $('.AddVehicleTxtBtn').click(function(){
+      $('#region').hide().css({'bottom':'-500px'});
+      $('#region2').hide().css({'bottom':'-500px'});
+  });
+
+
+
+
+
+  /*优惠券选择弹窗开始*/
+        $('.Yhj-xz-Btn').click(function(){
+          $('.Yhj-xz-Box').show();
+        }); 
+        //提交 关闭弹窗
+        $('.Yhj-xz-div-submit').click(function(){
+          $('.Yhj-xz-Box').hide();
+        });
+
+/*复选框选中*/
+  $('.Yhj-xz-div-Click').click(function(){
+    $('.checkbox-dlClick input').attr('checked',false);
+    $('.checkbox-dlClick').removeClass('this')
+    $(this).find('.checkbox-dlClick input').attr('checked',true);
+    $(this).find('.checkbox-dlClick').addClass('this');
+  });
+	</script>
+</body>
+</html>
