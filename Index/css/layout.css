@@ -334,12 +334,12 @@ ul#nav li.current a { color: #F06000; }
   	-webkit-animation: photoshop 2s ease;
 }
 .Dreamweaver {
-  	width: 90%;
+  	width: 80%;
   	-moz-animation: Dreamweaver 2s ease;
   	-webkit-animation: Dreamweaver 2s ease;
 }
 .sublime {
-  	width: 90%;
+  	width: 80%;
   	-moz-animation: sublime 2s ease;
   	-webkit-animation: sublime 2s ease;
 }
@@ -373,6 +373,11 @@ width: 50%;
     -moz-animation: Vue 2s ease;
     -webkit-animation: Vue 2s ease;
 }
+.Ajax {
+  width: 80%;
+    -moz-animation: Ajax 2s ease;
+    -webkit-animation: Ajax 2s ease;
+}
 
 @-moz-keyframes photoshop {
   0%   { width: 0px;  }
@@ -380,11 +385,11 @@ width: 50%;
 }
 @-moz-keyframes Dreamweaver {
   0%   { width: 0px;  }
-  100% { width: 90%;  }
+  100% { width: 80%;  }
 }
 @-moz-keyframes sublime {
   0%   { width: 0px;  }
-  100% { width: 90%;  }
+  100% { width: 80%;  }
 }
 @-moz-keyframes css {
   0%   { width: 0px;  }
@@ -410,6 +415,10 @@ width: 50%;
   0%   { width: 0px;  }
   100% { width: 50%;  }
 }
+@-moz-keyframes Ajax {
+  0%   { width: 0px;  }
+  100% { width: 80%;  }
+}
 
 @-webkit-keyframes photoshop {
   0%   { width: 0px;  }
@@ -417,11 +426,11 @@ width: 50%;
 }
 @-webkit-keyframes Dreamweaver {
   0%   { width: 0px;  }
-  100% { width: 90%;  }
+  100% { width: 80%;  }
 }
 @-webkit-keyframes sublime {
   0%   { width: 0px;  }
-  100% { width: 90%;  }
+  100% { width: 80%;  }
 }
 @-webkit-keyframes css {
   0%   { width: 0px;  }
@@ -446,6 +455,10 @@ width: 50%;
 @-webkit-keyframes Vue {
   0%   { width: 0px;  }
   100% { width: 50%;  }
+}
+@-webkit-keyframes Ajax {
+  0%   { width: 0px;  }
+  100% { width: 80%;  }
 }
 
 /* ------------------------------------------------------------------ */

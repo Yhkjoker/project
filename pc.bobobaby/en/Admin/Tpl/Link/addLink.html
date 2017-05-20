@@ -1,69 +1,0 @@
-<include file="Public:header"/>
-<script  type="text/javascript" src="__PUBLIC__/js/pic.js"></script>
-
-<!--内容-->
-<div id="content">
-<div id="breadcrumb"> <a href="__APP__/Index/index" title="Go to Home" class="tip-bottom"><i class="icon-home"></i>主页</a>->添加联动菜单</span></div>
-<div class="quick-actions_homepage">
-
-      <ul class="quick-actions">
-
-
-			 <li class="bg_ls"> <a href="javascript:history.go(-1);"> <i class="icon-dashboard"></i>返回</a></li>
-      </ul>
-
-    </div>
- <div class="row-fluid">
-
-     <div class="span12">
-
-        <div class="widget-box">
-
-          <div class="widget-title"> <span class="icon"> <i class="icon-th"></i> </span>
-
-            <h5>联动菜单名称</h5>
-				
-          </div>
-		<form action="__APP__/Link/doLink/action/add" id="myform" class="myForm" method="post" >	
-     	<table class="table table-bordered table-striped">
-
-			  <tr >		  <td width="100px"><span>一级菜单名称：</span></td>		  <td>			<select name="info[catid]"  datatype="*" nullmsg="请选择一级菜单">				<option value="">请选择一级菜单</option>				<foreach name="cate_list" item="v">					<option value="<{$v.catid}>"><{$v.catname}></option>				</foreach>				</select>		  </td>		  </tr>				
-     	
-		  <tr >
-		  <td width="100px"><span>二级菜单名称：</span></td>
-		  <td>
-			 <input type="text" name="info[name]" datatype="*" nullmsg="菜单名不能为空"/>
-
-		  </td>
-		  </tr>
-        <tr><td colspan="2"><input name="" type="submit" class="an" value="保存发布"></td></tr>
-
-
-		</table>		</form>
-	</div>
-	
-	 
-</div>
-</div>	
-<script>
-  $('.myForm').Validform({
-
-				tiptype:3,
-
-				ajaxPost:true,
-
-				callback:function(data){
-
-					if(data.status=='y'){
-
-						setTimeout(function(){window.location="__APP__/Link/index/cls/3";},1000);
-
-					}
-
-				}
-
-			  })
-</script>
-
-<!--尾巴-->
-<include file="Public:footer"/>

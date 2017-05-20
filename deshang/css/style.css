@@ -1,0 +1,506 @@
+@charset "utf-8";
+/*延迟*/
+.tr-02 {
+    transition:all .2s linear; 
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    -ms-transition: all .2s linear;
+    -o-transition: all .2s linear;
+}
+.tr-03 {
+    transition:all .3s linear; 
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    -o-transition: all .3s linear;
+}
+.tr-04 {
+    transition:all .4s linear; 
+    -webkit-transition: all .4s linear;
+    -moz-transition: all .4s linear;
+    -ms-transition: all .4s linear;
+    -o-transition: all .4s linear;
+}
+.tr-06 {
+    transition:all .6s linear; 
+    -webkit-transition: all .6s linear;
+    -moz-transition: all .6s linear;
+    -ms-transition: all .6s linear;
+    -o-transition: all .6s linear;
+}
+
+/*移动端导航点击按钮*/
+.header .container-fluid .navbar-toggle {
+	border:0;
+	padding: 0;
+	border-radius: 0;
+}
+.header .container-fluid .navbar-toggle span {
+	width: 38px;
+	height: 4px;
+	margin-top: 8px;
+	background-color: #124e2d;
+}
+.header .container-fluid .navbar-toggle span {
+    height: 5px;
+    width: 40px;
+    border-radius: 8px;
+    display: block;
+    margin-top: 8px;
+    -webkit-transition: all .4s;
+    -moz-transition: all .4s;
+    -ms-transition: all .4s;
+    -o-transition: all .4s;
+    transition: all .4s;
+}
+
+.header .container-fluid .navbar-toggle.active-toggle span:nth-child(2) {
+    -webkit-transform: rotate(42deg);
+    -moz-transform: rotate(42deg);
+    -ms-transform: rotate(42deg);
+    -o-transform: rotate(42deg);
+    transform: rotate(42deg);
+    -webkit-transform-origin: left;
+    -moz-transform-origin: left;
+    -ms-transform-origin: left;
+    -o-transform-origin: left;
+    transform-origin: left;
+    width: 44px;
+    position: relative;
+    top: -3px;
+}
+
+.header .container-fluid .navbar-toggle.active-toggle span:nth-child(3) {
+    opacity: 0
+}
+
+.header .container-fluid .navbar-toggle.active-toggle span:nth-child(4) {
+    -webkit-transform: rotate(-42deg);
+    -moz-transform: rotate(-42deg);
+    -ms-transform: rotate(-42deg);
+    -o-transform: rotate(-42deg);
+    transform: rotate(-42deg);
+    -webkit-transform-origin: left;
+    -moz-transform-origin: left;
+    -ms-transform-origin: left;
+    -o-transform-origin: left;
+    transform-origin: left;
+    width: 44px;
+    position: relative;
+    top: 2px;
+}
+.header .container-fluid .navbar-toggle:focus,
+.header .container-fluid .navbar-toggle:hover {
+	background: none;
+}
+
+
+@media screen and (min-width: 768px) {
+a.Txt_Href_color {
+    transition:all .4s linear; 
+    -webkit-transition: all .4s linear;
+    -moz-transition: all .4s linear;
+    -ms-transition: all .4s linear;
+    -o-transition: all .4s linear;
+}    
+a.Txt_Href_color:hover {
+    color: #c80a28;
+}    
+.header-A-swiper .swiper-slide .text article a:hover:before {
+    -webkit-transform: rotateX(90deg);
+    transform: rotateX(90deg);
+    opacity: 0.2;
+}
+.header-A-swiper .swiper-slide .text article a:hover:after {
+    -webkit-transform: rotateX(0);
+    transform: rotateX(0);
+}
+.custom.swiper-button-next:hover span,
+.custom.swiper-button-prev:hover span,
+.custom.swiper-button-next:hover span,
+.custom.swiper-button-prev:hover span  {
+    background: #c80a28;
+}
+.Nav-Wra .Nav > ul > li a:hover {
+    background: #c80a28;
+    color: #fff;
+}
+.Nav-content-Wra .Nav-content .gengduo:hover {
+    color: #666;
+}
+.Nav-content-Wra .Nav-content .gengduo:hover i {
+    background: url('../images/i-1.png') no-repeat right;
+}
+.Home-Content-A .Content-Nei .gengduo:hover,
+.Home-Content-C .Content-Nei .gengduo:hover {
+    color: #c80a28;
+}
+.Home-Content-A .Content-Nei .gengduo:hover i,
+.Home-Content-C .Content-Nei .gengduo:hover i {
+    background: url('../images/i-1.png') no-repeat left;
+}
+.Home-Content-B .row > div > a:hover .img1,
+.Nav-content-Wra .Nav-content-a ul li a:hover .Tu-a {
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    -ms-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+.Home-Content-B .row > div > a:hover .img2,
+.Nav-content-Wra .Nav-content-a ul li a:hover .Tu-b {
+    -webkit-transition-delay: 0.3s;
+    -moz-transition-delay: 0.3s;
+    -ms-transition-delay: 0.3s;
+    -o-transition-delay: 0.3s;
+    transition-delay: 0.3s;
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    -ms-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+    -webkit-transform: rotateY(360deg);
+    -moz-transform: rotateY(360deg);
+    -ms-transform: rotateY(360deg);
+    -o-transform: rotateY(360deg);
+    transform: rotateY(360deg);
+}
+.Nav-Wra .Nav .Chinese-English p a:hover {
+    color: #c80a28;
+}
+.Nav-Wra.active .button:hover .span span {
+    left: 3px;
+}
+.Nav-content-Wra .Nav-content-b ul li a:hover h3 i {
+    width: 70%;
+}
+.header-B-swiper .swiper-slide .Txt-Div a:hover {
+    color: #dc1d38;
+    background: #fff;
+}
+.Home-Content-A .Content-Nei .maple-tab ul li:hover {
+    border-color: #c80a28;
+    color: #c80a28;
+}
+.Home-Content-A .Content-Nei .Home-Content-A-container .Home-Content-A-slide > div > a:hover i {
+    height: 100%;
+    top: 0;
+    background: #9798a2;
+    z-index: -1;
+}
+.Home-Content-A .Content-Nei .Home-Content-A-container .Home-Content-A-slide > div > a:hover h4 p {
+    color: #fff;
+}
+.Home-Content-A .Content-Nei .Home-Content-A-container .Home-Content-A-slide > div > a:hover h4 span {
+    color: #fff;
+}
+.Home-Content-A .Content-Nei .Home-Content-A-container .Home-Content-A-slide > div > a:hover strong {
+    visibility: visible;
+}
+.Home-Content-A .Content-Nei .Home-Content-A-container .Home-Content-A-slide > div > a:hover img.Bottom {
+    visibility: visible;
+    opacity: 1;
+}
+.Home-Content-C .Content-Nei .row > div a:hover .Photo img  {
+  -webkit-animation: tada 1s .2s ease both;
+  -moz-animation: tada 1s .2s ease both;
+  -o-animation: tada 1s .2s ease both;
+  animation: tada 1s .2s ease both;
+}  
+.Home-Content-C .Content-Nei .row > div a:hover h4 {
+    color: #c80a28;
+}
+.footer-Nei .Site-Map .Href ul li a:hover {
+    color: #c80a28;
+}
+.Industry-Detailed .Industry-Detailed-Wra .Btn:hover,
+.footer-Nei .footer-Top a.btn:hover {
+    background: #c80a28;
+    color: #fff;
+}
+.Text-Content .Text-Div a:hover {
+    color: #c80a28;
+}
+.About .Home-Content-C .Click li:hover {
+    color: #c80a28;
+    border-color: #c80a28;
+}
+.Industry .within-Wra .swiper .swiper-container .swiper-slide a:hover .photo .img1 {
+    opacity: 0;
+}
+.Industry .within-Wra .swiper .swiper-container .swiper-slide a:hover .photo .img2 {
+    opacity: 1;
+}
+.Industry .within-Wra .swiper .swiper-container .swiper-slide a:hover p {
+    color: #c80a28;
+}
+.content.About3 .block ul li.active .viewphoto img,
+.content.About3 .block ul li:hover .viewphoto img {
+    opacity: .8;
+}
+.content.About3 .block ul li.active .txt,
+.content.About3 .block ul li:hover .txt {
+    opacity: 1;
+    top: 50%;
+}
+.content.About3 .block ul li .swiper-Div .swiper-slide a:hover .img1 {
+    opacity: 0;
+}
+.content.About3 .block ul li .swiper-Div .swiper-slide a:hover .img2 {
+    opacity: 1;
+}
+.Product-banner .Video-Btn:hover .btn {
+    opacity: .8;
+}
+.Product-banner ul li.active,
+.Product-banner ul li:hover {
+    border: 1px solid #c80a28;   
+}
+.Product-banner .Video .guanbi:hover {
+    opacity: .8;
+}
+.Product_Details .top-btn a:hover,
+.Product_Details .top-btn a.active {
+             color: #c80a28;
+             border-color: #c80a28;
+}
+#Eject .modal-dialog .close:hover span {
+    opacity: .5;
+} 
+    
+}
+/* 图标 animation */
+@keyframes icon-bounce {
+ 0%, 100% {
+ -moz-transform: rotate(0deg);
+ -ms-transform: rotate(0deg);
+ -webkit-transform: rotate(0deg);
+ transform: rotate(0deg);
+}
+ 25% {
+ -moz-transform: rotate(15deg);
+ -ms-transform: rotate(15deg);
+ -webkit-transform: rotate(15deg);
+ transform: rotate(15deg);
+}
+ 50% {
+ -moz-transform: rotate(-15deg);
+ -ms-transform: rotate(-15deg);
+ -webkit-transform: rotate(-15deg);
+ transform: rotate(-15deg);
+}
+ 75% {
+ -moz-transform: rotate(5deg);
+ -ms-transform: rotate(5deg);
+ -webkit-transform: rotate(5deg);
+ transform: rotate(5deg);
+}
+ 85% {
+ -moz-transform: rotate(-5deg);
+ -ms-transform: rotate(-5deg);
+ -webkit-transform: rotate(-5deg);
+ transform: rotate(-5deg);
+}
+}
+@-webkit-keyframes icon-bounce {
+ 0%, 100% {
+ -moz-transform: rotate(0deg);
+ -ms-transform: rotate(0deg);
+ -webkit-transform: rotate(0deg);
+ transform: rotate(0deg);
+}
+ 25% {
+ -moz-transform: rotate(15deg);
+ -ms-transform: rotate(15deg);
+ -webkit-transform: rotate(15deg);
+ transform: rotate(15deg);
+}
+ 50% {
+ -moz-transform: rotate(-15deg);
+ -ms-transform: rotate(-15deg);
+ -webkit-transform: rotate(-15deg);
+ transform: rotate(-15deg);
+}
+ 75% {
+ -moz-transform: rotate(5deg);
+ -ms-transform: rotate(5deg);
+ -webkit-transform: rotate(5deg);
+ transform: rotate(5deg);
+}
+ 85% {
+ -moz-transform: rotate(-5deg);
+ -ms-transform: rotate(-5deg);
+ -webkit-transform: rotate(-5deg);
+ transform: rotate(-5deg);
+}
+}
+@-moz-keyframes icon-bounce {
+ 0%, 100% {
+ -moz-transform: rotate(0deg);
+ -ms-transform: rotate(0deg);
+ -webkit-transform: rotate(0deg);
+ transform: rotate(0deg);
+}
+ 25% {
+ -moz-transform: rotate(15deg);
+ -ms-transform: rotate(15deg);
+ -webkit-transform: rotate(15deg);
+ transform: rotate(15deg);
+}
+ 50% {
+ -moz-transform: rotate(-15deg);
+ -ms-transform: rotate(-15deg);
+ -webkit-transform: rotate(-15deg);
+ transform: rotate(-15deg);
+}
+ 75% {
+ -moz-transform: rotate(5deg);
+ -ms-transform: rotate(5deg);
+ -webkit-transform: rotate(5deg);
+ transform: rotate(5deg);
+}
+ 85% {
+ -moz-transform: rotate(-5deg);
+ -ms-transform: rotate(-5deg);
+ -webkit-transform: rotate(-5deg);
+ transform: rotate(-5deg);
+}
+}
+@-o-keyframes icon-bounce {
+ 0%, 100% {
+ -moz-transform: rotate(0deg);
+ -ms-transform: rotate(0deg);
+ -webkit-transform: rotate(0deg);
+ transform: rotate(0deg);
+}
+ 25% {
+ -moz-transform: rotate(15deg);
+ -ms-transform: rotate(15deg);
+ -webkit-transform: rotate(15deg);
+ transform: rotate(15deg);
+}
+ 50% {
+ -moz-transform: rotate(-15deg);
+ -ms-transform: rotate(-15deg);
+ -webkit-transform: rotate(-15deg);
+ transform: rotate(-15deg);
+}
+ 75% {
+ -moz-transform: rotate(5deg);
+ -ms-transform: rotate(5deg);
+ -webkit-transform: rotate(5deg);
+ transform: rotate(5deg);
+}
+ 85% {
+ -moz-transform: rotate(-5deg);
+ -ms-transform: rotate(-5deg);
+ -webkit-transform: rotate(-5deg);
+ transform: rotate(-5deg);
+}
+}
+/*图片效果*/
+@-webkit-keyframes tada {
+0% {
+-webkit-transform:scale(1);
+}
+10%, 20% {
+-webkit-transform:scale(0.9) rotate(-3deg);
+}
+30%, 50%, 70%, 90% {
+-webkit-transform:scale(1.1) rotate(3deg);
+}
+40%, 60%, 80% {
+-webkit-transform:scale(1.1) rotate(-3deg);
+}
+100% {
+-webkit-transform:scale(1) rotate(0);
+}
+}
+@-moz-keyframes tada {
+0% {
+-moz-transform:scale(1);
+}
+10%, 20% {
+-moz-transform:scale(0.9) rotate(-3deg);
+}
+30%, 50%, 70%, 90% {
+-moz-transform:scale(1.1) rotate(3deg);
+}
+40%, 60%, 80% {
+-moz-transform:scale(1.1) rotate(-3deg);
+}
+100% {
+-moz-transform:scale(1) rotate(0);
+}
+}
+@keyframes tada {
+0% {
+-moz-transform:scale(1);
+}
+10%, 20% {
+-moz-transform:scale(0.9) rotate(-3deg);
+}
+30%, 50%, 70%, 90% {
+-moz-transform:scale(1.1) rotate(3deg);
+}
+40%, 60%, 80% {
+-moz-transform:scale(1.1) rotate(-3deg);
+}
+100% {
+-moz-transform:scale(1) rotate(0);
+}
+}
+
+/*服务与支持弹出窗*/
+@keyframes div1 {
+100% {
+  top: 50%;
+}
+}
+@-webkit-keyframes div1 {
+100% {
+  top: 50%;
+}
+}
+@-moz-keyframes div1 {
+100% {
+  top: 50%;
+}
+}
+@-o-keyframes div1 {
+100% {
+  top: 50%;
+}
+}
+@media screen and (max-width: 1439px) {
+
+
+}
+
+@media screen and (max-width: 1279px) {
+
+}
+@media screen and (max-width: 1199px) {
+
+}
+@media screen and (max-width: 991px) {
+
+}
+
+@media screen and (max-width: 767px) {
+
+
+}
+@media screen and (max-width: 534px) {
+
+}
