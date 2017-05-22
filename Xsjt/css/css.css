@@ -871,6 +871,9 @@ textarea { -webkit-appearance: none;}
 	margin-top: 6px;
 	border-radius: 3px;
 }
+.View_Item .footer .btn.w-100 {
+	width: 100%;
+}
 .View_Item .content .Record-B .listview li .ui-btn-icon-right:after {
 	display: none;
 }
@@ -1083,6 +1086,14 @@ textarea { -webkit-appearance: none;}
 	width: 12px;
 	position: relative;
 	top: 1px;
+}
+.News .content .listview li .Txt .i-8 {
+	width: 12px;
+	height: 14px;
+	background: url(../images/i-8.png) no-repeat center;
+	position: relative;
+	top: 1px;
+	background-size: 100%;
 }
 .News .content .listview li .Txt span {
 	font-size: 13px;
