@@ -63,10 +63,11 @@ $("#header .container-fluid .navbar-toggle").click(function(event) {
 
 
 /*返回顶部*/
-
-$('#Return-Top').click(function(){
-    $("html, body").animate({scrollTop: 0+ "px"}, 400);
-    return false;
+$(document).ready(function(){
+  $('#Return-Top').click(function(){
+      $("html, body").animate({scrollTop: 0+ "px"}, 400);
+      return false;
+  });
 });
 
 $(document).ready(function(){

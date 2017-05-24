@@ -706,7 +706,7 @@
     margin-left: -100px;
 }
 #Land .Land-Div {
-    top: 50%;
+    top: 60%;
 }
 #Land .Land-Div h2 {
     height: 50px;
@@ -1276,8 +1276,29 @@
 #Contene .Us .Problem .answer p, #Contene .Us .Problem .answer span {
     font-size: 13px;
 }
-
-
+.Short-List-SignUp .SignUpDiv > .f-l .section3 .right-radio  .section3-P .textarea {
+    height: 120px;
+}
+#payment .content-payment ul {
+    padding: 20px 0;
+}
+#payment .content-payment .paymentDiv {
+    padding: 30px 0;
+}
+#payment .top-b img {
+    width: 100px;
+}
+#payment .top-b span {
+    font-size: 14px;
+}
+#payment .top-b span:after {
+    height: 16px;
+    top: 3px;
+}
+#Contene .Us .Problem span {
+    width: 100%;
+    margin: 10px 0 5px;
+}
 
 }
 
@@ -1490,16 +1511,20 @@ width: 100%;
 .Order .Bottom .Modify .form li .txt-input2 {
     width: calc(100% - 110px);
 }
-
-
-
-
-
-
-
-
-
-
+#payment .content-payment ul li span.f-l,
+#payment .content-payment ul li span.f-r {
+    display: block;
+    float: none;
+}
+#payment .content-payment ul li span.f-r {
+   display: none;
+}
+#payment .content-payment .paymentDiv > img {
+    margin-top: 10px;
+}
+#payment .content-payment .paymentDiv .iocfukuan {
+    margin-top: 10px;
+}
 
 
 
@@ -1631,7 +1656,37 @@ width: 100%;
 #header .content-Wra .content ul li input.ico1 {
     background-size: 15px auto !important;
 }
-
+.Short-List-SignUp .SignUpDiv > .f-l .section .Common label {
+    // display: block;
+    margin-right: 20px;
+}
+#payment .content-payment .paymentDiv {
+    padding: 20px 0;
+    border-width: 1px;
+}
+#payment .content-payment ul {
+    padding: 15px 0;
+}
+#payment .content-payment ul li {
+    line-height: 1.5;
+}
+#payment .top-b {
+    height: 48px;
+    line-height: 48px;
+}
+#payment .content-payment {
+    top: 78px;
+    height: calc(100% - 78px);
+}
+#payment .content-payment .paymentDiv .iocfukuan {
+    height: 42px;
+    padding: 4px 20px;
+}
+#payment .content-payment .paymentDiv .iocfukuan > img {
+    width: 26px;
+    position: relative;
+    top: 3px;
+}
 
 
 }
@@ -1672,7 +1727,7 @@ width: 100%;
     line-height: 36px;
 }
 #Land .Land-Div {
-    top: 55%;
+    top: 60%;
 }
  #Land .Land-Div .Land-Input .TxtInput .TxtInput-Div .clearFix .button {
     font-size: 12px;
@@ -1685,6 +1740,31 @@ width: 100%;
 }
 #Land .Land-Div .Land-Input .button {
     margin-bottom: 0;
+}
+
+// .Home-B .Nei-Div .Txt .bottom h3,
+// .Home-B .Nei-Div .Txt .bottom a {
+//     float: none;
+// }
+.Home-B .Nei-Div .Txt {
+    padding-bottom: 60px;
+}
+.Home-B .Nei-Div .Txt .top > .price {
+    position: absolute;
+    left: 15px;
+    bottom: 10px;
+}
+.Home-B .Nei-Div .Txt .bottom a {
+    position: absolute;
+    right: 15px;
+    bottom: 10px;
+}
+.Home-B .Nei-Div .Txt .top p {
+    width: 100%;
+}
+#payment .content-payment .paymentDiv {
+    padding: 10px 0;
+    border-width: 1px;
 }
 
 }

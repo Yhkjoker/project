@@ -424,7 +424,7 @@ a:active, a:focus {
 	text-overflow:ellipsis;
 	-o-text-overflow:ellipsis;
 	overflow: hidden; 
-	width: calc(100% - 120px);
+	width: calc(100% - 200px);
 }
 .Home-A .swiper-slide .Txt .f-r sup {
 	font-size: 16px;
@@ -551,7 +551,7 @@ a:active, a:focus {
 	text-overflow:ellipsis;
 	-o-text-overflow:ellipsis;
 	overflow: hidden; 
-	width: calc(100% - 100px);
+	width: calc(100% - 200px);
 }
 .Home-B .Nei-Div .Txt .top .price sup,
 .Home-B .Nei-Div .Txt .top .price strong {
@@ -1127,6 +1127,9 @@ a:active, a:focus {
 }
 .List-Content .Content-Div > .f-r {
 	padding: 40px 30px 0 0;
+}
+.List-Content .Content-Div.chang > .f-r {
+	padding:20px 30px 0 0;
 }
 .List-Content .Content-Div > .f-r h2 .f-l {
 	color: #8fbf55;
@@ -1740,6 +1743,18 @@ a:active, a:focus {
 	display: none;
 	margin-top: 20px;
 }
+.Short-List-SignUp .SignUpDiv > .f-l .section3 .right-radio  .section3-P .textarea {
+	resize: none;
+	width: 100%;
+	height: 80px;
+	border:1px solid #dbdbdb;
+	background: #fff;
+	border-radius: 3px;
+	padding: 15px;
+	font-size: 16px;
+	color: #333;
+}
+
 .Short-List-SignUp .SignUpDiv > .f-l .section3 .right-radio  .section3-P.active {
 	display: block;
 }
@@ -2482,11 +2497,12 @@ a:active, a:focus {
 #Contene .Us .Problem p {
 	margin-bottom: 10px;
 	text-indent: 0;
-	width: calc(100% - 30px);
+	width: calc(100% - 56px);
 }
 #Contene .Us .Problem span {
-	width: 30px;
+	width: 56px;
 	display: block;
+	font-weight: 600;
 }
 #Contene .Us .Problem .ask p,
 #Contene .Us .Problem .ask span {
@@ -2520,6 +2536,112 @@ a:active, a:focus {
 #header .Ttdz {
 	height: 1160px;
 }
+
+
+
+/*支付页面*/
+#payment {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+}
+#payment .top-a {
+	height: 30px;
+	line-height: 30px;
+	background: #81868b;
+	color: #fff;
+	font-size: 12px;
+}
+#payment .top-b {
+	height: 60px;
+	line-height: 60px;
+	background: #fff;
+	border-bottom: 1px solid #d9d9d9;
+}
+#payment .top-b img {
+             margin-right: 26px; 
+             position: relative;
+             bottom: 3px;
+}
+#payment .top-b span {
+	font-size: 16px;
+	color: #666;
+	position: relative;
+}
+#payment .top-b span:after {
+	content: "";
+	display: block;
+	width: 1px;
+	height: 24px;
+	background: #676d70;
+	position: absolute;
+	top: 0;
+	left: -12px;
+}
+#payment .content-payment {
+	background: #eff0f1;
+	position: absolute;
+	height: calc(100% - 90px);
+	width: 100%;
+	top: 90px;
+	left: 0;
+}
+#payment .content-payment .paymentDivWra {
+             position: absolute;
+             top: 0;
+             left: 50%;
+             -webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	transform: translateX(-50%);
+}
+#payment .content-payment ul {
+	padding: 40px 0;
+}
+#payment .content-payment ul li {
+	font-size: 14px;
+	color: #444;
+	line-height: 1.8;
+}
+#payment .content-payment ul li strong {
+	font-size: 24px;
+	color: #ff6600;
+}
+#payment .content-payment ul li span.f-r {
+	position: relative;
+	bottom: 12px;
+}
+#payment .content-payment .paymentDiv {
+	background: #fff;
+	border-top: 3px solid #b3b3b3;
+	border-bottom: 3px solid #b3b3b3;
+	padding-top: 70px;
+	padding-bottom: 150px;
+}
+#payment .content-payment .paymentDiv > span,
+#payment .content-payment .paymentDiv > strong {	
+	display: block;
+}
+#payment .content-payment .paymentDiv .iocfukuan {
+	width: 172px;
+	height: 58px;
+	margin: 28px auto 0;
+	background: #445f85;
+	color: #fff;
+	font-size: 12px;
+	padding: 12px 17px;
+}
+#payment .content-payment .paymentDiv > img {
+	margin-top: 35px;
+}
+#payment .content-payment .paymentDiv > strong {
+	font-size: 28px;
+	color: #ff6600;
+}
+
+
+
 
 
 
