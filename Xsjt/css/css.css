@@ -663,6 +663,11 @@ textarea { -webkit-appearance: none;}
 .View_Item .content {
 	padding-bottom: 50px;
 }
+.View_Item .content .Neirong h2 a {
+            font-size: 16px;
+            color: #333;
+}
+
 .View_Item .content .View-Item-Ul {
 	background: #fff;
 	margin-top: 10px;
@@ -726,6 +731,13 @@ textarea { -webkit-appearance: none;}
 	top: 2px;
 	width: 3px;
 }
+.View_Item .content .Purchase-select {
+	border-top: 0;
+	margin-top: 0;
+	margin-bottom: 20px;
+}
+
+
 .View_Item .content .Record {
 	border-radius: 0;
 	border-top:1px solid #dbdbdb;
@@ -1081,6 +1093,24 @@ textarea { -webkit-appearance: none;}
 	font-size: 13px;
 	color: #999;
 	font-weight: normal;
+}
+
+.News .content .listview-new li h2 {
+	margin:0;
+	line-height: 70px;
+}
+.News .content .listview-new li h2 p {
+	font-size: 16px;
+	color: #1a1a1a;
+	margin:0;
+	width: calc(100% - 80px);
+}
+.News .content .listview-new li h2 span {
+	font-size: 13px;
+	color: #999;
+	font-weight: normal;
+	width: 80px;
+	display: inline-block;
 }
 .News .content .listview li .Txt img {
 	width: 12px;
