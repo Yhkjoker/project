@@ -54,6 +54,16 @@
 
 <script src="js/style.js"></script><!-- jQuery whole Put in the bottom --> 
 <script src="js/swiper.jquery.min.js"></script><!-- Slide Put in the bottom --> 
+<script type="text/javascript">
 
+var widthsize = function (){
+  var height_ = $('.top-a').height()+$('.top-b').height();
+    $('.content-payment').height($(document).height()-height_)
+};
+  widthsize();
+$(window).resize(function(){
+  widthsize();
+});
+</script>
 </body>
 </html>

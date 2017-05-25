@@ -524,6 +524,11 @@
     width: 140px;
     margin-left: -70px;
 }
+#header .content-Wra .content .textarea {
+    width: calc(100% - 85px);
+}
+
+
 
 }
 
@@ -634,14 +639,14 @@
 }
 /*团体定制*/
 .LangRegister #header {
-    height: 100%;
+    height: 110%;
     width: 100%;
     position: absolute;
     top: 0;
     left: 0;
 }
 .LangRegister  #header .banner {
-    height: 100%;
+    height: 110%;
     position: absolute;
     top: 0;
     left: 0;
@@ -653,8 +658,11 @@
 }
 #header .content-Wra {
     width: 95%;
-    top: 56%;
+    top: 150px;
     // height: 80%;
+     -webkit-transform: translate(-50%,0);
+    -moz-transform: translate(-50%,0);
+    transform: translate(-50%,0);
 }
 #header .content-Wra .content ul li .f-l,
 #header .content-Wra .content ul li .f-r {
@@ -1299,6 +1307,18 @@
     width: 100%;
     margin: 10px 0 5px;
 }
+#Contene .Us .Problem p {
+    width: 100%;
+}
+.Short-List-SignUp .SignUpDiv > .f-l .section .Common strong {
+    display: block;
+}
+.Short-List-SignUp .SignUpDiv > .f-l .section .Common > div.f-l {
+    width: 100%;
+}
+#header .content-Wra .content .textarea {
+    width: calc(100% - 105px);
+}
 
 }
 
@@ -1490,7 +1510,7 @@ width: 100%;
 .Order .Bottom .My-Message ul li > img {
     display: block;
     float: none;
-    margin: 0 auto 20px;
+    margin: 0 0 20px 0;
 }
 .Order .Bottom .My-Message ul li {
     height: auto;
@@ -1712,7 +1732,8 @@ width: 100%;
     width: calc(100% - 95px);
 }
 #header .content-Wra {
-    top: 58%;
+    // top: 58%;
+    top:150px; 
 }
 #Land .Land-Div .Land-Input .txt {
     margin-bottom: 10px;
