@@ -1466,6 +1466,19 @@ textarea { -webkit-appearance: none;}
 	background: #fff url('../images/i-5.png') no-repeat 98% center!important;
 	background-size: 12px auto!important;
 }
+.Purchase-select .select-f .inputtxt {
+	    width: 90%;
+	    border: 0;
+	    padding-left: 8px;
+	    border-radius: 5px;
+	    height: 35px;
+	    box-sizing: border-box;
+	    font-size: 14px;
+	    color: #333;
+	    position: relative;
+	    top: 2px;
+}
+
 .View_Item .content .Record-A.Purchase h4 > .No-Find {
 	position: relative;
 }
@@ -1631,6 +1644,11 @@ textarea { -webkit-appearance: none;}
     position: absolute;
     bottom:10px;
     right: 12px;
+}
+.Finance .Finance-Div .Href-Record.Href-Record-a {
+   right: 94px;
+   color: #fff;
+   border:none;
 }
 .Finance .content .Record-C .listview li .btn {
     border-color: #ff5959;
