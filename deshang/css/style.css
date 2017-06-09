@@ -295,6 +295,14 @@
         box-shadow: 0 0 10px rgba(200, 10, 40, 0.8);
         -o-box-shadow: 0 0 10px rgba(200, 10, 40, 0.8);
     }
+    .content.About3 .block .back button:hover {
+        background: #fff;
+        border-color: #c80a28;
+    }
+    .content.About3 .block .back button:hover:after,
+    .content.About3 .block .back button:hover:before {
+        background: #c80a28;
+    }
 }
 
 
@@ -626,9 +634,9 @@
         width: 90%;
     }
     /*行业应用*/
-        .Industry .within-Wra .swiper .swiper-container .swiper-slide a {
-            padding: 0 30px;
-        }
+    .Industry .within-Wra .swiper .swiper-container .swiper-slide a {
+        padding: 0 30px;
+    }
     .Industry .within-Wra .swiper .swiper-container .swiper-slide a .photo img {
         width: 100%;
     }
@@ -640,6 +648,13 @@
     }
     .Industry-Detailed .Industry-Detailed-Wra ul li .f-r.photo img {
         width: calc(25% - 30px);
+    }
+    /*合作伙伴*/
+    .content.About3 .block ul li .txt h4 {
+        font-size: 22px;
+    }
+    .content.About3 .block ul li .txt h5 {
+        font-size: 20px;
     }
 }
 
@@ -750,6 +765,13 @@
     .Industry .within-Wra .swiper .swiper-container .swiper-slide a p {
         font-size: 16px;
     }
+    /*合作伙伴*/
+    .content.About3 .block ul li .txt h4 {
+        font-size: 20px;
+    }
+    .content.About3 .block ul li .txt h5 {
+        font-size: 18px;
+    }
 }
 
 @media screen and (max-width: 991px) {
@@ -816,6 +838,74 @@
         text-align: center;
         margin: 20px 0 10px;
     }
+    /*合作伙伴*/
+    .content.About3 .block ul li .txt h4 {
+        font-size: 18px;
+    }
+    .content.About3 .block ul li .txt h5 {
+        font-size: 16px;
+    }
+    .content.About3 .block ul li {
+        margin: 5px;
+        width: calc(20% - 10px);
+    }
+    /*滑动*/
+    .content.About3 .block ul li .swiper-Div.active {
+        z-index: 9;
+        bottom: 10px;
+    }
+    .content.About3 .block {
+        padding-bottom: 30px;
+    }
+    .About-top {
+        margin-bottom: 30px;
+    }
+    .content.About3 .block ul li .sanjiao {
+        display: none;
+    }
+    .content.About3 .block ul li .swiper-Div.active {
+        height: 350px;
+    }
+    .content.About3 .block ul.active {
+        padding-bottom: 370px;
+    }
+    .content.About3 .block ul li.active .viewphoto img {
+        opacity: .5;
+    }
+    // .content.About3 .block ul.active {
+    //     padding-bottom: 0;
+    //     position: static;
+    // }
+    // .content.About3 .block ul li .sanjiao.active {
+    //     display: none;
+    // }
+    // .content.About3 .block ul li .swiper-Div {
+    //     position: fixed;
+    //     top: 50%;
+    //     left: 50%;
+    //     height: auto;
+    //     -webkit-transform: translate(-50%, -50%);
+    //     -moz-transform: translate(-50%, -50%);
+    //     transform: translate(-50%, -50%);
+    //     display: none;
+    // }
+    // .content.About3 .block ul li .swiper-Div.active {
+    //     z-index: 9;
+    //     position: fixed;
+    //     top: 50%;
+    //     left: 50%;
+    //     height: auto;
+    //     -webkit-transform: translate(-50%, -50%);
+    //     -moz-transform: translate(-50%, -50%);
+    //     transform: translate(-50%, -50%);
+    //     opacity: 1;
+    //     z-index: 99999;
+    //     display: block;
+    // }
+    // .content.About3 .block .back.active {
+    //     display: block;
+    // }
+
 }
 
 @media screen and (max-width: 767px) {
@@ -1103,7 +1193,7 @@
         padding: 0;
     }
     .content.Contact .leave {
-        margin-bottom:10px;
+        margin-bottom: 10px;
     }
     .Industry .within .txt {
         margin-top: 30px;
@@ -1149,10 +1239,24 @@
     .About1 .Centent .bottom h3 {
         margin-bottom: 30px;
     }
-    .About1{
+    .About1 {
         padding-bottom: 30px;
     }
-
+    // .content.About3 .block ul li .swiper-Div .swiper-container {
+    //     width: 90%;
+    // }
+    // // .content.About3 .block ul li .swiper-Div.active {
+    // //     height: 150px;
+    // // }
+    // .content.About3 .block {
+    //     padding-bottom: 30px;
+    // }
+    .content.About3 .block ul li .swiper-Div.active {
+        height: 250px;
+    }
+    .content.About3 .block ul.active {
+        padding-bottom: 270px;
+    }
 }
 
 @media screen and (max-width: 534px) {
@@ -1201,5 +1305,14 @@
         width: calc(50% - 15px);
         margin: 5px;
     }
-
+    .content.About3 .block ul li {
+            margin: 2px;
+           width: calc(20% - 4px);
+    }
+     .content.About3 .block ul li .swiper-Div.active {
+        height: 200px;
+    }
+    .content.About3 .block ul.active {
+        padding-bottom: 220px;
+    }
 }

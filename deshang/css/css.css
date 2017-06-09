@@ -1947,6 +1947,51 @@ a:focus {
 	margin: 0 auto;
 	padding-bottom: 100px;
 }
+.content.About3 .block .back {
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,.5);
+	width: 100%;
+	height: 100%;
+	z-index: 999;
+	display: none;
+}
+.content.About3 .block .back button {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	width: 40px;
+	height: 40px;
+	background: #c80a28;
+	border:2px solid #fff;
+	border-radius: 50%;
+}
+
+.content.About3 .block .back button:after,
+.content.About3 .block .back button:before{
+	content: "";
+	width: 26px;
+	height: 2px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -1px 0 0 -13px;
+	background: #fff;
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+.content.About3 .block .back button:before {
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
 
 .content.About3 .block ul {
 	width: 1660px;
