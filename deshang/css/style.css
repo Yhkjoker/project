@@ -225,10 +225,11 @@
         opacity: 1;
     }
     .Home-Content-C .Content-Nei .row > div a:hover .Photo img {
-        -webkit-animation: tada 1s .2s ease both;
-        -moz-animation: tada 1s .2s ease both;
-        -o-animation: tada 1s .2s ease both;
-        animation: tada 1s .2s ease both;
+        transform: scale(1.15);
+        -webkit-transform: scale(1.15);
+        -moz-transform: scale(1.15);
+        -o-transform: scale(1.15);
+        -ms-transform: scale(1.15);
     }
     .Home-Content-C .Content-Nei .row > div a:hover h4 {
         color: #c80a28;
@@ -302,6 +303,12 @@
     .content.About3 .block .back button:hover:after,
     .content.About3 .block .back button:hover:before {
         background: #c80a28;
+    }
+    .About1 .Centent .bottom > ul > li.child1 .text .tab ul li:hover {
+        background: #c80a28;
+        color: #fff;
+        border-color: #c80a28;
+        opacity: .8;
     }
 }
 
@@ -553,6 +560,9 @@
     .Home-Content {
         overflow: hidden;
     }
+    .Product-banner .Product-Photo {
+        left: 58%;
+    }
 }
 
 @media screen and (max-width: 1649px) {
@@ -562,6 +572,11 @@
     }
     .content.About3 .block ul {
         width: 100%;
+    }
+    .Product-banner .Product-Photo {
+        top: 10%;
+        left: auto;
+        right: 15px;
     }
 }
 
@@ -612,6 +627,9 @@
     .content.About3 .block ul li .swiper-Div {
         bottom: 36px;
     }
+    .Product-banner .Product-Photo img {
+        width: 500px!important;
+    }
 }
 
 @media screen and (max-width: 1439px) {}
@@ -656,12 +674,67 @@
     .content.About3 .block ul li .txt h5 {
         font-size: 20px;
     }
+    .Product-banner .Product-Photo img {
+        width: 400px!important;
+    }
+    .Product-Div-A .custom.swiper-button-next {
+        right: 10px;
+    }
+    .Product-Div-A .custom.swiper-button-prev {
+        left: 10px;
+    }
 }
 
 @media screen and (max-width: 1279px) {
     /*最新动态*/
     .Content-Width {
         width: 95% !important;
+    }
+    .Product-banner .Product-Photo {
+        top: 6%;
+    }
+    .Product-banner .Product-Photo img {
+        width: 350px!important;
+    }
+    .Product-banner .Video-Btn {
+        top: 50%;
+        left: 25%;
+    }
+    .Product-banner ul {
+        left: 5%;
+    }
+    .Product-Div-D .swiper .f-l .swiper-slide,
+    .Product-Div-D .swiper .f-l .swiper-wrapper,
+    .Product-Div-D .swiper .f-r .swiper-wrapper,
+    .Product-Div-D .swiper .f-r .swiper-container {
+        height: 520px !important;
+    }
+    .Product-Div-D .swiper .f-r {
+        height: 620px;
+    }
+    .Product-Div-D .swiper .f-l .swiper-slide img {
+        width: 100%;
+    }
+    .Product_Details .top-btn a {
+        width: calc(25% - 20px);
+    }
+    /*公司简介*/
+    .About1-banner {
+        top: 50%;
+        left: 100px;
+    }
+    .About1 .Centent .bottom > ul > li .text,
+    .About1 .Centent .bottom > ul > li.map .photo {
+        width: 55%;
+    }
+    .About1 .Centent .bottom > ul > li .photo,
+    .About1 .Centent .bottom > ul > li.map .text {
+        width: 40%;
+    }
+    .About1 .Centent .bottom > ul > li,
+    .About1 .Centent .bottom > ul > li.child1,
+    .About1 .Centent .bottom > ul > li.child2 {
+        height: auto;
     }
 }
 
@@ -772,6 +845,75 @@
     .content.About3 .block ul li .txt h5 {
         font-size: 18px;
     }
+    .Product-Div-B .Click-Top .f-l,
+    .Product-Div-B .Click-Top .f-r {
+        float: none;
+    }
+    .Product-Div-B .Click-Top .f-l {
+        margin-bottom: 15px;
+    }
+    .Product-Div-B .content-1 ul li > .f-l,
+    .Product-Div-B .content-1 ul li > .f-r,
+    .Product-Div-B .content-3 ul li > .f-l,
+    .Product-Div-B .content-3 ul li > .f-r,
+    .Product-Div-C ul li > .f-l,
+    .Product-Div-C ul li > .f-r {
+        float: none;
+    }
+    .Product-Div-B .content-1 ul li > .f-l,
+    .Product-Div-B .content-3 ul li > .f-l,
+    .Product-Div-C ul li > .f-l {
+        margin-bottom: 15px;
+    }
+    .Product-Div .f-r.width {
+        width: 100%;
+    }
+    .Product_Details .Product-Div {
+        border-bottom: 0;
+        padding-bottom: 50px;
+    }
+    .Product-Div-B .Click-Top .f-r a,
+    .Product-Div-C ul li .f-r .Click a {
+        margin-left: 5px;
+        font-size: 18px;
+    }
+    .Product-Div-B .Click-Top .f-l strong {
+        font-size: 20px;
+    }
+    .Product-Div-B .content-1 ul li .f-r span {
+        font-size: 18px;
+    }
+    .Product_Details .Product-Div {
+        padding-bottom: 0;
+    }
+    .Product_Details .Product-Div h3 {
+        padding-top: 30px;
+    }
+    .Product-Div-A .swiper-container-horizontal>.swiper-pagination {
+        bottom: 20px;
+    }
+    /*公司简介*/
+    .About1 .Centent .top p,
+    .About1 .Centent .bottom > ul > li p,
+    .About1 .Centent .bottom > ul > li .text p {
+        font-size: 16px;
+    }
+    .About1 .Centent .bottom > ul > li h4 {
+        font-size: 20px;
+        line-height: 40px;
+        margin-bottom: 10px;
+    }
+    .About1 .Centent .bottom > ul > li h4:after {
+        width: 3px;
+        height: 16px;
+        margin-top: -8px;
+    }
+    .About1 .Centent .bottom > ul > li.child2 .photo img {
+        position: static;
+    }
+    .About1 .Centent .bottom > ul > li.child2 .photo img {
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 991px) {
@@ -872,40 +1014,70 @@
     .content.About3 .block ul li.active .viewphoto img {
         opacity: .5;
     }
-    // .content.About3 .block ul.active {
-    //     padding-bottom: 0;
-    //     position: static;
-    // }
-    // .content.About3 .block ul li .sanjiao.active {
-    //     display: none;
-    // }
-    // .content.About3 .block ul li .swiper-Div {
-    //     position: fixed;
-    //     top: 50%;
-    //     left: 50%;
-    //     height: auto;
-    //     -webkit-transform: translate(-50%, -50%);
-    //     -moz-transform: translate(-50%, -50%);
-    //     transform: translate(-50%, -50%);
-    //     display: none;
-    // }
-    // .content.About3 .block ul li .swiper-Div.active {
-    //     z-index: 9;
-    //     position: fixed;
-    //     top: 50%;
-    //     left: 50%;
-    //     height: auto;
-    //     -webkit-transform: translate(-50%, -50%);
-    //     -moz-transform: translate(-50%, -50%);
-    //     transform: translate(-50%, -50%);
-    //     opacity: 1;
-    //     z-index: 99999;
-    //     display: block;
-    // }
-    // .content.About3 .block .back.active {
-    //     display: block;
-    // }
-
+    .Product-banner .Video-Btn {
+        width: 180px;
+    }
+    .Product-banner .Video-Btn img {
+        width: 100% !important;
+    }
+    .Product-banner .Video-Btn img.btn {
+        width: auto !important;
+    }
+    .Product-banner .Product-Photo img {
+        width: 300px!important;
+    }
+    .Product-banner ul li {
+        width: 100px;
+        height: auto;
+    }
+    .Product-banner ul li > img {
+        width: 100% !important;
+    }
+    .Product-Div-B .Click-Top .f-r a,
+    .Product-Div-C ul li .f-r .Click a {
+        margin-bottom: 15px;
+    }
+    .Product-Div-B .content-1 ul li .f-r span {
+        margin-bottom: 15px;
+        display: inline-block;
+    }
+    /*公司简介*/
+    .About1 .Centent .bottom > ul > li .text {
+        padding-top: 0;
+        width: 44%;
+    }
+    .About1 .Centent .bottom > ul > li .photo {
+        width: 52%;
+    }
+    .About1 {
+        padding-bottom: 0;
+    }
+    .About1 .Centent .bottom > ul > li {
+        padding-bottom: 20px;
+    }
+    .About1 .Centent .bottom > ul > li.child2 .text {
+        padding-top: 100px;
+    }
+    .About1 .Centent .bottom > ul > li.child1 .text {
+        width: 100%;
+        margin-top: 30px;
+    }
+    .About1 .Centent .bottom > ul > li.child1 .photo {
+        width: 100%;
+        text-align: center;
+    }
+    .About1 .Centent .bottom > ul > li.child1 .photo img {
+        width: auto;
+    }
+    .About1 .Centent .top p,
+    .About1 .Centent .bottom > ul > li p,
+    .About1 .Centent .bottom > ul > li .text p {
+        font-size: 14px;
+    }
+    .Centent #video {
+        width: 90%;
+        height: auto;
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -1242,20 +1414,80 @@
     .About1 {
         padding-bottom: 30px;
     }
-    // .content.About3 .block ul li .swiper-Div .swiper-container {
-    //     width: 90%;
-    // }
-    // // .content.About3 .block ul li .swiper-Div.active {
-    // //     height: 150px;
-    // // }
-    // .content.About3 .block {
-    //     padding-bottom: 30px;
-    // }
     .content.About3 .block ul li .swiper-Div.active {
         height: 250px;
     }
     .content.About3 .block ul.active {
         padding-bottom: 270px;
+    }
+    .Product-banner .Video-Btn {
+        width: 120px;
+        left: 26%;
+    }
+    .Product-banner .Product-Photo img {
+        width: 200px!important;
+    }
+    .Product-banner ul {
+        display: none;
+    }
+    .Product-Div-B .content-3 ul li .f-r dd {
+        font-size: 14px;
+    }
+    .Product-Div-B .content-3 ul li .f-r dl {
+        width: calc(50% - 10px);
+        margin-right: 10px;
+    }
+    #Product-Div-C,
+    #Product-Div-D {
+        display: none;
+    }
+    .Product_Details .top-btn a {
+        height: 36px;
+        line-height: 36px;
+        font-size: 16px;
+        padding: 0;
+        width: 48%;
+        margin: 0;
+    }
+    .Product_Details .top-btn a:nth-child(3),
+    .Product_Details .top-btn a:nth-child(4) {
+        display: none;
+    }
+    .Product_Details .Product-Div-A p {
+        margin-bottom: 20px;
+        font-size: 16px;
+    }
+    .Product_Details .Product-Div h3 {
+        font-size: 20px;
+        margin-bottom: 0;
+    }
+    /*公司简介*/
+    .About1 .Centent .bottom > ul > li .photo,
+    .About1 .Centent .bottom > ul > li .text {
+        width: 100%;
+        float: none;
+    }
+    .About1 .Centent .bottom > ul > li .photo {
+        text-align: center;
+    }
+    .About1 .Centent .bottom > ul > li .photo img {
+        width: auto;
+        max-width: 100%;
+    }
+    .About1 .Centent .bottom > ul > li.map .text,
+    .About1 .Centent .bottom > ul > li.map .photo {
+        width: 100%;
+    }
+    .About1 .Centent .bottom > ul > li.map .photo {
+        margin-bottom: 20px;
+    }
+    .About1 .Centent .bottom > ul > li h4:after {
+        height: 80%;
+        margin: 0;
+        top: 10%;
+    }
+    .About1-banner {
+        display: none;
     }
 }
 
@@ -1306,13 +1538,68 @@
         margin: 5px;
     }
     .content.About3 .block ul li {
-            margin: 2px;
-           width: calc(20% - 4px);
+        margin: 2px;
+        width: calc(20% - 4px);
     }
-     .content.About3 .block ul li .swiper-Div.active {
+    .content.About3 .block ul li .swiper-Div.active {
         height: 200px;
     }
     .content.About3 .block ul.active {
         padding-bottom: 220px;
+    }
+    .Product-banner .Video-Btn {
+        left: 20px;
+    }
+    .Product-banner .Product-Photo img {
+        width: 150px!important;
+    }
+    .About1 .Centent .bottom > ul > li.child1 .text .tab ul {
+        background: none;
+    }
+    .About1 .Centent .bottom > ul > li.child1 .text .tab ul li {
+        width: 100%;
+        margin: 5px 0;
+        background: #f2f2f2;
+        border: 1px solid #ccc;
+    }
+    .About1 .Centent .bottom > ul > li.child1 .photo {
+        padding-left: 0;
+    }
+    .About1 .Centent .bottom > ul > li.child2 .text,
+    .About1 .Centent .bottom > ul > li .text {
+        padding-top: 20px;
+    }
+}
+
+
+/*控制高度*/
+
+@media screen and (max-height: 761px) {
+    .Nav-Wra .Nav > ul > li {
+        line-height: 46px;
+    }
+}
+
+@media screen and (max-height: 700px) {
+    .Nav-Wra .Nav > ul > li {
+        line-height: 46px;
+    }
+    .Nav-Wra .Nav > ul > li ul li {
+        line-height: 30px;
+    }
+    .Nav-Wra .Nav > ul > li > a {
+        font-size: 24px;
+    }
+    .Nav-Wra .Nav .Chinese-English {
+        bottom: 10px;
+    }
+}
+
+@media screen and (max-height: 600px) {
+    .Nav-Wra .Nav > ul > li > a {
+        font-size: 22px;
+    }
+    .Nav-Wra .Nav > ul > li ul li a {
+        font-size: 16px;
     }
 }

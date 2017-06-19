@@ -116,25 +116,25 @@ function animation(obj, animate) {//两个参数 第一个是时间 第二个是
 }
 
 
-$('.Product-Div-B .Click-Top .f-r a').eq(0).click(function(){
-    $('.Product-Div-B .content-1 ul li:first-child .f-r').html('<span>NORMA</span><span>NOHARD A</span><span>HARDNORMA</span>');
-    $('.Product-Div-B .content-1 ul li:last-child .f-r').html('<span>NORMA</span><span>NOHARD A</span>');
-    $('.Product-Div-B .content-2 .se div').width('30%');
-    $('.Product-Div .f-r.width > img').attr('src','images/p-11-1.jpg');
-    $('.Product-Div-B .content-3 ul li .f-r p').html('DIN ISO 7619 / DIN 3213 ISO 868<br />DIN ISO 7619 / 3213 EN ISO 868');
-    $('.Product-Div-B .content-3 ul li .f-r dl dt img').attr('src','images/p-2-1.jpg');
-});
-$('.Product-Div-B .Click-Top .f-r a').eq(1).click(function(){
-    $('.Product-Div-B .content-1 ul li:first-child .f-r').html('<span>NORMA21232</span><span>32131 A</span><span>32132</span>');
-    $('.Product-Div-B .content-1 ul li:last-child .f-r').html('<span>NORMA</span><span>NOHARD A</span><span>NOHARD A</span>');
-    $('.Product-Div-B .content-2 .se div').width('50%');
-    $('.Product-Div .f-r.width > img').attr('src','images/p-11-2.jpg');
-    $('.Product-Div-B .content-3 ul li .f-r p').html('DIN ISO 7619 / DIN 212454 ISO 868<br />32132 ISO 7619 / 3213 EN ISO 868');
-    $('.Product-Div-B .content-3 ul li .f-r dl dt img').attr('src','images/p-2-2.jpg');
-});
-$('.Product-Div-B .Click-Top .f-r a').click(function(){
-    $(this).addClass('active').siblings().removeClass('active');
-});
+// $('.Product-Div-B .Click-Top .f-r a').eq(0).click(function(){
+//     $('.Product-Div-B .content-1 ul li:first-child .f-r').html('<span>NORMA</span><span>NOHARD A</span><span>HARDNORMA</span>');
+//     $('.Product-Div-B .content-1 ul li:last-child .f-r').html('<span>NORMA</span><span>NOHARD A</span>');
+//     $('.Product-Div-B .content-2 .se div').width('30%');
+//     $('.Product-Div .f-r.width > img').attr('src','images/p-11-1.jpg');
+//     $('.Product-Div-B .content-3 ul li .f-r p').html('DIN ISO 7619 / DIN 3213 ISO 868<br />DIN ISO 7619 / 3213 EN ISO 868');
+//     $('.Product-Div-B .content-3 ul li .f-r dl dt img').attr('src','images/p-2-1.jpg');
+// });
+// $('.Product-Div-B .Click-Top .f-r a').eq(1).click(function(){
+//     $('.Product-Div-B .content-1 ul li:first-child .f-r').html('<span>NORMA21232</span><span>32131 A</span><span>32132</span>');
+//     $('.Product-Div-B .content-1 ul li:last-child .f-r').html('<span>NORMA</span><span>NOHARD A</span><span>NOHARD A</span>');
+//     $('.Product-Div-B .content-2 .se div').width('50%');
+//     $('.Product-Div .f-r.width > img').attr('src','images/p-11-2.jpg');
+//     $('.Product-Div-B .content-3 ul li .f-r p').html('DIN ISO 7619 / DIN 212454 ISO 868<br />32132 ISO 7619 / 3213 EN ISO 868');
+//     $('.Product-Div-B .content-3 ul li .f-r dl dt img').attr('src','images/p-2-2.jpg');
+// });
+// $('.Product-Div-B .Click-Top .f-r a').click(function(){
+//     $(this).addClass('active').siblings().removeClass('active');
+// });
 
 
 
