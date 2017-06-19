@@ -684,6 +684,11 @@ textarea { -webkit-appearance: none;}
 	box-sizing: border-box;
 	position: relative;
 }
+.View_Item .content .View-Item-Ul > li.beizhu {
+	height: auto;
+	padding-bottom: 20px;
+}
+
 .View_Item .content .View-Item-Ul > li:first-child {
 	border:0;
 }
@@ -705,6 +710,10 @@ textarea { -webkit-appearance: none;}
 .View_Item .content .View-Item-Ul > li p {
 	font-size: 14px;
 	color: #999;
+}
+.View_Item .content .View-Item-Ul > li.beizhu p {
+	width: 100%;
+	line-height: 1.5;
 }
 .View_Item .content .View-Item-Ul.Photo > li {
 	height:auto;
@@ -978,11 +987,19 @@ textarea { -webkit-appearance: none;}
 	border-radius: 10px;
 	font-size: 12px;
 }
+.View_Item .content .Record-C .listview li .btn.shjl {
+	right : 86px;
+	border-color: #eb139f;
+}
+
 .View_Item .content .Record-C .listview li .btn a {
 	background: none;
 	color: #13a3eb;
 	font-weight: normal;
 	display: block;
+}
+.View_Item .content .Record-C .listview li .btn.shjl a {
+	color:  #eb139f;
 }
 .View_Item .content .Record-C .listview li .btn2 {
 	right: 90px;
