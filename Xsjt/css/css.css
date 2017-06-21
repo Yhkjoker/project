@@ -663,11 +663,6 @@ textarea { -webkit-appearance: none;}
 .View_Item .content {
 	padding-bottom: 50px;
 }
-.View_Item .content .Neirong h2 a {
-            font-size: 16px;
-            color: #333;
-}
-
 .View_Item .content .View-Item-Ul {
 	background: #fff;
 	margin-top: 10px;
@@ -684,11 +679,6 @@ textarea { -webkit-appearance: none;}
 	box-sizing: border-box;
 	position: relative;
 }
-.View_Item .content .View-Item-Ul > li.beizhu {
-	height: auto;
-	padding-bottom: 20px;
-}
-
 .View_Item .content .View-Item-Ul > li:first-child {
 	border:0;
 }
@@ -710,10 +700,6 @@ textarea { -webkit-appearance: none;}
 .View_Item .content .View-Item-Ul > li p {
 	font-size: 14px;
 	color: #999;
-}
-.View_Item .content .View-Item-Ul > li.beizhu p {
-	width: 100%;
-	line-height: 1.5;
 }
 .View_Item .content .View-Item-Ul.Photo > li {
 	height:auto;
@@ -740,13 +726,6 @@ textarea { -webkit-appearance: none;}
 	top: 2px;
 	width: 3px;
 }
-.View_Item .content .Purchase-select {
-	border-top: 0;
-	margin-top: 0;
-	margin-bottom: 20px;
-}
-
-
 .View_Item .content .Record {
 	border-radius: 0;
 	border-top:1px solid #dbdbdb;
@@ -892,9 +871,6 @@ textarea { -webkit-appearance: none;}
 	margin-top: 6px;
 	border-radius: 3px;
 }
-.View_Item .footer .btn.w-100 {
-	width: 100%;
-}
 .View_Item .content .Record-B .listview li .ui-btn-icon-right:after {
 	display: none;
 }
@@ -921,28 +897,6 @@ textarea { -webkit-appearance: none;}
     font-weight: normal;
     font-size: 16px;
     color: #333;
-}
-.View_Item .content .Record-B .listview h5 .txt {
-	height: 24px;
-	line-height: 24px;
-	border-radius: 3px;
-	text-indent: .5em;
-	border:1px solid #ccc;
-	margin-right: 5px;
-	font-size: 14px;
-	color: #333;
-}
-.View_Item .content .Record-B .listview h5 .btn {
-	height: 28px;
-	width: 50px;
-	line-height: 28px;
-	padding: 0;
-	margin: 0;
-	background: #13a3eb;
-	color: #fff;
-	font-size: 14px;
-	border:0;
-	border-radius: 3px;
 }
 .View_Item .content .Record-B .listview h5 span {
     font-weight: normal;
@@ -987,19 +941,11 @@ textarea { -webkit-appearance: none;}
 	border-radius: 10px;
 	font-size: 12px;
 }
-.View_Item .content .Record-C .listview li .btn.shjl {
-	right : 86px;
-	border-color: #eb139f;
-}
-
 .View_Item .content .Record-C .listview li .btn a {
 	background: none;
 	color: #13a3eb;
 	font-weight: normal;
 	display: block;
-}
-.View_Item .content .Record-C .listview li .btn.shjl a {
-	color:  #eb139f;
 }
 .View_Item .content .Record-C .listview li .btn2 {
 	right: 90px;
@@ -1111,36 +1057,10 @@ textarea { -webkit-appearance: none;}
 	color: #999;
 	font-weight: normal;
 }
-
-.News .content .listview-new li h2 {
-	margin:0;
-	line-height: 70px;
-}
-.News .content .listview-new li h2 p {
-	font-size: 16px;
-	color: #1a1a1a;
-	margin:0;
-	width: calc(100% - 80px);
-}
-.News .content .listview-new li h2 span {
-	font-size: 13px;
-	color: #999;
-	font-weight: normal;
-	width: 80px;
-	display: inline-block;
-}
 .News .content .listview li .Txt img {
 	width: 12px;
 	position: relative;
 	top: 1px;
-}
-.News .content .listview li .Txt .i-8 {
-	width: 12px;
-	height: 14px;
-	background: url(../images/i-8.png) no-repeat center;
-	position: relative;
-	top: 1px;
-	background-size: 100%;
 }
 .News .content .listview li .Txt span {
 	font-size: 13px;
@@ -1483,19 +1403,6 @@ textarea { -webkit-appearance: none;}
 	background: #fff url('../images/i-5.png') no-repeat 98% center!important;
 	background-size: 12px auto!important;
 }
-.Purchase-select .select-f .inputtxt {
-	    width: 90%;
-	    border: 0;
-	    padding-left: 8px;
-	    border-radius: 5px;
-	    height: 35px;
-	    box-sizing: border-box;
-	    font-size: 14px;
-	    color: #333;
-	    position: relative;
-	    top: 2px;
-}
-
 .View_Item .content .Record-A.Purchase h4 > .No-Find {
 	position: relative;
 }
@@ -1661,11 +1568,6 @@ textarea { -webkit-appearance: none;}
     position: absolute;
     bottom:10px;
     right: 12px;
-}
-.Finance .Finance-Div .Href-Record.Href-Record-a {
-   right: 94px;
-   color: #fff;
-   border:none;
 }
 .Finance .content .Record-C .listview li .btn {
     border-color: #ff5959;
