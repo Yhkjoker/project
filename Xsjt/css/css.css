@@ -862,7 +862,13 @@ html head+body .ui-body-a.ui-focus {
 .project .Add-project .table tr td:nth-child(2) input[type="date"]:nth-child(3) {
     float: right;
 }
-
+.project .Add-project .table tr td p {
+    width: 100%;
+    font-size: 14px;
+    color: #333;
+    border-radius: 5px;
+    padding-left: 8px;
+}
 .project .Add-project .table tr td:nth-child(2) span {
     width: 5%;
     height: 2px;

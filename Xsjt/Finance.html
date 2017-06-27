@@ -481,7 +481,7 @@
   </div>
   
   <div data-role="footer" class="footer" data-position="fixed">
-      <a href="#" class="footer-Submit" data-role="none" data-ajax="false">付款</a>
+      <a href="#add-Receivables-a" class="footer-Submit" data-role="none" data-ajax="false">添加收付款记录</a>
   </div>
 </div>
 
@@ -580,7 +580,49 @@
   </div>
 
 </div>
+<!--添加收付款记录-->
+<div data-role="page" class="page project Bg-fff" id="add-Receivables-a">
+    <div class="header ui-shadow" data-role="header" data-position="fixed">
+        <h1>添加收付款记录</h1>
+        <a href="{:U('financeSel',array('ruleid'=>$_GET[ruleid]))}?id={$_GET[id]}" class="ui-btn fanhui" data-rel="back"
+           data-transition="fade" data-direction="reverse"></a>
+    </div>
+    <form action="{:U('gatheringSk',array('action'=>'dosubmit','ruleid'=>$_GET[ruleid]))}" method="post" id="myForm">
+        <div data-role="content" class="content Add-project">
+            <table class="table" width="100%">
+                <tr>
+                    <td>收款时间</td>
+                    <td><input class="Txt Bg-f2f2f2 W100" type="date" data-role="none" name="time"></td>
+                </tr>
+                <tr>
+                    <td>收款金额</td>
+                    <td><input class="Txt Bg-f2f2f2" type="number" data-role="none" name="receiveprice"></td>
+                </tr>
+                <tr>
+                    <td>付款金额</td>
+                    <td><input class="Txt Bg-f2f2f2" type="number" data-role="none" name="receiveprice"></td>
+                </tr>
+                <tr>
+                    <td>开支</td>
+                    <td><input class="Txt Bg-f2f2f2" type="number" data-role="none" name="receiveprice"></td>
+                </tr>
+                <tr>
+                    <td>利润</td>
+                    <td><p class="Bg-f2f2f2">2222</p></td>
+                </tr>
+                <tr>
+                    <td>备注</td>
+                    <td><textarea class="Bg-f2f2f2" style="resize:none;" data-role="none"></textarea></td>
+                </tr>
+            </table>
+        </div>
 
+        <div data-role="footer" class="footer" data-position="fixed">
+            <input type="hidden" name="pid" value="{$_GET[id]}">
+            <a href="javascript:;" class="footer-Submit" data-role="none" data-ajax="false" id="dosubmit">保存</a>
+        </div>
+    </form>
+</div>
 
 
 <!--图片弹窗显示区-->
