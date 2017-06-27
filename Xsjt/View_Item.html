@@ -50,21 +50,22 @@
           <li><a href="#"><span>2017-03-29  08:15</span><strong>拜访客户</strong></a></li>
         </ul>
       </div>
-      <div data-role="collapsible" class="Record Record-B">
+      <!-- <div data-role="collapsible" class="Record Record-B">
         <h4 class="clearFix">
             <span class="f-l">合同价格</span>
             <div class="f-r Record-jiantou"></div>
             <i></i>
         </h4>
-        <ul data-role="listview" class="listview">
-          <h5 class="clearFix"><strong class="f-l">合同总价</strong><span class="f-r">390000元</span></h5>
+        <ul data-role="listview" class="listview"> -->
+          <!-- <h5 class="clearFix"><strong class="f-l">合同总价</strong><span class="f-r">390000元</span></h5> -->
+         <!--  <h5 class="clearFix"><strong class="f-l">合同总价</strong><span class="f-r"><input class="txt" type="number" data-role="none" /><button class="btn" type="button" data-role="none">确定</button></span></h5>
           <h6>财务明细</h6>
           <li><a href="#"><span>2017-03-29</span><strong>应收款2000元，实收款2000元，发票已开</strong></a></li>
           <li><a href="#"><span>2017-03-29</span><strong>应收款2000元，实收款2000元，发票已开</strong></a></li>
           <li><a href="#"><span>2017-03-29</span><strong>应收款2000元，实收款2000元，发票已开</strong></a></li>
         </ul>
-      </div>
-      <div data-role="collapsible" class="Record Record-C">
+      </div> -->
+      <!-- <div data-role="collapsible" class="Record Record-C">
         <h4 class="clearFix">
             <span class="f-l">货品清单</span>
             <div class="f-r Record-jiantou"></div>
@@ -77,6 +78,7 @@
               <p>名称：花纹大理石瓷砖</p>
               <p>数量：1000块</p>
               <p>总价：25000元</p>
+              <div class="btn shjl"><a href="#shjl-1"  data-transition="slideup">送货记录</a></div>
               <div class="btn"><a href="#View_list">查看</a></div>
           </li>
           <li>
@@ -87,10 +89,10 @@
               <div class="btn"><a href="#View_list">查看</a></div> 
           </li>
         </ul>
-      </div>
+      </div> -->
   </div>
   
-  <div data-role="footer" class="footer" data-position="fixed">
+  <!-- <div data-role="footer" class="footer" data-position="fixed">
       <div data-role="navbar">
           <ul>
               <li><a href="index.html" class="ioc-a" data-ajax="false" data-transition="fade">工作</a></li>
@@ -98,6 +100,12 @@
               <li><a href="News.html" class="ioc-c" data-ajax="false" data-transition="fade">消息</a></li>
               <li><a href="My.html" class="ioc-d" data-ajax="false" data-transition="fade">我的</a></li>
           </ul>
+      </div>
+  </div> -->
+   <div data-role="footer" class="footer" data-position="fixed">
+      <div class="clearFix">
+          <a href="#" class="Bg-13a3eb btn f-l">跟进成功</a>
+          <a href="#" class="Bg-ff5959 btn f-r">跟进失败</a>
       </div>
   </div>
 </div>
@@ -188,8 +196,8 @@
   
   <div data-role="footer" class="footer" data-position="fixed">
       <div class="clearFix">
-          <a href="#Add-Follow" class="Bg-13a3eb btn f-l" data-transition="slideup">添加跟进</a>
-          <a href="#" class="Bg-ff5959 btn f-r">保存</a>
+          <a href="#Add-Follow" class="Bg-13a3eb btn f-l w-100" data-transition="slideup">添加跟进</a>
+          <!-- <a href="#" class="Bg-ff5959 btn f-r">保存</a> -->
       </div>
   </div>
 </div>
@@ -466,6 +474,47 @@
     </div>
   </div>
 </div>
+<!-- 送货记录 -->
+<div data-role="page" class="page View_Item Bg-f2f2f2" id="shjl-1">
+  <div class="header ui-shadow" data-role="header" data-position="fixed">
+      <h1>送货记录</h1>
+      <a href="#" class="ui-btn fanhui" data-rel="back" data-transition="fade" data-direction="reverse"></a>
+  </div>
+  
+  <div data-role="content" class="content">
+         <div data-role="collapsible" class="Neirong">
+           <h2>送货记录一</h2>
+           <div>
+                <ul class="View-Item-Ul">
+                  <li class="clearFix"><span class="f-l">日期</span><p class="f-r">2017-10-10</p></li>
+                  <li class="clearFix"><span class="f-l">名称</span><p class="f-r">花纹大理石瓷砖</p></li>
+                  <li class="clearFix"><span class="f-l">单价</span><p class="f-r">1</p></li>
+                  <li class="clearFix"><span class="f-l">数量</span><p class="f-r">1000</p></li>
+                  <li class="clearFix"><span class="f-l">总价</span><p class="f-r">1000</p></li>
+                  <li class="clearFix beizhu"><span class="f-l">备注</span><p class="f-r">JavaScript的原型链和Java的Class区别就在，它没有“Class”的概念，所有对象都是实例，所谓继承关系不过是把一个对象的原型指向另一个对象而已。</p></li>
+                </ul>
+           </div>
+         </div>
+         <div data-role="collapsible" class="Neirong">
+           <h2>送货记录二</h2>
+           <div>
+                <ul class="View-Item-Ul">
+                  <li class="clearFix"><span class="f-l">日期</span><p class="f-r">2017-10-10</p></li>
+                  <li class="clearFix"><span class="f-l">名称</span><p class="f-r">花纹大理石瓷砖</p></li>
+                  <li class="clearFix"><span class="f-l">单价</span><p class="f-r">1</p></li>
+                  <li class="clearFix"><span class="f-l">数量</span><p class="f-r">1000</p></li>
+                  <li class="clearFix"><span class="f-l">总价</span><p class="f-r">1000</p></li>
+                  <li class="clearFix beizhu"><span class="f-l">备注</span><p class="f-r">JavaScript的原型链和Java的Class区别就在，它没有“Class”的概念，所有对象都是实例，所谓继承关系不过是把一个对象的原型指向另一个对象而已。</p></li>
+                </ul>
+           </div>
+         </div>
+  </div>
+  
+   <div data-role="footer" class="footer" data-position="fixed">
+      <a href="#My-List" class="footer-Submit" data-role="none" data-ajax="false">添加记录</a>
+  </div>
+</div>
+
 
 <script src="js/photoswipe.min.js"></script> 
 <script src="js/photoswipe-ui-default.min.js"></script>
